@@ -7,3 +7,4 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 
 * Created this thing.
 * Added a fish alias to make it easier to edit.
+* Also added a Vim mapping...
