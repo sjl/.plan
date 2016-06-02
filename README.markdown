@@ -21,6 +21,6 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
   all out of whack thanks to the changing weather.
 * Read a some more [AMOP][].  My brain hurts.
 * Read more [Masters of Doom][].
-
-
-
+* Noticed the `dynamic-extent` declaration of a `flet`ed function in
+  Alexandria's `extremum`... should look into this for the bigass `labels` in
+  [Bones][].
