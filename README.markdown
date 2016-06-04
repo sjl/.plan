@@ -4,9 +4,10 @@
 I'm going to try keeping a `.plan`.  Let's see how this goes.
 
 [Bones]: http://bitbucket.org/sjl/bones
-[AMOP]: 
-[Masters of Doom]: 
-[Mazes]:
+[AMOP]: http://www.amazon.com/dp/0262610744/?tag=stelos-20
+[Masters of Doom]: http://www.amazon.com/dp/0812972155/?tag=stelos-20
+[Mazes]: http://www.amazon.com/dp/1680500554/?tag=stelos-20
+[ELS 2016]: http://www.european-lisp-symposium.org/
 
 ## 2016-06-01
 
@@ -26,3 +27,13 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
   Alexandria's `extremum`... should look into this for the bigass `labels` in
   [Bones][].
 * Did a bit more from the [Mazes][] book.
+
+## 2016-06-04
+
+* Went to a talk by Tony Hoare at my school.  It was interesting, but the more
+  I dive into purely theoretical things the more I realize I really love
+  *actually making the computer do things*.
+* Started watching the [ELS 2016][] videos.  I wish I could have made it this
+  year, but unfortunately my school schedule conflicted.  Next year!
+* Asked for help/advice/feedback on the UI for [Bones][]:
+  <https://gist.github.com/sjl/1f4bb73967663af0f9276b491af84140>
