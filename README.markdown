@@ -28,6 +28,8 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
   [Bones][].
 * Did a bit more from the [Mazes][] book.
 
+## 2016-06-03
+
 ## 2016-06-04
 
 * Went to a talk by Tony Hoare at my school.  It was interesting, but the more
