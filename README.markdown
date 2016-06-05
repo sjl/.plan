@@ -8,9 +8,9 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [Masters of Doom]: http://www.amazon.com/dp/0812972155/?tag=stelos-20
 [Mazes]: http://www.amazon.com/dp/1680500554/?tag=stelos-20
 [ELS 2016]: http://www.european-lisp-symposium.org/
-[LOL]:
-[WAM book]:
-[cl-nrepl]:
+[LOL]: http://www.amazon.com/dp/1435712757/?tag=stelos-20
+[WAM book]: http://wambook.sourceforge.net/
+[cl-nrepl]: https://bitbucket.org/sjl/cl-nrepl
 
 ## 2016-06-01
 
