@@ -37,3 +37,6 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
   year, but unfortunately my school schedule conflicted.  Next year!
 * Asked for help/advice/feedback on the UI for [Bones][]:
   <https://gist.github.com/sjl/1f4bb73967663af0f9276b491af84140>
+* Implemented `cut` for [Bones][].  I simplified the book's fuckery quite a bit
+  and it turned out to work pretty well, after chasing down a couple of other
+  pre-existing bugs.
