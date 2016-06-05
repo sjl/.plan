@@ -8,6 +8,9 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [Masters of Doom]: http://www.amazon.com/dp/0812972155/?tag=stelos-20
 [Mazes]: http://www.amazon.com/dp/1680500554/?tag=stelos-20
 [ELS 2016]: http://www.european-lisp-symposium.org/
+[LOL]:
+[WAM book]:
+[cl-nrepl]:
 
 ## 2016-06-01
 
@@ -42,3 +45,25 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 * Implemented `cut` for [Bones][].  I simplified the book's fuckery quite a bit
   and it turned out to work pretty well, after chasing down a couple of other
   pre-existing bugs.
+
+## 2016-06-05
+
+* Discovered a bug in the [Bones][] compiler, and I think the best way to fix it
+  is to rewrite the bulk of the compiler.  This sounds bad, but "rewrite the
+  compiler" has been on my list of things to do for a while now, so it's as good
+  a time as any.
+* The compiler is pretty crufty because it started out with me trying to wrap my
+  head around the awful [WAM book][] and grew organically.  Now that I've got
+  a fairly solid understanding of how this shit works, my second attempt should
+  be nicer.
+* Watched more [ELS 2016][] videos.
+* Finished reading the main part of [AMOP][].  Gonna put it down and move on to
+  [LOL][] instead of trying to power through reading the entire MOP spec.
+* Started rewriting the [Bones][] compiler.  Made good progress, will probably
+  take another day or so to get working and then another day to clean up.
+* I really should go through and type hint all the stuff in that compiler.  The
+  type hints have proven useful in the rest of the project.
+* Started thinking about what an inspector plugin for [cl-nrepl][] would
+  look like.  The "dump the object" code I wrote for the new compiler is ugly
+  and painful to write -- if I just had a nice inspector I wouldn't need to fuck
+  around with writing it.
