@@ -67,3 +67,8 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
   look like.  The "dump the object" code I wrote for the new compiler is ugly
   and painful to write -- if I just had a nice inspector I wouldn't need to fuck
   around with writing it.
+
+## 2016-06-06
+
+* Read more [LOL][].
+* Logistic travel stuff.
