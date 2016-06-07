@@ -72,3 +72,8 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 
 * Read more [LOL][].
 * Logistic travel stuff.
+
+## 2016-06-07
+
+* [Finished
+  rewriting](https://bitbucket.org/sjl/bones/commits/72bbdd5157258b77c85a6c0172240a26bb7ad4a4) the [Bones][] compiler.
