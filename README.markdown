@@ -6,7 +6,8 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [Bones]: http://bitbucket.org/sjl/bones
 [AMOP]: http://www.amazon.com/dp/0262610744/?tag=stelos-20
 [Masters of Doom]: http://www.amazon.com/dp/0812972155/?tag=stelos-20
-[Mazes]: http://www.amazon.com/dp/1680500554/?tag=stelos-20
+[Mazes book]: http://www.amazon.com/dp/1680500554/?tag=stelos-20
+[Mazes]: http://bitbucket.org/sjl/mazes
 [ELS 2016]: http://www.european-lisp-symposium.org/
 [LOL]: http://www.amazon.com/dp/1435712757/?tag=stelos-20
 [WAM book]: http://wambook.sourceforge.net/
@@ -29,7 +30,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 * Noticed the `dynamic-extent` declaration of a `flet`ed function in
   Alexandria's `extremum`... should look into this for the bigass `labels` in
   [Bones][].
-* Did a bit more from the [Mazes][] book.
+* Did a bit more from the [Mazes book][].
 
 ## 2016-06-03
 
@@ -77,3 +78,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 
 * [Finished
   rewriting](https://bitbucket.org/sjl/bones/commits/72bbdd5157258b77c85a6c0172240a26bb7ad4a4) the [Bones][] compiler.
+
+## 2016-06-08
+
+* Implemented Aldous-Broder and a bunch of code cleanup for [Mazes][].
