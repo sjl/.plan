@@ -12,6 +12,8 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [LOL]: http://www.amazon.com/dp/1435712757/?tag=stelos-20
 [WAM book]: http://wambook.sourceforge.net/
 [cl-nrepl]: https://bitbucket.org/sjl/cl-nrepl
+[Dash]: https://kapeli.com/dash
+[Roswell]: https://github.com/roswell/roswell
 
 ## 2016-06-01
 
@@ -82,3 +84,13 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 ## 2016-06-08
 
 * Implemented Aldous-Broder and a bunch of code cleanup for [Mazes][].
+
+## 2016-06-09
+
+* Downloading/updating everything to prepare for my long-ass flight back to the
+  states tomorrow.
+* Grabbing doc trees with `wget`, but also might try out [Dash][] to see if it
+  can reduce this pain a bit.
+* Roswell broke when I updated it through Homebrew and I had to manually remove
+  all its cached files in `~/.roswell` for it to work again.  Computers are
+  garbage.
