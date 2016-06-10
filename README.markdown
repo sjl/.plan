@@ -94,3 +94,8 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 * Roswell broke when I updated it through Homebrew and I had to manually remove
   all its cached files in `~/.roswell` for it to work again.  Computers are
   garbage.
+
+## 2016-06-10
+
+* Flew back to the states for a short visit.
+* Fixed a pair of really nasty bugs in [Bones][] on the plane.
