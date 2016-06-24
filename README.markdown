@@ -14,6 +14,14 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [cl-nrepl]: https://bitbucket.org/sjl/cl-nrepl
 [Dash]: https://kapeli.com/dash
 [Roswell]: https://github.com/roswell/roswell
+[ANSI Common Lisp]: http://www.amazon.com/dp/0133708756/?tag=stelos-20
+[Successful Lisp]: http://www.amazon.com/dp/3937526005/?tag=stelos-20
+[CLtL2]: http://www.amazon.com/dp/1555580416/?tag=stelos-20
+[OpenGL SuperBible]: http://www.amazon.com/dp/0672337479/?tag=stelos-20
+[CEPL]: https://github.com/cbaggers/cepl
+[On Writing]: http://www.amazon.com/dp/1439156816/?tag=stelos-20
+[Salem's Lot]: http://www.amazon.com/dp/0307743675/?tag=stelos-20
+[Reddit GDC]: https://www.reddit.com/r/gamedev/comments/4oodum/what_are_some_of_the_best_gdc_talks/
 
 ## 2016-06-01
 
@@ -99,3 +107,34 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 
 * Flew back to the states for a short visit.
 * Fixed a pair of really nasty bugs in [Bones][] on the plane.
+
+## 2016-06-11 - 2016-06-23
+
+* Traveling in the US.  I miss American food.
+* I had left a cache of paper books at a friend's place in the US, so I read
+  through a few while I was there.
+* Read through [ANSI Common Lisp][].  Pretty basic, nothing too advanced in it.
+  It reminded me how much I hate Paul Graham's function/variable naming style.
+  Aim for brevity of *ideas*, not characters.
+* Read/skimmed [Successful Lisp][].  Also pretty basic, but kind of weird at the
+  same time.  It seemed to just skim a lot of topics and not really go in-depth
+  enough on any of them.  Except for the chapter about the bit-twiddling
+  operations, which I haven't seen in any other Lisp book (except maybe
+  [CLtL2][]).  I don't think I'd recommend it.
+* Read through most of the [OpenGL SuperBible][].  Graphics programming is some
+  really neat and powerful stuff wrapped in a hilarious nest of disgusting
+  syntax and boilerplate.
+* I really want to play around with shaders and such, but the C++ development
+  environment seems like an enourmous pain in the ass.  There's also [CEPL][]
+  but I'm worried that I should really know some OpenGL before diving into that.
+  I might poke at WebGL a bit as a middle ground.
+* Read through [On Writing][] by Stephen King.  Some good advice in there,
+  especially about just reading and writing a *lot*.  I haven't been reading
+  enough lately -- so from now on the Kindle is gonna replace my phone while on
+  the bus.
+
+## 2016-06-24
+
+* Still jet lagged.  Catching up on things back in Iceland.
+* Halfway through [Salem's Lot][].  I forgot how much I loved reading fiction.
+* Grabbed a bunch of GDC talks from [this thread][Reddit GDC] to watch later.
