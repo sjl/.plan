@@ -138,3 +138,6 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 * Still jet lagged.  Catching up on things back in Iceland.
 * Halfway through [Salem's Lot][].  I forgot how much I loved reading fiction.
 * Grabbed a bunch of GDC talks from [this thread][Reddit GDC] to watch later.
+* Read more [LOL][].  This dude is a wonderful nutbag.  The chapter on
+  efficiency is crazy, but interesting.  I might use some of its ideas in
+  [Bones][] once I've got that to a stable place.
