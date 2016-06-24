@@ -141,3 +141,4 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 * Read more [LOL][].  This dude is a wonderful nutbag.  The chapter on
   efficiency is crazy, but interesting.  I might use some of its ideas in
   [Bones][] once I've got that to a stable place.
+* Watched the Juice it or Lose It talk from that Reddit thread.  Really nice.
