@@ -150,3 +150,8 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
   was really interesting.  The idea that making Ellie stick close to the player
   means that any mistakes become the player's fault (so they won't blame her)
   seems obvious now, but wasn't before I watched it.
+* Finally finished up a blog post that's been halfway done for months.  Might
+  post it on Monday.
+* Finished [LOL][] (though I had to tap out halfway through the final Forth
+  chapter).  My dude certainly has a lot of fresh, hot, steaming takes.  I'd
+  recommend the book, but only with a rabbit-sized grain of salt.
