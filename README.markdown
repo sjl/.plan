@@ -155,3 +155,6 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 * Finished [LOL][] (though I had to tap out halfway through the final Forth
   chapter).  My dude certainly has a lot of fresh, hot, steaming takes.  I'd
   recommend the book, but only with a rabbit-sized grain of salt.
+* Watched the [ELS 2016][] talk "Type Checking on Heterogeneous Sequences in
+  Common Lisp".  Seems a lot like the Clojure spec stuff that was released
+  shortly after.
