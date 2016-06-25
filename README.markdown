@@ -142,3 +142,11 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
   efficiency is crazy, but interesting.  I might use some of its ideas in
   [Bones][] once I've got that to a stable place.
 * Watched the Juice it or Lose It talk from that Reddit thread.  Really nice.
+  Simple stuff like tweening makes a big difference.
+
+## 2016-06-25
+
+* Watched the "Ellie: Buddy AI in The Last of Us" GDC talk over breakfast.  It
+  was really interesting.  The idea that making Ellie stick close to the player
+  means that any mistakes become the player's fault (so they won't blame her)
+  seems obvious now, but wasn't before I watched it.
