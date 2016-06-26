@@ -22,6 +22,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [On Writing]: http://www.amazon.com/dp/1439156816/?tag=stelos-20
 [Salem's Lot]: http://www.amazon.com/dp/0307743675/?tag=stelos-20
 [Reddit GDC]: https://www.reddit.com/r/gamedev/comments/4oodum/what_are_some_of_the_best_gdc_talks/
+[The Implementation of Prolog]: 
 
 ## 2016-06-01
 
@@ -161,3 +162,13 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 * Started a blog post about Lisp and symbols which turned into a 5k word
   monster.  Gonna edit it down over the next few days and post it some time next
   week.
+
+## 2016-06-26
+
+* Watched the "Antichamber: An Overnight Success, Seven Years in the Making" GDC
+  video.  Pretty inspiring, though I think he still probably underestimates how
+  much luck matters.
+* Started reading [The Implementation of Prolog][].  Some good ideas and
+  explanations in here, though the coding style is maddening.  I might even try
+  a clean rewrite of [Bones][] a year or two down the line, using some of the
+  concepts I'm seeing here.
