@@ -23,7 +23,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [Salem's Lot]: http://www.amazon.com/dp/0307743675/?tag=stelos-20
 [Reddit GDC]: https://www.reddit.com/r/gamedev/comments/4oodum/what_are_some_of_the_best_gdc_talks/
 [The Implementation of Prolog]: 
-[Coding Math]:
+[Coding Math]: http://bitbucket.org/sjl/coding-math/
 
 ## 2016-06-01
 
