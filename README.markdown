@@ -23,6 +23,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [Salem's Lot]: http://www.amazon.com/dp/0307743675/?tag=stelos-20
 [Reddit GDC]: https://www.reddit.com/r/gamedev/comments/4oodum/what_are_some_of_the_best_gdc_talks/
 [The Implementation of Prolog]: 
+[Coding Math]:
 
 ## 2016-06-01
 
@@ -172,3 +173,4 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
   explanations in here, though the coding style is maddening.  I might even try
   a clean rewrite of [Bones][] a year or two down the line, using some of the
   concepts I'm seeing here.
+* Started doing the [Coding Math][] series again.  Finished episode 28.
