@@ -174,3 +174,5 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
   a clean rewrite of [Bones][] a year or two down the line, using some of the
   concepts I'm seeing here.
 * Started doing the [Coding Math][] series again.  Finished episode 28.
+* Started back into the [Mazes book][] again.  Implemented Wilson's Algorithm in
+  my little [demo][Mazes].
