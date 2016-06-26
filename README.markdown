@@ -158,3 +158,6 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 * Watched the [ELS 2016][] talk "Type Checking on Heterogeneous Sequences in
   Common Lisp".  Seems a lot like the Clojure spec stuff that was released
   shortly after.
+* Started a blog post about Lisp and symbols which turned into a 5k word
+  monster.  Gonna edit it down over the next few days and post it some time next
+  week.
