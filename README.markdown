@@ -183,7 +183,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 
 ## 2016-06-27
 
-* Printed off and the manuals for two Lisp things I've been meaning to look
+* Printed off and read the manuals for two Lisp things I've been meaning to look
   into: [iterate][] and [parenscript][].
 * Parenscript seems like an ugly, practical compile-to-JS Lisp.  It's not
   pretty, but it has macros so I make it pretty if desired.  And at least it's
