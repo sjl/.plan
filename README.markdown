@@ -27,6 +27,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [Learning WebGL]: http://learningwebgl.com/
 [iterate]: https://common-lisp.net/project/iterate/
 [parenscript]: https://common-lisp.net/project/parenscript/
+[Wisp]: http://bitbucket.org/Gozala/wisp
 
 ## 2016-06-01
 
@@ -182,6 +183,15 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 
 ## 2016-06-27
 
-* Printed off the manuals for two Lisp things I've been meaning to look into:
-  [iterate][] and [parenscript][].
-* Did the first lesson of [Learning WebGL][].
+* Printed off and the manuals for two Lisp things I've been meaning to look
+  into: [iterate][] and [parenscript][].
+* Parenscript seems like an ugly, practical compile-to-JS Lisp.  It's not
+  pretty, but it has macros so I make it pretty if desired.  And at least it's
+  not abandoned like [Wisp][].
+* Did the first few lessons of [Learning WebGL][].  So far I understand
+  everything (reading the [SuperBible][OpenGL SuperBible] helped a ton).  I'm
+  beginning to think graphics programming *seems* really tough because it's
+  usually done in weak languages that can't abstract for shit like C and JS.
+  Most of the boilerplate in these tutorials could be abstracted away with some
+  careful inline functions or macros.  But maybe I'll change my mind once I dive
+  in more.
