@@ -22,8 +22,11 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [On Writing]: http://www.amazon.com/dp/1439156816/?tag=stelos-20
 [Salem's Lot]: http://www.amazon.com/dp/0307743675/?tag=stelos-20
 [Reddit GDC]: https://www.reddit.com/r/gamedev/comments/4oodum/what_are_some_of_the_best_gdc_talks/
-[The Implementation of Prolog]: 
+[The Implementation of Prolog]: http://press.princeton.edu/titles/5264.html
 [Coding Math]: http://bitbucket.org/sjl/coding-math/
+[Learning WebGL]: http://learningwebgl.com/
+[iterate]: https://common-lisp.net/project/iterate/
+[parenscript]: https://common-lisp.net/project/parenscript/
 
 ## 2016-06-01
 
@@ -176,3 +179,9 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 * Started doing the [Coding Math][] series again.  Finished episode 28.
 * Started back into the [Mazes book][] again.  Implemented Wilson's Algorithm in
   my little [demo][Mazes].
+
+## 2016-06-27
+
+* Printed off the manuals for two Lisp things I've been meaning to look into:
+  [iterate][] and [parenscript][].
+* Did the first lesson of [Learning WebGL][].
