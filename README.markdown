@@ -185,9 +185,15 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 
 * Printed off and read the manuals for two Lisp things I've been meaning to look
   into: [iterate][] and [parenscript][].
-* Parenscript seems like an ugly, practical compile-to-JS Lisp.  It's not
+* [parenscript][] seems like an ugly, practical compile-to-JS Lisp.  It's not
   pretty, but it has macros so I make it pretty if desired.  And at least it's
   not abandoned like [Wisp][].
+* [iterate][] is neat.  I can definitely see how it's cleaner than `loop`.
+  There are some parts that seem tricky, but I have the feeling that they're
+  edge cases that I only say because I read the manual cover-to-cover -- I doubt
+  they'd appear much in real life.  I really should just bite the bullet and
+  start using it -- there's no other way to learn -- but `loop` is like
+  a comfortable rut I've found myself stuck in...
 * Did the first few lessons of [Learning WebGL][].  So far I understand
   everything (reading the [SuperBible][OpenGL SuperBible] helped a ton).  I'm
   beginning to think graphics programming *seems* really tough because it's
