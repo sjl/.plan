@@ -201,3 +201,9 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
   Most of the boilerplate in these tutorials could be abstracted away with some
   careful inline functions or macros.  But maybe I'll change my mind once I dive
   in more.
+
+## 2016-06-28
+
+* Finished [Salem's Lot][].  I really want to visit Maine again.
+* Did more [Learning WebGL][].  Still pretty smooth sailing.
+* More [Coding Math][].
