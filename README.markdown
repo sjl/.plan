@@ -218,3 +218,8 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
   countless stories and characters unfold, each one unique, and all of them
   created by the interaction of the player's imagination and the game's
   procedural mechanics.  I'd love to make a game like that.
+* Posted a [blog post](http://stevelosh.com/blog/2016/06/symbolic-computation/)
+  about symbolic computation.
+* Added support for dynamic calling (Prolog's `call/1`) in [Bones][].  This lets
+  you write `not/1` trivially, which we need for some GDL games.
+* Fixed a nasty unrelated bug in the `bind!` function of [Bones][]' VM.
