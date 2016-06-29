@@ -207,3 +207,14 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 * Finished [Salem's Lot][].  I really want to visit Maine again.
 * Did more [Learning WebGL][].  Still pretty smooth sailing.
 * More [Coding Math][].
+
+## 2016-06-29
+
+* Watched "Designing Monument Valley" over breakfast.  This style of game isn't
+  my particular cup of tea, but the talk was interesting.  He mentioned a few
+  times that mechanics get in the way of the storytelling/experience and while
+  that can be true, maybe even *most* of the time, I kept thinking about Dwarf
+  Fortress as a counterexample.  If you read the DF subreddit or forums you see
+  countless stories and characters unfold, each one unique, and all of them
+  created by the interaction of the player's imagination and the game's
+  procedural mechanics.  I'd love to make a game like that.
