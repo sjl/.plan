@@ -220,6 +220,8 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
   procedural mechanics.  I'd love to make a game like that.
 * Posted a [blog post](http://stevelosh.com/blog/2016/06/symbolic-computation/)
   about symbolic computation.
-* Added support for dynamic calling (Prolog's `call/1`) in [Bones][].  This lets
-  you write `not/1` trivially, which we need for some GDL games.
-* Fixed a nasty unrelated bug in the `bind!` function of [Bones][]' VM.
+* [Added support for dynamic calling](https://bitbucket.org/sjl/bones/commits/de6e248866f44f1b997669339a7cce227305419c)
+  (Prolog's `call/1`) in [Bones][].  This lets you write `not/1` trivially,
+  which we need for some GDL games.
+* Fixed a [nasty unrelated bug](https://bitbucket.org/sjl/bones/commits/05ce726f28744cb1c412e0f450fac3b978a6001d)
+  in the `bind!` function of [Bones][]' VM.
