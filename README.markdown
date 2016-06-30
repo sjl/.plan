@@ -225,3 +225,11 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
   which we need for some GDL games.
 * Fixed a [nasty unrelated bug](https://bitbucket.org/sjl/bones/commits/05ce726f28744cb1c412e0f450fac3b978a6001d)
   in the `bind!` function of [Bones][]' VM.
+
+## 2016-06-30
+
+* Watched the "Obsessive Compulsive Development" GDC talk over breakfast.  It
+  was refreshing to see a talk about a game that didn't turn out to be a huge
+  success.  Lots of good advice in it which seems obvious in retrospect, but
+  I can see how in the heat of the moment it would be easy to lose sight of the
+  bigger picture.
