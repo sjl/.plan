@@ -257,6 +257,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
   should be trivial for all GDL games.  It is *really* tedious to do by hand
   though, so I really want to write a GDL to Bones translator.  But to do that
   I think I need to sort out the `assert`/`retract` situation.
+* More [Learning WebGL][].
 
 ### Assertion and Retraction in [Bones][]
 
