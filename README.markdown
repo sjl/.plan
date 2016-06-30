@@ -258,6 +258,9 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
   though, so I really want to write a GDL to Bones translator.  But to do that
   I think I need to sort out the `assert`/`retract` situation.
 * More [Learning WebGL][].
+* Added the Hunt and Kill algorithm to [Mazes][], and also started diving into
+  [iterate][] by switching over a few of the `loop`s.  I'm never gonna learn if
+  I don't just force myself to jump in the deep end.
 
 ### Assertion and Retraction in [Bones][]
 
