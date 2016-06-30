@@ -257,42 +257,45 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
   should be trivial for all GDL games.  It is *really* tedious to do by hand
   though, so I really want to write a GDL to Bones translator.  But to do that
   I think I need to sort out the `assert`/`retract` situation.
-* I've been thinking about the best way to implement the rule
-  assertion/retraction UI in Bones and I have a few ideas.  The current stopgap
-  UI of "all the parts of a predicate need to be defined in a single `(rules
-  ...)` call" is *really* awful to work with.
 
-  There are a few ways I could solidify this.  One way would be to delay
-  compilation of all the predicates until you call a top-level `(compile)`, at
-  which point all the predicates would be compiled and fixed forever.  This
-  would let you split apart the rules, but not assert/retract things at runtime
-  without rebuilding the entire WAM, which is kind of shitty.
+### Assertion and Retraction in [Bones][]
 
-  On the other end, I could implement full dynamic assertion/retraction.  This
-  would be the most flexible, but has drawbacks.  There would probably be a lot
-  of wasted compilation: if you do `(fact (foo 1)) (fact (bar 2)) (fact (baz
-  3))` it would compile `foo` three times, throwing the first two away.  I'd
-  also need to implement a garbage collection algorithm for the code store,
-  which seems like a lot of work and a large cost at runtime.
+I've been thinking about the best way to implement the rule assertion/retraction
+UI in Bones and I have a few ideas.  The current stopgap UI of "all the parts of
+a predicate need to be defined in a single `(rules ...)` call" is *really* awful
+to work with.
 
-  An idea I've been rolling around in my head is to try to trade off some
-  flexibility for speed by using a kind of "stack-based" assertion/retraction
-  scheme.  You would add rules one at a time and it would delay compiling them
-  until you call `(allocate-logic-stack-frame)`, at which point it would compile
-  everything and record the current top of the code store (and which predicates
-  have been defined).  Then you could define more predicates, as long as they
-  weren't already used in a previous "frame", and freeze the frame again to use
-  them.  When you want to retract, you would only be able to pop an entire frame
-  of predicates in one go.
+There are a few ways I could solidify this.  One way would be to delay
+compilation of all the predicates until you call a top-level `(compile)`, at
+which point all the predicates would be compiled and fixed forever.  This
+would let you split apart the rules, but not assert/retract things at runtime
+without rebuilding the entire WAM, which is kind of shitty.
 
-  This gives you less control -- you can only retract entire frames, and if you
-  want to retract something you defined way back at the start you're also forced
-  to retract everything that came later.  But the benefit is that you don't have
-  to suffer useless recompilation, and you don't need to wait for garbage
-  collection.
+On the other end, I could implement full dynamic assertion/retraction.  This
+would be the most flexible, but has drawbacks.  There would probably be a lot of
+wasted compilation: if you do `(fact (foo 1)) (fact (bar 2)) (fact (baz 3))` it
+would compile `foo` three times, throwing the first two away.  I'd also need to
+implement a garbage collection algorithm for the code store, which seems like
+a lot of work and a large cost at runtime.
 
-  This is probably my GGP mindset showing, because this would be perfect for
-  using with GDL.  When you receive the rules of the game you compile them all,
-  and freeze the stack.  Then for each state you can just compile and push the
-  `next` and `does` predicates into the new top frame, and pop it when you're
-  finished examining the state.
+An idea I've been rolling around in my head is to try to trade off some
+flexibility for speed by using a kind of "stack-based" assertion/retraction
+scheme.  You would add rules one at a time and it would delay compiling them
+until you call `(allocate-logic-stack-frame)`, at which point it would compile
+everything and record the current top of the code store (and which predicates
+have been defined).  Then you could define more predicates, as long as they
+weren't already used in a previous "frame", and freeze the frame again to use
+them.  When you want to retract, you would only be able to pop an entire frame
+of predicates in one go.
+
+This gives you less control -- you can only retract entire frames, and if you
+want to retract something you defined way back at the start you're also forced
+to retract everything that came later.  But the benefit is that you don't have
+to suffer useless recompilation, and you don't need to wait for garbage
+collection.
+
+This is probably my GGP mindset showing, because this would be perfect for using
+with GDL.  When you receive the rules of the game you compile them all, and
+freeze the stack.  Then for each state you can just compile and push the `next`
+and `does` predicates into the new top frame, and pop it when you're finished
+examining the state.
