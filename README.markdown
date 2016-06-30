@@ -233,3 +233,12 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
   success.  Lots of good advice in it which seems obvious in retrospect, but
   I can see how in the heat of the moment it would be easy to lose sight of the
   bigger picture.
+* Did another episode of [Coding Math][].  This one is about writing a tweening
+  library.  I ended up writing a ridiculous pair of [tweening
+  macros](https://bitbucket.org/sjl/coding-math/src/783609c42ef0955634097267531ee06541275574/src/tween.lisp)
+  that will tween arbitrary places with a nice simple UI.  It's much more
+  general than the Javascript version, which is limited to tweening (unnested)
+  properties of objects.  Want to tween the car of a slot of an entry in a hash
+  table?  No problem!  `(tween-place! (car (slot-value (gethash 'foo table)
+  'myslot)) 500 2.0 #'tween-linear)`  I shudder to think how you'd do this in
+  a language without macros...
