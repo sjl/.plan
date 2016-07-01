@@ -303,3 +303,7 @@ with GDL.  When you receive the rules of the game you compile them all, and
 freeze the stack.  Then for each state you can just compile and push the `next`
 and `does` predicates into the new top frame, and pop it when you're finished
 examining the state.
+
+## 2016-07-01
+
+* More [Learning WebGL][].
