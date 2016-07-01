@@ -307,3 +307,6 @@ examining the state.
 ## 2016-07-01
 
 * More [Learning WebGL][].
+* Another episode of [Coding Math][].  Penner's easing functions are beautiful
+  little functions clouded by a haze of godawful programming style.  I tried to
+  write my versions to be a bit more readable, at the expense of some speed.
