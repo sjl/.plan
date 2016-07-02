@@ -30,6 +30,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [Wisp]: http://bitbucket.org/Gozala/wisp
 [CCL]: http://ccl.clozure.com/
 [SBCL]: http://sbcl.org/
+[The Road]:
 
 ## 2016-06-01
 
@@ -310,3 +311,4 @@ examining the state.
 * Another episode of [Coding Math][].  Penner's easing functions are beautiful
   little functions clouded by a haze of godawful programming style.  I tried to
   write my versions to be a bit more readable, at the expense of some speed.
+* Finished [The Road][].  Meh.
