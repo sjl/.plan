@@ -307,6 +307,9 @@ freeze the stack.  Then for each state you can just compile and push the `next`
 and `does` predicates into the new top frame, and pop it when you're finished
 examining the state.
 
+
+## July 2016
+
 ### 2016-07-01
 
 * More [Learning WebGL][].
@@ -315,6 +318,13 @@ examining the state.
   write my versions to be a bit more readable, at the expense of some speed.
 * Finished [The Road][].  Meh.
 
-## July 2016
-
 ### 2016-07-02
+
+* Watched the "Programming Context-Aware Dialog in The Last of Us" GDC talk by
+  Jason Gregory.  Really neat stuff.  This is the kind of AAA game I'd love to
+  work on.  Vanilla FPS, sports, etc games bore the shit out of me, but The Last
+  of Us has a lot more depth to it.
+
+  I admit I did twitch a bit when I saw the infix `(('speaker 'health) > 0.5)`
+  notation in their Scheme-like dialog scripting language -- I guess even
+  Naughty Dog isn't perfect, hah.
