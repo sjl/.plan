@@ -361,3 +361,4 @@ examining the state.
   expression over the life of the loop, and `(timing run-time :since-start-into
   v1 :per-iteration-into v2)` sets vars to store timing info.  And they even
   work together -- in `run-stats` I average the per-iteration times together.
+* More [Learning WebGL][].
