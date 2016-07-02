@@ -352,3 +352,12 @@ examining the state.
   I think the general rule I'll follow (for now) is to use multiple value
   returns very sparingly, and only when one of the values is different than the
   rest and is obviously the "most important" one.
+* Worked on [Mazes][] some more.  I did a tiny bit more of the [book][Mazes
+  book] but mostly it was me playing around with [iterate][].
+
+  Iterate is turning out to be cool.  I made some custom drivers for my maze
+  grids and a couple of custom clauses that are really neat.  `(averaging
+  (...some expr...) :into some-var)` will keep track of the average of the
+  expression over the life of the loop, and `(timing run-time :since-start-into
+  v1 :per-iteration-into v2)` sets vars to store timing info.  And they even
+  work together -- in `run-stats` I average the per-iteration times together.
