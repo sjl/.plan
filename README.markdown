@@ -312,3 +312,5 @@ examining the state.
   little functions clouded by a haze of godawful programming style.  I tried to
   write my versions to be a bit more readable, at the expense of some speed.
 * Finished [The Road][].  Meh.
+
+## 2016-07-02
