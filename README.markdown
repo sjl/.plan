@@ -32,13 +32,15 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [SBCL]: http://sbcl.org/
 [The Road]:
 
-## 2016-06-01
+## June 2016
+
+### 2016-06-01
 
 * Created this thing.
 * Added a fish alias to make it easier to edit.
 * Also added a Vim mapping...
 
-## 2016-06-02
+### 2016-06-02
 
 * Added Prolog list support to [Bones][].  Need to think about the UI more, but
   it speeds things up considerably (I don't *fully* understand *why* yet...).
@@ -51,9 +53,9 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
   [Bones][].
 * Did a bit more from the [Mazes book][].
 
-## 2016-06-03
+### 2016-06-03
 
-## 2016-06-04
+### 2016-06-04
 
 * Went to a talk by Tony Hoare at my school.  It was interesting, but the more
   I dive into purely theoretical things the more I realize I really love
@@ -66,7 +68,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
   and it turned out to work pretty well, after chasing down a couple of other
   pre-existing bugs.
 
-## 2016-06-05
+### 2016-06-05
 
 * Discovered a bug in the [Bones][] compiler, and I think the best way to fix it
   is to rewrite the bulk of the compiler.  This sounds bad, but "rewrite the
@@ -88,21 +90,21 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
   and painful to write -- if I just had a nice inspector I wouldn't need to fuck
   around with writing it.
 
-## 2016-06-06
+### 2016-06-06
 
 * Read more [LOL][].
 * Logistic travel stuff.
 
-## 2016-06-07
+### 2016-06-07
 
 * [Finished
   rewriting](https://bitbucket.org/sjl/bones/commits/72bbdd5157258b77c85a6c0172240a26bb7ad4a4) the [Bones][] compiler.
 
-## 2016-06-08
+### 2016-06-08
 
 * Implemented Aldous-Broder and a bunch of code cleanup for [Mazes][].
 
-## 2016-06-09
+### 2016-06-09
 
 * Downloading/updating everything to prepare for my long-ass flight back to the
   states tomorrow.
@@ -112,12 +114,12 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
   all its cached files in `~/.roswell` for it to work again.  Computers are
   garbage.
 
-## 2016-06-10
+### 2016-06-10
 
 * Flew back to the states for a short visit.
 * Fixed a pair of really nasty bugs in [Bones][] on the plane.
 
-## 2016-06-11 - 2016-06-23
+### 2016-06-11 - 2016-06-23
 
 * Traveling in the US.  I miss American food.
 * I had left a cache of paper books at a friend's place in the US, so I read
@@ -142,7 +144,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
   enough lately -- so from now on the Kindle is gonna replace my phone while on
   the bus.
 
-## 2016-06-24
+### 2016-06-24
 
 * Still jet lagged.  Catching up on things back in Iceland.
 * Halfway through [Salem's Lot][].  I forgot how much I loved reading fiction.
@@ -153,7 +155,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 * Watched the Juice it or Lose It talk from that Reddit thread.  Really nice.
   Simple stuff like tweening makes a big difference.
 
-## 2016-06-25
+### 2016-06-25
 
 * Watched the "Ellie: Buddy AI in The Last of Us" GDC talk over breakfast.  It
   was really interesting.  The idea that making Ellie stick close to the player
@@ -171,7 +173,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
   monster.  Gonna edit it down over the next few days and post it some time next
   week.
 
-## 2016-06-26
+### 2016-06-26
 
 * Watched the "Antichamber: An Overnight Success, Seven Years in the Making" GDC
   video.  Pretty inspiring, though I think he still probably underestimates how
@@ -184,7 +186,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 * Started back into the [Mazes book][] again.  Implemented Wilson's Algorithm in
   my little [demo][Mazes].
 
-## 2016-06-27
+### 2016-06-27
 
 * Printed off and read the manuals for two Lisp things I've been meaning to look
   into: [iterate][] and [parenscript][].
@@ -205,13 +207,13 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
   careful inline functions or macros.  But maybe I'll change my mind once I dive
   in more.
 
-## 2016-06-28
+### 2016-06-28
 
 * Finished [Salem's Lot][].  I really want to visit Maine again.
 * Did more [Learning WebGL][].  Still pretty smooth sailing.
 * More [Coding Math][].
 
-## 2016-06-29
+### 2016-06-29
 
 * Watched "Designing Monument Valley" over breakfast.  This style of game isn't
   my particular cup of tea, but the talk was interesting.  He mentioned a few
@@ -229,7 +231,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 * Fixed a [nasty unrelated bug](https://bitbucket.org/sjl/bones/commits/05ce726f28744cb1c412e0f450fac3b978a6001d)
   in the `bind!` function of [Bones][]' VM.
 
-## 2016-06-30
+### 2016-06-30
 
 * Watched the "Obsessive Compulsive Development" GDC talk over breakfast.  It
   was refreshing to see a talk about a game that didn't turn out to be a huge
@@ -263,7 +265,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
   [iterate][] by switching over a few of the `loop`s.  I'm never gonna learn if
   I don't just force myself to jump in the deep end.
 
-### Assertion and Retraction in [Bones][]
+#### Assertion and Retraction in [Bones][]
 
 I've been thinking about the best way to implement the rule assertion/retraction
 UI in Bones and I have a few ideas.  The current stopgap UI of "all the parts of
@@ -305,7 +307,7 @@ freeze the stack.  Then for each state you can just compile and push the `next`
 and `does` predicates into the new top frame, and pop it when you're finished
 examining the state.
 
-## 2016-07-01
+### 2016-07-01
 
 * More [Learning WebGL][].
 * Another episode of [Coding Math][].  Penner's easing functions are beautiful
@@ -313,4 +315,6 @@ examining the state.
   write my versions to be a bit more readable, at the expense of some speed.
 * Finished [The Road][].  Meh.
 
-## 2016-07-02
+## July 2016
+
+### 2016-07-02
