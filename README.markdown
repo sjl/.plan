@@ -362,3 +362,9 @@ examining the state.
   v1 :per-iteration-into v2)` sets vars to store timing info.  And they even
   work together -- in `run-stats` I average the per-iteration times together.
 * More [Learning WebGL][].
+
+#### 2016-07-03
+
+* Did a few more episodes of [Coding Math][].  Ran into a weird issue with
+  Sketch's `polygon` function... I'll have to ask vydd about that in IRC the
+  next time I have an internet connection.
