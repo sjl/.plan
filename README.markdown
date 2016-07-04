@@ -363,8 +363,99 @@ examining the state.
   work together -- in `run-stats` I average the per-iteration times together.
 * More [Learning WebGL][].
 
-#### 2016-07-03
+### 2016-07-03
 
+* Watched the "Network Programming for Physics Programmers" GDC talk over
+  breakfast.  Impressive results, but I wonder how specific they are to his
+  particular data set (or at least the physics engine).
 * Did a few more episodes of [Coding Math][].  Ran into a weird issue with
   Sketch's `polygon` function... I'll have to ask vydd about that in IRC the
   next time I have an internet connection.
+* Switched [Bones][] over to use `?question-style` for logic variables instead
+  of the previous `:keyword-style`.  Aside from updating the tests it was about
+  three lines worth of change, which is good.
+
+##### Variable UI in Bones
+
+I'm still not happy with the `?question-style` though.  First, the check becomes
+less elegant and efficient:
+
+    (declaim (optimize (speed 3) (safety 0) (debug 0)))
+
+    (defun* variablep (term)
+      (:returns boolean)
+      (declare (inline keywordp))
+      (keywordp term))
+
+    ; disassembly for VARIABLEP
+    ; Size: 64 bytes. Origin: #x1006B80692
+    ; 92:       4881F917001020   CMP RCX, 537919511               ; no-arg-parsing entry point
+    ; 99:       741B             JEQ L2
+    ; 9B:       8D41F1           LEA EAX, [RCX-15]
+    ; 9E:       A80F             TEST AL, 15
+    ; A0:       7506             JNE L0
+    ; A2:       8079F145         CMP BYTE PTR [RCX-15], 69
+    ; A6:       740E             JEQ L2
+    ; A8: L0:   B917001020       MOV ECX, 537919511
+    ; AD: L1:   488BD1           MOV RDX, RCX
+    ; B0:       488BE5           MOV RSP, RBP
+    ; B3:       F8               CLC
+    ; B4:       5D               POP RBP
+    ; B5:       C3               RET
+    ; B6: L2:   488B4119         MOV RAX, [RCX+25]
+    ; BA:       483B057FFFFFFF   CMP RAX, [RIP-129]               ; #<PACKAGE "KEYWORD">
+    ; C1:       B917001020       MOV ECX, 537919511
+    ; C6:       41BB4F001020     MOV R11D, 537919567              ; T
+    ; CC:       490F44CB         CMOVEQ RCX, R11
+    ; D0:       EBDB             JMP L1
+
+    (defun* variablep (term)
+      (:returns boolean)
+      (and (symbolp term)
+        (char= (char (symbol-name term) 0) #\?)))
+
+    ; disassembly for VARIABLEP
+    ; Size: 99 bytes. Origin: #x1006B1C2AF
+    ; 2AF:       4881FA17001020   CMP RDX, 537919511              ; no-arg-parsing entry point
+    ; 2B6:       7418             JEQ L2
+    ; 2B8:       8D42F1           LEA EAX, [RDX-15]
+    ; 2BB:       A80F             TEST AL, 15
+    ; 2BD:       7506             JNE L0
+    ; 2BF:       807AF145         CMP BYTE PTR [RDX-15], 69
+    ; 2C3:       740B             JEQ L2
+    ; 2C5: L0:   BA17001020       MOV EDX, 537919511
+    ; 2CA: L1:   488BE5           MOV RSP, RBP
+    ; 2CD:       F8               CLC
+    ; 2CE:       5D               POP RBP
+    ; 2CF:       C3               RET
+    ; 2D0: L2:   488B4A11         MOV RCX, [RDX+17]
+    ; 2D4:       8D41F1           LEA EAX, [RCX-15]
+    ; 2D7:       A80F             TEST AL, 15
+    ; 2D9:       7506             JNE L3
+    ; 2DB:       8079F1E5         CMP BYTE PTR [RCX-15], -27
+    ; 2DF:       742C             JEQ L6
+    ; 2E1: L3:   8D41F1           LEA EAX, [RCX-15]
+    ; 2E4:       A80F             TEST AL, 15
+    ; 2E6:       751F             JNE L5
+    ; 2E8:       8079F1E1         CMP BYTE PTR [RCX-15], -31
+    ; 2EC:       7519             JNE L5
+    ; 2EE:       0FB64101         MOVZX EAX, BYTE PTR [RCX+1]
+    ; 2F2: L4:   4883F83F         CMP RAX, 63
+    ; 2F6:       BA17001020       MOV EDX, 537919511
+    ; 2FB:       41BB4F001020     MOV R11D, 537919567             ; T
+    ; 301:       490F44D3         CMOVEQ RDX, R11
+    ; 305:       EBC3             JMP L1
+    ; 307: L5:   0F0B0A           BREAK 10                        ; error trap
+    ; 30A:       02               BYTE #X02
+    ; 30B:       0F               BYTE #X0F                       ; NIL-ARRAY-ACCESSED-ERROR
+    ; 30C:       9B               BYTE #X9B                       ; RCX
+    ; 30D: L6:   8B4101           MOV EAX, [RCX+1]
+    ; 310:       EBE0             JMP L4
+
+In practice this probably won't be too bad (though this is something Bones
+checks a *lot* during the initial parsing pass).
+
+On the plus side, it matches what most other logic libraries use, so it's
+familiar.  It also matches GDL, so I won't have to transform things when parsing
+a GDL game, which is nice.  It'll also let me write a macro to bind results to
+variables, which is a nicer UI than having to pull them out of a data structure.
