@@ -459,3 +459,19 @@ On the plus side, it matches what most other logic libraries use, so it's
 familiar.  It also matches GDL, so I won't have to transform things when parsing
 a GDL game, which is nice.  It'll also let me write a macro to bind results to
 variables, which is a nicer UI than having to pull them out of a data structure.
+
+### 2016-07-04
+
+* Watched the "Julia: To Lisp or Not To Lisp?" talk from [ELS 2016][].  I wish
+  he had gone further in depth on how Julia does macros.  He showed a simple
+  `timeit` macro but I would have liked to know how to introspect the
+  expressions a macro gets and work with them.
+
+  One of the things that makes Lisp macros so nice is that the expressions
+  macros get (and the tools you use to work on them) are the same kinds of
+  things you use everywhere *else* in the language (lists, symbols, etc).  This
+  makes it really frictionless to switch back and forth.  If your macros are
+  getting some special `AST_Node` type that you need to learn to work with it
+  feels a lot more like work.
+* Poked around in `#lisp` and `#sbcl` to clear up some performance-related
+  questions I had about Lisp arrays.  I have exciting new ideas for [Bones][].
