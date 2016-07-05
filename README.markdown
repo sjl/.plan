@@ -478,3 +478,9 @@ variables, which is a nicer UI than having to pull them out of a data structure.
 * Added anonymous variables and the `*_void` instructions to [Bones][].  This
   was more difficult than I anticipated, but part of it was a bunch of
   refactoring that had to happen along the way.
+
+### 2016-07-04
+
+* Did the "Intro to Fractals" episode of [Coding Math][].  Fun stuff.  Need to
+  play around with animating them like he did at the very end.
+* More [Learning WebGL][].
