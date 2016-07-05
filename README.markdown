@@ -475,3 +475,6 @@ variables, which is a nicer UI than having to pull them out of a data structure.
   feels a lot more like work.
 * Poked around in `#lisp` and `#sbcl` to clear up some performance-related
   questions I had about Lisp arrays.  I have exciting new ideas for [Bones][].
+* Added anonymous variables and the `*_void` instructions to [Bones][].  This
+  was more difficult than I anticipated, but part of it was a bunch of
+  refactoring that had to happen along the way.
