@@ -479,8 +479,21 @@ variables, which is a nicer UI than having to pull them out of a data structure.
   was more difficult than I anticipated, but part of it was a bunch of
   refactoring that had to happen along the way.
 
-### 2016-07-04
+### 2016-07-05
 
 * Did the "Intro to Fractals" episode of [Coding Math][].  Fun stuff.  Need to
   play around with animating them like he did at the very end.
 * More [Learning WebGL][].
+* Spent most of the day implementing the "logic stack" assertion/retraction
+  I [rambled about](https://gist.github.com/sjl/1f4bb73967663af0f9276b491af84140)
+  a while back.
+
+  It works, and it looks pretty good in action!  It also cut the time in my
+  little benchmark almost in half (because we only need to compile the state
+  code once instead of like 3+ times at each node), and it's MUCH nicer to read
+  rule definitions now.
+
+  I'm thinking that programatically parsing/running GDL games is actually
+  feasible now, so I think that'll be my next step.  Once I can run arbitrary
+  GDL games without having to translate the logic by hand I'll have a LOT more
+  nice test cases.
