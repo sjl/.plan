@@ -30,7 +30,10 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [Wisp]: http://bitbucket.org/Gozala/wisp
 [CCL]: http://ccl.clozure.com/
 [SBCL]: http://sbcl.org/
+[sandbox]: http://bitbucket.org/sjl/sand/
 [The Road]:
+[Algorithms and Networking for Computer Games]:
+
 
 ## June 2016
 
@@ -497,3 +500,11 @@ variables, which is a nicer UI than having to pull them out of a data structure.
   feasible now, so I think that'll be my next step.  Once I can run arbitrary
   GDL games without having to translate the logic by hand I'll have a LOT more
   nice test cases.
+
+### 2016-07-06
+
+* Cleaned up the UI of [Bones][] a bit.  The new function/macro pairs are a lot
+  cleaner to read and work with.
+* Got a couple of books out of the RU library before it closes for a few weeks
+  in the summer.  Started going through [Algorithms and Networking for Computer
+  Games][] and made a little [sandbox][] repo to play around in.
