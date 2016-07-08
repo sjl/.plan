@@ -520,3 +520,6 @@ variables, which is a nicer UI than having to pull them out of a data structure.
 ### 2016-07-08
 
 * More [Coding Math][].
+* After rereading the section of the [WAM book][] on anonymous variables
+  I realized I could clean things up a lot in [Bones][].  I *knew* it had to be
+  easier than I was making it.
