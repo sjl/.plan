@@ -32,8 +32,8 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [SBCL]: http://sbcl.org/
 [sandbox]: http://bitbucket.org/sjl/sand/
 [hype]: http://bitbucket.org/sjl/hype/
-[The Road]:
-[Algorithms and Networking for Computer Games]:
+[The Road]: http://www.amazon.com/dp/0307387895/?tag=stelos-20
+[Algorithms and Networking for Computer Games]: http://www.amazon.com/dp/0470018127/?tag=stelos-20
 
 
 ## June 2016
@@ -512,3 +512,11 @@ variables, which is a nicer UI than having to pull them out of a data structure.
 * Hacked together a quick [proof of concept][hype] GDL player that can read and
   search arbitrary GDL games.  It's so nice to see things finally starting to
   come together!
+
+### 2016-07-07
+
+* Chatted with my advisor about [Bones][] and GGP stuff.  Lots of new ideas!
+
+### 2016-07-08
+
+* More [Coding Math][].
