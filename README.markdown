@@ -543,3 +543,4 @@ variables, which is a nicer UI than having to pull them out of a data structure.
 * Started screwing around with [parenscript][] in my little [sandbox][].
 * Poked a bit more at the [ANCG book][ancg].  Gonna try to take this one in
   bite-sized pieces.
+* More [Coding Math][].
