@@ -33,7 +33,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [sandbox]: http://bitbucket.org/sjl/sand/
 [hype]: http://bitbucket.org/sjl/hype/
 [The Road]: http://www.amazon.com/dp/0307387895/?tag=stelos-20
-[Algorithms and Networking for Computer Games]: http://www.amazon.com/dp/0470018127/?tag=stelos-20
+[ancg]: http://www.amazon.com/dp/0470018127/?tag=stelos-20
 [heisler]: http://www.amazon.com/dp/0823085651/?tag=stelos-20
 [WebGL Fundamentals]: http://webglfundamentals.org/
 
@@ -509,7 +509,7 @@ variables, which is a nicer UI than having to pull them out of a data structure.
   cleaner to read and work with.
 * Got a couple of books out of the RU library before it closes for a few weeks
   in the summer.  Started going through [Algorithms and Networking for Computer
-  Games][] and made a little [sandbox][] repo to play around in.
+  Games][ancg] and made a little [sandbox][] repo to play around in.
 * Hacked together a quick [proof of concept][hype] GDL player that can read and
   search arbitrary GDL games.  It's so nice to see things finally starting to
   come together!
@@ -541,3 +541,5 @@ variables, which is a nicer UI than having to pull them out of a data structure.
 * Started the [WebGL Fundamentals][] series.  I want to get a second look at
   this stuff before I dive in and try to poke at it with Lisp.
 * Started screwing around with [parenscript][] in my little [sandbox][].
+* Poked a bit more at the [ANCG book][ancg].  Gonna try to take this one in
+  bite-sized pieces.
