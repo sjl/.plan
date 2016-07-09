@@ -544,3 +544,5 @@ variables, which is a nicer UI than having to pull them out of a data structure.
 * Poked a bit more at the [ANCG book][ancg].  Gonna try to take this one in
   bite-sized pieces.
 * More [Coding Math][].
+* Poked around at some basic GGP games, which revealed some bugs and memory
+  problems in [Bones][], so I fixed them.
