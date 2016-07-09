@@ -34,7 +34,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [hype]: http://bitbucket.org/sjl/hype/
 [The Road]: http://www.amazon.com/dp/0307387895/?tag=stelos-20
 [Algorithms and Networking for Computer Games]: http://www.amazon.com/dp/0470018127/?tag=stelos-20
-
+[heisler]: http://www.amazon.com/dp/0823085651/?tag=stelos-20
 
 ## June 2016
 
@@ -524,3 +524,16 @@ variables, which is a nicer UI than having to pull them out of a data structure.
   I realized I could clean things up a lot in [Bones][].  I *knew* it had to be
   easier than I was making it.
 * More [Mazes][].
+
+### 2016-07-09
+
+* Watched the "Designing Downwell Around One Key Mechanic" GDC talk over
+  breakfast.  No revolutionary ideas in it, but I love "case studies" of
+  really well-done things like this.  It's the same reason I love books like
+  Gregory Heisler's [50 Portraits][heisler] -- you can learn a lot from
+  listening to someone experienced talk about what goes through their mind as
+  they create something.
+* Finished the [Learning WebGL][] series.  I'd definitely recommend it.  It's
+  a really good introduction to OpenGL if you just want to learn how the damn
+  graphics card works without fucking around with the nightmarish C/C++
+  build/ecosystem.  Just open a browser and start hitting OpenGL.
