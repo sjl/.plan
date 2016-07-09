@@ -540,3 +540,4 @@ variables, which is a nicer UI than having to pull them out of a data structure.
   build/ecosystem.  Just open a browser and start hitting OpenGL.
 * Started the [WebGL Fundamentals][] series.  I want to get a second look at
   this stuff before I dive in and try to poke at it with Lisp.
+* Started screwing around with [parenscript][] in my little [sandbox][].
