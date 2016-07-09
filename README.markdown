@@ -35,6 +35,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [The Road]: http://www.amazon.com/dp/0307387895/?tag=stelos-20
 [Algorithms and Networking for Computer Games]: http://www.amazon.com/dp/0470018127/?tag=stelos-20
 [heisler]: http://www.amazon.com/dp/0823085651/?tag=stelos-20
+[WebGL Fundamentals]: http://webglfundamentals.org/
 
 ## June 2016
 
@@ -537,3 +538,5 @@ variables, which is a nicer UI than having to pull them out of a data structure.
   a really good introduction to OpenGL if you just want to learn how the damn
   graphics card works without fucking around with the nightmarish C/C++
   build/ecosystem.  Just open a browser and start hitting OpenGL.
+* Started the [WebGL Fundamentals][] series.  I want to get a second look at
+  this stuff before I dive in and try to poke at it with Lisp.
