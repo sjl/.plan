@@ -3,6 +3,8 @@
 
 I'm going to try keeping a `.plan`.  Let's see how this goes.
 
+[TOC]
+
 [Bones]: http://bitbucket.org/sjl/bones
 [AMOP]: http://www.amazon.com/dp/0262610744/?tag=stelos-20
 [Masters of Doom]: http://www.amazon.com/dp/0812972155/?tag=stelos-20
@@ -546,3 +548,145 @@ variables, which is a nicer UI than having to pull them out of a data structure.
 * More [Coding Math][].
 * Poked around at some basic GGP games, which revealed some bugs and memory
   problems in [Bones][], so I fixed them.
+
+### 2016-07-10
+
+* Watched the "Learning Through Failure - Portico" GDC talk.  Short but good.
+  I think the best idea in is was "players only learn through failure when they
+  *understand* what went wrong".
+* Brain dumped some stuff about [Bones][] below.
+
+#### Splitting the Bones Store
+
+Up until now I've been writing [Bones][] as mostly a transliteration of what's
+in the [WAM book][].  This means, for example, that the heap/stack are just
+arrays of bytes in memory.  This made it easy to follow along with the book, but
+I'm at the point now where I feel like I've wrapped my head around it and am
+ready to move on.  My idea for the next big step in Bones is to split the store
+into two separate arrays.
+
+The WAM store consists of "cells", each of which has a type and a value.  For
+example, reference cells have a type of `REF` and their value is an
+index/pointer to whatever they're bound to.  Because I wanted to pack everything
+into a single Lisp array, I've implemented this by storing a cell as an
+`(unsigned-byte 16)` with a few of the low-order bits used for a type tag.  So
+to check the type of a cell, you mask off everything but the low-order bits.  To
+get the value, you shift it right.
+
+This works, and is pretty memory-efficient, but has a couple of problems.
+First: you need to do masks and shifts all the time which are extra
+instructions.  But that's probably not a really huge problem in practice -- CPUs
+are fast.  The bigger issue is that because the value of a cell has to be packed
+into part of an `unsigned-byte`, you can basically only store integers as cell
+values.  For `REF` (and `STR`) cells this is fine (they're just indexes into the
+store array), but for functor cells it's not ideal.  Bones currently keeps what
+is essentially a symbol table to map functor/arity pairs to integers, which is
+really ugly.
+
+This is an annoying layer of indirection, but it also limits us further.  I'd
+*really* like to let Bones work with arbitrary Lisp objects.  For example, you
+could say something like `(fact (username sally "sal"))` and the string there
+would Just Work.  You'd also get support for numerics basically for free (though
+I might still special-case those a bit).
+
+So the solution I've been rolling around in my head for a while is to split the
+store into two separate arrays: an array of types and an array of values.  The
+types array would just store small unique integer tags, so it could be packed
+pretty tightly (maybe four-bit bytes for each tag).  The values array would just
+be a normal Lisp `(vector t)`.  This means each cell would be 64 bits, and you
+could store pointers to normal Lisp objects.
+
+This would let us ditch the symbol table entirely.  Now a functor cell would
+just have a tag of `FUN` and the value would be a pointer directly to the Lisp
+symbol.  We'd still need to handle the arity, but we can just follow every `FUN`
+cell with a second cell containing the Lisp fixnum for the arity.
+
+Crucially, SBCL (and CCL, possibly others) will still store fixnums immediately
+in the array, so for `REF` and `STR` cells we don't need to suffer an extra
+memory deref -- we've still got the index right there in the array's contiguous
+hunk of memory.  And we actually don't need to deref even for functors in this
+new scheme; the functor values are pointers, but since we just need to compare
+them with `eq` and it just compares the pointers themselves.
+
+This also has another possible benefit: we don't need the WAM at (query) compile
+time.  Currently when you compile a query you need to have the WAM object
+present, so Bones can shove any functors in the query inside its symbol table.
+But now we just store the functor symbols directly, so there's no need to have
+the WAM available at compile time.
+
+This means that for queries which are completely known at compile time, we can
+do the expensive compilation of query-to-WAM-bytecode at compile time instead of
+runtime with a compiler macro.  For example: if we have something like `(defun
+legal-moves () (query-all (legal ?role ?move)))` we can, at Lisp compile-time,
+process that `(legal ?role ?move)` query into a hunk of WAM bytecode and turn it
+into: `(defun legal-moves () (query-all #<array of WAM bytecode>))`.  Then at
+runtime we just load that into the query area of the code store and go -- no
+expensive bytecode compilation needed.
+
+For dynamic queries where we need to build the query at runtime (e.g. ``(defun
+legal-moves-for (role) (invoke-query-all `(legal ,role ?move)))``) we can't do
+this, unfortunately.
+
+So there are a bunch of benefits to splitting up the store, but of course there
+are also drawbacks.  Obviously it will use more memory, but I don't care much
+about that.  Popping things off the stack/heap will also become more expensive
+because now we need to null out references to Lisp objects when we pop them, so
+they can be GC'ed properly.
+
+It also makes another idea I've had slightly more complicated.
+
+#### Prolog on the GPU
+
+A few months back when I was thinking about topics for my upcoming master's
+thesis one of the things on my list was seeing if I could get my WAM queries
+running on the GPU using OpenGL.  This could potentially speed things up when
+you want to know *all* the results of a query and not just the first.
+
+The basic idea would be something like this.
+
+Ahead of time:
+
+* Write an implementation of the WAM bytecode interpreter (not the compiler,
+  just the VM part) in GLSL as a vertex (or possible compute?) shader.
+* For each predicate, note how many different choices it has (essentially the
+  number of `try/retry/trust` instructions).
+
+The idea would be to divide up the and/or tree of Prolog choices into `N`
+subtrees, where `N` is the number of GPU cores you've got.  Then each core
+searches a portion of the subtree and you merge the results at the end.
+
+At query time:
+
+* Push the WAM code store to the graphics card as a texture.
+* Walk the and/or tree of predicates breadth-first to generate `M <= N`
+  "traces", each of which is a list of which choice you picked at a given node.
+* Push all those different traces to the vertex shader as vertices.
+* Each time the vertex shader runs, it gets one trace which essentially tells it
+  which direction to take at each choice point it encounters, so it can skip the
+  backtracking and just dive head-first down this one path.
+* Once it reaches the end of the trace, it just continues normally and starts
+  backtracking when necessary.
+* Results can get written to a texture framebuffer or something and pulled out
+  at the end.
+* Merge the results from all the vertices.
+
+This parallel mode would be heavily restricted.  Things like `cut` would cut off
+(no pun intended) the trace at that point, forcing full processing by the shader
+from that point on.  And of course anything with side effects would just error
+out.  But when you're just grinding through unification of basic Prolog terms it
+might potentially speed things up (though the latency to/from the graphics card
+memory could be a problem).
+
+All this is just an idea I've had for the far future, but I've been thinking
+about it because if I split up the WAM store and start treating functors as Lisp
+object pointers, that complicates things.  We can easily push integers up to the
+graphics card, but if functors are pointers (which can potentially get moved
+around by GC) what can we do?
+
+For a while I thought it was unsolvable, but now I think there might be a way.
+If we just keep a global "object index" that maps Lisp objects to integers, we
+can use those integers as stand-ins for the actual objects when we're on the
+GPU.  Of course that would interfere with GC, but there's a solution.  Most
+modern implementations support hash tables with weak values, so if we use that
+for the index I think it would fix the problem.  We'd be able to map objects to
+fixnums without interfering with GC and leaking memory.
