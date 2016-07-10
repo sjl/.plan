@@ -555,6 +555,13 @@ variables, which is a nicer UI than having to pull them out of a data structure.
   I think the best idea in is was "players only learn through failure when they
   *understand* what went wrong".
 * Brain dumped some stuff about [Bones][] below.
+* Removed the stupid garbage `set-*` opcodes from Bones and consolidated them
+  into the `unify-*` opcodes like God intended.  Proceeded to rename those
+  stupid `unify-*` opcodes to `subterm-*` so mortals can understand what the
+  fuck is going on.
+* Poked a bit and pushing the constant optimization down into the compilation
+  phase, but ran into a bit of a wall so I threw away the diff.  Might take
+  another stab at it later once I let it roll around in my head a bit.
 
 #### Splitting the Bones Store
 
