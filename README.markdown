@@ -562,6 +562,8 @@ variables, which is a nicer UI than having to pull them out of a data structure.
 * Poked a bit and pushing the constant optimization down into the compilation
   phase, but ran into a bit of a wall so I threw away the diff.  Might take
   another stab at it later once I let it roll around in my head a bit.
+* Mostly refactored the Bones code store to be a `simple-array`, after profiling
+  indicates that most of the runtime is spent in data vector refs.
 
 #### Splitting the Bones Store
 
@@ -697,3 +699,8 @@ GPU.  Of course that would interfere with GC, but there's a solution.  Most
 modern implementations support hash tables with weak values, so if we use that
 for the index I think it would fix the problem.  We'd be able to map objects to
 fixnums without interfering with GC and leaking memory.
+
+### 2016-07-11
+
+* Finished up the [Bones][] code store refactor and a couple of other minor
+  things.
