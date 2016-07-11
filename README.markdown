@@ -704,3 +704,7 @@ fixnums without interfering with GC and leaking memory.
 
 * Finished up the [Bones][] code store refactor and a couple of other minor
   things.
+* Switched over the Bones main store to be a `simple-array` too.  Another
+  performance increase.  I've switched to a new game for benchmarking because
+  the previous one was starting to finish too fast for me to be confident in
+  getting sane results.  I think that's a good sign.
