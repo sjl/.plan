@@ -712,3 +712,13 @@ fixnums without interfering with GC and leaking memory.
   productive, but I did learn a lot along the way, so I think it was worth it.
 * Today's commits took the runtime for the `aipsrovers01` game from about 47
   seconds down to 19 seconds.  Not too bad!
+
+### 2016-07-12
+
+* Watched the "Interpreting Feedback & Maintaining Your Vision" GDC talk.
+  I like the idea of not backing down and changing to try to give users exactly
+  what they want all the time.  The last slide in the talk is the best -- a
+  game is a conduit to get some idea/experience from your head into the players'
+  heads.  Players give you feedback based on what happens in their heads, but
+  they don't know what's going on in yours, so you need to interpret their
+  feedback keeping that in mind.
