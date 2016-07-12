@@ -723,3 +723,6 @@ fixnums without interfering with GC and leaking memory.
   they don't know what's going on in yours, so you need to interpret their
   feedback keeping that in mind.
 * More [Coding Math][].
+* Implemented last call optimization in [Bones][].  Not much of a speed
+  improvement for the particular GGP games I've been testing with, but it had to
+  happen at some point, so we can write actual Prolog without blowing the stack.
