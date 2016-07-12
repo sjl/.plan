@@ -708,3 +708,5 @@ fixnums without interfering with GC and leaking memory.
   performance increase.  I've switched to a new game for benchmarking because
   the previous one was starting to finish too fast for me to be confident in
   getting sane results.  I think that's a good sign.
+* Puttered around with a bunch of other little optimizations.  Not super
+  productive, but I did learn a lot along the way, so I think it was worth it.
