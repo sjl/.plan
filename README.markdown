@@ -722,3 +722,4 @@ fixnums without interfering with GC and leaking memory.
   heads.  Players give you feedback based on what happens in their heads, but
   they don't know what's going on in yours, so you need to interpret their
   feedback keeping that in mind.
+* More [Coding Math][].
