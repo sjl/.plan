@@ -38,6 +38,10 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [ancg]: http://www.amazon.com/dp/0470018127/?tag=stelos-20
 [heisler]: http://www.amazon.com/dp/0823085651/?tag=stelos-20
 [WebGL Fundamentals]: http://webglfundamentals.org/
+[Neovim]: https://neovim.io/
+[miniyank]: https://github.com/bfredl/nvim-miniyank
+[YankRing]: http://www.vim.org/scripts/script.php?script_id=1234
+[Paredit]: https://github.com/vim-scripts/paredit.vim
 
 ## June 2016
 
@@ -728,3 +732,17 @@ fixnums without interfering with GC and leaking memory.
   happen at some point, so we can write actual Prolog without blowing the stack.
 * Got a good start on splitting apart the Bones store like I wrote about above.
   It'll probably take another day or two two finish up.
+
+### 2016-07-13
+
+* Spent an hour or so cleaning up my `.vimrc` and plugins, and moving fully to
+  [neovim][].  The catalyst was discovering [miniyank][].  I've been using
+  [YankRing][] for years, but it has always been *super* janky.  The way the
+  original YankRing works is to rebind all the keys that could possibly result
+  in yanking text, like `d`, `c`, `x`, and `y` to a function that handles them.
+  As you might imagine, this can cause problems -- especially with plugins like
+  [Paredit][] that need to manage those keys too.  Miniyank hooks into a new
+  neovim event, which lets it do what it needs to do without all the hacky
+  workarounds.
+
+
