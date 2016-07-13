@@ -744,5 +744,7 @@ fixnums without interfering with GC and leaking memory.
   [Paredit][] that need to manage those keys too.  Miniyank hooks into a new
   neovim event, which lets it do what it needs to do without all the hacky
   workarounds.
+* Finished splitting apart the [Bones][] main WAM store into separate type/value
+  arrays.
 
 
