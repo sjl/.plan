@@ -726,3 +726,5 @@ fixnums without interfering with GC and leaking memory.
 * Implemented last call optimization in [Bones][].  Not much of a speed
   improvement for the particular GGP games I've been testing with, but it had to
   happen at some point, so we can write actual Prolog without blowing the stack.
+* Got a good start on splitting apart the Bones store like I wrote about above.
+  It'll probably take another day or two two finish up.
