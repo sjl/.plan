@@ -747,4 +747,8 @@ fixnums without interfering with GC and leaking memory.
 * Finished splitting apart the [Bones][] main WAM store into separate type/value
   arrays.
 
+### 2016-07-14
 
+* Watched the "Distributed High Performance Computing in Common Lisp" talk from
+  [ELS 2016][] over breakfast.  It would be really fun to try to get a GGP
+  player running on an 11k-core supercomputer...
