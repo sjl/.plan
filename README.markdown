@@ -754,4 +754,4 @@ fixnums without interfering with GC and leaking memory.
   player running on an 11k-core supercomputer...
 * Got [Bones][] to run on ECL.  I needed to hack [policy-cond][] to do it, but
   I talked to the ECL maintainer in IRC and hopefully I should be able to remove
-  the hack in the future.
+  the hack in the future.  Performance is pretty bad, but at least it runs!
