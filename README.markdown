@@ -350,7 +350,7 @@ examining the state.
   return values for everything this time instead of taking/returning vectors
   everywhere, just to see how it felt.
 
-  Implementing the core functions felt really nice with multiple values, but
+    Implementing the core functions felt really nice with multiple values, but
   when it came to the drawing code things got a bit more awkward.  Needing to
   use `multiple-value-(call/bind)` to get things done is kind of a pain in CL
   because of how verbose things can get.  I could make some read macros to ease
