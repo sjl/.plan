@@ -57,13 +57,18 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 
 * Added Prolog list support to [Bones][].  Need to think about the UI more, but
   it speeds things up considerably (I don't *fully* understand *why* yet...).
+
 * Started playing guitar again after a month of so of not at all.  Truss rod is
   all out of whack thanks to the changing weather.
+
 * Read some more [AMOP][].  My brain hurts.
+
 * Read more [Masters of Doom][].
+
 * Noticed the `dynamic-extent` declaration of a `flet`ed function in
   Alexandria's `extremum`... should look into this for the bigass `labels` in
   [Bones][].
+
 * Did a bit more from the [Mazes book][].
 
 ### 2016-06-03
@@ -73,10 +78,13 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 * Went to a talk by Tony Hoare at my school.  It was interesting, but the more
   I dive into purely theoretical things the more I realize I really love
   *actually making the computer do things*.
+
 * Started watching the [ELS 2016][] videos.  I wish I could have made it this
   year, but unfortunately my school schedule conflicted.  Next year!
+
 * Asked for help/advice/feedback on the UI for [Bones][]:
   <https://gist.github.com/sjl/1f4bb73967663af0f9276b491af84140>
+
 * Implemented `cut` for [Bones][].  I simplified the book's fuckery quite a bit
   and it turned out to work pretty well, after chasing down a couple of other
   pre-existing bugs.
@@ -87,17 +95,23 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
   is to rewrite the bulk of the compiler.  This sounds bad, but "rewrite the
   compiler" has been on my list of things to do for a while now, so it's as good
   a time as any.
+
 * The compiler is pretty crufty because it started out with me trying to wrap my
   head around the awful [WAM book][] and grew organically.  Now that I've got
   a fairly solid understanding of how this shit works, my second attempt should
   be nicer.
+
 * Watched more [ELS 2016][] videos.
+
 * Finished reading the main part of [AMOP][].  Gonna put it down and move on to
   [LOL][] instead of trying to power through reading the entire MOP spec.
+
 * Started rewriting the [Bones][] compiler.  Made good progress, will probably
   take another day or so to get working and then another day to clean up.
+
 * I really should go through and type hint all the stuff in that compiler.  The
   type hints have proven useful in the rest of the project.
+
 * Started thinking about what an inspector plugin for [cl-nrepl][] would
   look like.  The "dump the object" code I wrote for the new compiler is ugly
   and painful to write -- if I just had a nice inspector I wouldn't need to fuck
@@ -110,8 +124,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 
 ### 2016-06-07
 
-* [Finished
-  rewriting](https://bitbucket.org/sjl/bones/commits/72bbdd5157258b77c85a6c0172240a26bb7ad4a4) the [Bones][] compiler.
+* [Finished rewriting](https://bitbucket.org/sjl/bones/commits/72bbdd5157258b77c85a6c0172240a26bb7ad4a4) the [Bones][] compiler.
 
 ### 2016-06-08
 
@@ -121,8 +134,10 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 
 * Downloading/updating everything to prepare for my long-ass flight back to the
   states tomorrow.
+
 * Grabbing doc trees with `wget`, but also might try out [Dash][] to see if it
   can reduce this pain a bit.
+
 * Roswell broke when I updated it through Homebrew and I had to manually remove
   all its cached files in `~/.roswell` for it to work again.  Computers are
   garbage.
@@ -135,23 +150,29 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 ### 2016-06-11 - 2016-06-23
 
 * Traveling in the US.  I miss American food.
+
 * I had left a cache of paper books at a friend's place in the US, so I read
   through a few while I was there.
+
 * Read through [ANSI Common Lisp][].  Pretty basic, nothing too advanced in it.
   It reminded me how much I hate Paul Graham's function/variable naming style.
   Aim for brevity of *ideas*, not characters.
+
 * Read/skimmed [Successful Lisp][].  Also pretty basic, but kind of weird at the
   same time.  It seemed to just skim a lot of topics and not really go in-depth
   enough on any of them.  Except for the chapter about the bit-twiddling
   operations, which I haven't seen in any other Lisp book (except maybe
   [CLtL2][]).  I don't think I'd recommend it.
+
 * Read through most of the [OpenGL SuperBible][].  Graphics programming is some
   really neat and powerful stuff wrapped in a hilarious nest of disgusting
   syntax and boilerplate.
+
 * I really want to play around with shaders and such, but the C++ development
   environment seems like an enourmous pain in the ass.  There's also [CEPL][]
   but I'm worried that I should really know some OpenGL before diving into that.
   I might poke at WebGL a bit as a middle ground.
+
 * Read through [On Writing][] by Stephen King.  Some good advice in there,
   especially about just reading and writing a *lot*.  I haven't been reading
   enough lately -- so from now on the Kindle is gonna replace my phone while on
@@ -160,11 +181,15 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 ### 2016-06-24
 
 * Still jet lagged.  Catching up on things back in Iceland.
+
 * Halfway through [Salem's Lot][].  I forgot how much I loved reading fiction.
+
 * Grabbed a bunch of GDC talks from [this thread][Reddit GDC] to watch later.
+
 * Read more [LOL][].  This dude is a wonderful nutbag.  The chapter on
   efficiency is crazy, but interesting.  I might use some of its ideas in
   [Bones][] once I've got that to a stable place.
+
 * Watched the Juice it or Lose It talk from that Reddit thread.  Really nice.
   Simple stuff like tweening makes a big difference.
 
@@ -174,14 +199,18 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
   was really interesting.  The idea that making Ellie stick close to the player
   means that any mistakes become the player's fault (so they won't blame her)
   seems obvious now, but wasn't before I watched it.
+
 * Finally finished up a blog post that's been halfway done for months.  Might
   post it on Monday.
+
 * Finished [LOL][] (though I had to tap out halfway through the final Forth
   chapter).  My dude certainly has a lot of fresh, hot, steaming takes.  I'd
   recommend the book, but only with a rabbit-sized grain of salt.
+
 * Watched the [ELS 2016][] talk "Type Checking on Heterogeneous Sequences in
   Common Lisp".  Seems a lot like the Clojure spec stuff that was released
   shortly after.
+
 * Started a blog post about Lisp and symbols which turned into a 5k word
   monster.  Gonna edit it down over the next few days and post it some time next
   week.
@@ -191,11 +220,14 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 * Watched the "Antichamber: An Overnight Success, Seven Years in the Making" GDC
   video.  Pretty inspiring, though I think he still probably underestimates how
   much luck matters.
+
 * Started reading [The Implementation of Prolog][].  Some good ideas and
   explanations in here, though the coding style is maddening.  I might even try
   a clean rewrite of [Bones][] a year or two down the line, using some of the
   concepts I'm seeing here.
+
 * Started doing the [Coding Math][] series again.  Finished episode 28.
+
 * Started back into the [Mazes book][] again.  Implemented Wilson's Algorithm in
   my little [demo][Mazes].
 
@@ -203,15 +235,18 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 
 * Printed off and read the manuals for two Lisp things I've been meaning to look
   into: [iterate][] and [parenscript][].
+
 * [parenscript][] seems like an ugly, practical compile-to-JS Lisp.  It's not
   pretty, but it has macros so I make it pretty if desired.  And at least it's
   not abandoned like [Wisp][].
+
 * [iterate][] is neat.  I can definitely see how it's cleaner than `loop`.
   There are some parts that seem tricky, but I have the feeling that they're
   edge cases that I only say because I read the manual cover-to-cover -- I doubt
   they'd appear much in real life.  I really should just bite the bullet and
   start using it -- there's no other way to learn -- but `loop` is like
   a comfortable rut I've found myself stuck in...
+
 * Did the first few lessons of [Learning WebGL][].  So far I understand
   everything (reading the [SuperBible][OpenGL SuperBible] helped a ton).  I'm
   beginning to think graphics programming *seems* really tough because it's
@@ -236,11 +271,14 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
   countless stories and characters unfold, each one unique, and all of them
   created by the interaction of the player's imagination and the game's
   procedural mechanics.  I'd love to make a game like that.
+
 * Posted a [blog post](http://stevelosh.com/blog/2016/06/symbolic-computation/)
   about symbolic computation.
+
 * [Added support for dynamic calling](https://bitbucket.org/sjl/bones/commits/de6e248866f44f1b997669339a7cce227305419c)
   (Prolog's `call/1`) in [Bones][].  This lets you write `not/1` trivially,
   which we need for some GDL games.
+
 * Fixed a [nasty unrelated bug](https://bitbucket.org/sjl/bones/commits/05ce726f28744cb1c412e0f450fac3b978a6001d)
   in the `bind!` function of [Bones][]' VM.
 
@@ -251,6 +289,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
   success.  Lots of good advice in it which seems obvious in retrospect, but
   I can see how in the heat of the moment it would be easy to lose sight of the
   bigger picture.
+
 * Did another episode of [Coding Math][].  This one is about writing a tweening
   library.  I ended up writing a ridiculous pair of [tweening
   macros](https://bitbucket.org/sjl/coding-math/src/783609c42ef0955634097267531ee06541275574/src/tween.lisp)
@@ -260,6 +299,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
   table?  No problem!  `(tween-place! (car (slot-value (gethash 'foo table)
   'myslot)) 500 2.0 #'tween-linear)`  I shudder to think how you'd do this in
   a language without macros...
+
 * Added support for running [Bones][]' test suite on [CCL][].  Up til now I've
   just been using [SBCL][] for development, but I accidentally opened the wrong
   REPL today and didn't notice until I got a traceback for something stupid
@@ -268,12 +308,15 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
   implementation with zero extra effort.  It's *so* nice to be working in
   a language with an *actual standard*.  I put the CCL testing into the
   precommit hook to help keep me honest going forward.
+
 * Ported two GDL games (`hanoi7_bugfix` and `aipsrovers01`) into Bones'
   `examples/` directory.  Now that I can write `not/1` it was trivial, and
   should be trivial for all GDL games.  It is *really* tedious to do by hand
   though, so I really want to write a GDL to Bones translator.  But to do that
   I think I need to sort out the `assert`/`retract` situation.
+
 * More [Learning WebGL][].
+
 * Added the Hunt and Kill algorithm to [Mazes][], and also started diving into
   [iterate][] by switching over a few of the `loop`s.  I'm never gonna learn if
   I don't just force myself to jump in the deep end.
@@ -326,9 +369,11 @@ examining the state.
 ### 2016-07-01
 
 * More [Learning WebGL][].
+
 * Another episode of [Coding Math][].  Penner's easing functions are beautiful
   little functions clouded by a haze of godawful programming style.  I tried to
   write my versions to be a bit more readable, at the expense of some speed.
+
 * Finished [The Road][].  Meh.
 
 ### 2016-07-02
@@ -486,14 +531,16 @@ variables, which is a nicer UI than having to pull them out of a data structure.
   `timeit` macro but I would have liked to know how to introspect the
   expressions a macro gets and work with them.
 
-  One of the things that makes Lisp macros so nice is that the expressions
+    One of the things that makes Lisp macros so nice is that the expressions
   macros get (and the tools you use to work on them) are the same kinds of
   things you use everywhere *else* in the language (lists, symbols, etc).  This
   makes it really frictionless to switch back and forth.  If your macros are
   getting some special `AST_Node` type that you need to learn to work with it
   feels a lot more like work.
+
 * Poked around in `#lisp` and `#sbcl` to clear up some performance-related
   questions I had about Lisp arrays.  I have exciting new ideas for [Bones][].
+
 * Added anonymous variables and the `*_void` instructions to [Bones][].  This
   was more difficult than I anticipated, but part of it was a bunch of
   refactoring that had to happen along the way.
@@ -502,17 +549,19 @@ variables, which is a nicer UI than having to pull them out of a data structure.
 
 * Did the "Intro to Fractals" episode of [Coding Math][].  Fun stuff.  Need to
   play around with animating them like he did at the very end.
+
 * More [Learning WebGL][].
+
 * Spent most of the day implementing the "logic stack" assertion/retraction
   I [rambled about](https://gist.github.com/sjl/1f4bb73967663af0f9276b491af84140)
   a while back.
 
-  It works, and it looks pretty good in action!  It also cut the time in my
+    It works, and it looks pretty good in action!  It also cut the time in my
   little benchmark almost in half (because we only need to compile the state
   code once instead of like 3+ times at each node), and it's MUCH nicer to read
   rule definitions now.
 
-  I'm thinking that programatically parsing/running GDL games is actually
+    I'm thinking that programatically parsing/running GDL games is actually
   feasible now, so I think that'll be my next step.  Once I can run arbitrary
   GDL games without having to translate the logic by hand I'll have a LOT more
   nice test cases.
@@ -521,9 +570,11 @@ variables, which is a nicer UI than having to pull them out of a data structure.
 
 * Cleaned up the UI of [Bones][] a bit.  The new function/macro pairs are a lot
   cleaner to read and work with.
+
 * Got a couple of books out of the RU library before it closes for a few weeks
   in the summer.  Started going through [Algorithms and Networking for Computer
   Games][ancg] and made a little [sandbox][] repo to play around in.
+
 * Hacked together a quick [proof of concept][hype] GDL player that can read and
   search arbitrary GDL games.  It's so nice to see things finally starting to
   come together!
@@ -535,9 +586,11 @@ variables, which is a nicer UI than having to pull them out of a data structure.
 ### 2016-07-08
 
 * More [Coding Math][].
+
 * After rereading the section of the [WAM book][] on anonymous variables
   I realized I could clean things up a lot in [Bones][].  I *knew* it had to be
   easier than I was making it.
+
 * More [Mazes][].
 
 ### 2016-07-09
@@ -548,16 +601,22 @@ variables, which is a nicer UI than having to pull them out of a data structure.
   Gregory Heisler's [50 Portraits][heisler] -- you can learn a lot from
   listening to someone experienced talk about what goes through their mind as
   they create something.
+
 * Finished the [Learning WebGL][] series.  I'd definitely recommend it.  It's
   a really good introduction to OpenGL if you just want to learn how the damn
   graphics card works without fucking around with the nightmarish C/C++
   build/ecosystem.  Just open a browser and start hitting OpenGL.
+
 * Started the [WebGL Fundamentals][] series.  I want to get a second look at
   this stuff before I dive in and try to poke at it with Lisp.
+
 * Started screwing around with [parenscript][] in my little [sandbox][].
+
 * Poked a bit more at the [ANCG book][ancg].  Gonna try to take this one in
   bite-sized pieces.
+
 * More [Coding Math][].
+
 * Poked around at some basic GGP games, which revealed some bugs and memory
   problems in [Bones][], so I fixed them.
 
@@ -566,14 +625,18 @@ variables, which is a nicer UI than having to pull them out of a data structure.
 * Watched the "Learning Through Failure - Portico" GDC talk.  Short but good.
   I think the best idea in is was "players only learn through failure when they
   *understand* what went wrong".
+
 * Brain dumped some stuff about [Bones][] below.
+
 * Removed the stupid garbage `set-*` opcodes from Bones and consolidated them
   into the `unify-*` opcodes like God intended.  Proceeded to rename those
   stupid `unify-*` opcodes to `subterm-*` so mortals can understand what the
   fuck is going on.
+
 * Poked a bit and pushing the constant optimization down into the compilation
   phase, but ran into a bit of a wall so I threw away the diff.  Might take
   another stab at it later once I let it roll around in my head a bit.
+
 * Mostly refactored the Bones code store to be a `simple-array`, after profiling
   indicates that most of the runtime is spent in data vector refs.
 
@@ -716,12 +779,15 @@ fixnums without interfering with GC and leaking memory.
 
 * Finished up the [Bones][] code store refactor and a couple of other minor
   things.
+
 * Switched over the Bones main store to be a `simple-array` too.  Another
   performance increase.  I've switched to a new game for benchmarking because
   the previous one was starting to finish too fast for me to be confident in
   getting sane results.  I think that's a good sign.
+
 * Puttered around with a bunch of other little optimizations.  Not *super*
   productive, but I did learn a lot along the way, so I think it was worth it.
+
 * Today's commits took the runtime for the `aipsrovers01` game from about 47
   seconds down to 19 seconds.  Not too bad!
 
@@ -729,29 +795,36 @@ fixnums without interfering with GC and leaking memory.
 
 * Watched the "Interpreting Feedback & Maintaining Your Vision" GDC talk.
   I like the idea of not backing down and changing to try to give users exactly
-  what they want all the time.  The last slide in the talk is the best -- a
-  game is a conduit to get some idea/experience from your head into the players'
-  heads.  Players give you feedback based on what happens in their heads, but
-  they don't know what's going on in yours, so you need to interpret their
-  feedback keeping that in mind.
+  what they want all the time.
+
+    The last slide in the talk is the best -- a game is a conduit to get some
+  idea/experience from your head into the players' heads.  Players give you
+  feedback based on what happens in their heads, but they don't know what's
+  going on in yours, so you need to interpret their feedback keeping that in
+  mind.
+
 * More [Coding Math][].
+
 * Implemented last call optimization in [Bones][].  Not much of a speed
   improvement for the particular GGP games I've been testing with, but it had to
   happen at some point, so we can write actual Prolog without blowing the stack.
+
 * Got a good start on splitting apart the Bones store like I wrote about above.
   It'll probably take another day or two two finish up.
 
 ### 2016-07-13
 
 * Spent an hour or so cleaning up my `.vimrc` and plugins, and moving fully to
-  [neovim][].  The catalyst was discovering [miniyank][].  I've been using
-  [YankRing][] for years, but it has always been *super* janky.  The way the
-  original YankRing works is to rebind all the keys that could possibly result
-  in yanking text, like `d`, `c`, `x`, and `y` to a function that handles them.
-  As you might imagine, this can cause problems -- especially with plugins like
-  [Paredit][] that need to manage those keys too.  Miniyank hooks into a new
-  neovim event, which lets it do what it needs to do without all the hacky
-  workarounds.
+  [neovim][].
+
+    The catalyst was discovering [miniyank][].  I've been using [YankRing][] for
+  years, but it has always been *super* janky.  The way the original YankRing
+  works is to rebind all the keys that could possibly result in yanking text,
+  like `d`, `c`, `x`, and `y` to a function that handles them.  As you might
+  imagine, this can cause problems -- especially with plugins like [Paredit][]
+  that need to manage those keys too.  Miniyank hooks into a new neovim event,
+  which lets it do what it needs to do without all the hacky workarounds.
+
 * Finished splitting apart the [Bones][] main WAM store into separate type/value
   arrays.
 
@@ -760,12 +833,16 @@ fixnums without interfering with GC and leaking memory.
 * Watched the "Distributed High Performance Computing in Common Lisp" talk from
   [ELS 2016][] over breakfast.  It would be really fun to try to get a GGP
   player running on an 11k-core supercomputer...
+
 * Got [Bones][] to run on ECL.  I needed to hack [policy-cond][] to do it, but
   I talked to the ECL maintainer in IRC and hopefully I should be able to remove
   the hack in the future.  Performance is pretty bad, but at least it runs!
+
 * Tried out the [PAIP][] tries for [Hype][]'s transposition tables, but they
   don't seem to be much better than a vanilla CL hash table, at least in SBCL.
   Oh well.
+
 * Wrote a real nasty macro to improve the performance of Bones' hot loop.
+
 * Remapped a couple of more keys on my keyboard and I feel like I'm going
   insane, but I think it'll be worth it in the long run.
