@@ -345,11 +345,12 @@ examining the state.
 * Shaved a yak related to packages in [cl-nrepl][] that I've been meaning to get
   to for a long time.  Really I need to rewrite that whole project now that
   I'm not a complete noob in Common Lisp.
+
 * Did episode 32 in [Coding Math][].  I decided to use Common Lisp's multiple
   return values for everything this time instead of taking/returning vectors
   everywhere, just to see how it felt.
 
-    Implementing the core functions felt really nice with multiple values, but
+  Implementing the core functions felt really nice with multiple values, but
   when it came to the drawing code things got a bit more awkward.  Needing to
   use `multiple-value-(call/bind)` to get things done is kind of a pain in CL
   because of how verbose things can get.  I could make some read macros to ease
@@ -366,6 +367,7 @@ examining the state.
     I think the general rule I'll follow (for now) is to use multiple value
   returns very sparingly, and only when one of the values is different than the
   rest and is obviously the "most important" one.
+
 * Worked on [Mazes][] some more.  I did a tiny bit more of the [book][Mazes
   book] but mostly it was me playing around with [iterate][].
 
@@ -375,6 +377,7 @@ examining the state.
   expression over the life of the loop, and `(timing run-time :since-start-into
   v1 :per-iteration-into v2)` sets vars to store timing info.  And they even
   work together -- in `run-stats` I average the per-iteration times together.
+
 * More [Learning WebGL][].
 
 ### 2016-07-03
@@ -382,9 +385,11 @@ examining the state.
 * Watched the "Network Programming for Physics Programmers" GDC talk over
   breakfast.  Impressive results, but I wonder how specific they are to his
   particular data set (or at least the physics engine).
+
 * Did a few more episodes of [Coding Math][].  Ran into a weird issue with
   Sketch's `polygon` function... I'll have to ask vydd about that in IRC the
   next time I have an internet connection.
+
 * Switched [Bones][] over to use `?question-style` for logic variables instead
   of the previous `:keyword-style`.  Aside from updating the tests it was about
   three lines worth of change, which is good.
