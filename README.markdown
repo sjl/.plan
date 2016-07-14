@@ -341,6 +341,7 @@ examining the state.
     I admit I did twitch a bit when I saw the infix `(('speaker 'health) > 0.5)`
   notation in their Scheme-like dialog scripting language -- I guess even
   Naughty Dog isn't perfect, hah.
+
 * Shaved a yak related to packages in [cl-nrepl][] that I've been meaning to get
   to for a long time.  Really I need to rewrite that whole project now that
   I'm not a complete noob in Common Lisp.
