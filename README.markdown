@@ -752,3 +752,6 @@ fixnums without interfering with GC and leaking memory.
 * Watched the "Distributed High Performance Computing in Common Lisp" talk from
   [ELS 2016][] over breakfast.  It would be really fun to try to get a GGP
   player running on an 11k-core supercomputer...
+* Got [Bones][] to run on ECL.  I needed to hack [policy-cond][] to do it, but
+  I talked to the ECL maintainer in IRC and hopefully I should be able to remove
+  the hack in the future.
