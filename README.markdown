@@ -760,3 +760,5 @@ fixnums without interfering with GC and leaking memory.
   don't seem to be much better than a vanilla CL hash table, at least in SBCL.
   Oh well.
 * Wrote a real nasty macro to improve the performance of Bones' hot loop.
+* Remapped a couple of more keys on my keyboard and I feel like I'm going
+  insane, but I think it'll be worth it in the long run.
