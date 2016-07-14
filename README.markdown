@@ -43,6 +43,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [YankRing]: http://www.vim.org/scripts/script.php?script_id=1234
 [Paredit]: https://github.com/vim-scripts/paredit.vim
 [PAIP]: http://www.amazon.com/dp/1558601910/?tag=stelos-20
+[policy-cond]: https://bitbucket.org/tarballs_are_good/policy-cond
 
 ## June 2016
 
