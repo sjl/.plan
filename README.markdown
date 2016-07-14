@@ -338,7 +338,7 @@ examining the state.
   work on.  Vanilla FPS, sports, etc games bore the shit out of me, but The Last
   of Us has a lot more depth to it.
 
-  I admit I did twitch a bit when I saw the infix `(('speaker 'health) > 0.5)`
+    I admit I did twitch a bit when I saw the infix `(('speaker 'health) > 0.5)`
   notation in their Scheme-like dialog scripting language -- I guess even
   Naughty Dog isn't perfect, hah.
 * Shaved a yak related to packages in [cl-nrepl][] that I've been meaning to get
@@ -348,13 +348,13 @@ examining the state.
   return values for everything this time instead of taking/returning vectors
   everywhere, just to see how it felt.
 
-  Implementing the core functions felt really nice with multiple values, but
+    Implementing the core functions felt really nice with multiple values, but
   when it came to the drawing code things got a bit more awkward.  Needing to
   use `multiple-value-(call/bind)` to get things done is kind of a pain in CL
   because of how verbose things can get.  I could make some read macros to ease
   the pain, but it's probably not worth it.
 
-  I'm trying to come up with a good rule of thumb for when to use multiple
+    I'm trying to come up with a good rule of thumb for when to use multiple
   values and when not to.  Multiple value return obviously only gives you one
   level of "hierarchy" to work with, so e.g. instead of `(values x1 y2 x2 y2)`
   it's probably better to do `(values point1 point2)`.  Also if the items are
@@ -362,13 +362,13 @@ examining the state.
   some kind -- the fact that CL treats the value first differently makes it seem
   like it's special when really `point1` isn't any more important than `point2`.
 
-  I think the general rule I'll follow (for now) is to use multiple value
+    I think the general rule I'll follow (for now) is to use multiple value
   returns very sparingly, and only when one of the values is different than the
   rest and is obviously the "most important" one.
 * Worked on [Mazes][] some more.  I did a tiny bit more of the [book][Mazes
   book] but mostly it was me playing around with [iterate][].
 
-  Iterate is turning out to be cool.  I made some custom drivers for my maze
+    Iterate is turning out to be cool.  I made some custom drivers for my maze
   grids and a couple of custom clauses that are really neat.  `(averaging
   (...some expr...) :into some-var)` will keep track of the average of the
   expression over the life of the loop, and `(timing run-time :since-start-into
