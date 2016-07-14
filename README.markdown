@@ -42,6 +42,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [miniyank]: https://github.com/bfredl/nvim-miniyank
 [YankRing]: http://www.vim.org/scripts/script.php?script_id=1234
 [Paredit]: https://github.com/vim-scripts/paredit.vim
+[PAIP]: http://www.amazon.com/dp/1558601910/?tag=stelos-20
 
 ## June 2016
 
@@ -755,3 +756,7 @@ fixnums without interfering with GC and leaking memory.
 * Got [Bones][] to run on ECL.  I needed to hack [policy-cond][] to do it, but
   I talked to the ECL maintainer in IRC and hopefully I should be able to remove
   the hack in the future.  Performance is pretty bad, but at least it runs!
+* Tried out the [PAIP][] tries for [Hype][]'s transposition tables, but they
+  don't seem to be much better than a vanilla CL hash table, at least in SBCL.
+  Oh well.
+* Wrote a real nasty macro to improve the performance of Bones' hot loop.
