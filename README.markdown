@@ -867,3 +867,10 @@ fixnums without interfering with GC and leaking memory.
   up for numbers for now.  This is the first real Lisp/Prolog interop I've got,
   which is pretty cool.  It also means I can excise the stupid number-munging
   code from [Hype][].
+
+* Refactored the Bones compiler to use structs in a few places instead of CLOS
+  classes to reduce consing a bit.  Also fixed a couple of other hot points and
+  split apart the horrifically large `compiler.lisp` file.
+
+* Removed the functor table from the WAM.  This is the first step toward making
+  Bones GC-friendly.
