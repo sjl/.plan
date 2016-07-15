@@ -862,3 +862,8 @@ fixnums without interfering with GC and leaking memory.
   Everything always breaks all the time because programming, especially
   graphics/GUI programming, is a dumpster fire.  I should just never update
   anything ever.  A fucking lab mouse would have learned by now.
+
+* Added support for arbitrary Lisp objects in the [Bones][] heap, and hooked it
+  up for numbers for now.  This is the first real Lisp/Prolog interop I've got,
+  which is pretty cool.  It also means I can excise the stupid number-munging
+  code from [Hype][].
