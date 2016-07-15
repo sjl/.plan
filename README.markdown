@@ -850,3 +850,15 @@ fixnums without interfering with GC and leaking memory.
 ### 2016-07-15
 
 * [Got nerd sniped](https://www.reddit.com/r/lisp/comments/4si6qm/go_forth/d5d827u?context=1) by /r/lisp.
+
+* Tried to work on more [Coding Math][] but *something* I did yesterday with
+  Roswell completely fucked my CCL/Sketch situation.  First SDL2 wouldn't build
+  at all.  Then it built, but the key input, title bar, and cmd-tabbing are all
+  broken when running from the command line.  ClozureCL.app works, until I do
+  something that throws an exception, then it just hangs forever and can't be
+  cmd-tabbed back to.
+
+    I don't know why I keep trying to ever update anything on my computer.
+  Everything always breaks all the time because programming, especially
+  graphics/GUI programming, is a dumpster fire.  I should just never update
+  anything ever.  A fucking lab mouse would have learned by now.
