@@ -846,3 +846,7 @@ fixnums without interfering with GC and leaking memory.
 
 * Remapped a couple of more keys on my keyboard and I feel like I'm going
   insane, but I think it'll be worth it in the long run.
+
+### 2016-07-15
+
+* [Got nerd sniped](https://www.reddit.com/r/lisp/comments/4si6qm/go_forth/d5d827u?context=1) by /r/lisp.
