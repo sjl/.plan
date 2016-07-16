@@ -44,6 +44,8 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [Paredit]: https://github.com/vim-scripts/paredit.vim
 [PAIP]: http://www.amazon.com/dp/1558601910/?tag=stelos-20
 [policy-cond]: https://bitbucket.org/tarballs_are_good/policy-cond
+[cl-charms]: https://github.com/HiTECNOLOGYs/cl-charms
+[Silt]: http://stevelosh.com/blog/2015/12/ludum-dare-34/
 
 ## June 2016
 
@@ -887,3 +889,11 @@ fixnums without interfering with GC and leaking memory.
 
 * Went through and removed `defstar` from [Bones][] entirely because apparently
   the fucking thing is GPL'ed.  This is why we can't have nice things.
+
+* Made a tiny little ncurses demo with [cl-charms][] in my [sandbox][].  I'm
+  thinking about porting [Silt][] to Common Lisp for the [August 2016 Lisp Game
+  Jam](https://itch.io/jam/august-2016-lisp-game-jam), so I figured I should
+  make sure things actually work before the jam starts.
+
+    I was pleasantly surprised to see that cl-charms just worked right out of the
+  box, even inside neovim's terminal emulator.
