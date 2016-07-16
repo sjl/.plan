@@ -874,3 +874,7 @@ fixnums without interfering with GC and leaking memory.
 
 * Removed the functor table from the WAM.  This is the first step toward making
   Bones GC-friendly.
+
+* Finished the Bones store split by splitting apart functor cells into functor
+  and arity cell pairs.  Now that I know this is going to work I'm excited for
+  what I can do with Prolog/Lisp interop in the future.
