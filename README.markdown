@@ -878,3 +878,12 @@ fixnums without interfering with GC and leaking memory.
 * Finished the Bones store split by splitting apart functor cells into functor
   and arity cell pairs.  Now that I know this is going to work I'm excited for
   what I can do with Prolog/Lisp interop in the future.
+
+### 2016-07-16
+
+* Started wrapping my head around the WAM's clause indexing.  I think I mostly
+  understand the idea -- I'll need to let it roll around a bit before I try to
+  implement it though.
+
+* Went through and removed `defstar` from [Bones][] entirely because apparently
+  the fucking thing is GPL'ed.  This is why we can't have nice things.
