@@ -912,8 +912,11 @@ fixnums without interfering with GC and leaking memory.
   a lot faster, and ends up saving a lot of consing too.
 
 * Did a bit more in the [ANCG][] book.  Tried to use gnuplot to plot the
-  data for a spectral RNG test and it was behaving poorly.  The plot would open
-  up under iTerm2, not have a Mac title bar or entry in the command-tab
-  switcher, etc.  For my future self who's run into this shit again: the problem
-  is that you're launching it from a tmux process that's been detached through
-  a logout.
+  data for a spectral RNG test and it was behaving poorly.
+
+    The plot would open up under iTerm2, not have a Mac title bar or entry in
+  the command-tab switcher, etc.  For my future self who's run into this shit
+  again: the problem is that you're launching it from a tmux process that's been
+  detached through a logout.  You need to kill the entire tmux process (not just
+  the session, **all** the sessions) and restart it.  This is also what was
+  fucking up sketch for me the other day.  Computers are garbage.
