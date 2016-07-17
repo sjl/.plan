@@ -910,3 +910,10 @@ fixnums without interfering with GC and leaking memory.
   at compile time, allowing us to run them by simply loading the code store with
   the contents of the precompiled array and firing off the main loop.  This is
   a lot faster, and ends up saving a lot of consing too.
+
+* Did a bit more in the [ANCG][] book.  Tried to use gnuplot to plot the
+  data for a spectral RNG test and it was behaving poorly.  The plot would open
+  up under iTerm2, not have a Mac title bar or entry in the command-tab
+  switcher, etc.  For my future self who's run into this shit again: the problem
+  is that you're launching it from a tmux process that's been detached through
+  a logout.
