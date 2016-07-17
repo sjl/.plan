@@ -903,3 +903,10 @@ fixnums without interfering with GC and leaking memory.
 * Ported a few of my solutions to [99 Prolog Problems][] from Prolog over to
   Bones as unit tests.  I found one bug in Bones itself from them, and I expect
   they'll be good to have as test cases in the future.
+
+### 2016-07-17
+
+* Wrote a compiler macro in Bones to precompile static queries to WAM bytecode
+  at compile time, allowing us to run them by simply loading the code store with
+  the contents of the precompiled array and firing off the main loop.  This is
+  a lot faster, and ends up saving a lot of consing too.
