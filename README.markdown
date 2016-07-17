@@ -46,6 +46,8 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [policy-cond]: https://bitbucket.org/tarballs_are_good/policy-cond
 [cl-charms]: https://github.com/HiTECNOLOGYs/cl-charms
 [Silt]: http://stevelosh.com/blog/2015/12/ludum-dare-34/
+[99 Prolog Problems]: http://www.ic.unicamp.br/~meidanis/courses/mc336/2009s2/prolog/problemas/
+
 
 ## June 2016
 
@@ -897,3 +899,7 @@ fixnums without interfering with GC and leaking memory.
 
     I was pleasantly surprised to see that cl-charms just worked right out of the
   box, even inside neovim's terminal emulator.
+
+* Ported a few of my solutions to [99 Prolog Problems][] from Prolog over to
+  Bones as unit tests.  I found one bug in Bones itself from them, and I expect
+  they'll be good to have as test cases in the future.
