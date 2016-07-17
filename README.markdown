@@ -926,3 +926,5 @@ fixnums without interfering with GC and leaking memory.
   detached through a logout.  You need to kill the entire tmux process (not just
   the session, **all** the sessions) and restart it.  This is also what was
   fucking up sketch for me the other day.  Computers are garbage.
+
+* Another episode of [Coding Math][].
