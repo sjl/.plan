@@ -904,6 +904,12 @@ fixnums without interfering with GC and leaking memory.
   Bones as unit tests.  I found one bug in Bones itself from them, and I expect
   they'll be good to have as test cases in the future.
 
+* Fought with Roswell a bit to get it to rebuild my lispindent script.  The
+  problem was that I has installed ECL under Roswell to test Bones with, and
+  this had switched the default Lisp implementation for Roswell to ECL, which
+  made it shit the bed when trying to `ros build`.  The solution was to `ros
+  use` SBCL again.
+
 ### 2016-07-17
 
 * Wrote a compiler macro in Bones to precompile static queries to WAM bytecode
