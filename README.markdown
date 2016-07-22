@@ -47,6 +47,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [cl-charms]: https://github.com/HiTECNOLOGYs/cl-charms
 [Silt]: http://stevelosh.com/blog/2015/12/ludum-dare-34/
 [99 Prolog Problems]: http://www.ic.unicamp.br/~meidanis/courses/mc336/2009s2/prolog/problemas/
+[cl-ggp]: http://sjl.bitbucket.org/cl-ggp/
 
 
 ## June 2016
@@ -933,4 +934,8 @@ fixnums without interfering with GC and leaking memory.
 
 * Planning and traveling in the Westfjords.
 
+### 2016-07-22
 
+* Started making plugging [Hype][] into [cl-ggp][] to see if I can make this
+  whole circus run.  It kind of does.  I worked out a couple bugs in cl-ggp, and
+  one of the games uncovered a bug in [Bones][] that I should fix.
