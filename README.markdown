@@ -939,3 +939,4 @@ fixnums without interfering with GC and leaking memory.
 * Started making plugging [Hype][] into [cl-ggp][] to see if I can make this
   whole circus run.  It kind of does.  I worked out a couple bugs in cl-ggp, and
   one of the games uncovered a bug in [Bones][] that I should fix.
+* Fixed the bug in Bones.
