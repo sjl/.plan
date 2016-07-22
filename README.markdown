@@ -928,3 +928,9 @@ fixnums without interfering with GC and leaking memory.
   fucking up sketch for me the other day.  Computers are garbage.
 
 * Another episode of [Coding Math][].
+
+### 2016-07-18 - 2016-07-21
+
+* Planning and traveling in the Westfjords.
+
+
