@@ -48,6 +48,8 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [Silt]: http://stevelosh.com/blog/2015/12/ludum-dare-34/
 [99 Prolog Problems]: http://www.ic.unicamp.br/~meidanis/courses/mc336/2009s2/prolog/problemas/
 [cl-ggp]: http://sjl.bitbucket.org/cl-ggp/
+[taop]: http://www.amazon.com/dp/0262192500/?tag=stelos-20
+[ggp-book]: http://www.amazon.com/dp/1627052550/?tag=stelos-20
 
 
 ## June 2016
@@ -936,7 +938,16 @@ fixnums without interfering with GC and leaking memory.
 
 ### 2016-07-22
 
-* Started making plugging [Hype][] into [cl-ggp][] to see if I can make this
-  whole circus run.  It kind of does.  I worked out a couple bugs in cl-ggp, and
-  one of the games uncovered a bug in [Bones][] that I should fix.
+* Started plugging [Hype][] into [cl-ggp][] to see if I can make this whole
+  circus run.  It kind of does.  I worked out a couple bugs in cl-ggp, and one
+  of the games uncovered a bug in [Bones][] that I should fix.
 * Fixed the bug in Bones.
+* Now that I've fixed the bug in Bones my little stupid Common Lisp random-move
+  player can play games (and lose) against the Clojure player using GGP-Base
+  that my partner and I made last semester.  The yak has been shaved!
+* My copy of [The Art of Prolog][taop] finally made it through the mail system,
+  so I started reading that.
+* I also borrowed the copy of [General Game Playing][ggp-book] that was sitting
+  around in the CADIA lab and started skimming over that.  Most of it is the
+  stuff we covered in class, I just want to fill in any gaps in my knowledge.
+
