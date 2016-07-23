@@ -961,3 +961,8 @@ fixnums without interfering with GC and leaking memory.
   [getting two birds stoned at
   once](https://www.youtube.com/watch?v=pXEm08dsQOc).
 * More [WebGL Fundamentals][].
+* Another section of [ANCG][].  It's slow going, but mostly because I'm trying
+  to do other things along the way.  For example, I wrote a `frequencies`
+  function that does the same as Clojure's `frequencies` so I could test my
+  results, and to do that I wrote a little [iterate][] driver too.  Lots of
+  naked yaks.
