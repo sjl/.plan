@@ -954,3 +954,9 @@ fixnums without interfering with GC and leaking memory.
 ### 2016-07-23
 
 * Another episode of [Coding Math][].  I'm nearing the end!
+* Read more of the [GGP Book][ggp-book].  I should implement some of these
+  simple players (again) in [Hype][] as an exercise.
+* Started adding examples/exercises from [The Art of Prolog][taop] to [Bones][]
+  as unit tests.  I get more practice and Bones gets more test coverage.  We're
+  [getting two birds stoned at
+  once](https://www.youtube.com/watch?v=pXEm08dsQOc).
