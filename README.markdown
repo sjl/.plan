@@ -951,3 +951,6 @@ fixnums without interfering with GC and leaking memory.
   around in the CADIA lab and started skimming over that.  Most of it is the
   stuff we covered in class, I just want to fill in any gaps in my knowledge.
 
+### 2016-07-23
+
+* Another episode of [Coding Math][].  I'm nearing the end!
