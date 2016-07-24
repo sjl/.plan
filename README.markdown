@@ -973,3 +973,4 @@ fixnums without interfering with GC and leaking memory.
 ### 2016-07-24
 
 * More [Coding Math][].
+* More [Bones][] tests from [TAOP][].
