@@ -974,3 +974,5 @@ fixnums without interfering with GC and leaking memory.
 
 * More [Coding Math][].
 * More [Bones][] tests from [TAOP][].
+* Started cleaning up my vector math stuff from Coding Math.  Might make it into
+  its own little library so I can use it in other things.
