@@ -50,6 +50,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [cl-ggp]: http://sjl.bitbucket.org/cl-ggp/
 [taop]: http://www.amazon.com/dp/0262192500/?tag=stelos-20
 [ggp-book]: http://www.amazon.com/dp/1627052550/?tag=stelos-20
+[ooze]: https://bitbucket.org/sjl/dotfiles/src/default/vim/bundle/ooze/
 
 
 ## June 2016
@@ -966,3 +967,5 @@ fixnums without interfering with GC and leaking memory.
   function that does the same as Clojure's `frequencies` so I could test my
   results, and to do that I wrote a little [iterate][] driver too.  Lots of
   naked yaks.
+* Fixed a bunch of shit in [Ooze][] that has been bugging me for a while.  Also
+  started to thing about its successor.
