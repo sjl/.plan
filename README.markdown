@@ -969,3 +969,7 @@ fixnums without interfering with GC and leaking memory.
   naked yaks.
 * Fixed a bunch of shit in [Ooze][] that has been bugging me for a while.  Also
   started to thing about its successor.
+
+### 2016-07-24
+
+* More [Coding Math][].
