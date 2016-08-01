@@ -51,7 +51,11 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [taop]: http://www.amazon.com/dp/0262192500/?tag=stelos-20
 [ggp-book]: http://www.amazon.com/dp/1627052550/?tag=stelos-20
 [ooze]: https://bitbucket.org/sjl/dotfiles/src/default/vim/bundle/ooze/
-
+[Lisp Hackers]: https://leanpub.com/lisphackers/read
+[Hillbilly Elegy]: http://www.amazon.com/dp/0062300547/?tag=stelos-20
+[Hillbilly Elegy Interview]: http://www.theamericanconservative.com/dreher/trump-us-politics-poor-whites/
+[Engines of Logic]: http://www.amazon.com/dp/0393322297/?tag=stelos-20
+[diagonalization]: https://en.wikipedia.org/wiki/Cantor's_diagonal_argument
 
 ## June 2016
 
@@ -976,3 +980,22 @@ fixnums without interfering with GC and leaking memory.
 * More [Bones][] tests from [TAOP][].
 * Started cleaning up my vector math stuff from Coding Math.  Might make it into
   its own little library so I can use it in other things.
+
+### 2016-07-25 - 2016-07-31
+
+* Traveling around Iceland with a friend who was visiting.
+* Read [Hillbilly Elegy][] after reading [this interview][Hillbilly Elegy
+  Interview].  It was a really interesting book.  You should read it if you want
+  to understand how what's happening in the US could possibly be happening.
+  Luckily the book doesn't strike **too** close to home for me, but growing up
+  in rural Pennsylvania I definitely saw bits and pieces of what he describes.
+* Read the [Lisp Hackers][] book.
+* Finished reading [Engines of Logic][].  It was interesting, but kind of
+  a weird mix.  I expected a basic pop science book about the history of logic
+  and computing, and for the most part that's what it was, but it was written by
+  a mathematician and has some really strangely-explained examples of particular
+  mathematical concepts that were really hard to follow.  For example: I already
+  understood Cantor's [diagonalization][] argument before reading the book, but
+  I still found it hard to follow the author's explanation of it.  The author
+  seems to be trying to "dumb down" the explanations but does it in a way that
+  makes it harder to grasp overall.
