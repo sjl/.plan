@@ -56,6 +56,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [Hillbilly Elegy Interview]: http://www.theamericanconservative.com/dreher/trump-us-politics-poor-whites/
 [Engines of Logic]: http://www.amazon.com/dp/0393322297/?tag=stelos-20
 [diagonalization]: https://en.wikipedia.org/wiki/Cantor's_diagonal_argument
+[August 2016 Lisp Game Jam]: https://itch.io/jam/august-2016-lisp-game-jam
 
 ## June 2016
 
@@ -999,3 +1000,8 @@ fixnums without interfering with GC and leaking memory.
   I still found it hard to follow the author's explanation of it.  The author
   seems to be trying to "dumb down" the explanations but does it in a way that
   makes it harder to grasp overall.
+
+### 2016-08-01
+
+* Did an initial skeleton commit for the [August 2016 Lisp Game Jam][].  Going
+  to really dive in tomorrow though.
