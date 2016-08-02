@@ -56,7 +56,8 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [Hillbilly Elegy Interview]: http://www.theamericanconservative.com/dreher/trump-us-politics-poor-whites/
 [Engines of Logic]: http://www.amazon.com/dp/0393322297/?tag=stelos-20
 [diagonalization]: https://en.wikipedia.org/wiki/Cantor's_diagonal_argument
-[August 2016 Lisp Game Jam]: https://itch.io/jam/august-2016-lisp-game-jam
+[lispjamaugust16]: https://itch.io/jam/august-2016-lisp-game-jam
+[Silt2]: http://bitbucket.org/sjl/silt2
 
 ## June 2016
 
@@ -1001,7 +1002,15 @@ fixnums without interfering with GC and leaking memory.
   seems to be trying to "dumb down" the explanations but does it in a way that
   makes it harder to grasp overall.
 
+## August 2016
+
 ### 2016-08-01
 
-* Did an initial skeleton commit for the [August 2016 Lisp Game Jam][].  Going
-  to really dive in tomorrow though.
+* Did an initial skeleton commit for the [August 2016 Lisp Game
+  Jam][lispjamaugust16].  Going to really dive in tomorrow though.
+
+### 2016-08-02
+
+* Started sketching out some basic structure on [Silt2][] for the
+  [jam][lispjamaugust16].  I think I'm going to try using a state machine as the
+  main game loop and see how it goes.
