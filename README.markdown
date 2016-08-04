@@ -1014,3 +1014,16 @@ fixnums without interfering with GC and leaking memory.
 * Started sketching out some basic structure on [Silt2][] for the
   [jam][lispjamaugust16].  I think I'm going to try using a state machine as the
   main game loop and see how it goes.
+
+### 2016-08-03
+
+### 2016-08-04
+
+* Started working on [Silt2][] for real.  Spent some time figuring out how to
+  make Diamond-Square terrain tile/wrap properly.  It's not as simple as people
+  make it out to be, but I think I've got it working nicely now.  Gonna have to
+  remember to write a little blog post about that.
+* Set up my build process so I can deploy Silt2 as I work on it.  You can
+  `telnet silt.stevelosh.com` to play what I've got so far.  It's not much
+  though -- really just the basic terrain/height generation for now.  But it's
+  a start.
