@@ -59,6 +59,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [lispjamaugust16]: https://itch.io/jam/august-2016-lisp-game-jam
 [Silt2]: http://bitbucket.org/sjl/silt2
 [cl-ecs]: https://github.com/lispgames/cl-ecs
+[cl-losh]: http://bitbucket.org/sjl/cl-losh
 
 ## June 2016
 
@@ -1036,3 +1037,6 @@ fixnums without interfering with GC and leaking memory.
 
 * More work on [Silt2][].  Revamped the entity component system a bit to make it
   a lot more performant.  Happy with the progress so far.
+* Finally got around to consolidating all my `utils.lisp` files in various
+  projects into [my own personal utility library][cl-losh], because the world
+  definitely needs another one of those.
