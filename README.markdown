@@ -1031,3 +1031,8 @@ fixnums without interfering with GC and leaking memory.
 * Played around a bit with [cl-ecs][] but quickly ran into a use case it doesn't
   really cover.  In true Lisp fashion I decided to roll my own entity/component
   system and got something hacked together enough to work for now.
+
+### 2016-08-05
+
+* More work on [Silt2][].  Revamped the entity component system a bit to make it
+  a lot more performant.  Happy with the progress so far.
