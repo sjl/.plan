@@ -58,6 +58,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [diagonalization]: https://en.wikipedia.org/wiki/Cantor's_diagonal_argument
 [lispjamaugust16]: https://itch.io/jam/august-2016-lisp-game-jam
 [Silt2]: http://bitbucket.org/sjl/silt2
+[cl-ecs]: https://github.com/lispgames/cl-ecs
 
 ## June 2016
 
@@ -1027,3 +1028,6 @@ fixnums without interfering with GC and leaking memory.
   `telnet silt.stevelosh.com` to play what I've got so far.  It's not much
   though -- really just the basic terrain/height generation for now.  But it's
   a start.
+* Played around a bit with [cl-ecs][] but quickly ran into a use case it doesn't
+  really cover.  In true Lisp fashion I decided to roll my own entity/component
+  system and got something hacked together enough to work for now.
