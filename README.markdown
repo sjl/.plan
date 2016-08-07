@@ -60,6 +60,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [Silt2]: http://bitbucket.org/sjl/silt2
 [cl-ecs]: https://github.com/lispgames/cl-ecs
 [cl-losh]: http://bitbucket.org/sjl/cl-losh
+[DCSS]: https://crawl.develz.org/
 
 ## June 2016
 
@@ -1040,3 +1041,18 @@ fixnums without interfering with GC and leaking memory.
 * Finally got around to consolidating all my `utils.lisp` files in various
   projects into [my own personal utility library][cl-losh], because the world
   definitely needs another one of those.
+
+### 2016-08-06
+
+* Played a bunch more [DCSS][].  I'm addicted.  This does not bode well for my
+  productivity.
+* Worked on [Silt2][] more.  Added rotting fruit, creatures, eating, inspection,
+  random names, and a bunch more.  It's starting to come together.  Four more
+  days left for the jam.
+* Fixed the UTF-8 issues with the Silt telnet server.  I just had to force
+  `export LANG=en_US.UTF-8` before running the Lisp binary in the telnet script.
+* Fixed another funny bug on the Silt server.  Building the Silt binary with
+  [Roswell][] means that when it runs `save-lisp-and-die` it saves
+  *everything*, including the initial seed for the random number generator.  So
+  every time you telneted to the server you'd get the same initial world
+  generated.  I fixed that by reseeding before each world gen.
