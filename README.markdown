@@ -1060,3 +1060,14 @@ fixnums without interfering with GC and leaking memory.
 ### 2016-08-06
 
 * More [Silt2][] and [DCSS][].
+
+### 2016-08-07
+
+* More [Silt2][] and [DCSS][], again.
+
+### 2016-08-08
+
+* Pretty much wrapping up [Silt2][].  Just need to balance it a bit and write up
+  a little blog post and call it done.
+
+
