@@ -1056,3 +1056,7 @@ fixnums without interfering with GC and leaking memory.
   *everything*, including the initial seed for the random number generator.  So
   every time you telneted to the server you'd get the same initial world
   generated.  I fixed that by reseeding before each world gen.
+
+### 2016-08-06
+
+* More [Silt2][] and [DCSS][].
