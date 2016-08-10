@@ -1074,3 +1074,9 @@ fixnums without interfering with GC and leaking memory.
 
 * Almost done with [Silt2][].  Might add a few more artifacts tomorrow but
   otherwise it's done.  Time to move on.
+
+### 2016-08-10
+
+* Added a [Links page](http://stevelosh.com/links/) to my website.  I've been
+  meaning to do this for a while.  It's going to be a place for me to dump links
+  to blogs/etc that I want to remember to check every now and then.
