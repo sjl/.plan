@@ -61,6 +61,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [cl-ecs]: https://github.com/lispgames/cl-ecs
 [cl-losh]: http://bitbucket.org/sjl/cl-losh
 [DCSS]: https://crawl.develz.org/
+[beast]: http://bitbucket.org/sjl/beast
 
 ## June 2016
 
@@ -1069,6 +1070,8 @@ fixnums without interfering with GC and leaking memory.
 
 * Pretty much wrapping up [Silt2][].  Just need to balance it a bit and write up
   a little blog post and call it done.
+* Split out the entity/aspect/system stuff from Silt into its own library called
+  [beast][] ("Basic Entity/Aspect/System Toolkit").
 
 ### 2016-08-09
 
@@ -1080,3 +1083,4 @@ fixnums without interfering with GC and leaking memory.
 * Added a [Links page](http://stevelosh.com/links/) to my website.  I've been
   meaning to do this for a while.  It's going to be a place for me to dump links
   to blogs/etc that I want to remember to check every now and then.
+* Fixed the system redefinition clobbering bug in [beast][].
