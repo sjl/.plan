@@ -1070,4 +1070,7 @@ fixnums without interfering with GC and leaking memory.
 * Pretty much wrapping up [Silt2][].  Just need to balance it a bit and write up
   a little blog post and call it done.
 
+### 2016-08-09
 
+* Almost done with [Silt2][].  Might add a few more artifacts tomorrow but
+  otherwise it's done.  Time to move on.
