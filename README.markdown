@@ -1084,3 +1084,10 @@ fixnums without interfering with GC and leaking memory.
   meaning to do this for a while.  It's going to be a place for me to dump links
   to blogs/etc that I want to remember to check every now and then.
 * Fixed the system redefinition clobbering bug in [beast][].
+
+### 2016-08-11
+
+* Submitted [Silt2][] to the game jam.  It's as done as it's every gonna get.
+  I'm pretty happy with how it turned out.
+* Wrote up some docs for [beast][].  Gonna officially release it in the next
+  couple of days.
