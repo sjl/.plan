@@ -1058,10 +1058,6 @@ fixnums without interfering with GC and leaking memory.
   every time you telneted to the server you'd get the same initial world
   generated.  I fixed that by reseeding before each world gen.
 
-### 2016-08-06
-
-* More [Silt2][] and [DCSS][].
-
 ### 2016-08-07
 
 * More [Silt2][] and [DCSS][], again.
@@ -1087,7 +1083,15 @@ fixnums without interfering with GC and leaking memory.
 
 ### 2016-08-11
 
-* Submitted [Silt2][] to the game jam.  It's as done as it's every gonna get.
+* Submitted [Silt2][] to the game jam.  It's as done as it's ever gonna get.
   I'm pretty happy with how it turned out.
 * Wrote up some docs for [beast][].  Gonna officially release it in the next
   couple of days.
+
+### 2016-08-12
+
+* Started writing up a postmortem blog post for the Lisp game jam.  Gonna post
+  it on Monday if I get it all done by then.
+
+
+
