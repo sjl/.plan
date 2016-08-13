@@ -1093,5 +1093,11 @@ fixnums without interfering with GC and leaking memory.
 * Wrote up a postmortem blog post for the Lisp game jam.  Gonna post it on
   Monday.
 
+### 2016-08-13
+
+* Finally getting back to [Coding Math][].  Sadly I'm almost done with the
+  entire series.
+* Wrote up some real nasty `iterate` drivers to make looping over nested things
+  easier.
 
 
