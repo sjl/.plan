@@ -1090,8 +1090,8 @@ fixnums without interfering with GC and leaking memory.
 
 ### 2016-08-12
 
-* Started writing up a postmortem blog post for the Lisp game jam.  Gonna post
-  it on Monday if I get it all done by then.
+* Wrote up a postmortem blog post for the Lisp game jam.  Gonna post it on
+  Monday.
 
 
 
