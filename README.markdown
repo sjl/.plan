@@ -1100,4 +1100,7 @@ fixnums without interfering with GC and leaking memory.
 * Wrote up some real nasty `iterate` drivers to make looping over nested things
   easier.
 
+### 2016-08-14
+
+* Did the first two kinematics episodes of [Coding Math][].  Fun!
 
