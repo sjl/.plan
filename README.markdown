@@ -1108,5 +1108,7 @@ fixnums without interfering with GC and leaking memory.
 
 ### 2016-08-15
 
+* Posted my [Lisp Game Jam Postmortem](http://stevelosh.com/blog/2016/08/lisp-jam-postmortem/).
 * Wrote another blog post about a particular Lisp macro.  Gonna let it stew for
   a couple of days before posting it.
+* More [Coding Math][].
