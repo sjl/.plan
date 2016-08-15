@@ -1106,3 +1106,7 @@ fixnums without interfering with GC and leaking memory.
 * Wrote a couple of horrifying macros in my utility library. 
 * Ascended in [DCSS][] for the first time!
 
+### 2016-08-15
+
+* Wrote another blog post about a particular Lisp macro.  Gonna let it stew for
+  a couple of days before posting it.
