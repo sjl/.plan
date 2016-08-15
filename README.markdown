@@ -1103,4 +1103,6 @@ fixnums without interfering with GC and leaking memory.
 ### 2016-08-14
 
 * Did the first two kinematics episodes of [Coding Math][].  Fun!
+* Wrote a couple of horrifying macros in my utility library. 
+* Ascended in [DCSS][] for the first time!
 
