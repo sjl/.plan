@@ -1121,3 +1121,4 @@ fixnums without interfering with GC and leaking memory.
   research papers to look into.  Also downloaded some [IRDC talks][] and the
   [New England Lisp Games Conference talks][] to watch over the next week or
   two.
+* More [Coding Math][].
