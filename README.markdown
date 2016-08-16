@@ -62,6 +62,8 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [cl-losh]: http://bitbucket.org/sjl/cl-losh
 [DCSS]: https://crawl.develz.org/
 [beast]: http://bitbucket.org/sjl/beast
+[IRDC talks]: https://www.reddit.com/r/roguelikes/comments/4wwlx2/are_any_of_the_talks_from_the_recent_irdc_getting/
+[New England Lisp Games Conference talks]: http://xelf.me/nelgc-videos.html
 
 ## June 2016
 
@@ -1112,3 +1114,10 @@ fixnums without interfering with GC and leaking memory.
 * Wrote another blog post about a particular Lisp macro.  Gonna let it stew for
   a couple of days before posting it.
 * More [Coding Math][].
+
+### 2016-08-16
+
+* Spent a chunk of time at school finding and printing off General Game Playing
+  research papers to look into.  Also downloaded some [IRDC talks][] and the
+  [New England Lisp Games Conference talks][] to watch over the next week or
+  two.
