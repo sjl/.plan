@@ -1122,3 +1122,6 @@ fixnums without interfering with GC and leaking memory.
   [New England Lisp Games Conference talks][] to watch over the next week or
   two.
 * More [Coding Math][].
+* Built some
+  [docs](https://github.com/sjl/cl-losh/blob/master/DOCUMENTATION.markdown) for
+  [my utility library][cl-losh].
