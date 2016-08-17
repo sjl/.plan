@@ -1127,3 +1127,10 @@ fixnums without interfering with GC and leaking memory.
   [my utility library][cl-losh].
 * Watched the Markov by Candlelight talk from IRDC and stayed up too late making
   a really simple Markov chain generator.
+
+### 2016-08-17
+
+* First day of school!  But it's not really too different for me because I'm not
+  taking classes, jut going to be working on my thesis for the next two
+  semesters.
+* Made a hilarious Markov chain mashup bot.
