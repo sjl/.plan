@@ -1125,3 +1125,5 @@ fixnums without interfering with GC and leaking memory.
 * Built some
   [docs](https://github.com/sjl/cl-losh/blob/master/DOCUMENTATION.markdown) for
   [my utility library][cl-losh].
+* Watched the Markov by Candlelight talk from IRDC and stayed up too late making
+  a really simple Markov chain generator.
