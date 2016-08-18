@@ -1139,3 +1139,5 @@ fixnums without interfering with GC and leaking memory.
 
 * Watched the IRDC talk about Dijkstra Maps and spent way too much time playing
   around with them.
+* More [Coding Math][].
+* Finished the [GGP Book][ggp-book].  It was pretty mediocre.
