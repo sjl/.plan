@@ -1134,3 +1134,8 @@ fixnums without interfering with GC and leaking memory.
   taking classes, jut going to be working on my thesis for the next two
   semesters.
 * Made a hilarious Markov chain mashup bot.
+
+### 2016-08-18
+
+* Watched the IRDC talk about Dijkstra Maps and spent way too much time playing
+  around with them.
