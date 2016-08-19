@@ -1141,3 +1141,9 @@ fixnums without interfering with GC and leaking memory.
   around with them.
 * More [Coding Math][].
 * Finished the [GGP Book][ggp-book].  It was pretty mediocre.
+
+
+### 2016-08-19
+
+* Lots of chatting with my advisor and paper-printing for thesis topics.
+
