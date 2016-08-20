@@ -1147,3 +1147,6 @@ fixnums without interfering with GC and leaking memory.
 
 * Lots of chatting with my advisor and paper-printing for thesis topics.
 
+### 2016-08-20
+
+* Finished the final episode of [Coding Math][]!
