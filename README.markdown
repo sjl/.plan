@@ -65,6 +65,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [IRDC talks]: https://www.reddit.com/r/roguelikes/comments/4wwlx2/are_any_of_the_talks_from_the_recent_irdc_getting/
 [New England Lisp Games Conference talks]: http://xelf.me/nelgc-videos.html
 [bdd]: https://en.wikipedia.org/wiki/Binary_decision_diagram
+[SICP]: http://www.amazon.com/dp/0262510871/?tag=stelos-20
 
 ## June 2016
 
@@ -1154,3 +1155,5 @@ fixnums without interfering with GC and leaking memory.
 * Started playing around with [Binary Decision Diagrams][bdd].  Made a trivial
   implementation and some code to build/eval them and draw them with Graphviz.
   Watched part of Knuth's "Fun with BDDs" talk as inspiration.
+* Continuing my cover-to-cover, exerciseless read through of [SICP][].
+
