@@ -1156,4 +1156,8 @@ fixnums without interfering with GC and leaking memory.
   implementation and some code to build/eval them and draw them with Graphviz.
   Watched part of Knuth's "Fun with BDDs" talk as inspiration.
 * Continuing my cover-to-cover, exerciseless read through of [SICP][].
+* Added a unit test to [Bones][].  It's not much, but I haven't worked on it in
+  a while and I want to get back to it, so I wanted to just do *something* so
+  tomorrow it won't feel like I haven't worked on it in forever.
+
 
