@@ -66,6 +66,8 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [New England Lisp Games Conference talks]: http://xelf.me/nelgc-videos.html
 [bdd]: https://en.wikipedia.org/wiki/Binary_decision_diagram
 [SICP]: http://www.amazon.com/dp/0262510871/?tag=stelos-20
+[Alexandria]: https://common-lisp.net/project/alexandria/
+[cl-ppcre]: http://www.weitz.de/cl-ppcre/
 
 ## June 2016
 
@@ -1161,4 +1163,48 @@ fixnums without interfering with GC and leaking memory.
   and I want to get back to it, so I wanted to just do *something* so tomorrow
   it won't feel like I haven't worked on it in forever.
 
+### 2016-08-21
 
+* Puttered around with minor code/paper/book stuff all day.
+
+### 2016-08-21
+
+* Printed off a bunch of material about GGP and [BDDs][bdd] to read.
+* Spent way too long fucking around with `enscript` to make a little shell
+  script to convert source code to a readable/printable PDF.
+  
+#### Reading Code
+
+Thinking back to [On Writing][] one of the things I took away is that to be
+a good author you need to read other authors' work *a lot*.
+
+I think as programmers we often forget to just sit down from time to time and
+read other programmers' work from cover to cover.  Reading snippets and blog
+posts is fine, but it's kind of like going through life only reading the Cliff
+Notes versions of every book.  Reading a complete work is something different.
+
+So I'm going to start reading code more often.  I started by printing off all
+of [Alexandria][], which is only about fifty or so A4 pages.
+
+I read part of it and already saw things I could use to improve some of my
+existing stuff.  Some of my own little toolkit can be replaced with things from
+Alexandria I never knew existed, e.g. my `gethash-or-init` is almost an exact
+duplicate of `ensure-hash`.  I also saw a couple of patterns in the Alexandria
+code that gave me ideas for new utilities/abstractions, like abstracting the:
+
+    (let ((results nil))
+      (progn
+        ...
+        (push thing results)
+        ...)
+      results)
+
+pattern out into a `gathering` macro:
+
+    (gathering
+      ...
+      (gather thing)
+      ...)
+
+So even after just one day it's already paying off.  Once I finish reading
+Alexandria I'll move on to [cl-ppcre][] and then who knows where from there.
