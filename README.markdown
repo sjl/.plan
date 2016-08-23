@@ -68,6 +68,8 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [SICP]: http://www.amazon.com/dp/0262510871/?tag=stelos-20
 [Alexandria]: https://common-lisp.net/project/alexandria/
 [cl-ppcre]: http://www.weitz.de/cl-ppcre/
+[huffman-trees]: https://en.wikipedia.org/wiki/Huffman_coding
+[cl-adt]: https://bitbucket.org/tarballs_are_good/cl-algebraic-data-type
 
 ## June 2016
 
@@ -1172,7 +1174,10 @@ fixnums without interfering with GC and leaking memory.
 * Printed off a bunch of material about GGP and [BDDs][bdd] to read.
 * Spent way too long fucking around with `enscript` to make a little shell
   script to convert source code to a readable/printable PDF.
-  
+* Played around with [SICP's][SICP] [Huffman trees][huffman-trees] a bit.
+  Started off by using [cl-adt][] to represent them but it turned out to be kind
+  of a pain, so I switched over to vanilla `defstruct` and it worked great.
+
 #### Reading Code
 
 Thinking back to [On Writing][] one of the things I took away is that to be
