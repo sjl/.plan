@@ -1169,7 +1169,7 @@ fixnums without interfering with GC and leaking memory.
 
 * Puttered around with minor code/paper/book stuff all day.
 
-### 2016-08-21
+### 2016-08-22
 
 * Printed off a bunch of material about GGP and [BDDs][bdd] to read.
 * Spent way too long fucking around with `enscript` to make a little shell
