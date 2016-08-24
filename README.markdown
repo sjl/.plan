@@ -71,6 +71,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [huffman-trees]: https://en.wikipedia.org/wiki/Huffman_coding
 [cl-adt]: https://bitbucket.org/tarballs_are_good/cl-algebraic-data-type
 [gdl-bench]: http://cgi.cse.unsw.edu.au/%7Emit/GGP/GIGA-13-Proceedings.pdf#page=55
+[Temperance]: http://sjl.bitbucket.org/temperance/
 
 ## June 2016
 
@@ -1218,10 +1219,14 @@ Alexandria I'll move on to [cl-ppcre][] and then who knows where from there.
 ### 2016-08-23
 
 * With Stephan's help I got part of his [GDL Reasoner Benchmark][gdl-bench] up
-  and running.  I think I should be able to plug in Temperance with another day
-  or so of work.  It'll be nice to have a decent benchmark.
+  and running.  I think I should be able to plug in [Temperance][] with another
+  day or so of work.  It'll be nice to have a decent benchmark.
 * Changed Temperance's API to be more functional (e.g. instead of `(query foo)`
   using a global variable for a database it's now `(query db foo)`).  This
   should make maintenance and composing things saner, at the cost of a bit of
   extra typing.
 * More [SICP][].  Finished playing around with [Huffman Trees][huffman-trees].
+
+### 2016-08-24
+
+* Finished plugging [Temperance][] into the GDL benchmark suite.
