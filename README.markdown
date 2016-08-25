@@ -1229,4 +1229,8 @@ Alexandria I'll move on to [cl-ppcre][] and then who knows where from there.
 
 ### 2016-08-24
 
-* Finished plugging [Temperance][] into the GDL benchmark suite.
+* Finished plugging [Temperance][] (and PAIProlog) into the GDL benchmark suite.
+
+### 2016-08-25
+
+* More chatting/printing about BDDs.
