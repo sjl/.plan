@@ -1242,3 +1242,15 @@ Alexandria I'll move on to [cl-ppcre][] and then who knows where from there.
   Ultimately I failed, which led to...
 * Reading [the Wikipedia article on color difference][color difference] and
   thinking about an idea.
+
+### 2016-08-26
+
+* Took a step back and read through SBCL's FFI documentation, because trying to
+  read the CFFI docs was like biting into a brick.  I think I mostly understand
+  how `sb-alien` works now.  Playing around with wrapping up some C stdlib
+  functions in `define-alien-routine` was helpful, and then I compiled
+  [linenoise](https://github.com/antirez/linenoise) and loaded/wrapped that
+  successfully, so I've at least got something running.
+* Watched the GDC talk from Brian Moriarty about the making of Loom.  I never
+  played the game, but the talk was really inspiring.
+* More BDD reading.
