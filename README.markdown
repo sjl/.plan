@@ -72,6 +72,8 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [cl-adt]: https://bitbucket.org/tarballs_are_good/cl-algebraic-data-type
 [gdl-bench]: http://cgi.cse.unsw.edu.au/%7Emit/GGP/GIGA-13-Proceedings.pdf#page=55
 [Temperance]: http://sjl.bitbucket.org/temperance/
+[color difference]: https://en.wikipedia.org/wiki/Color_difference
+[CFFI]: https://common-lisp.net/project/cffi/
 
 ## June 2016
 
@@ -1234,3 +1236,9 @@ Alexandria I'll move on to [cl-ppcre][] and then who knows where from there.
 ### 2016-08-25
 
 * More chatting/printing about BDDs.
+* Read part of the [CFFI][] manual.
+* Played around with [cl-charms][] a bit more.  Spent *far* too long trying to
+  get iterm2/tmux/ncurses working nicely together to allow me to set colors.
+  Ultimately I failed, which led to...
+* Reading [the Wikipedia article on color difference][color difference] and
+  thinking about an idea.
