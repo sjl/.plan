@@ -1254,3 +1254,7 @@ Alexandria I'll move on to [cl-ppcre][] and then who knows where from there.
 * Watched the GDC talk from Brian Moriarty about the making of Loom.  I never
   played the game, but the talk was really inspiring.
 * More BDD reading.
+
+### 2016-08-27
+
+* More SICP.
