@@ -74,6 +74,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [Temperance]: http://sjl.bitbucket.org/temperance/
 [color difference]: https://en.wikipedia.org/wiki/Color_difference
 [CFFI]: https://common-lisp.net/project/cffi/
+[rs-colors]: https://github.com/ralph-schleicher/rs-colors
 
 ## June 2016
 
@@ -1266,3 +1267,6 @@ Alexandria I'll move on to [cl-ppcre][] and then who knows where from there.
 ### 2016-08-29
 
 * Finished writing up a rough plan for my thesis.
+* Poked around with [rs-colors][], fixing a bug (learning about
+  [`make-load-form`](http://clhs.lisp.se/Body/f_mk_ld_.htm) in the process) and
+  filing another one.
