@@ -1258,3 +1258,11 @@ Alexandria I'll move on to [cl-ppcre][] and then who knows where from there.
 ### 2016-08-27
 
 * More SICP.
+
+### 2016-08-28
+
+* Non-computer stuff.
+
+### 2016-08-29
+
+* Finished writing up a rough plan for my thesis.
