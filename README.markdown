@@ -75,6 +75,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [color difference]: https://en.wikipedia.org/wiki/Color_difference
 [CFFI]: https://common-lisp.net/project/cffi/
 [rs-colors]: https://github.com/ralph-schleicher/rs-colors
+[linenoise]: https://github.com/antirez/linenoise
 
 ## June 2016
 
@@ -1250,15 +1251,15 @@ Alexandria I'll move on to [cl-ppcre][] and then who knows where from there.
   read the CFFI docs was like biting into a brick.  I think I mostly understand
   how `sb-alien` works now.  Playing around with wrapping up some C stdlib
   functions in `define-alien-routine` was helpful, and then I compiled
-  [linenoise](https://github.com/antirez/linenoise) and loaded/wrapped that
-  successfully, so I've at least got something running.
+  [linenoise][] and loaded/wrapped that successfully, so I've at least got
+  something running.
 * Watched the GDC talk from Brian Moriarty about the making of Loom.  I never
   played the game, but the talk was really inspiring.
 * More BDD reading.
 
 ### 2016-08-27
 
-* More SICP.
+* More [SICP][].
 
 ### 2016-08-28
 
@@ -1270,3 +1271,16 @@ Alexandria I'll move on to [cl-ppcre][] and then who knows where from there.
 * Poked around with [rs-colors][], fixing a bug (learning about
   [`make-load-form`](http://clhs.lisp.se/Body/f_mk_ld_.htm) in the process) and
   filing another one.
+
+### 2016-08-30
+
+* Dove into CFFI again.  This time I had a bit more of a base after poking at
+  SBCL's FFI stuff, and it was a bit more productive.  I wrapped [linenoise][]
+  pretty much entirely.
+* Saw a talk at my school about music recommendation systems.  I wish I had time
+  to poke around at building one myself.  All music recommendation engines are
+  garbage at what I want them for, but I'm probably an edge case so unless
+  I make something myself I'll continue to sort through tons of crap to find
+  what I want.
+* More [SICP][].  I'm up to the digital circuits part with all the mutability
+  everywhere and it's delightfully filthy.
