@@ -76,6 +76,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [CFFI]: https://common-lisp.net/project/cffi/
 [rs-colors]: https://github.com/ralph-schleicher/rs-colors
 [linenoise]: https://github.com/antirez/linenoise
+[Caves of Qud]: http://store.steampowered.com/app/333640
 
 ## June 2016
 
@@ -1284,3 +1285,9 @@ Alexandria I'll move on to [cl-ppcre][] and then who knows where from there.
   what I want.
 * More [SICP][].  I'm up to the digital circuits part with all the mutability
   everywhere and it's delightfully filthy.
+
+### 2016-08-30
+
+* More [SICP][].
+* Too much [Caves of Qud][].  I like the depth and aesthetic of the game, but
+  damn is the interface clunky, especially the equipment menus.
