@@ -1286,7 +1286,7 @@ Alexandria I'll move on to [cl-ppcre][] and then who knows where from there.
 * More [SICP][].  I'm up to the digital circuits part with all the mutability
   everywhere and it's delightfully filthy.
 
-### 2016-08-30
+### 2016-08-31
 
 * More [SICP][].
 * Too much [Caves of Qud][].  I like the depth and aesthetic of the game, but
