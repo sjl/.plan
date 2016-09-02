@@ -77,6 +77,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [rs-colors]: https://github.com/ralph-schleicher/rs-colors
 [linenoise]: https://github.com/antirez/linenoise
 [Caves of Qud]: http://store.steampowered.com/app/333640
+[CUDD]: http://vlsi.colorado.edu/~fabio/CUDD/html/index.html
 
 ## June 2016
 
@@ -1291,3 +1292,10 @@ Alexandria I'll move on to [cl-ppcre][] and then who knows where from there.
 * More [SICP][].
 * Too much [Caves of Qud][].  I like the depth and aesthetic of the game, but
   damn is the interface clunky, especially the equipment menus.
+
+### September 2016
+
+### 2016-09-01
+
+* Read through the PDF manual of [CUDD][], which I may end up using in my
+  thesis.
