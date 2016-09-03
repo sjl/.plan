@@ -1306,3 +1306,4 @@ Alexandria I'll move on to [cl-ppcre][] and then who knows where from there.
 
 * Continued digging into Peter Kissmann's thesis on General Game Playing and
   BDDs.
+* Added more unit tests to [Temperance][] from [TAOP][].
