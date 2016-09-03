@@ -1293,9 +1293,16 @@ Alexandria I'll move on to [cl-ppcre][] and then who knows where from there.
 * Too much [Caves of Qud][].  I like the depth and aesthetic of the game, but
   damn is the interface clunky, especially the equipment menus.
 
-### September 2016
+## September 2016
 
 ### 2016-09-01
 
 * Read through the PDF manual of [CUDD][], which I may end up using in my
   thesis.
+
+### 2016-09-02
+
+### 2016-09-03
+
+* Continued digging into Peter Kissmann's thesis on General Game Playing and
+  BDDs.
