@@ -1307,3 +1307,11 @@ Alexandria I'll move on to [cl-ppcre][] and then who knows where from there.
 * Continued digging into Peter Kissmann's thesis on General Game Playing and
   BDDs.
 * Added more unit tests to [Temperance][] from [TAOP][].
+
+### 2016-09-04
+
+* Did some stuff for the blues course Una and I are starting to teach tomorrow.
+* Read more of Kissmann's thesis.
+* Implemented the first half of the streams section of [SICP][].  I've used
+  streams before in Clojure but it's fun to go through the SICP stuff and make
+  everything from scratch.
