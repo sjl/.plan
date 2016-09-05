@@ -1315,3 +1315,8 @@ Alexandria I'll move on to [cl-ppcre][] and then who knows where from there.
 * Implemented the first half of the streams section of [SICP][].  I've used
   streams before in Clojure but it's fun to go through the SICP stuff and make
   everything from scratch.
+
+### 2016-09-05
+
+* It's my birthday!
+* More [SICP][] streams.
