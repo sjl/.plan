@@ -78,6 +78,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [linenoise]: https://github.com/antirez/linenoise
 [Caves of Qud]: http://store.steampowered.com/app/333640
 [CUDD]: http://vlsi.colorado.edu/~fabio/CUDD/html/index.html
+[ABCL]: https://common-lisp.net/project/armedbear/
 
 ## June 2016
 
@@ -1323,3 +1324,17 @@ Alexandria I'll move on to [cl-ppcre][] and then who knows where from there.
 
 ### 2016-09-06
 
+* Been thinking more about what direction I want to take for implementing my
+  BDD/thesis stuff.  I was thinking about using [CUDD][], but unfortunately all
+  the Lisp wrappers around it are unmaintained and broken.  I poked around a bit
+  at wrapping it myself but it seems like a big effort.
+
+    But today I had another idea.  Kissmann's thesis used the Java wrapper
+  around CUDD, so I could do that.  I sure as hell don't want to write Java, so
+  I suppose I could do things in Clojure, but honestly I don't really like
+  Clojure that much either.  But then I remembered [ABCL][], an implementation
+  of Common Lisp that runs on the JVM.  This might be a good place to start.  It
+  would let me use the Java wrapper libraries and write the rest of my code in
+  ANSI Common Lisp.  If I have spare time down the road I could try my hand at
+  wrapping CUDD, and then porting the rest of my code to something else will be
+  trivial.
