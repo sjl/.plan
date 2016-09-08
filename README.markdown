@@ -1354,6 +1354,7 @@ Alexandria I'll move on to [cl-ppcre][] and then who knows where from there.
 
 ### 2016-09-08
 
+* Cleaned up [beast][] a bit and submitted it for inclusion to Quicklisp.
 * Started sketching out a project for my thesis' game player.  Gonna call it
   [Scully][] because it deals with incomplete-information games.
 * Got some basic socket-based communication up and running for Scully with
