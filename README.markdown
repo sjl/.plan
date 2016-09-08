@@ -79,6 +79,8 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [Caves of Qud]: http://store.steampowered.com/app/333640
 [CUDD]: http://vlsi.colorado.edu/~fabio/CUDD/html/index.html
 [ABCL]: https://common-lisp.net/project/armedbear/
+[zdd]: https://en.wikipedia.org/wiki/Zero-suppressed_decision_diagram
+[scully]: https://github.com/sjl/scully
 
 ## June 2016
 
@@ -1338,3 +1340,24 @@ Alexandria I'll move on to [cl-ppcre][] and then who knows where from there.
   ANSI Common Lisp.  If I have spare time down the road I could try my hand at
   wrapping CUDD, and then porting the rest of my code to something else will be
   trivial.
+
+### 2016-09-07
+
+* Installed [ABCL][].
+* Ported [cl-nrepl][] to work with ABCL, took one line of code.
+* Got [Temperance][] running in ABCL.  Required no changes to Temperance, but
+  I did have to hack [policy-cond][] a bit more.  But the test suite passes.
+  Nice.
+* After getting those working, I think my plan from yesterday might be feasible.
+* Watched Knuth talk about [ZDDs][zdd] and I think these might end up being an
+  even better fit for my thesis than [BDDs][bdd].  Must investigate further.
+
+### 2016-09-08
+
+* Started sketching out a project for my thesis' game player.  Gonna call it
+  [Scully][] because it deals with incomplete-information games.
+* Got some basic socket-based communication up and running for Scully with
+  usocket, so eventually she'll be able to have multiple "brains" running in
+  parallel to solve a given game, and each brain will be isolated to its own
+  process.  That way if a particular strategy blows the heap it doesn't kill the
+  entire player.
