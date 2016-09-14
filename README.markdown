@@ -1372,3 +1372,7 @@ Alexandria I'll move on to [cl-ppcre][] and then who knows where from there.
 
 * Fixed a bug in my hacky [documentation generator][cl-d-api].
 * Minor feature addition to [cl-ggp][] to make my life easier.
+* Tore out the socket communication stuff from [Scully][].  It's more complexity
+  that doesn't help my actual goal for the project, so out it goes.
+* Implemented the basic vanilla GDL random player for [Scully][].  Shaved
+  a couple of yaks along the way, but now it's running in ABCL properly.
