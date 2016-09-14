@@ -81,6 +81,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [ABCL]: https://common-lisp.net/project/armedbear/
 [zdd]: https://en.wikipedia.org/wiki/Zero-suppressed_decision_diagram
 [scully]: https://github.com/sjl/scully
+[cl-d-api]: https://bitbucket.org/sjl/cl-d-api/
 
 ## June 2016
 
@@ -1362,3 +1363,12 @@ Alexandria I'll move on to [cl-ppcre][] and then who knows where from there.
   parallel to solve a given game, and each brain will be isolated to its own
   process.  That way if a particular strategy blows the heap it doesn't kill the
   entire player.
+
+### 2016-09-09-2016-09-13
+
+* Non-computer stuff.
+
+### 2016-09-14
+
+* Fixed a bug in my hacky [documentation generator][cl-d-api].
+* Minor feature addition to [cl-ggp][] to make my life easier.
