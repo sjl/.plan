@@ -1376,6 +1376,8 @@ Alexandria I'll move on to [cl-ppcre][] and then who knows where from there.
   that doesn't help my actual goal for the project, so out it goes.
 * Implemented the basic vanilla GDL random player for [Scully][].  Shaved
   a couple of yaks along the way, but now it's running in ABCL properly.
+* Played around with some code after watching [this youtube
+  video](https://www.youtube.com/watch?v=LYKn0yUTIU4).
 
 ### 2016-09-15
 
