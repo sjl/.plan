@@ -1382,3 +1382,6 @@ Alexandria I'll move on to [cl-ppcre][] and then who knows where from there.
 ### 2016-09-15
 
 * Cleaned up a couple things in [my utility library][cl-losh].
+* Added support for GDL-II to [cl-ggp][].  Started patching support for it into
+  [Scully][] too.  Just need a bit more to get a legal/random player up and
+  running.
