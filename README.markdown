@@ -1385,3 +1385,8 @@ Alexandria I'll move on to [cl-ppcre][] and then who knows where from there.
 * Added support for GDL-II to [cl-ggp][].  Started patching support for it into
   [Scully][] too.  Just need a bit more to get a legal/random player up and
   running.
+
+### 2016-09-16
+
+* Got [Scully][] mostly working with GDL-II (brute-force, random/legal moves
+  only).  A good start.
