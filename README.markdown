@@ -82,6 +82,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [zdd]: https://en.wikipedia.org/wiki/Zero-suppressed_decision_diagram
 [scully]: https://github.com/sjl/scully
 [cl-d-api]: https://bitbucket.org/sjl/cl-d-api/
+[Learning How to Learn]: https://www.coursera.org/learn/learning-how-to-learn
 
 ## June 2016
 
@@ -1390,3 +1391,10 @@ Alexandria I'll move on to [cl-ppcre][] and then who knows where from there.
 
 * Got [Scully][] mostly working with GDL-II (brute-force, random/legal moves
   only).  A good start.
+* Started going through the [Learning How to Learn][] Coursera course.  Seems
+  like there are some good ideas but *god damn* is it cheesy.  Talk to me like
+  a human being, not an idiot child who needs fuckin zombies shoved into
+  everything to keep their attention.
+* More [SICP][].  Going through the nondeterministic evaluation section now.
+  Would be fun to implement some day, but I've got enough projects floating
+  around at the moment, so I'll just be content with reading it for now.
