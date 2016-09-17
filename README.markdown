@@ -83,6 +83,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [scully]: https://github.com/sjl/scully
 [cl-d-api]: https://bitbucket.org/sjl/cl-d-api/
 [Learning How to Learn]: https://www.coursera.org/learn/learning-how-to-learn
+[calligraphy]: https://www.youtube.com/playlist?list=PLI1tD84LNGe11I8Mlw6gxaydAg_uydCs2
 
 ## June 2016
 
@@ -1404,3 +1405,9 @@ Alexandria I'll move on to [cl-ppcre][] and then who knows where from there.
 * More [SICP][].  Started the logic programming section.  Using streams is
   a clever way to model the logic of returning multiple results from
   unification.
+* Played around with making some directed acyclic graphs in Lisp, mostly with
+  a functional style.
+* Started watching [Lloyd Reynolds' Italic Calligraphy series][calligraphy].
+  I've been writing exclusively in italic for a year or two now, and while it
+  looks okay I've kinda stalled on getting any better.  Hopefully this series
+  will kick my ass into gear.
