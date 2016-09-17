@@ -1398,3 +1398,9 @@ Alexandria I'll move on to [cl-ppcre][] and then who knows where from there.
 * More [SICP][].  Going through the nondeterministic evaluation section now.
   Would be fun to implement some day, but I've got enough projects floating
   around at the moment, so I'll just be content with reading it for now.
+
+### 2016-09-17
+
+* More [SICP][].  Started the logic programming section.  Using streams is
+  a clever way to model the logic of returning multiple results from
+  unification.
