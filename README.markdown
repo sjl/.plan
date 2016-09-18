@@ -1411,3 +1411,8 @@ Alexandria I'll move on to [cl-ppcre][] and then who knows where from there.
   I've been writing exclusively in italic for a year or two now, and while it
   looks okay I've kinda stalled on getting any better.  Hopefully this series
   will kick my ass into gear.
+
+### 2016-09-18
+
+* Finally came up with a way to macroexpand iterate clauses.  Added it to
+  [cl-losh][].
