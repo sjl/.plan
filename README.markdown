@@ -1416,3 +1416,8 @@ Alexandria I'll move on to [cl-ppcre][] and then who knows where from there.
 
 * Finally came up with a way to macroexpand iterate clauses.  Added it to
   [cl-losh][].
+
+### 2016-09-19
+
+* More thesis reading.
+* Slapped together a tiny blog post for tomorrow.
