@@ -84,6 +84,7 @@ I'm going to try keeping a `.plan`.  Let's see how this goes.
 [cl-d-api]: https://bitbucket.org/sjl/cl-d-api/
 [Learning How to Learn]: https://www.coursera.org/learn/learning-how-to-learn
 [calligraphy]: https://www.youtube.com/playlist?list=PLI1tD84LNGe11I8Mlw6gxaydAg_uydCs2
+[Hugo]: https://gohugo.io/
 
 ## June 2016
 
