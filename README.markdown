@@ -1421,3 +1421,10 @@ Alexandria I'll move on to [cl-ppcre][] and then who knows where from there.
 
 * More thesis reading.
 * Slapped together a tiny blog post for tomorrow.
+
+### 2016-09-20
+
+* Converted my site about 90% of the way to using [Hugo][].  I've been using an
+  ancient version of Hyde for years now and I'm terrified that it's gonna die
+  when something in the OS X Python stack kicks the bucket.  Plus Hugo is a lot
+  faster, which is nice.
