@@ -7,7 +7,7 @@
 
 ## January 2017
 
-### 2016-06-01
+### 2017-01-26
 
 * Rebooting this `.plan` after a long absence.  It's a new year!
 * Wrote a first draft of my proposal for a talk at [ELS][] 2017.
