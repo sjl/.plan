@@ -1,6 +1,7 @@
 [TOC]
 
 [ELS]: http://www.european-lisp-symposium.org/editions/2017/
+[qud-ds]: https://www.twitch.tv/ptychomancer
 
 # January 2017
 
@@ -8,5 +9,7 @@
 
 * Rebooting this `.plan` after a long absence.  It's a new year!
 * Wrote a first draft of my proposal for a talk at [ELS][] 2017.
+* Made a little prototype [name generator](https://github.com/sjl/sand/blob/master/src/names.lisp)
+  based on some ideas from last week's [Caves of Qud dev stream][qud-ds].
 
 
