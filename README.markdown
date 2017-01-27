@@ -12,4 +12,6 @@
 * Made a little prototype [name generator](https://github.com/sjl/sand/blob/master/src/names.lisp)
   based on some ideas from last week's [Caves of Qud dev stream][qud-ds].
 
+## 2017-01-27
 
+* Polished up my ELS paper.
