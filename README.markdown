@@ -15,3 +15,9 @@
 ## 2017-01-27
 
 * Polished up my ELS paper.
+
+## 2017-01-28
+
+## 2017-01-29
+
+* Finished and submitted the ELS paper.
