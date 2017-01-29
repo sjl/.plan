@@ -21,3 +21,5 @@
 ## 2017-01-29
 
 * Finished and submitted the ELS paper.
+* Worked a bit more on a platformer game assignment for a class.  I hate
+  graphics/shader programming so much.
