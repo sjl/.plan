@@ -3,6 +3,7 @@
 [ELS]: http://www.european-lisp-symposium.org/editions/2017/
 [qud-ds]: https://www.twitch.tv/ptychomancer
 [cl-ggp]: https://sjl.bitbucket.io/cl-ggp/
+[clojure-lanterna]: https://github.com/MultiMUD/clojure-lanterna/
 
 # January 2017
 
@@ -25,3 +26,9 @@
 * Worked a bit more on a platformer game assignment for a class.  I hate
   graphics/shader programming so much.
 * Added a few docs to [cl-ggp][].  Still got a bit more to write.
+
+## 2017-01-30
+
+* Handed off maintainership of [clojure-lanterna][].
+* More platformer work.  Finally got the fucking sprite pack working.  I hate
+  things with no documentation.
