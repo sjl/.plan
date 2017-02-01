@@ -4,6 +4,7 @@
 [qud-ds]: https://www.twitch.tv/ptychomancer
 [cl-ggp]: https://sjl.bitbucket.io/cl-ggp/
 [clojure-lanterna]: https://github.com/MultiMUD/clojure-lanterna/
+[PCG]: http://www.pcg-random.org/
 
 # January 2017
 
@@ -32,3 +33,13 @@
 * Handed off maintainership of [clojure-lanterna][].
 * More platformer work.  Finally got the fucking sprite pack working.  I hate
   things with no documentation.
+
+## 2017-01-31
+
+* Got nerd-sniped and ended up implementing [PCG][] in Common Lisp.
+
+# February 2017
+
+## 2017-02-01
+
+* Started working on a constrained game with my team for AGDD.
