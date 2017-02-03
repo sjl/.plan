@@ -43,3 +43,9 @@
 ## 2017-02-01
 
 * Started working on a constrained game with my team for AGDD.
+
+## 2017-02-02
+
+* Added a bit of juice to the constrained game.
+* Finally sorted out the AI/animation bullshit for my minimal game.  Assets
+  without docs are the worst.
