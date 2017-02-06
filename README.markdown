@@ -4,6 +4,7 @@
 [qud-ds]: https://www.twitch.tv/ptychomancer
 [cl-ggp]: https://sjl.bitbucket.io/cl-ggp/
 [sand]: https://bitbucket.org/sjl/sand/
+[chancery]: https://bitbucket.org/sjl/chancery/
 [clojure-lanterna]: https://github.com/MultiMUD/clojure-lanterna/
 [PCG]: http://www.pcg-random.org/
 
@@ -58,3 +59,5 @@
 ## 2017-02-06
 
 * Implemented a little easing API in my [sandbox][sand] repo.
+* Made the pluralization rules in [Chancery][] slightly less awful.  I should
+  just sit down and fix it right some day.
