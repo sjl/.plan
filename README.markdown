@@ -49,3 +49,7 @@
 * Added a bit of juice to the constrained game.
 * Finally sorted out the AI/animation bullshit for my minimal game.  Assets
   without docs are the worst.
+
+## 2017-02-06
+
+* More juice to the constrained game.  Been doing non-computer stuff lately.
