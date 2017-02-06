@@ -3,6 +3,7 @@
 [ELS]: http://www.european-lisp-symposium.org/editions/2017/
 [qud-ds]: https://www.twitch.tv/ptychomancer
 [cl-ggp]: https://sjl.bitbucket.io/cl-ggp/
+[sand]: https://bitbucket.org/sjl/sand/
 [clojure-lanterna]: https://github.com/MultiMUD/clojure-lanterna/
 [PCG]: http://www.pcg-random.org/
 
@@ -50,6 +51,10 @@
 * Finally sorted out the AI/animation bullshit for my minimal game.  Assets
   without docs are the worst.
 
-## 2017-02-06
+## 2017-02-05
 
 * More juice to the constrained game.  Been doing non-computer stuff lately.
+
+## 2017-02-06
+
+* Implemented a little easing API in my [sandbox][sand] repo.
