@@ -4,9 +4,11 @@
 [qud-ds]: https://www.twitch.tv/ptychomancer
 [cl-ggp]: https://sjl.bitbucket.io/cl-ggp/
 [sand]: https://bitbucket.org/sjl/sand/
+[scully]: https://bitbucket.org/sjl/scully/
 [chancery]: https://bitbucket.org/sjl/chancery/
 [clojure-lanterna]: https://github.com/MultiMUD/clojure-lanterna/
 [PCG]: http://www.pcg-random.org/
+[bearlibterminal]: https://bitbucket.org/cfyzium/bearlibterminal
 
 # January 2017
 
@@ -61,3 +63,10 @@
 * Implemented a little easing API in my [sandbox][sand] repo.
 * Made the pluralization rules in [Chancery][] slightly less awful.  I should
   just sit down and fix it right some day.
+
+## 2017-02-07
+
+* Chatted with my advisor a bit and solidified my plans for the home stretch of
+  [Scully][].
+* Made a little Lisp wrapper for [bearlibterminal][].  Learned more about SBCL's
+  floating-point traps than I wanted to.
