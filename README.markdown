@@ -6,6 +6,7 @@
 [sand]: https://bitbucket.org/sjl/sand/
 [scully]: https://bitbucket.org/sjl/scully/
 [chancery]: https://bitbucket.org/sjl/chancery/
+[temperance]: https://bitbucket.org/sjl/temperance/
 [clojure-lanterna]: https://github.com/MultiMUD/clojure-lanterna/
 [PCG]: http://www.pcg-random.org/
 [bearlibterminal]: https://bitbucket.org/cfyzium/bearlibterminal
@@ -70,3 +71,14 @@
   [Scully][].
 * Made a little Lisp wrapper for [bearlibterminal][].  Learned more about SBCL's
   floating-point traps than I wanted to.
+
+## 2017-02-08
+
+* Worked more on our constrained game with my team.  Got something almost
+  game-like now!
+
+## 2017-02-09
+
+* More constrained game work.  It's an actual game now.  Fun.
+* Changed all the `#:foo` uninterned symbols in [Temperance][] to regular `:foo`
+  keywords.  Memory is cheap.
