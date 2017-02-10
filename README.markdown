@@ -82,3 +82,8 @@
 * More constrained game work.  It's an actual game now.  Fun.
 * Changed all the `#:foo` uninterned symbols in [Temperance][] to regular `:foo`
   keywords.  Memory is cheap.
+
+## 2017-02-10
+
+* Finished the docs and pushed the 1.0.0 release of [cl-ggp][].  I still need to
+  submit it to Quicklisp, but I need to submit [Temperance][] first.
