@@ -10,6 +10,7 @@
 [clojure-lanterna]: https://github.com/MultiMUD/clojure-lanterna/
 [PCG]: http://www.pcg-random.org/
 [bearlibterminal]: https://bitbucket.org/cfyzium/bearlibterminal
+[euler]: https://projecteuler.net/
 
 # January 2017
 
@@ -87,3 +88,4 @@
 
 * Finished the docs and pushed the 1.0.0 release of [cl-ggp][].  I still need to
   submit it to Quicklisp, but I need to submit [Temperance][] first.
+* Dusted off my old [Project Euler][euler] repo and did another problem.
