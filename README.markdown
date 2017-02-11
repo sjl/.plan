@@ -93,3 +93,11 @@
 * Dusted off my old [Project Euler][euler] repo and did another problem.
 * Dumped initial commits of [cl-pcg][] and [cl-blt][] to the internet in case my
   laptop catches fire.  Still lots of work left to do on those.
+
+## 2017-02-11
+
+* Added basic level generation and scrolling to my AGDD minimal game.  Also
+  sound.
+* Fleshed out [cl-blt][] a tiny bit more.  Ported a little terrain gen demo over
+  to it.  It seems promising.
+
