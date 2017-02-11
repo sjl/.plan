@@ -11,6 +11,8 @@
 [PCG]: http://www.pcg-random.org/
 [bearlibterminal]: https://bitbucket.org/cfyzium/bearlibterminal
 [euler]: https://projecteuler.net/
+[cl-pcg]: https://sjl.bitbucket.io/cl-pcg/
+[cl-blt]: https://sjl.bitbucket.io/cl-blt/
 
 # January 2017
 
@@ -89,3 +91,5 @@
 * Finished the docs and pushed the 1.0.0 release of [cl-ggp][].  I still need to
   submit it to Quicklisp, but I need to submit [Temperance][] first.
 * Dusted off my old [Project Euler][euler] repo and did another problem.
+* Dumped initial commits of [cl-pcg][] and [cl-blt][] to the internet in case my
+  laptop catches fire.  Still lots of work left to do on those.
