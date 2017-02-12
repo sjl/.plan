@@ -13,6 +13,7 @@
 [euler]: https://projecteuler.net/
 [cl-pcg]: https://sjl.bitbucket.io/cl-pcg/
 [cl-blt]: https://sjl.bitbucket.io/cl-blt/
+[dieharder]: https://www.phy.duke.edu/~rgb/General/dieharder.php
 
 # January 2017
 
@@ -100,4 +101,4 @@
   sound.
 * Fleshed out [cl-blt][] a tiny bit more.  Ported a little terrain gen demo over
   to it.  It seems promising.
-
+* Wrote a little harness for [cl-pcg][] to test it with [dieharder][].
