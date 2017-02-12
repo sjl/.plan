@@ -102,3 +102,7 @@
 * Fleshed out [cl-blt][] a tiny bit more.  Ported a little terrain gen demo over
   to it.  It seems promising.
 * Wrote a little harness for [cl-pcg][] to test it with [dieharder][].
+
+## 2017-02-12
+
+* Did another [Project Euler][euler] problem over breakfast.
