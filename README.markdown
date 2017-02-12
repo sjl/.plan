@@ -105,4 +105,6 @@
 
 ## 2017-02-12
 
-* Did another [Project Euler][euler] problem over breakfast.
+* Did another [Project Euler][euler] problem over breakfast, and a couple more
+  after that.  The early ones are simple to just brute-force.
+* More work on the constrained game.
