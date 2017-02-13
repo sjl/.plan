@@ -112,3 +112,5 @@
 ## 2017-02-13
 
 * More [Project Euler][euler].  Math is fun.
+* Fixed up the universe-based matching in Scully.  I'll need it soon for the
+  percept matching.
