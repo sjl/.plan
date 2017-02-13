@@ -108,3 +108,7 @@
 * Did another [Project Euler][euler] problem over breakfast, and a couple more
   after that.  The early ones are simple to just brute-force.
 * More work on the constrained game.
+
+## 2017-02-13
+
+* More [Project Euler][euler].  Math is fun.
