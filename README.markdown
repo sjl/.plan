@@ -14,6 +14,7 @@
 [cl-pcg]: https://sjl.bitbucket.io/cl-pcg/
 [cl-blt]: https://sjl.bitbucket.io/cl-blt/
 [dieharder]: https://www.phy.duke.edu/~rgb/General/dieharder.php
+[local-time]: https://common-lisp.net/project/local-time/
 
 # January 2017
 
@@ -114,3 +115,9 @@
 * More [Project Euler][euler].  Math is fun.
 * Fixed up the universe-based matching in Scully.  I'll need it soon for the
   percept matching.
+
+## 2017-02-16
+
+* More [Project Euler][euler], this time I had an excuse to poke at
+  [local-time][].
+
