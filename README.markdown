@@ -121,7 +121,7 @@
 * More [Project Euler][euler], this time I had an excuse to poke at
   [local-time][].
 
-## 2017-02-16
+## 2017-02-17
 
 * More tiny [Project Euler][euler] problems.
 * Finally got the percept filtering in [Scully][] all figured out.
