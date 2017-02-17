@@ -125,3 +125,6 @@
 
 * More tiny [Project Euler][euler] problems.
 * Finally got the percept filtering in [Scully][] all figured out.
+* Cleaned up [Temperance][] and start writing docstrings.  One more "Finishing
+  Friday" and it should be ready for an initial release.  Not perfect, but good
+  enough for now.
