@@ -128,3 +128,8 @@
 * Cleaned up [Temperance][] and start writing docstrings.  One more "Finishing
   Friday" and it should be ready for an initial release.  Not perfect, but good
   enough for now.
+
+## 2017-02-20
+
+* More [Project Euler][euler].
+* Poked a bit more at my minimal game.  It's gonna be *very* minimal.
