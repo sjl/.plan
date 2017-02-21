@@ -133,3 +133,8 @@
 
 * More [Project Euler][euler].
 * Poked a bit more at my minimal game.  It's gonna be *very* minimal.
+
+## 2017-02-21
+
+* Finished the damn minimal game.
+* Another [Project Euler][euler] problem.
