@@ -138,3 +138,8 @@
 
 * Finished the damn minimal game.
 * Another [Project Euler][euler] problem.
+
+## 2017-02-24
+
+* Chatted with my advisor and did more work on [Scully][].  The home stretch is
+  in sight!
