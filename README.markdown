@@ -143,3 +143,8 @@
 
 * Chatted with my advisor and did more work on [Scully][].  The home stretch is
   in sight!
+* Tipsy [Project Euler][euler].
+
+## 2017-02-25
+
+* More [Project Euler][euler].
