@@ -148,3 +148,5 @@
 ## 2017-02-25
 
 * More [Project Euler][euler].
+* Watched the first part of the Merry Fragmas 3.0 Unity session.  Multiplayer
+  FPS in Unity looks to be not too bad.
