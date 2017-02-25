@@ -150,3 +150,4 @@
 * More [Project Euler][euler].
 * Watched the first part of the Merry Fragmas 3.0 Unity session.  Multiplayer
   FPS in Unity looks to be not too bad.
+* Cleaned up the internal API in [Scully][] a bit.
