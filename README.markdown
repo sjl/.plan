@@ -156,3 +156,9 @@
 
 * More [Project Euler][euler].
 * Watched the second part of the Merry Fragmas 3.0 Unity session.
+
+## 2017-02-28
+
+* More [Project Euler][euler].  Problem 51 was painfully underspecified, but
+  I finally got the stupid thing.
+* Watched the last part of the Merry Fragmas 3.0 Unity session.
