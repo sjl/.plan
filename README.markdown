@@ -1,20 +1,21 @@
 [TOC]
 
-[ELS]: http://www.european-lisp-symposium.org/editions/2017/
-[qud-ds]: https://www.twitch.tv/ptychomancer
+[bearlibterminal]: https://bitbucket.org/cfyzium/bearlibterminal
+[chancery]: https://bitbucket.org/sjl/chancery/
+[cl-blt]: https://sjl.bitbucket.io/cl-blt/
 [cl-ggp]: https://sjl.bitbucket.io/cl-ggp/
+[cl-losh]: https://bitbucket.org/sjl/cl-losh/
+[cl-pcg]: https://sjl.bitbucket.io/cl-pcg/
+[clojure-lanterna]: https://github.com/MultiMUD/clojure-lanterna/
+[dieharder]: https://www.phy.duke.edu/~rgb/General/dieharder.php
+[ELS]: http://www.european-lisp-symposium.org/editions/2017/
+[euler]: https://projecteuler.net/
+[local-time]: https://common-lisp.net/project/local-time/
+[PCG]: http://www.pcg-random.org/
+[qud-ds]: https://www.twitch.tv/ptychomancer
 [sand]: https://bitbucket.org/sjl/sand/
 [scully]: https://bitbucket.org/sjl/scully/
-[chancery]: https://bitbucket.org/sjl/chancery/
 [temperance]: https://bitbucket.org/sjl/temperance/
-[clojure-lanterna]: https://github.com/MultiMUD/clojure-lanterna/
-[PCG]: http://www.pcg-random.org/
-[bearlibterminal]: https://bitbucket.org/cfyzium/bearlibterminal
-[euler]: https://projecteuler.net/
-[cl-pcg]: https://sjl.bitbucket.io/cl-pcg/
-[cl-blt]: https://sjl.bitbucket.io/cl-blt/
-[dieharder]: https://www.phy.duke.edu/~rgb/General/dieharder.php
-[local-time]: https://common-lisp.net/project/local-time/
 
 # January 2017
 
@@ -162,3 +163,10 @@
 * More [Project Euler][euler].  Problem 51 was painfully underspecified, but
   I finally got the stupid thing.
 * Watched the last part of the Merry Fragmas 3.0 Unity session.
+
+# March 2017
+
+## 2017-03-01
+
+* Started poking at a prototype game my teammate made.
+* Added a janky priority queue to [cl-losh][].
