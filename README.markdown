@@ -170,3 +170,7 @@
 
 * Started poking at a prototype game my teammate made.
 * Added a janky priority queue to [cl-losh][].
+
+## 2017-03-02
+
+* Finished the stupid [Project Euler][] poker problem.  This isn't math.
