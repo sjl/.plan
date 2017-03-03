@@ -15,6 +15,7 @@
 [qud-ds]: https://www.twitch.tv/ptychomancer
 [sand]: https://bitbucket.org/sjl/sand/
 [scully]: https://bitbucket.org/sjl/scully/
+[surreal numbers]: http://www.amazon.com/dp/0201038129/?tag=stelos-20
 [temperance]: https://bitbucket.org/sjl/temperance/
 
 # January 2017
@@ -179,4 +180,7 @@
 
 * More [Project Euler][euler].
 * Started documenting [Chancery][].
+* Started working through [Surreal Numbers][].  I'm going to try to code each
+  chapter up after I read it, to make sure I understand everything.  So far I'm
+  done with chapter 2.
 
