@@ -174,3 +174,9 @@
 ## 2017-03-02
 
 * Finished the stupid [Project Euler][] poker problem.  This isn't math.
+
+## 2017-03-03
+
+* More [Project Euler][euler].
+* Started documenting [Chancery][].
+
