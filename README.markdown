@@ -11,6 +11,7 @@
 [ELS]: http://www.european-lisp-symposium.org/editions/2017/
 [euler]: https://projecteuler.net/
 [local-time]: https://common-lisp.net/project/local-time/
+[pandabt]: http://www.pandabehaviour.com/
 [PCG]: http://www.pcg-random.org/
 [qud-ds]: https://www.twitch.tv/ptychomancer
 [sand]: https://bitbucket.org/sjl/sand/
@@ -184,3 +185,10 @@
   chapter up after I read it, to make sure I understand everything.  So far I'm
   done with chapter 2.
 
+## 2017-03-04
+
+* More [Project Euler][euler].
+* Poked around at [PandaBT][].  Behavior trees are really weird.
+* Watched [Why is Gone Home a Game?](http://www.gdcvault.com/play/1020376/Why-Is-Gone-Home-a).
+* Read chapter 3 of [Surreal Numbers][].  Not much to code for this one,
+  I think.
