@@ -192,3 +192,13 @@
 * Watched [Why is Gone Home a Game?](http://www.gdcvault.com/play/1020376/Why-Is-Gone-Home-a).
 * Read chapter 3 of [Surreal Numbers][].  Not much to code for this one,
   I think.
+
+## 2017-03-05
+
+* Worked on our game with my team.
+
+## 2017-03-06
+
+* Watched [Math for Game Programmers: Building a Better
+  Jump](https://www.youtube.com/watch?v=hG9SzQxaCm8) over breakfast.
+
