@@ -200,6 +200,9 @@
 ## 2017-03-06
 
 * Watched [Math for Game Programmers: Building a Better
-  Jump](https://www.youtube.com/watch?v=hG9SzQxaCm8) over breakfast.
+  Jump](https://www.youtube.com/watch?v=hG9SzQxaCm8) over breakfast.  I really
+  like the idea of deriving the gravity and initial velocity constants from jump
+  height/distance targets.  I'll have to try that the next time I make
+  a platformer.
 * Implemented a bunch of simple (but necessary) API functions in [Scully][].
 
