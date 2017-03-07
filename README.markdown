@@ -201,4 +201,5 @@
 
 * Watched [Math for Game Programmers: Building a Better
   Jump](https://www.youtube.com/watch?v=hG9SzQxaCm8) over breakfast.
+* Implemented a bunch of simple (but necessary) API functions in [Scully][].
 
