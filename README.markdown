@@ -206,3 +206,7 @@
   a platformer.
 * Implemented a bunch of simple (but necessary) API functions in [Scully][].
 
+## 2017-03-08
+
+* Passed maintainership of [rerun](https://github.com/mandarg/rerun) over to
+  [@mandarg](https://github.com/mandarg/).
