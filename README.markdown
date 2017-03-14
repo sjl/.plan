@@ -5,6 +5,7 @@
 [cl-blt]: https://sjl.bitbucket.io/cl-blt/
 [cl-ggp]: https://sjl.bitbucket.io/cl-ggp/
 [cl-losh]: https://bitbucket.org/sjl/cl-losh/
+[cl-nrepl]: https://bitbucket.org/sjl/cl-nrepl/
 [cl-pcg]: https://sjl.bitbucket.io/cl-pcg/
 [clojure-lanterna]: https://github.com/MultiMUD/clojure-lanterna/
 [dieharder]: https://www.phy.duke.edu/~rgb/General/dieharder.php
@@ -211,9 +212,15 @@
 * Passed maintainership of [rerun](https://github.com/mandarg/rerun) over to
   [@mandarg](https://github.com/mandarg/).
 
-## 2017-03-13
+## 2017-03-14
 
-* Did the final bit of plumbing to make [Scully][] actuall play games with the
+* Did the final bit of plumbing to make [Scully][] actually play games with the
   game server.  It works!
 * Added `LICENSE.markdown` files to all my projects.  Annoying, but if it staves
   off the people complaining for a while it's worth the extra wasted bytes.
+* Chatted with my advisor about the next step for fixing the combinatorial rule
+  tree explosions in Scully.
+* Added a restart to [cl-nrepl][] to let me specify a new port to use more
+  easily, if the default one is already in use.  Common Lisp's condition system
+  is really powerful but also really obtuse, and I don't seem to use it often
+  enough to really get it into my stupid brain.
