@@ -210,3 +210,10 @@
 
 * Passed maintainership of [rerun](https://github.com/mandarg/rerun) over to
   [@mandarg](https://github.com/mandarg/).
+
+## 2017-03-13
+
+* Did the final bit of plumbing to make [Scully][] actuall play games with the
+  game server.  It works!
+* Added `LICENSE.markdown` files to all my projects.  Annoying, but if it staves
+  off the people complaining for a while it's worth the extra wasted bytes.
