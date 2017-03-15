@@ -224,3 +224,5 @@
   easily, if the default one is already in use.  Common Lisp's condition system
   is really powerful but also really obtuse, and I don't seem to use it often
   enough to really get it into my stupid brain.
+* Added a couple of docstrings to [cl-pcg][].  Still not sure about the API
+  layout... I think I need to try it in a real game to see how it feels.
