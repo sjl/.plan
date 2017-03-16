@@ -226,3 +226,13 @@
   enough to really get it into my stupid brain.
 * Added a couple of docstrings to [cl-pcg][].  Still not sure about the API
   layout... I think I need to try it in a real game to see how it feels.
+
+## 2017-03-15
+
+* Did a bunch of stuff on my team's game.  I really need to dig into the Unity
+  networking documentation...
+
+## 2017-03-16
+
+* Whipped up some docs for [cl-pcg][].  I think I'll just call it released in
+  the next day or two and see where it goes from there.
