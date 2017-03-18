@@ -236,3 +236,9 @@
 
 * Whipped up some docs for [cl-pcg][].  I think I'll just call it released in
   the next day or two and see where it goes from there.
+
+## 2017-03-17
+
+* Watched a big chunk more of the Unity course.  I've made a bunch in Unity
+  already but it's good to follow along with a class and fill in all the gaps in
+  my self-learned knowledge.
