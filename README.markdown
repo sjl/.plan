@@ -242,3 +242,7 @@
 * Watched a big chunk more of the Unity course.  I've made a bunch in Unity
   already but it's good to follow along with a class and fill in all the gaps in
   my self-learned knowledge.
+
+## 2017-03-18
+
+* Added a test harness to [cl-pcg][].  Need to write a couple of simple tests.
