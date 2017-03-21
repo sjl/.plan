@@ -254,3 +254,4 @@
 * Watched "5 Bits of Good Game Design from 2015" [GMTK][] video.  I especially
   like the bits about downtime in games and about giving players a reason *not*
   to do something (like saving or killing every enemy).
+* Fixed a nasty bug in our game.  Multiplayer is hard (at least in Unity).
