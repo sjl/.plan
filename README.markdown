@@ -11,6 +11,7 @@
 [dieharder]: https://www.phy.duke.edu/~rgb/General/dieharder.php
 [ELS]: http://www.european-lisp-symposium.org/editions/2017/
 [euler]: https://projecteuler.net/
+[gmtk]: https://www.youtube.com/user/McBacon1337
 [local-time]: https://common-lisp.net/project/local-time/
 [pandabt]: http://www.pandabehaviour.com/
 [PCG]: http://www.pcg-random.org/
@@ -243,6 +244,13 @@
   already but it's good to follow along with a class and fill in all the gaps in
   my self-learned knowledge.
 
-## 2017-03-18
+## 2017-03-20
 
 * Added a test harness to [cl-pcg][].  Need to write a couple of simple tests.
+* Worked on the game a bit more with my team at the end of class.
+
+## 2017-03-21
+
+* Watched "5 Bits of Good Game Design from 2015" [GMTK][] video.  I especially
+  like the bits about downtime in games and about giving players a reason *not*
+  to do something (like saving or killing every enemy).
