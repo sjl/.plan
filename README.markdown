@@ -266,3 +266,6 @@
 * Added a simple Monte Carlo player to [cl-ggp][].  It'll be used as an example
   during my ELS talk.  Also added some additional GDL cleaning to cl-ggp's
   reasoner.
+* Looked around for a simple, cross-platform way to just play a WAV file from
+  Common Lisp (or at least from C (which I can wrap with CFFI) but apparently
+  nothing exists.  Computers are awful.
