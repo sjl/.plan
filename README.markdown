@@ -255,3 +255,14 @@
   like the bits about downtime in games and about giving players a reason *not*
   to do something (like saving or killing every enemy).
 * Fixed a nasty bug in our game.  Multiplayer is hard (at least in Unity).
+
+## 2017-03-22
+
+* More game bugfixes in the lab.
+
+## 2017-03-23
+
+* Pushed v1.0.0 of [cl-pcg][].  Time to move on.
+* Added a simple Monte Carlo player to [cl-ggp][].  It'll be used as an example
+  during my ELS talk.  Also added some additional GDL cleaning to cl-ggp's
+  reasoner.
