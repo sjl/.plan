@@ -21,6 +21,7 @@
 [surreal numbers]: http://www.amazon.com/dp/0201038129/?tag=stelos-20
 [temperance]: https://bitbucket.org/sjl/temperance/
 [aeropress]: http://amzn.to/2zZq5GT
+[bria]: https://bitbucket.org/sjl/bria/
 
 # January 2017
 
@@ -281,3 +282,8 @@
 * Read a bit more of [The Whole Shebang](http://amzn.to/2zYB1nN).  It's good,
   but the bit on the "evolution" of the universe seems like a bit of a stretch,
   given that there's not replication mechanism like DNA has.
+* Refactored the rate-limiting macro in [Bria][] to be more general.  Of course
+  I immediately ran into edge cases because I'm using this to rate-limit
+  reloading of the entire bot, which means than all the forms get re-evaluated.
+  So using a gensym for the key in the macro was not gonna work.  But at least
+  I ran into those edge cases early.
