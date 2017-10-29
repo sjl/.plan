@@ -20,6 +20,7 @@
 [scully]: https://bitbucket.org/sjl/scully/
 [surreal numbers]: http://www.amazon.com/dp/0201038129/?tag=stelos-20
 [temperance]: https://bitbucket.org/sjl/temperance/
+[aeropress]: http://amzn.to/2zZq5GT
 
 # January 2017
 
@@ -269,3 +270,13 @@
 * Looked around for a simple, cross-platform way to just play a WAV file from
   Common Lisp (or at least from C (which I can wrap with CFFI) but apparently
   nothing exists.  Computers are awful.
+
+# October 2017
+
+## 2017-03-29
+
+* Tried my first [Aeropress][] coffee.  It was a bit sour, which I think is due
+  to underextraction.  Gonna try again with a finer grind (today's was a 13).
+* Read a bit more of [The Whole Shebang](http://amzn.to/2zYB1nN).  It's good,
+  but the bit on the "evolution" of the universe seems like a bit of a stretch,
+  given that there's not replication mechanism like DNA has.
