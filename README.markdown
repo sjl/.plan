@@ -22,6 +22,7 @@
 [temperance]: https://bitbucket.org/sjl/temperance/
 [aeropress]: http://amzn.to/2zZq5GT
 [bria]: https://bitbucket.org/sjl/bria/
+[ergolib]: https://github.com/rongarret/ergolib
 
 # January 2017
 
@@ -287,3 +288,6 @@
   reloading of the entire bot, which means than all the forms get re-evaluated.
   So using a gensym for the key in the macro was not gonna work.  But at least
   I ran into those edge cases early.
+* Started reading through [ergolib][].  Lots of stuff in it, some of it
+  interesting, some of it a bit crazy.  It's fun to see how other people
+  implement some of the utilities as in my own utils library.
