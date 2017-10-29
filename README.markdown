@@ -275,6 +275,7 @@
 
 ## 2017-03-29
 
+* Gonna try updating this thing again now that I'm settled back into the US.
 * Tried my first [Aeropress][] coffee.  It was a bit sour, which I think is due
   to underextraction.  Gonna try again with a finer grind (today's was a 13).
 * Read a bit more of [The Whole Shebang](http://amzn.to/2zYB1nN).  It's good,
