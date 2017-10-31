@@ -275,7 +275,7 @@
 
 # October 2017
 
-## 2017-03-29
+## 2017-10-29
 
 * Gonna try updating this thing again now that I'm settled back into the US.
 * Tried my first [Aeropress][] coffee.  It was a bit sour, which I think is due
@@ -291,3 +291,11 @@
 * Started reading through [ergolib][].  Lots of stuff in it, some of it
   interesting, some of it a bit crazy.  It's fun to see how other people
   implement some of the utilities as in my own utils library.
+
+## 2017-10-30
+
+* Work.
+* Read [Fast generic dispatch for Common
+  Lisp](http://metamodular.com/generic-dispatch.pdf).  A pretty simple idea at
+  its core, but Common Lisp's support for highly-dynamic things like redefining
+  classes at runtime complicates things.
