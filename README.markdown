@@ -299,3 +299,9 @@
   Lisp](http://metamodular.com/generic-dispatch.pdf).  A pretty simple idea at
   its core, but Common Lisp's support for highly-dynamic things like redefining
   classes at runtime complicates things.
+
+## 2017-10-31
+
+* Work.
+* [Streamed](https://go.twitch.tv/videos/186653039?t=6m45s) some Common Lisp and
+  ncurses gamedev.  Made a spooky little Halloween clicker game.
