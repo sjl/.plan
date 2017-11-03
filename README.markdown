@@ -315,3 +315,5 @@
 ## 2017-11-02
 
 * Work.
+* Finished writing [documentation](https://sjl.bitbucket.io/chancery/usage/) for
+  [Chancery][].
