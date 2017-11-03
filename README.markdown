@@ -305,3 +305,13 @@
 * Work.
 * [Streamed](https://go.twitch.tv/videos/186653039?t=6m45s) some Common Lisp and
   ncurses gamedev.  Made a spooky little Halloween clicker game.
+
+# November 2017
+
+## 2017-11-01
+
+* Work.
+
+## 2017-11-02
+
+* Work.
