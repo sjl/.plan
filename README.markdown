@@ -27,6 +27,8 @@
 [recreations]: http://amzn.to/2zfRHre
 [lisp3e]: http://amzn.to/2y0dnWG
 [sjleuler]: https://github.com/sjl/euler
+[magitek]: https://github.com/sjl/magitek/
+[procjam]: http://www.procjam.com/
 
 # January 2017
 
@@ -337,4 +339,5 @@
   implementing some [aliquot
   sequence](https://en.wikipedia.org/wiki/Aliquot_sequence) functions in [my
   Project Euler repo][sjleuler] for fun.
-
+* Fixed the bitrot in my [magitek][] repo so I can make some bots for
+  [procjam][] later this week.
