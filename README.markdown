@@ -23,6 +23,10 @@
 [aeropress]: http://amzn.to/2zZq5GT
 [bria]: https://bitbucket.org/sjl/bria/
 [ergolib]: https://github.com/rongarret/ergolib
+[shebang]: http://amzn.to/2zYB1nN
+[recreations]: http://amzn.to/2zfRHre
+[lisp3e]: http://amzn.to/2y0dnWG
+[sjleuler]: https://github.com/sjl/euler
 
 # January 2017
 
@@ -280,7 +284,7 @@
 * Gonna try updating this thing again now that I'm settled back into the US.
 * Tried my first [Aeropress][] coffee.  It was a bit sour, which I think is due
   to underextraction.  Gonna try again with a finer grind (today's was a 13).
-* Read a bit more of [The Whole Shebang](http://amzn.to/2zYB1nN).  It's good,
+* Read a bit more of [The Whole Shebang][shebang].  It's good,
   but the bit on the "evolution" of the universe seems like a bit of a stretch,
   given that there's not replication mechanism like DNA has.
 * Refactored the rate-limiting macro in [Bria][] to be more general.  Of course
@@ -322,5 +326,15 @@
 
 * Work.
 * Submitted [Chancery][] to Quicklisp.
-* Continued reading [Lisp](http://amzn.to/2y0dnWG).  Learned about
+* Continued reading [Lisp][lisp3e].  Learned about
   [dribble](http://clhs.lisp.se/Body/f_dribbl.htm).
+
+## 2017-11-04
+
+* Read more of [The Whole Shebang][shebang].
+* Read more of [Lisp][lisp3e].
+* Read more of [Recreations in the Theory of Numbers][recreations].  Ended up
+  implementing some [aliquot
+  sequence](https://en.wikipedia.org/wiki/Aliquot_sequence) functions in [my
+  Project Euler repo][sjleuler] for fun.
+
