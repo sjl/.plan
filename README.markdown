@@ -317,3 +317,10 @@
 * Work.
 * Finished writing [documentation](https://sjl.bitbucket.io/chancery/usage/) for
   [Chancery][].
+
+## 2017-11-03
+
+* Work.
+* Submitted [Chancery][] to Quicklisp.
+* Continued reading [Lisp](http://amzn.to/2y0dnWG).  Learned about
+  [dribble](http://clhs.lisp.se/Body/f_dribbl.htm).
