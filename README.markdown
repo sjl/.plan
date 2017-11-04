@@ -341,3 +341,4 @@
   Project Euler repo][sjleuler] for fun.
 * Fixed the bitrot in my [magitek][] repo so I can make some bots for
   [procjam][] later this week.
+* Did another section of the Udemy Ardunio class (sound sensing).
