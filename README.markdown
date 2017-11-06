@@ -342,3 +342,12 @@
 * Fixed the bitrot in my [magitek][] repo so I can make some bots for
   [procjam][] later this week.
 * Did another section of the Udemy Ardunio class (sound sensing).
+
+## 2017-11-05
+
+* Read more of [Lisp][lisp3e].
+* Started working on [this month's
+  Hackerbox](https://hackerboxes.com/collections/frontpage/products/hackerbox-0024-vision-quest).
+  Got the headers soldered to the Arduino Nano and the pan/tilt thing assembled.
+  Checked that the sketchy drivers worked to dump code to the Nano and they
+  appear to be okay.
