@@ -351,3 +351,5 @@
   Got the headers soldered to the Arduino Nano and the pan/tilt thing assembled.
   Checked that the sketchy drivers worked to dump code to the Nano and they
   appear to be okay.
+* Finished reading the code of [EasyWFC](https://github.com/heyx3/EasyWFC).
+  I'll probably try to implement Wave Function Collapse on stream this week.
