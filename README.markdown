@@ -1,6 +1,8 @@
 [TOC]
 
+[aeropress]: http://amzn.to/2zZq5GT
 [bearlibterminal]: https://bitbucket.org/cfyzium/bearlibterminal
+[bria]: https://bitbucket.org/sjl/bria/
 [chancery]: https://bitbucket.org/sjl/chancery/
 [cl-blt]: https://sjl.bitbucket.io/cl-blt/
 [cl-ggp]: https://sjl.bitbucket.io/cl-ggp/
@@ -10,25 +12,24 @@
 [clojure-lanterna]: https://github.com/MultiMUD/clojure-lanterna/
 [dieharder]: https://www.phy.duke.edu/~rgb/General/dieharder.php
 [ELS]: http://www.european-lisp-symposium.org/editions/2017/
+[ergolib]: https://github.com/rongarret/ergolib
 [euler]: https://projecteuler.net/
 [gmtk]: https://www.youtube.com/user/McBacon1337
+[lisp3e]: http://amzn.to/2y0dnWG
 [local-time]: https://common-lisp.net/project/local-time/
+[magitek]: https://github.com/sjl/magitek/
 [pandabt]: http://www.pandabehaviour.com/
 [PCG]: http://www.pcg-random.org/
+[procjam]: http://www.procjam.com/
 [qud-ds]: https://www.twitch.tv/ptychomancer
+[recreations]: http://amzn.to/2zfRHre
 [sand]: https://bitbucket.org/sjl/sand/
 [scully]: https://bitbucket.org/sjl/scully/
+[shebang]: http://amzn.to/2zYB1nN
+[sjleuler]: https://github.com/sjl/euler
+[Sketch]: https://github.com/vydd/sketch
 [surreal numbers]: http://www.amazon.com/dp/0201038129/?tag=stelos-20
 [temperance]: https://bitbucket.org/sjl/temperance/
-[aeropress]: http://amzn.to/2zZq5GT
-[bria]: https://bitbucket.org/sjl/bria/
-[ergolib]: https://github.com/rongarret/ergolib
-[shebang]: http://amzn.to/2zYB1nN
-[recreations]: http://amzn.to/2zfRHre
-[lisp3e]: http://amzn.to/2y0dnWG
-[sjleuler]: https://github.com/sjl/euler
-[magitek]: https://github.com/sjl/magitek/
-[procjam]: http://www.procjam.com/
 
 # January 2017
 
