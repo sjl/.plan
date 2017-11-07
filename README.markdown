@@ -353,3 +353,9 @@
   appear to be okay.
 * Finished reading the code of [EasyWFC](https://github.com/heyx3/EasyWFC).
   I'll probably try to implement Wave Function Collapse on stream this week.
+
+## 2017-11-06
+
+* Work.
+* Did some preliminary work to get it out of the way for the WFC stream
+  tomorrow, mostly remembering how to use [Sketch][].
