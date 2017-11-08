@@ -30,6 +30,7 @@
 [Sketch]: https://github.com/vydd/sketch
 [surreal numbers]: http://www.amazon.com/dp/0201038129/?tag=stelos-20
 [temperance]: https://bitbucket.org/sjl/temperance/
+[hackerbox24]: https://hackerboxes.com/collections/frontpage/products/hackerbox-0024-vision-quest
 
 # January 2017
 
@@ -347,8 +348,7 @@
 ## 2017-11-05
 
 * Read more of [Lisp][lisp3e].
-* Started working on [this month's
-  Hackerbox](https://hackerboxes.com/collections/frontpage/products/hackerbox-0024-vision-quest).
+* Started working on [this month's Hackerbox][hackerbox24].
   Got the headers soldered to the Arduino Nano and the pan/tilt thing assembled.
   Checked that the sketchy drivers worked to dump code to the Nano and they
   appear to be okay.
@@ -360,3 +360,10 @@
 * Work.
 * Did some preliminary work to get it out of the way for the WFC stream
   tomorrow, mostly remembering how to use [Sketch][].
+
+## 2017-11-07
+
+* Work.
+* Streamed.  Did some work on WFC, though we didn't finish.
+* Did a bit more on [Hacker Box 24][hackerbox24].  Finished putting the hardware
+  together, and got the Processing sketch to work with the webcam (finally).
