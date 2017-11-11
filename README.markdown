@@ -30,6 +30,7 @@
 [Sketch]: https://github.com/vydd/sketch
 [surreal numbers]: http://www.amazon.com/dp/0201038129/?tag=stelos-20
 [temperance]: https://bitbucket.org/sjl/temperance/
+[deploy]: https://shinmera.github.io/deploy/
 [hackerbox24]: https://hackerboxes.com/collections/frontpage/products/hackerbox-0024-vision-quest
 
 # January 2017
@@ -381,3 +382,8 @@
 * Read more [Lisp][lisp3e].
 * Wrote a little Lisp program to calculate ideal padding for hanging two rows of
   different-sized photos so that they'll match up.
+## 2017-11-11
+
+* Realized that switching to [Deploy][] to build my [magitek][] lib fucked up
+  the random state generation, and fixed it.  This bites me *constantly* in Lisp
+  and I hate it.
