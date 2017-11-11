@@ -367,3 +367,17 @@
 * Streamed.  Did some work on WFC, though we didn't finish.
 * Did a bit more on [Hacker Box 24][hackerbox24].  Finished putting the hardware
   together, and got the Processing sketch to work with the webcam (finally).
+
+## 2017-11-08
+
+* Work.
+
+## 2017-11-09
+
+* Work.
+
+## 2017-11-10
+
+* Read more [Lisp][lisp3e].
+* Wrote a little Lisp program to calculate ideal padding for hanging two rows of
+  different-sized photos so that they'll match up.
