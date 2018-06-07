@@ -34,3 +34,7 @@ work, but at least I can dim the screen.
 Getting VPN set up.  Mostly used the network manager GUI to handle the settings.
 To disable saving of the password I had to click the silly little icon in the
 right of each password field.
+
+Got my `xrandr` bullshit mostly tamed, thanks to some Lisp code from katco.
+It's really nice to be able to script my window manager to add hotkeys with
+Common Lisp.
