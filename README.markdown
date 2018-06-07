@@ -28,3 +28,9 @@ described in the Arch wiki.  The backlight keys on the keyboard still don't
 work, but at least I can dim the screen.
 
 `xcape` remains busted in stumpwm for now.  Will debug later.
+
+## 2018-06-07
+
+Getting VPN set up.  Mostly used the network manager GUI to handle the settings.
+To disable saving of the password I had to click the silly little icon in the
+right of each password field.
