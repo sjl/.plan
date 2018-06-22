@@ -43,4 +43,8 @@ Common Lisp.
 
 More math review.  I'm rusty.
 
-More homework from the Prolog class.
+More homework from the Prolog class.  This time it was the classic Family Tree
+style exercise.  Wasn't too tough, even though my Prolog is *really* rusty.
+
+Still on OS X for personal stuff until the rest of the parts for my
+Linux/Windows machine arrive.
