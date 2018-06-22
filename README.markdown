@@ -38,3 +38,9 @@ right of each password field.
 Got my `xrandr` bullshit mostly tamed, thanks to some Lisp code from katco.
 It's really nice to be able to script my window manager to add hotkeys with
 Common Lisp.
+
+## 2018-06-21
+
+More math review.  I'm rusty.
+
+More homework from the Prolog class.
