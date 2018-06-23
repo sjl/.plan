@@ -3,3 +3,4 @@ NES emulator
 
 pager duty whack a mole
 learn about x clipboards
+learn to use graphviz better
