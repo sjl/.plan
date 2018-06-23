@@ -48,3 +48,13 @@ style exercise.  Wasn't too tough, even though my Prolog is *really* rusty.
 
 Still on OS X for personal stuff until the rest of the parts for my
 Linux/Windows machine arrive.
+
+## 2018-06-22
+
+Math review.
+
+## 2018-06-23
+
+Finished the Trains exercise for the Prolog class.  It was harder than
+I expected — my Prolog skills definitely need work.  But I guess that's what the
+class is for, right?
