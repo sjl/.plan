@@ -58,3 +58,14 @@ Math review.
 Finished the Trains exercise for the Prolog class.  It was harder than
 I expected — my Prolog skills definitely need work.  But I guess that's what the
 class is for, right?
+
+# July 2018
+
+## 2018-07-01
+
+The quest to make my new Linux machine usable continues.  Finally managed to
+build Weechat from source after screwing around in dependency hell for a while
+(apparently there's no `libgnutls30-dev` for Ubuntu 18.04?).  Also managed to
+get the sound coming out the right ports after some dark incantation with
+`pactl`.  Not using Gnome as a WM apparently means I'm going to be perpetually
+confused about how to configure anything on this damn machine, I guess.
