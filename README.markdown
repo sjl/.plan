@@ -61,7 +61,7 @@ class is for, right?
 
 # July 2018
 
-## 2018-07-01
+## 2018-07-03
 
 The quest to make my new Linux machine usable continues.  Finally managed to
 build Weechat from source after screwing around in dependency hell for a while
@@ -72,3 +72,14 @@ confused about how to configure anything on this damn machine, I guess.
 
 Catching up in the Prolog class.  Thankfully tomorrow is a holiday so I can
 hopefully make some good progress there too.
+
+## 2018-07-04
+
+Managed to get Weechat to work with Unicode support.  I had installed
+`libncursesw` and reran `cmake ..` but apparently that wasn't enough, I had to
+fully blow away the `build/` directory and redo the `cmake` from scratch to get
+it to link against `libncursesw` (rather than `libncurses`).  What a shitshow.
+I really need to take a month off and write my own IRC client in CL.
+
+Looked into an SBCL bug, but it turns out the standard is just kind of
+ambiguous, and the current behavior is probably fine.
