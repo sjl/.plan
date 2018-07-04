@@ -69,3 +69,6 @@ build Weechat from source after screwing around in dependency hell for a while
 get the sound coming out the right ports after some dark incantation with
 `pactl`.  Not using Gnome as a WM apparently means I'm going to be perpetually
 confused about how to configure anything on this damn machine, I guess.
+
+Catching up in the Prolog class.  Thankfully tomorrow is a holiday so I can
+hopefully make some good progress there too.
