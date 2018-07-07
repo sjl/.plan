@@ -83,3 +83,11 @@ I really need to take a month off and write my own IRC client in CL.
 
 Looked into an SBCL bug, but it turns out the standard is just kind of
 ambiguous, and the current behavior is probably fine.
+
+## 2018-07-07
+
+Did the [Prolog modules tutorial][] for the Prolog class.  This made me really
+appreciate Common Lisp's package system... the Prolog module system seems really
+crufty in comparison.
+
+[Prolog modules tutorial]: http://chiselapp.com/user/ttmrichter/repository/gng/doc/trunk/output/tutorials/swiplmodtut.html
