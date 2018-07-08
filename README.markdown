@@ -90,9 +90,33 @@ Did the [Prolog modules tutorial][] for the Prolog class.  This made me really
 appreciate Common Lisp's package system... the Prolog module system seems really
 crufty in comparison.
 
+Fixed a display issue for my blog, but I don't have Hugo set up on this machine
+yet, so it'll have to wait to be deployed.
+
 [Prolog modules tutorial]: http://chiselapp.com/user/ttmrichter/repository/gng/doc/trunk/output/tutorials/swiplmodtut.html
 
 ## 2018-07-08
 
 Got mutt running on the new Linux machine.  The quest to convert my dotfiles
 fully over to Linux continues.
+
+Got ABCL, ECL, SBCL, and CCL all installed and working on the Linux machine.
+I had originally installed SBCL (for bootstrapping a new build of it) and
+StumpWM through the package manager and forgotten about them.  This meant I had
+a `/usr/share/common-lisp` laying around which was getting loaded for other
+installs too, which borked a few things.  I had to remove the old packages, blow
+away `~/.cache/common-lisp`, and everything works now.  ECL is still installed
+through the package manager, the rest aren't.
+
+Started getting my Lisp test infrastructure up and running on the Linux box.
+Previously I used [figlet][] and [lolcat][] to print nice headers during the
+test runs.  I don't want to install Ruby on this machine if possible, so
+I looked for a replacement for lolcat and found [toilet][], which includes the
+functionality of both.  Great!  Had to download the figlet contrib fonts
+manually, which was annoying (Homebrew on OS X did it automatically, but the
+Ubuntu package doesn't).  Toilet's rainbows aren't as nice as lolcat's, but the
+tradeoff of not needing ruby is worth it.
+
+[figlet]: http://www.figlet.org/
+[lolcat]: https://github.com/busyloop/lolcat
+[toilet]: http://caca.zoy.org/wiki/toilet
