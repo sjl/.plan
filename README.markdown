@@ -123,6 +123,11 @@ I noticed in Firefox on Linux.  Hand-compiled the LessCSS to avoid having to
 install NodeJS on the machine.  Removed the timeago jQuery plugin -- the quest
 to exterminate all JS on my website continues.
 
+Wrote a blog post.  Will post it tomorrow.
+
+Looked into why StumpWM's `remove` command is making the widths weird.  Gotta
+dive in more when my mind is fresh.
+
 [figlet]: http://www.figlet.org/
 [lolcat]: https://github.com/busyloop/lolcat
 [toilet]: http://caca.zoy.org/wiki/toilet
