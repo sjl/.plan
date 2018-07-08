@@ -117,6 +117,12 @@ manually, which was annoying (Homebrew on OS X did it automatically, but the
 Ubuntu package doesn't).  Toilet's rainbows aren't as nice as lolcat's, but the
 tradeoff of not needing ruby is worth it.
 
+Got Hugo installed on the Linux box and made a build of my site.  I hope
+I didn't break anything.  Made a couple of tweaks to fix a couple of issues
+I noticed in Firefox on Linux.  Hand-compiled the LessCSS to avoid having to
+install NodeJS on the machine.  Removed the timeago jQuery plugin -- the quest
+to exterminate all JS on my website continues.
+
 [figlet]: http://www.figlet.org/
 [lolcat]: https://github.com/busyloop/lolcat
 [toilet]: http://caca.zoy.org/wiki/toilet
