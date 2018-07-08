@@ -91,3 +91,8 @@ appreciate Common Lisp's package system... the Prolog module system seems really
 crufty in comparison.
 
 [Prolog modules tutorial]: http://chiselapp.com/user/ttmrichter/repository/gng/doc/trunk/output/tutorials/swiplmodtut.html
+
+## 2018-07-08
+
+Got mutt running on the new Linux machine.  The quest to convert my dotfiles
+fully over to Linux continues.
