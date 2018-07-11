@@ -131,3 +131,18 @@ dive in more when my mind is fresh.
 [figlet]: http://www.figlet.org/
 [lolcat]: https://github.com/busyloop/lolcat
 [toilet]: http://caca.zoy.org/wiki/toilet
+## 2018-07-10
+
+Figured out why StumpWM wasn't noticing my timezone changes.  I tracked it down
+to SBCL itself not noticing the timzeone changes — e.g. you can run
+`(get-decoded-time)`, change your timezone, and run `(get-decoded-time)` again
+and SBCL will still return the old timezone until you restart it.  Eventually
+I narrowed this down to `get_timezone` in SBCL's
+[`time.c`](https://github.com/sbcl/sbcl/blob/master/src/runtime/time.c), which
+uses `localtime_r`.  The problem is that `localtime` and `localtime_r` don't
+check for a timezone change, you have to call `tzset` yourself, according to
+`man 3 localtime`.  So the solution is to run `(cffi:foreign-funcall "tzset")`
+in your StumpWM process whenever you change your timezone.
+
+Watched the Prolog class presentation from a couple days ago.  I'm still
+a little bit behind, gotta hopefully catch up this weekend.
