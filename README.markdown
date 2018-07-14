@@ -146,3 +146,7 @@ in your StumpWM process whenever you change your timezone.
 
 Watched the Prolog class presentation from a couple days ago.  I'm still
 a little bit behind, gotta hopefully catch up this weekend.
+
+## 2018-07-14
+
+Got `notmuch` set up on the new box.  Forgot how dang fast it is.
