@@ -150,3 +150,12 @@ a little bit behind, gotta hopefully catch up this weekend.
 ## 2018-07-14
 
 Got `notmuch` set up on the new box.  Forgot how dang fast it is.
+
+## 2018-07-15
+
+Got `pass` sharing sanely on my phone and desktop.
+
+## 2018-07-16
+
+Installed the Arduino IDE on my desktop.  The quest to switch fully to Linux
+continues.
