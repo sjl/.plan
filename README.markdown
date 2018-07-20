@@ -159,3 +159,20 @@ Got `pass` sharing sanely on my phone and desktop.
 
 Installed the Arduino IDE on my desktop.  The quest to switch fully to Linux
 continues.
+
+## 2018-07-18
+
+Started setting up my new Yubikeys.  The process is... not friendly.  I'm mostly
+following [this guide](https://www.palkeo.com/sys/perfect-password-manager.html).
+
+## 2018-07-19
+
+Finished setting up the Yubikeys.  I think.
+
+There's still a few fiddly bits -- handling multiple different Yubikeys seems
+like it's gonna take a bit of scripting grease, and I don't think there's a way
+to time out the PIN on the Yubikey after a certain amount of inactivity.
+I think this should mostly be alright, since the only one I'll leave plugged in
+is the Nano: that's plugged into my desktop monitor that I use for a KVM, so
+whenever I switch the computers or turn off the monitor it'll lock.  I think
+that's a good enough mix of practicality and security for what I need.
