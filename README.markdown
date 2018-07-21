@@ -176,3 +176,17 @@ I think this should mostly be alright, since the only one I'll leave plugged in
 is the Nano: that's plugged into my desktop monitor that I use for a KVM, so
 whenever I switch the computers or turn off the monitor it'll lock.  I think
 that's a good enough mix of practicality and security for what I need.
+
+## 2018-07-20
+
+Finally got around to fixing StumpWM's frame splitting/removing/balancing.  Got
+a work-in-progress/proof-of-concept PR at https://github.com/stumpwm/stumpwm/pull/481
+
+Debugged why my `scrot` keyboard shortcuts that work fine on Debian weren't
+working on my Ubuntu machine.  It took a while because shell commands you run
+through StumpWM's key mappings have their output blackholed to god only knows
+where.  Eventually I split the commands into a separate shell script and
+redirected all the output to a file (I should have done this much earlier),
+which let me see giblib complaining about the keyboard being busy.  Once I found
+that error it led me to https://bbs.archlinux.org/viewtopic.php?id=86507 which
+shows a solution: add a `sleep 0.2` before the call to `scrot`.  Jesus.
