@@ -190,3 +190,7 @@ redirected all the output to a file (I should have done this much earlier),
 which let me see giblib complaining about the keyboard being busy.  Once I found
 that error it led me to https://bbs.archlinux.org/viewtopic.php?id=86507 which
 shows a solution: add a `sleep 0.2` before the call to `scrot`.  Jesus.
+
+## 2018-07-21
+
+Did some programming exercises.  I'm rusty at this stuff.
