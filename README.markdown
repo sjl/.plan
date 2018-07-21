@@ -193,4 +193,7 @@ shows a solution: add a `sleep 0.2` before the call to `scrot`.  Jesus.
 
 ## 2018-07-21
 
-Did some programming exercises.  I'm rusty at this stuff.
+Did some coding interview-style programming exercises.  I'm rusty at this stuff.
+
+Started writing a blog post.  It's turning out to be longer than I expected it
+would be.  By now I should expect this.
