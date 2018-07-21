@@ -1,6 +1,4 @@
 NES emulator
-
-
 pager duty whack a mole
 learn about x clipboards
 learn to use graphviz better
@@ -8,3 +6,4 @@ more mutated l systems for flax
 national weather service "discussion" cli, e.g. https://forecast.weather.gov/product.php?site=BUF&issuedby=BUF&product=AFD&format=CI&version=1&glossary=1&highlight=off
 do something with SERIES
 put mastodon link on site
+DAG learning or tutorial site
