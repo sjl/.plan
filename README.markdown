@@ -197,3 +197,11 @@ Did some coding interview-style programming exercises.  I'm rusty at this stuff.
 
 Started writing a blog post.  It's turning out to be longer than I expected it
 would be.  By now I should expect this.
+
+## 2018-07-23
+
+Cleaned up my Vim bundle folder.  Removed a bunch of things I never use.
+
+Figured out how to do wildcard blocking in uBlock.  Again.  Here's for my future
+self: the uBlock rule should look like `##[class^="prefix-"]` or
+`##[class*="part"]`.
