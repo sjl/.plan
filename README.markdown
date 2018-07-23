@@ -205,3 +205,7 @@ Cleaned up my Vim bundle folder.  Removed a bunch of things I never use.
 Figured out how to do wildcard blocking in uBlock.  Again.  Here's for my future
 self: the uBlock rule should look like `##[class^="prefix-"]` or
 `##[class*="part"]`.
+
+I think I found a setting to eliminate the screen tearing I've been seeing in
+Ubuntu with my Radeon card.  It was described
+[here](https://cubethethird.wordpress.com/2016/06/14/eliminate-screen-tearing-with-amd-gpu-on-ubuntu/).
