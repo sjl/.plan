@@ -209,3 +209,10 @@ self: the uBlock rule should look like `##[class^="prefix-"]` or
 I think I found a setting to eliminate the screen tearing I've been seeing in
 Ubuntu with my Radeon card.  It was described
 [here](https://cubethethird.wordpress.com/2016/06/14/eliminate-screen-tearing-with-amd-gpu-on-ubuntu/).
+
+Got Inkscape installed in preparation for setting up my AxiDraw again this
+weekend.  Used the PPA to install the latest version (0.92).  EMSL recommends
+0.91, but apparently I can use the prerelease version on one file for the
+AxiDraw (`plot_utils.py`) and it should work okay.  I went ahead and version
+controlled `.config/inkscape/extensions` this time for when I inevitably have to
+dick around with the source again — I learned my lesson last time.
