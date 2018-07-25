@@ -216,3 +216,9 @@ weekend.  Used the PPA to install the latest version (0.92).  EMSL recommends
 AxiDraw (`plot_utils.py`) and it should work okay.  I went ahead and version
 controlled `.config/inkscape/extensions` this time for when I inevitably have to
 dick around with the source again — I learned my lesson last time.
+
+## 2018-07-25
+
+Got `stumpish` set up so I can poke at stumpwm from within scripts.  Hacked my
+`pass` binary to pop up the copied message with `stumpish` so it's a little less
+opaque when I use the stumpwm shortcut to grab a pass.
