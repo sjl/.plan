@@ -231,4 +231,8 @@ actual IP, and I wanted to use OpenVPN instead of PIA's custom app thing.
 Networking is a mess.
 
 Got Project 1999 set up on Linux.  Fonts are a mess, but otherwise it's working
-fine.
+fine.  Had to add this to `~/.wine/user.reg` to get it to stop fucking up my
+gamma:
+
+    [Software\\Wine\\X11 Driver] 1269299093
+    "UseXVidMode"="N"
