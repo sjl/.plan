@@ -222,3 +222,10 @@ dick around with the source again — I learned my lesson last time.
 Got `stumpish` set up so I can poke at stumpwm from within scripts.  Hacked my
 `pass` binary to pop up the copied message with `stumpish` so it's a little less
 opaque when I use the stumpwm shortcut to grab a pass.
+
+## 2018-07-28
+
+Finally got my VPN setup on the Linux machine.  Had to disable IPv6 at the
+router because PIA doesn't support it, and leaving it enabled will leak my
+actual IP, and I wanted to use OpenVPN instead of PIA's custom app thing.
+Networking is a mess.
