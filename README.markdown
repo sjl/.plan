@@ -236,3 +236,19 @@ gamma:
 
     [Software\\Wine\\X11 Driver] 1269299093
     "UseXVidMode"="N"
+
+# August 2018
+
+## 2018-08-10
+
+Tried to get Folding at Home working, but after about an hour of screwing around
+with GPU drivers on Linux I gave up.  Sorry, I'd like to help, but I can't
+invest the time to debug a basic install process.
+
+Set up my own lightweight personal pastebin as outlined
+[here](https://pinafore.social/statuses/100475132430233694).  The hardest part
+was getting a working `pbcopy` and `pbpaste` inside a bash script.  I was using
+`xsel` which works at my main shell but wouldn't work at all from inside a bash
+script.  I assume this has something to do with `$DISPLAY`, but then I tried
+`xclip` and it worked just fine, so fuck it.  Clipboards on Linux are such
+a mess.
