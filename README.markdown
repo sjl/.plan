@@ -271,3 +271,19 @@ I ended up having to delete some files by hand:
 https://donncha.is/2014/07/problems-using-an-openpgp-smartcard-for-ssh-with-gpg-agent/
 
 How is any normal person supposed to actually *use* this software?
+
+## 2018-08-13
+
+At the office, trying to get my Thinkpad set up again.  Linux is a Journey.
+
+Had trouble getting the external monitor to work.  Again.  First attempt: used
+a USB-C to MiniDP dongle to a MiniDP to DP cable.  It saw the correct
+resolution, but something in the dongle prevented it from calculating the
+correct timing, and the monitor wouldn't work.
+
+Second attempt: scavenged a raw USB-C to DP cable.  This actually worked.
+
+Also had to scavenge a mouse.  Took a while to find the not-bluetooth USB
+dongle.  I checked in all the USB ports on the monitors but didn't see it, til
+a coworker pointed out the Apple keyboards also have a spare USB port and that's
+where it was.
