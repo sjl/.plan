@@ -252,3 +252,22 @@ was getting a working `pbcopy` and `pbpaste` inside a bash script.  I was using
 script.  I assume this has something to do with `$DISPLAY`, but then I tried
 `xclip` and it worked just fine, so fuck it.  Clipboards on Linux are such
 a mess.
+
+## 2018-08-12
+
+Traveling.  Trying to use my second Yubikey on my work machine, and of course
+it's a fucking mess because why would anyone ever possibly want to use more than
+ONE single smartcard in their life, right?
+
+The problem is that even though the secret keys for decrypting my `pass`
+archives are on this second Yubikey, GPG always wants me to insert the original
+Yubikey and pops up the "Please insert smartcard with serial number ..." dialog.
+Even after I run `gpg --card-status` to forcibly tell its dumb ass to notice the
+new card.
+
+I tried the usual "delete the secret key and reimport the pubkey, then run
+`--card-status` to make it notice" dance, but this time even *that* didn't work.
+I ended up having to delete some files by hand:
+https://donncha.is/2014/07/problems-using-an-openpgp-smartcard-for-ssh-with-gpg-agent/
+
+How is any normal person supposed to actually *use* this software?
