@@ -287,3 +287,25 @@ Also had to scavenge a mouse.  Took a while to find the not-bluetooth USB
 dongle.  I checked in all the USB ports on the monitors but didn't see it, til
 a coworker pointed out the Apple keyboards also have a spare USB port and that's
 where it was.
+
+## 2018-08-20
+
+Back in Rochester, and GPG is being an asshole once again.  Much the same
+problem as on 8/12 — I'm trying to switch back to my normal Yubikey.  The
+problem:
+
+* I have two Yubikeys, A and B, which hold my GPG key K.
+* I normally use A.
+* I want to switch to using B.
+* GPG still thinks the private keys for K are stored only on A, even when I plug
+  in B.
+
+The solution is:
+
+1. Blow away the "keygrip" files in `~/.gnupg/private-keys-v1.d` corresponding
+   to the keys on the Yubikeys, but **not** other keygrip files.  An easy way to
+   do this is something like `grep -rl shadowed-private-key ~/.gnupg/private-keys-v1.d/ | xargs rm`.
+2. Run `gpg --card-status` so GPG will notice the missing keygrips and realize
+   they're on this *new* Yubikey.
+
+I should probably wrap this up into a script.
