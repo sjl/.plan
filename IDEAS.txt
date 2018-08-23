@@ -11,3 +11,4 @@ common lisp hash bag library
 simple lisp pastebin service
 light pastebin blog post
 try emilyst font hinting options for linux menlo
+vastly simpler system loading library in CL that uses a digraph and parallelizes compilation called QUICKSYS
