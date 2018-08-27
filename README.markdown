@@ -309,3 +309,11 @@ The solution is:
    they're on this *new* Yubikey.
 
 I should probably wrap this up into a script.
+
+## 2018-08-27
+
+Tad says I need some kind of "udev rule" for my Switch controller under Linux:
+
+    KERNEL=="hidraw*", ATTRS{idVendor}=="057e", ATTRS{idProduct}=="2009", MODE="0666"
+
+I don't know what this means, but I'm dumping it in here for later.
