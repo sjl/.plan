@@ -317,3 +317,6 @@ Tad says I need some kind of "udev rule" for my Switch controller under Linux:
     KERNEL=="hidraw*", ATTRS{idVendor}=="057e", ATTRS{idProduct}=="2009", MODE="0666"
 
 I don't know what this means, but I'm dumping it in here for later.
+
+Published http://stevelosh.com/blog/2018/08/a-road-to-common-lisp/ after many
+plane rides and weekends.
