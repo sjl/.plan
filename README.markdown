@@ -391,3 +391,11 @@ easy.  To my future self: here's how to install Dropbox on Ubuntu:
 Important: **do not run the last command with sudo**, because if you do your
 entire installation will be totally fucked (`~/Dropbox` will be owned by root)
 and you'll have to start all over.
+
+Building Mercurial from source.  Had to install `python-dev` first.
+
+As always, `hg-git` is fucking broken on install.  Had to symlink
+`dulwich/dulwich` into the Mercurial directory, but it was still broken.
+[This](https://bitbucket.org/durin42/hg-git/issues/252/hg-47-error) is the
+problem.  Mercurial's lack of a stable plugin API is why I no longer really
+maintain my hg plugins.  It sucks.  For now I'm just gonna downgrade Mercurial.
