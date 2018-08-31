@@ -374,3 +374,20 @@ Things I needed to `apt install` to get something usable:
 Updated my dotfiles bootstrap script to include the new linux symlinks.
 
 Bootstrapping the system is still an uphill fight.
+
+
+## 2018-08-31
+
+Continuing bootstrapping.
+
+Installing Dropbox makes things a lot easier because I can easily sync little
+bits of state between computers.  But the Dropbox site sure doesn't make it
+easy.  To my future self: here's how to install Dropbox on Ubuntu:
+
+* Download the `.deb` file from their site.
+* `sudo dpkg -i thefile.deb`
+* `dropbox start -i`
+
+Important: **do not run the last command with sudo**, because if you do your
+entire installation will be totally fucked (`~/Dropbox` will be owned by root)
+and you'll have to start all over.
