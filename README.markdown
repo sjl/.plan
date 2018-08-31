@@ -320,3 +320,57 @@ I don't know what this means, but I'm dumping it in here for later.
 
 Published http://stevelosh.com/blog/2018/08/a-road-to-common-lisp/ after many
 plane rides and weekends.
+
+## 2018-08-30
+
+Another Ubuntu setup.  Practice makes perfect I guess.
+
+Things I needed to `apt install` to get something usable:
+
+* `arandr`
+* `aspell-en`
+* `aspell-is`
+* `autoconf`
+* `build-essential`
+* `chromium-browser`
+* `cmake`
+* `curl`
+* `dunst`
+* `exfat-fuse`
+* `exfat-utils`
+* `fish`
+* `git`
+* `gnupg-agent`
+* `htop`
+* `hugo`
+* `inkscape`
+* `libx11-dev`
+* `mmv`
+* `msmtp`
+* `neomutt`
+* `neovim`
+* `network-manager-openvpn-gnome`
+* `notmuch`
+* `offlineimap`
+* `pcscd`
+* `python-neovim`
+* `python3-pip`
+* `restic`
+* `rlwrap`
+* `scdaemon`
+* `scrot`
+* `slock`
+* `texinfo`
+* `tmux`
+* `toilet`
+* `tree`
+* `vlc`
+* `w3m`
+* `wget`
+* `xautolock`
+* `xcape`
+* `xclip`
+
+Updated my dotfiles bootstrap script to include the new linux symlinks.
+
+Bootstrapping the system is still an uphill fight.
