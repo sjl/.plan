@@ -399,3 +399,17 @@ As always, `hg-git` is fucking broken on install.  Had to symlink
 [This](https://bitbucket.org/durin42/hg-git/issues/252/hg-47-error) is the
 problem.  Mercurial's lack of a stable plugin API is why I no longer really
 maintain my hg plugins.  It sucks.  For now I'm just gonna downgrade Mercurial.
+
+# September 2018
+
+I quit my job at the end of August and spent September traveling and not
+thinking about computers.
+
+# October 2018
+
+I spent the first three weeks of October in SF at my new job, to onboard in
+meatspace before starting remote work.
+
+## 2018-10-23
+
+Continuing game jam work.
