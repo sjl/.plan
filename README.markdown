@@ -410,6 +410,19 @@ thinking about computers.
 I spent the first three weeks of October in SF at my new job, to onboard in
 meatspace before starting remote work.
 
-## 2018-10-23
+## 2018-10-22
 
 Continuing game jam work.
+
+## 2018-10-23
+
+More work on the Lisp Game Jam.  I don't think my entry will be ready in time,
+but if nothing else at least I've accomplished a couple of things:
+
+* Done some actual testing of Mansion.  I really need to come up with a more
+  stringy syntax, and also start thinking about how to define colors (just use
+  constants?).
+* Figured out how to use esrap.  It's a little clumsy, but better than doing
+  everything by hand.  I still like Smug better, I think, though it has its own
+  clumsiness.
+
