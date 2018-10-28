@@ -426,3 +426,7 @@ but if nothing else at least I've accomplished a couple of things:
   everything by hand.  I still like Smug better, I think, though it has its own
   clumsiness.
 
+## 2018-10-28
+
+Finally got back to the electronics book.  Learned about 555 timer chips.
+
