@@ -430,3 +430,14 @@ but if nothing else at least I've accomplished a couple of things:
 
 Finally got back to the electronics book.  Learned about 555 timer chips.
 
+# November 2018
+
+## 2018-11-08
+
+Did a couple of Rosalind problems after work:
+
+* `cl-ppcre`'s `all-matches` only returns non-overlapping matches, not *all*
+  matches.  Had to write my own.  Dammit.
+* `~*` will skip over `format` arguments.
+* Drakma follows HTTP redirects by default, which is nice.
+* Uniprot is slow until you warm up their caches.
