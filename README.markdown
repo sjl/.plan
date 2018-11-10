@@ -441,3 +441,17 @@ Did a couple of Rosalind problems after work:
 * `~*` will skip over `format` arguments.
 * Drakma follows HTTP redirects by default, which is nice.
 * Uniprot is slow until you warm up their caches.
+
+## 2018-11-09
+
+Added some support for arbitrary data to CACL.  After using `jq` and being
+miserable, I think it might be possible to do RPN JSON processing.  (Re)learned how
+to use the CL pretty printer in the process, from the CLR book, so I can print
+hash tables much more nicely now.
+
+## 2018-11-10
+
+Changed the battery in my Thinkpad.  Mostly straightforward, except that the
+original was missing some screws and one of the plastic tabs had broken off and
+was jamming things when I tried to reassemble it.  Once I figured that out it
+went back together fine.
