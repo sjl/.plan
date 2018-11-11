@@ -455,3 +455,6 @@ Changed the battery in my Thinkpad.  Mostly straightforward, except that the
 original was missing some screws and one of the plastic tabs had broken off and
 was jamming things when I tried to reassemble it.  Once I figured that out it
 went back together fine.
+
+Did some more Rosalind problems.  One was trivial.  Implemented
+`longest-monotonic-subsequence` for another, which was tricky.
