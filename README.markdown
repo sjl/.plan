@@ -471,3 +471,5 @@ Got the backlight control working in my Thinkpad.  Had to edit
     EndSection
 
 Then reboot, and `xbacklight` would finally work.
+
+Played some DCSS for the first time in a long while.  Still fun.
