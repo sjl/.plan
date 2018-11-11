@@ -458,3 +458,16 @@ went back together fine.
 
 Did some more Rosalind problems.  One was trivial.  Implemented
 `longest-monotonic-subsequence` for another, which was tricky.
+
+## 2018-11-11
+
+Got the backlight control working in my Thinkpad.  Had to edit
+`/etc/X11/xorg.conf.d/20-intel.conf` to contain:
+
+    Section "Device"
+        Identifier  "Intel Graphics" 
+        Driver      "intel"
+        Option      "Backlight"  "intel_backlight"
+    EndSection
+
+Then reboot, and `xbacklight` would finally work.
