@@ -490,3 +490,7 @@ I eventually [tracked
 down](https://github.com/Clozure/ccl/issues/177#issuecomment-449586557) why the
 command line arguments are wonky.  No idea if this is a bug or intended
 behavior, but at last I understand what is happening now.
+
+Dusted off the old AxiDraw to make Christmas gift tags and cards for people.
+Fun!  I've learned now to not try to switch pens and redraw over the old lines
+— switching pens moves things around enough that it won't work cleanly.
