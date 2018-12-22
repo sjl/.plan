@@ -473,3 +473,20 @@ Got the backlight control working in my Thinkpad.  Had to edit
 Then reboot, and `xbacklight` would finally work.
 
 Played some DCSS for the first time in a long while.  Still fun.
+
+# December 2018
+
+## 2018-12-22
+
+Trying to debug why `ccl:*unprocessed-command-line-arguments*` isn't working.
+
+I can run CCL and connect to it with Vlime to jump around, which is great, but
+this particular problem is about command line argument processing so I had to
+figure out how to rebuild CCL to add some logging.  Turns out you just
+`(rebuild-ccl)` in a running CCL to tell it to rebuild itself.  I can even do
+that in the Vlime process, and then run the binary in another terminal.  Cool.
+
+I eventually [tracked
+down](https://github.com/Clozure/ccl/issues/177#issuecomment-449586557) why the
+command line arguments are wonky.  No idea if this is a bug or intended
+behavior, but at last I understand what is happening now.
