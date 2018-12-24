@@ -494,3 +494,32 @@ behavior, but at last I understand what is happening now.
 Dusted off the old AxiDraw to make Christmas gift tags and cards for people.
 Fun!  I've learned now to not try to switch pens and redraw over the old lines
 — switching pens moves things around enough that it won't work cleanly.
+
+## 2018-12-23
+
+Traveling.
+
+Refactored the split-sequence PR fork thing.  Surprisingly tricky to get all its
+weird edge cases around number-of-elements-examined correct.
+
+Still getting used to this split keyboard.  Finally starting to press the `b`
+key with the correct finger.  The numbers and arrows and stuff are still
+a challenge.
+
+Cleaned up CACL to work with CCL and Adopt.  Need to do some more work on the
+other CLI utils and write some docs for Adopt and then a blog post, I think.
+
+Tried to get Weechat up and running on this laptop so I can communicate with the
+world.  Unfortunately there's no nice list of Weechat's dependencies anywhere
+because fuck me, and I'm an idiot and didn't log it in this plan file the last
+time I had to deal with this bullshit, so here we are:
+
+    sudo apt install cmake libncursesw5-dev libcurl4-gnutls-dev zlib1g-dev libgcrypt20-dev gnutls-bin ca-certificates aspell aspell-en aspell-is libgnutls28-dev
+    cd ~/src/weechat
+    mkdir -p build
+    cd build
+    cmake ..
+    make
+    sudo make install
+
+That `libgnutls28-dev` is important.
