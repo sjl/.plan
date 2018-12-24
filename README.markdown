@@ -527,3 +527,7 @@ That `libgnutls28-dev` is important.
 Did another couple of Rosalind problems.  They were pretty easy, but it was good
 to get back into the swing of things, and I came up with some nice utils that
 make them pretty clean.
+
+## 2018-12-24
+
+Fixed a bug in one of my Rosalind problems.
