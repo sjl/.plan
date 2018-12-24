@@ -524,5 +524,6 @@ time I had to deal with this bullshit, so here we are:
 
 That `libgnutls28-dev` is important.
 
-Did another Rosalind problem.  This one was pretty easy, but it was good to get
-back into the swing of things.
+Did another couple of Rosalind problems.  They were pretty easy, but it was good
+to get back into the swing of things, and I came up with some nice utils that
+make them pretty clean.
