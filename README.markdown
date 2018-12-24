@@ -531,3 +531,8 @@ make them pretty clean.
 ## 2018-12-24
 
 Fixed a bug in one of my Rosalind problems.
+
+Pinned `python-markdown` to version `2.6.11` in `d` because the last release is
+fucking broken (it double-escapes characters in codehilited blocks).  They fixed
+it months ago but still haven't pushed a new release, so whatever, I'll just pin
+to one that seems to work.  At least I can build my documentation again.
