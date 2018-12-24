@@ -523,3 +523,6 @@ time I had to deal with this bullshit, so here we are:
     sudo make install
 
 That `libgnutls28-dev` is important.
+
+Did another Rosalind problem.  This one was pretty easy, but it was good to get
+back into the swing of things.
