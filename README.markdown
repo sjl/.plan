@@ -536,3 +536,11 @@ Pinned `python-markdown` to version `2.6.11` in `d` because the last release is
 fucking broken (it double-escapes characters in codehilited blocks).  They fixed
 it months ago but still haven't pushed a new release, so whatever, I'll just pin
 to one that seems to work.  At least I can build my documentation again.
+
+## 2018-12-25
+
+Merry Christmas.
+
+Whipped up a CSV library because the existing ones are a little bonkers.  Way
+less code and much faster.  There are still a couple of features I need to think
+about but I think it's pretty solid already.
