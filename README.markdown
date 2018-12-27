@@ -544,3 +544,15 @@ Merry Christmas.
 Whipped up a CSV library because the existing ones are a little bonkers.  Way
 less code and much faster.  There are still a couple of features I need to think
 about but I think it's pretty solid already.
+
+## 2018-12-26
+
+Wrote unit tests for the CSV library and got them running on SBCL, CCL, and ECL.
+`cl-csv` doesn't let you use a string as the newline delimiter on CCL, fun.  Had
+to install ECL on this laptop.  Built it from source this time.  It worked
+great.
+
+Got my pastebin access set up on this machine.  Apparently I forgot to add this
+machine's public key to my main Linode box.  Had to do it through Lish.
+
+
