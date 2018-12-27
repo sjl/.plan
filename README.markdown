@@ -582,3 +582,4 @@ is just:
 * Put the two JARs in `/usr/local/bin`.
 * Make a shell script to call `java -jar abcl.jar`.
 
+Renamed `trivial-ppm` to `cl-netpbm` since it's grown more functionality.
