@@ -570,4 +570,15 @@ hell.  Brain dump for next time:
 * The personal edition can't run a non-GUI (jesus).  I guess I'm not adding it
   to my automated tests.
 
+What the hell, let's get Allegro running too.  Allegro worked out of the box
+because I had already done the 32 bit bullshit for LispWorks, but it too is
+janky.  At least Allegro provides a command line REPL in `alisp`.  That's nice.
+
+Installed ABCL on this laptop to run tests there too.  The installation process
+is just:
+
+* Download the `-bin` from the site.  You don't also need to grab the contrib,
+  it's all bundled together.
+* Put the two JARs in `/usr/local/bin`.
+* Make a shell script to call `java -jar abcl.jar`.
 
