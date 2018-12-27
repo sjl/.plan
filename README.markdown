@@ -555,4 +555,19 @@ great.
 Got my pastebin access set up on this machine.  Apparently I forgot to add this
 machine's public key to my main Linode box.  Had to do it through Lish.
 
+Finally got around to installing LispWorks.  The personal edition is janky as
+hell.  Brain dump for next time:
+
+* The personal edition is 32-bit, so it will just Not Work™ out of the box.
+  Have to install 32-bit deps to get it to even run: `sudo apt install
+  libgtk2.0-0:i386 gtk2-engines-murrine:i386`.
+* The personal edition is an older version, which bundles ASDF 2, which can't
+  build shit any more.
+* Need to build ASDF 3 first by running `make` in the ASDF repo on the `release` branch.
+* Then in LispWorks run `(load "~/src/asdf/build/asdf.lisp") (provide "asdf")`.
+* Then you can run the Quicklisp bootstrap and everything works.
+* The personal edition won't run init files, you have to do it manually.
+* The personal edition can't run a non-GUI (jesus).  I guess I'm not adding it
+  to my automated tests.
+
 
