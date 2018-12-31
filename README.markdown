@@ -583,3 +583,13 @@ is just:
 * Make a shell script to call `java -jar abcl.jar`.
 
 Renamed `trivial-ppm` to `cl-netpbm` since it's grown more functionality.
+
+## 2018-12-31
+
+Figured out how to get my external hard drives mounted on Ubuntu as a non-root
+user.  Have to add a line like the following to `/etc/fstab`:
+
+    UUID=40098415-2c77-35dc-a3ed-4b286c7ed542 /media/sjl/external-drives/western-digital/ auto user,force,rw 0 0
+
+Get the UUID from `sudo blkid -sUUID`.  Then you can just `mount
+/media/sjl/external-drives/western-digital`.
