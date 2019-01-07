@@ -37,3 +37,8 @@ Someone wanted me to take a look at getting my coding math repo running again.
 It's bitrotted.  Need to install SDL first:
 
     sudo apt install libsdl2-dev libsdl2-ttf-dev libsdl2-image-dev libffi-dev
+
+Pushed a commit to fix the most obvious brokenness, but something inside SDL
+makes CCL shit itself and drop you into the kernel debugger and I just can't be
+bothered to figure out the shitshow that is graphics programming.  Sorry.  Best
+to look at my `coding-math` repo as a historical curiosity.
