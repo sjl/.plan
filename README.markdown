@@ -25,3 +25,15 @@ out after rewriting the addressing mode stuff three or four times.
 
 More work on Fern.  Got all of `nestest.nes` passing after lots of run, diff,
 fix cycles.  On to pictures and sound!
+
+## 2019-01-06
+
+More work on Fern.  Did a lot of restructuring and didn't make much actual
+progress, but I think it was helpful for wrapping my brain around stuff.
+
+## 2019-01-07
+
+Someone wanted me to take a look at getting my coding math repo running again.
+It's bitrotted.  Need to install SDL first:
+
+    sudo apt install libsdl2-dev libsdl2-ttf-dev libsdl2-image-dev libffi-dev
