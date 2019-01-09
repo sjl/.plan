@@ -66,8 +66,14 @@ learning experience and should work just fine for the NES.
 ## 2019-01-08
 
 Started really wrapping my head around pattern tables for Fern.  Wrote some
-janky code to render them as strings for now.  Started poking around with
-`cl-glfw3` and `cl-opengl`.  OpenGL is as much of an inscrutable shitshow as
-I remember, though I have a little bit of a head start in understanding it this
-time around.  Hopefully it won't take me too long to remember everything.  I did
-manage to get the example running smoothly, so that's nice.
+janky code to render them as strings for now.
+
+Started poking around with `cl-glfw3` and `cl-opengl`.  OpenGL is as much of an
+inscrutable shitshow as I remember, though I have a little bit of a head start
+in understanding it this time around.  Hopefully it won't take me too long to
+remember everything.  I did manage to get the example running smoothly, so
+that's nice.
+
+Started going through <http://learnopengl.com> to try to remember how to do this
+crap.  Spent lots of time fighting with object lifetimes because the examples
+all just garbage collect with `exit()`.
