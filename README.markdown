@@ -42,3 +42,28 @@ Pushed a commit to fix the most obvious brokenness, but something inside SDL
 makes CCL shit itself and drop you into the kernel debugger and I just can't be
 bothered to figure out the shitshow that is graphics programming.  Sorry.  Best
 to look at my `coding-math` repo as a historical curiosity.
+
+Did some research and thinking about the GUI for Fern.  Refreshed my memory on
+all the inscrutable fucking acronyms:
+
+* OpenGL: take triangles and textures and shaders, render pixels.
+* GLU: utilities for OpenGL, probably outdated and not needed any more.
+* GLUT: handles the OS-specific stuff about getting a window to draw into, getting keystrokes, etc.
+* GLFW: competitor to GLUT that does the same things?
+* SDL: competitor to GLUT/GLU that does the same things, plus other things like sound, networking, etc.
+* GLEW: completely unrelated, handles OpenGL extensions (GL Extension Wrangler).
+
+Looked into immediate mode GUI libs like IMGUI and Nuklear.  They're especially
+weird in that you have to provide your own rendering backend and input support.
+So you'd use them *in addition* to GLFW+OpenGL, for example, and you need to
+wire up all the support yourself.
+
+These might be good eventually but I think I can probably just get away with
+GLFW for now, since I just want to display some god damn pixels in a window.
+I can do sound with PortAudio like I did for `cl-chip8`.  That'll be a fun
+learning experience and should work just fine for the NES.
+
+## 2019-01-08
+
+Started really wrapping my head around pattern tables for Fern.  Wrote some
+janky code to render them as strings for now.
