@@ -1,6 +1,6 @@
 [TOC]
 
-# January 2018
+# January 2019
 
 Happy new year!
 
@@ -77,3 +77,11 @@ that's nice.
 Started going through <http://learnopengl.com> to try to remember how to do this
 crap.  Spent lots of time fighting with object lifetimes because the examples
 all just garbage collect with `exit()`.
+
+## 2019-01-09
+
+Started booking travel for the upcoming year.
+
+Got my copy of [Programming the 65816](https://amzn.to/2RH8or0).  Gonna skim
+through it for all the 6502-specific bits to hopefully fill in the gaps in my
+brain for Fern.
