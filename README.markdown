@@ -85,3 +85,9 @@ Started booking travel for the upcoming year.
 Got my copy of [Programming the 65816](https://amzn.to/2RH8or0).  Gonna skim
 through it for all the 6502-specific bits to hopefully fill in the gaps in my
 brain for Fern.
+
+## 2019-01-10
+
+Finally got around to replacing `mkpass` with a version in Common Lisp.  My
+collection of CL scripts is growing, now that I have Adopt to make writing their
+UI less painful.  Need to dogfood it a bit more and eventually release it.
