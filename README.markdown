@@ -91,3 +91,5 @@ brain for Fern.
 Finally got around to replacing `mkpass` with a version in Common Lisp.  My
 collection of CL scripts is growing, now that I have Adopt to make writing their
 UI less painful.  Need to dogfood it a bit more and eventually release it.
+
+Did a bit more of the OpenGL tutorial.
