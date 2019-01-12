@@ -93,3 +93,8 @@ collection of CL scripts is growing, now that I have Adopt to make writing their
 UI less painful.  Need to dogfood it a bit more and eventually release it.
 
 Did a bit more of the OpenGL tutorial.
+
+## 2019-01-12
+
+Did some more of the OpenGL tutorial.  Added some extra bits to cl-netpbm to
+easily load an image into an array in the form OpenGL expects.
