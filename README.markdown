@@ -97,4 +97,5 @@ Did a bit more of the OpenGL tutorial.
 ## 2019-01-12
 
 Did some more of the OpenGL tutorial.  Added some extra bits to cl-netpbm to
-easily load an image into an array in the form OpenGL expects.
+easily load an image into an array in the form OpenGL expects.  Started
+sketching out the GUI structure in Fern.
