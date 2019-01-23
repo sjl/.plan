@@ -99,3 +99,13 @@ Did a bit more of the OpenGL tutorial.
 Did some more of the OpenGL tutorial.  Added some extra bits to cl-netpbm to
 easily load an image into an array in the form OpenGL expects.  Started
 sketching out the GUI structure in Fern.
+
+## 2019-01-19
+
+Got pattern tables rendering in Fern (finally).
+
+## 2019-01-22
+
+Got a first pass at the main GUI loop for Fern hashed out.  GUI programming is
+fucking miserable.
+
