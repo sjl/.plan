@@ -144,3 +144,32 @@ Observations:
 
 What the fuck, man.
 
+Added a skeleton of a nametable viewer to Fern.  The windowing works, but I've
+hit a problem I'm not sure exactly how to solve.
+
+For some reason, I thought it was the `poll-events` call that blocked til vsync.
+That was incorrect — it's the `swap-buffers` that waits.  This exposes two
+problems in my current design:
+
+1. When we don't have to draw anything, we never call `swap-buffers`, and so
+   never have a chance to block, and so busy loop and consume an entire CPU
+   core.
+2. If we have multiple windows open that all want to draw on the same frame,
+   they'll vsync one after another and end up cutting our FPS down.
+
+I could potentially solve 1 with something like "if you didn't draw anything,
+sleep for 10ms" or something, but that doesn't fix problem 2, which is more of
+an issue.
+
+Problem 2 is trickier.  I searched around a little bit online and found a couple
+of things I might want to try.
+
+1. Disabling vsync and managing it myself with sleeps.  Folks warn that this
+   could produce tearing, so it doesn't seem ideal.
+2. Track which windows need to swap.  Enable vsync for the first and swap,
+   disable it for the rest and swap them.  Sleep if nothing needs to swap.  This
+   seems reasonable, though some folks said it might still produce tearing?
+3. Run each window in its own thread, and vsync.  Does this work on MacOS?  Do
+   I care?
+
+Need to sleep on this.
