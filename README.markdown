@@ -109,3 +109,38 @@ Got pattern tables rendering in Fern (finally).
 Got a first pass at the main GUI loop for Fern hashed out.  GUI programming is
 fucking miserable.
 
+## 2019-01-24
+
+The saga of my keyboard disconnects continues.  Captured a `dmesg` log of it
+happening:
+
+    [88916.149078] usb 1-2.1-port1: disabled by hub (EMI?), re-enabling...
+    [88916.152083] usb 1-2.1.1: USB disconnect, device number 29
+    [88916.638190] usb 1-2.1.1: new full-speed USB device number 33 using xhci_hcd
+    [88916.958196] usb 1-2.1.1: New USB device found, idVendor=1d50, idProduct=6122
+    [88916.958199] usb 1-2.1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+    [88916.958200] usb 1-2.1.1: Product: Ultimate Hacking Keyboard
+    [88916.958202] usb 1-2.1.1: Manufacturer: Ultimate Gadget Laboratories
+    [88916.979576] hid-generic 0003:1D50:6122.002A: hiddev1,hidraw2: USB HID v1.10 Device [Ultimate Gadget Laboratories Ultimate Hacking Keyboard] on usb-0000:01:00.0-2.1.1/input0
+    [88916.989417] input: Ultimate Gadget Laboratories Ultimate Hacking Keyboard as /devices/pci0000:00/0000:00:01.1/0000:01:00.0/usb1/1-2/1-2.1/1-2.1.1/1-2.1.1:1.1/0003:1D50:6122.002B/input/input45
+    [88917.046540] hid-generic 0003:1D50:6122.002B: input,hidraw3: USB HID v1.10 Keyboard [Ultimate Gadget Laboratories Ultimate Hacking Keyboard] on usb-0000:01:00.0-2.1.1/input1
+    [88917.056500] input: Ultimate Gadget Laboratories Ultimate Hacking Keyboard as /devices/pci0000:00/0000:00:01.1/0000:01:00.0/usb1/1-2/1-2.1/1-2.1.1/1-2.1.1:1.2/0003:1D50:6122.002C/input/input46
+    [88917.114459] hid-generic 0003:1D50:6122.002C: input,hidraw4: USB HID v1.10 Device [Ultimate Gadget Laboratories Ultimate Hacking Keyboard] on usb-0000:01:00.0-2.1.1/input2
+    [88917.124334] input: Ultimate Gadget Laboratories Ultimate Hacking Keyboard as /devices/pci0000:00/0000:00:01.1/0000:01:00.0/usb1/1-2/1-2.1/1-2.1.1/1-2.1.1:1.3/0003:1D50:6122.002D/input/input47
+    [88917.182306] hid-generic 0003:1D50:6122.002D: input,hidraw5: USB HID v1.10 Device [Ultimate Gadget Laboratories Ultimate Hacking Keyboard] on usb-0000:01:00.0-2.1.1/input3
+    [88917.194570] input: Ultimate Gadget Laboratories Ultimate Hacking Keyboard as /devices/pci0000:00/0000:00:01.1/0000:01:00.0/usb1/1-2/1-2.1/1-2.1.1/1-2.1.1:1.4/0003:1D50:6122.002E/input/input48
+    [88917.194696] hid-generic 0003:1D50:6122.002E: input,hidraw7: USB HID v1.10 Mouse [Ultimate Gadget Laboratories Ultimate Hacking Keyboard] on usb-0000:01:00.0-2.1.1/input4
+    [88917.258912] usb 1-2.1.2: reset full-speed USB device number 31 using xhci_hcd
+
+Observations:
+
+* It's only the keyboard disconnecting.  The mouse is also plugged into the same
+  USB hub, and that doesn't seem to get disconnected (the "mouse" in that log
+  output is the virtual one the UHK uses to do mouse stuff).
+* I'm pretty sure this happens regardless of what USB port it's plugged into.
+  I'm going to try plugging it into a different port on the hub, and if that
+  fails, into the monitor hub, and maybe into the work laptop itself.
+* My Realforce did the same thing, so it can't be specific to the keyboard.
+
+What the fuck, man.
+
