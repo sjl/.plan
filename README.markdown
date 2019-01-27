@@ -173,3 +173,10 @@ of things I might want to try.
    I care?
 
 Need to sleep on this.
+
+## 2019-01-27
+
+Took another two stabs at the Fern multiple windows things.  I basically ended
+up going with option 2.  It seems to work.  Still need to do some actual work
+on the nametable viewer, but at least it doesn't eat my CPU and/or take way too
+long to do anything now.
