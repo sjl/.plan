@@ -180,3 +180,13 @@ Took another two stabs at the Fern multiple windows things.  I basically ended
 up going with option 2.  It seems to work.  Still need to do some actual work
 on the nametable viewer, but at least it doesn't eat my CPU and/or take way too
 long to do anything now.
+
+# February 2019
+
+Spent the first two weeks in SF for work.
+
+## 2019-02-18
+
+Back from SF.  Registered for ELS 2019.  Don't have anything to talk about this
+time, but it'll be good to see folks again.
+
