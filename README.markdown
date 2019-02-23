@@ -220,4 +220,7 @@ I went with option 4:
         (loop :for (float . more) :on (ensure-list float-or-floats)
               :do (format s "~,VF~:[~; ~]" precision float more))))
 
+Finally wrote some documentation for
+[cl-netpbm](https://sjl.bitbucket.io/cl-netpbm/) and sent a request to get it
+into Quicklisp.  The project backlog continues to shrink.
 
