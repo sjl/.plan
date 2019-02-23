@@ -190,3 +190,8 @@ Spent the first two weeks in SF for work.
 Back from SF.  Registered for ELS 2019.  Don't have anything to talk about this
 time, but it'll be good to see folks again.
 
+## 2019-02-22
+
+Did some more Rosalind problems.  I'm up to 33 or so now.  These were fairly
+straightforward, but there are some other trickier ones I need to think about
+more.
