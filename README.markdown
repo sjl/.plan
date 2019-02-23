@@ -195,3 +195,29 @@ time, but it'll be good to see folks again.
 Did some more Rosalind problems.  I'm up to 33 or so now.  These were fairly
 straightforward, but there are some other trickier ones I need to think about
 more.
+
+## 2019-02-23
+
+Did another Rosalind problem.  Spent some time dicking around with `format` to
+try to figure out how to do the equivalent of the following:
+
+    (format nil "~{~,VF~^ ~}" precision floats)
+
+The intent is to print all the floats with the given precision.  This doesn't
+work, because the `V` is inside the `~{~}` directive, and so `format` expects
+two list items per iteration.  Options:
+
+1. Generate a control string at runtime with a separate `format` (gross).
+2. Define `print-float` to be a formatting function that uses a dynamic variable
+   and use`~/print-float/` in the control string (awkward).
+3. Interleave the precision in the list (wasteful).
+4. Do something horrible.
+
+I went with option 4:
+
+    (defun float-string (float-or-floats &optional (precision 3))
+      (with-output-to-string (s)
+        (loop :for (float . more) :on (ensure-list float-or-floats)
+              :do (format s "~,VF~:[~; ~]" precision float more))))
+
+
