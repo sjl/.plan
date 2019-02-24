@@ -224,3 +224,36 @@ Finally wrote some documentation for
 [cl-netpbm](https://sjl.bitbucket.io/cl-netpbm/) and sent a request to get it
 into Quicklisp.  The project backlog continues to shrink.
 
+Started reading the Bioinformatics Algorithms book.  Set up a new repo for it.
+Did the first problem just to make sure all the pieces are hooked up.  The first
+problem is trivial to do serially.  Dicked around with lparallel to exercise my
+fancy machine a bit.  Learned a few things:
+
+* You can give each lparallel worker thread its own thread-local bindings with
+  `:bindings '((*foo* . (form to eval) …))`.  This is nice to give each thread
+  its own random number generator so they can work concurrently.
+* Generating ~32gb of random DNA is a *lot* faster when you do it on 16 cores
+  instead of 1.
+* Giving SBCL all of my 64gb of memory is a bad idea.  It will try to use *all*
+  of it, and I usually have at least another few GB used, and the Linux OOM
+  killer does not fuck around.
+* I need a better interface for cl-pcg.  The current one blows.
+
+Asked #sbcl for clarification on a couple of things:
+
+    <sjl> Are there any thread safety guarantees for writing to separate elements of SIMPLE-ARRAYs?
+    <sjl> Example: I want to initialize a large (~30gb) array with random data (DNA bases) for testing purposes.
+    <sjl> If I make the array a (SIMPLE-ARRAY CHARACTER (*)) and initialize it using LPARALLEL:PDOTIMES to work in chunks, it appears to work fine, but I assume I can't rely on that behaviour.
+    <sjl> I'm guessing if I switched to something more compact like (SIMPLE-ARRAY (INTEGER 0 3) (*)) this would no longer Just Work™.
+    <sjl> Would I then need to use the CAS stuff to guarantee that one thread writing to (AREF FOO N) and another writing to (AREF FOO (1+ N)) don't step on each others' toes?
+    <pkhuong> sjl: bytes and larger are safe.
+    <pkhuong> there is no guarantee
+    <pkhuong> except for the fact that it's implemented that way
+    <pkhuong> threading is outside the spec. developing a formal memory model is expensive.
+    <sjl> Yeah
+    <sjl> It seems unlikely that "bytes and larger are safe" would stop being true in the future, right?
+    <pkhuong> correct.
+    <sjl> I think I can live with that.
+    <sjl> Thanks.
+    <pkhuong> don't run on itanium. I'd double check the disassembly on ARM.
+    <sjl> Ah, not using either at the moment, but good to know.
