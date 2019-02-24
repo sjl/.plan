@@ -238,6 +238,7 @@ fancy machine a bit.  Learned a few things:
   of it, and I usually have at least another few GB used, and the Linux OOM
   killer does not fuck around.
 * I need a better interface for cl-pcg.  The current one blows.
+* SBCL does appear to `free` memory back to the OS when it GCs, unlike the JVM.
 
 Asked #sbcl for clarification on a couple of things:
 
