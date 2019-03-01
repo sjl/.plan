@@ -262,3 +262,10 @@ Asked #sbcl for clarification on a couple of things:
 ## 2019-02-24
 
 More Bioinformatics Algorithms problems.
+
+# March 2019
+
+## 2019-03-01
+
+Did the `LONG` Rosalind problem while sitting in ORD.  Not completely happy with
+it — I feel like I must be missing something that would make this cleaner.
