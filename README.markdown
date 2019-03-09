@@ -274,3 +274,11 @@ it — I feel like I must be missing something that would make this cleaner.
 
 Did some more BIAL problems.  Spent way too much time writing iterate drivers to
 make the problems themselves look clean.  Oh well, I'll use them again some day.
+
+## 2019-03-09
+
+Browsed through `st`'s code a little bit.  Seems fairly simple (at least as
+simple as a language as weak as C can be).
+
+More BIAL problems.  Spent a bunch of time screwing around with iterate and
+lparallel for not a lot of benefit.  Oh well.
