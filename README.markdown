@@ -269,3 +269,8 @@ More Bioinformatics Algorithms problems.
 
 Did the `LONG` Rosalind problem while sitting in ORD.  Not completely happy with
 it — I feel like I must be missing something that would make this cleaner.
+
+## 2019-03-08
+
+Did some more BIAL problems.  Spent way too much time writing iterate drivers to
+make the problems themselves look clean.  Oh well, I'll use them again some day.
