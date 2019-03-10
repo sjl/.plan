@@ -282,3 +282,6 @@ simple as a language as weak as C can be).
 
 More BIAL problems.  Spent a bunch of time screwing around with iterate and
 lparallel for not a lot of benefit.  Oh well.
+
+Finished The Character of Physical Law by Feynman.  A bunch went over my head,
+but it was still a good read.
