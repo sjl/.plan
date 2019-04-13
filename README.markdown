@@ -337,3 +337,22 @@ Setting the time and date worked great.  They persist across restarts and such.
 After evaluating some stuff, the screen seems to be garbled.  Not sure exactly
 what I need to do/configure to get the screen working properly.  Evaluating
 `(cls)` does clear the screen back to the beginning, so I can use that for now.
+
+## 2019-04-13
+
+Trying to get my code-to-PDF thing ported to Linux.  Random notes:
+
+* No idea where my header file is.  Probably forgot to commit it.
+* `pstopdf` is called `ps2pdf` on Linux and has different options.
+* To list fonts on the system: `fc-list`.
+* `enscript` on Linux can't just take one of these fonts because fuck you.  It
+  needs an "AFM" file for some reason.
+* Can generate an `afm` file with `ttf2afm` which is in the `texlive-binaries`
+  package along with a whole other pile of bullshit I don't need.  Cool.  `sudo
+  apt install texlive-binaries; and ttf2afm /usr/share/fonts/truetype/ubuntu/UbuntuMono-R.ttf | sudo tee /usr/share/enscript/afm/umr.afm`
+* Then I need to edit `/usr/share/enscript/afm/font.map` because this program is
+  incapable of `ls`ing a directory to find all the font maps in it or something.
+  Note that the font name here needs to match the font name in the generated
+  AFM even though you're explicitly telling the stupid program which AFM to use
+  with a given font name, because once again: fuck you.
+
