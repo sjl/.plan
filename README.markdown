@@ -342,17 +342,71 @@ what I need to do/configure to get the screen working properly.  Evaluating
 
 Trying to get my code-to-PDF thing ported to Linux.  Random notes:
 
-* No idea where my header file is.  Probably forgot to commit it.
-* `pstopdf` is called `ps2pdf` on Linux and has different options.
-* To list fonts on the system: `fc-list`.
-* `enscript` on Linux can't just take one of these fonts because fuck you.  It
-  needs an "AFM" file for some reason.
-* Can generate an `afm` file with `ttf2afm` which is in the `texlive-binaries`
-  package along with a whole other pile of bullshit I don't need.  Cool.  `sudo
-  apt install texlive-binaries; and ttf2afm /usr/share/fonts/truetype/ubuntu/UbuntuMono-R.ttf | sudo tee /usr/share/enscript/afm/umr.afm`
-* Then I need to edit `/usr/share/enscript/afm/font.map` because this program is
-  incapable of `ls`ing a directory to find all the font maps in it or something.
-  Note that the font name here needs to match the font name in the generated
-  AFM even though you're explicitly telling the stupid program which AFM to use
-  with a given font name, because once again: fuck you.
+No idea where my header file is.  Probably forgot to commit it.
+
+`pstopdf` is called `ps2pdf` on Linux and has different options, because fuck
+you.
+
+To list fonts and their files on the system: `fc-list`.
+
+`enscript` on Linux can't just take one of these fonts because fuck you.  It
+needs an "AFM" file for some reason.
+
+Can generate an `afm` file with `ttf2afm` which is in the `texlive-binaries`
+package along with a whole other pile of bullshit I don't need.  Cool:
+
+    sudo apt install texlive-binaries
+    ttf2afm /usr/share/fonts/truetype/ubuntu/UbuntuMono-R.ttf | sudo tee /usr/share/enscript/afm/umr.afm`
+
+Then I need to edit `/usr/share/enscript/afm/font.map` because this program is
+incapable of `ls`ing a directory to find all the font maps in it or something.
+Note that the font name here needs to match the font name in the generated AFM
+even though you're explicitly telling the stupid program which AFM to use with
+a given font name, because once again: fuck you.
+
+Found the `sjl.hdr` file on my old machine.  It was just in `/usr/local` because
+I was lazy.  Committed it to my dotfiles this time.
+
+I also had a `clisp.st` highlighting file in there.  Need to symlink that into
+`/usr/share` too, and also update the `enscript.st` file to add it.
+
+Also need to hack `enscript.st` to tell enscript how to find the proper variants
+of my font.  Jesus:
+
+    else if (is_prefix ("UbuntuMono", font))
+      {
+        bold_font = "UbuntuMono-Bold";
+        italic_font = "UbuntuMono-Italic";
+        bold_italic_font = "UbuntuMono-BoldItalic";
+      }
+
+Now the thing finally fucking runs again.  So now I can get started printing the
+MakerLisp code.  However, if I do my usual one-page-per-file style it ends up
+being 198 pages, and many of them are almost entirely blank.  So instead I can
+cat the various groups of files together with something like:
+
+    cd bin
+    ffindext l | sort | xargs -I file sh -c "cat file; echo" > ../bin.l
+    cd ../..
+
+    cd l/lang
+    ffindext l | sort | xargs -I file sh -c "cat file; echo" > ../lang.l
+    cd ../..
+
+    cd l/clib
+    ffindext l | sort | xargs -I file sh -c "cat file; echo" > ../clib.l
+    cd ../..
+
+    cd l/ez80
+    ffindext l | sort | xargs -I file sh -c "cat file; echo" > ../ez80.l
+    cd ../..
+
+And then generate the PDF with something like:
+
+    ffindext l | sort | grep -v /lang/ | grep -v /bin/ | grep -v /clib/ | grep -v /ez80/ | xargs code-to-pdf "MakerLisp"
+
+Now we're down to 64 pages, which is much more reasonable.  The `demo` and
+`util` directories have some beefier programs, so I'll leave those alone.  And
+I *finally* have a PDF I can print.  I hate computers.
+
 
