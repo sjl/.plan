@@ -285,3 +285,55 @@ lparallel for not a lot of benefit.  Oh well.
 
 Finished The Character of Physical Law by Feynman.  A bunch went over my head,
 but it was still a good read.
+
+# April 2019
+
+## 2019-04-12
+
+My [MakerLisp Machine](https://makerlisp.com/) arrived.  Going to put it
+together and brain dump along the way.
+
+I had previously downloaded and extracted `makerlisp.zip`, and committed the
+result into a Mercurial repo.  Just to be safe I wanted to see if it had been
+updated since a couple of days ago.  I downloaded it again, moved it into the
+repo, and then `rm -rf src doc RELEASE` and `unzip makerlisp.zip`.  Then an `hg
+diff` showed me the changes.  Maybe this process could be made easier (e.g. by
+just letting me clone the git repo?) but it's easy enough to script up if
+necessary.
+
+Used my new SD card reader to get at the SD card.  It was FAT32 as expected, so
+nothing to mess around with there.  Had to first get it mounted, and of course
+mounting anything is a giant pain in the ass on Linux.  I miss MacOS.  Ended up
+using `udisksctl mount -b /dev/sdc1` to mount the thing without dicking around
+with `fstab`.  Then `cp -rt /media/sjl/…mountpoint…/ src/uSDimage/*` to actually
+copy the files.  It was pretty fast.  `udisksctl unmount -b /dev/sdc1` to eject.
+
+Installed the battery.
+
+Wiring up the VGA controller and USB keyboard controller.  Almost messed up
+— the RX pin goes to PD0 and the C pin goes to PB1.  Note it's D and B, not the
+same letter!
+
+VGA cable is quite beefy, not perfect for routing around everything.  But it
+does the job.
+
+After connecting everything and plugging it in, it works!  The screen looks
+a little odd because there appear to be two prompts.  I wonder if the graphics
+mode is wonky.
+
+Had some issues getting the keyboard working:
+
+* The documentation says to make sure the RX jumper isn't connected.  The board
+  came this way, so that was fine.
+* But the board came with the TX jumper jumped, and I had to *remove* that to
+  get the keyboard to work.
+* Then I tried to use some other USB keyboards, because the 40% one is just too
+  painful to type on.  The Realforce 104 worked fine, but my HHKB and my UHKs
+  didn't work at all.  They're getting power (they light up) but typing doesn't
+  work at all.
+
+Setting the time and date worked great.  They persist across restarts and such.
+
+After evaluating some stuff, the screen seems to be garbled.  Not sure exactly
+what I need to do/configure to get the screen working properly.  Evaluating
+`(cls)` does clear the screen back to the beginning, so I can use that for now.
