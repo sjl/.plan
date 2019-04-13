@@ -409,4 +409,7 @@ Now we're down to 64 pages, which is much more reasonable.  The `demo` and
 `util` directories have some beefier programs, so I'll leave those alone.  And
 I *finally* have a PDF I can print.  I hate computers.
 
-
+Booted up the lisp machine again and today the TX jumper seems to work as
+documented.  I tried debugging the display corruption with the info from the
+email Luther sent (getting a bunch of text on the screen and pressing the Auto
+button) but that didn't seem to help.  Emailed back.
