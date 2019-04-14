@@ -413,3 +413,19 @@ Booted up the lisp machine again and today the TX jumper seems to work as
 documented.  I tried debugging the display corruption with the info from the
 email Luther sent (getting a bunch of text on the screen and pressing the Auto
 button) but that didn't seem to help.  Emailed back.
+
+## 2019-04-14
+
+More troubleshooting of the Lisp machine video issues.  Borrowed a miniDP/VGA
+dongle and TV with a VGA input (apparently they still exist) from a friend, and
+got a new VGA cable.  The results are very confusing:
+
+* Cable makes no different in any scenario.
+* WORKS: Macbook miniDP to dongle to Elecrow VGA
+* WORKS: Thinkpad miniDP to dongle to Elecrow VGA
+* WORKS: Lisp Machine VGA to TV VGA
+* BORKED: Lisp Machine VGA to Elecrow VGA
+
+Emailed the author back with my results.  This is really strange… I would have
+expected either the monitor or the Lisp Machine were the problem, but they only
+seem to not work *together*.
