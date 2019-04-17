@@ -429,3 +429,14 @@ got a new VGA cable.  The results are very confusing:
 Emailed the author back with my results.  This is really strange… I would have
 expected either the monitor or the Lisp Machine were the problem, but they only
 seem to not work *together*.
+
+## 2019-04-16
+
+The Makerlisp author received an updated version of the monitor and he's now
+seeing the same thing I am, so it's nothing I did wrong.  He's mailing me his
+old/good monitor and I'm mailing him my bad new one, which was very kind of him.
+
+Spent a while getting Vim set up to work with a Makerlisp REPL.  Mostly got it
+working, except the newline handling is going to be kind of a pain.  But I can
+live with that for now, in exchange for being able to edit in Vim with Paredit
+and sending to a REPL easily.
