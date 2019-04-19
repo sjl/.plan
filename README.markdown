@@ -440,3 +440,30 @@ Spent a while getting Vim set up to work with a Makerlisp REPL.  Mostly got it
 working, except the newline handling is going to be kind of a pain.  But I can
 live with that for now, in exchange for being able to edit in Vim with Paredit
 and sending to a REPL easily.
+
+## 2019-04-18
+
+More poking around at MakerLisp.
+
+I know I'm going to need user input for a game, so my first idea is to see if
+I can make some reading functions.  `read-line` would be good for a text
+adventure.  I found an example implementation in the shunting yard demo, but
+also tried writing my own.  I wrote a bunch of other stuff along the way too.
+Did `read-byte` and `read-char`.  Not sure how to go about making the `-no-hang`
+variants.
+
+Is there something like CL's `macroexpand-1` that will only do one level of
+macroexpansion?  It's a bit hard to read when *everything* gets expanded…
+
+Symbols don't seem to be printed readably.
+
+Spent 15+ minutes wondering why my `defmacro` macro would go into an infinite
+loop on the second and further tries.  Realized it's because I was using the
+file as a scratch space, and so when it would `forget` itself and autoload it
+would be evaling the `expand` call over and over.  I'm so dumb.
+
+`cadr` is a macro, so I can't map it (or, rather, I can with *very* strange
+results).
+
+`print` and friends don't return their argument, which means you can't just wrap
+a `(print …)` around something when debugging.
