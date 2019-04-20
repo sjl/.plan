@@ -467,3 +467,19 @@ results).
 
 `print` and friends don't return their argument, which means you can't just wrap
 a `(print …)` around something when debugging.
+
+## 2019-04-19
+
+New screen arrived today.  It works!  Then I needed to sync the SD card again.
+Commands to do that (eventually I'll script these):
+
+    udisksctl mount -b /dev/sdc1
+    rsync -avd ./ --copy-unsafe-links --exclude=.hg  /media/sjl/3831-6133
+    udisksctl unmount -b /dev/sdc1 
+
+(Aside: why don't I always just pipe `histgrep` into `nvim -`?)
+
+Narrowed down my macro troubles to a couple of bugs in MakerLisp itself.  He's
+going to take care of them.
+
+## 2019-04-20
