@@ -495,3 +495,17 @@ integers.  Turns out not many folks have done much LCG research on 24-bit
 machines (go figure).  All the test suites (e.g. TestU01 and PractRand)
 immediately fail small PRNGs, so it's hard to know if I've got something decent
 or not.  Oh well, it's just for games, it's not life and death.
+
+Random notes:
+
+* The "Randograms" in the blog post are confusing because they're sampling the
+  entire period of the generator, but still get odd-numbered occurence counts.
+  This confused the hell out of me until I realized that by "pair up the
+  numbers" they mean a sliding two element window: `(1 2 3 4)` produces `((1 2)
+  (2 3) (3 4))`.
+* The 256x256 size works perfectly for the 8-bit generators.  I wasn't able to
+  extend it for 16-bit generators because exhausting their period would take
+  *much* longer.
+* It's still not clear to me how to decide what's a "good" multiplier for
+  smaller-sized PRNGs.  They fail the tests right away because they're so small,
+  so I can't really go by that.
