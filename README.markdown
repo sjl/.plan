@@ -483,3 +483,15 @@ Narrowed down my macro troubles to a couple of bugs in MakerLisp itself.  He's
 going to take care of them.
 
 ## 2019-04-20
+
+Need a random number generator for the MakerLisp machine.  I could FFI out, but
+it'll be more fun to write a PCG for it.  This turned out to be a hell of
+a rabbit hole.
+
+I've written PCGs before, of course, but on normal computers where I could just
+use the bit sizes and multiplier of the reference implementation.  Here I can't
+do that, so I had to try to come up with something that would work with 24 bit
+integers.  Turns out not many folks have done much LCG research on 24-bit
+machines (go figure).  All the test suites (e.g. TestU01 and PractRand)
+immediately fail small PRNGs, so it's hard to know if I've got something decent
+or not.  Oh well, it's just for games, it's not life and death.
