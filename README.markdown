@@ -509,3 +509,23 @@ Random notes:
 * It's still not clear to me how to decide what's a "good" multiplier for
   smaller-sized PRNGs.  They fail the tests right away because they're so small,
   so I can't really go by that.
+
+## 2019-04-30
+
+Started playing/rating the lisp jam games.  Wanted to install a VM to safely
+play the non-web ones, which led to a big old rabbit hole:
+
+* Need to enable CPU virtualization in the BIOS to get VirtualBox to work.
+* When I rebooted my desktop crashed right after logging in.
+* Took me a while to find my display manager logs because I can never remember
+  its fucking name (and can never remember that it's "display manager" and not
+  "desktop manager").  Hey idiot future self: you use XDM.
+* Thought the problem was maybe because I just upgraded SBCL and didn't rebuild
+  Stump.  Tried that, didn't help.
+* Saw some errors in the XDM log about the config file not parsing properly.
+  Fixed those.  Didn't help.
+* Opened `.xsessionrc` and immediately saw the problem: the `gpg-agent` shit
+  I added on my work machine and pulled down here.  Christ.  Removed that for
+  now because I can't remember the magic systemd incantation required to get it
+  to quit fucking autostarting the agent whenever anything looks in the general
+  direction of its ports and I want to move on with my fucking life tonight.
