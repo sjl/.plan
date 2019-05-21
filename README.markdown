@@ -580,3 +580,21 @@ least my cores are getting some use.  It's fun to see all 32 bars full in
 churns through a lot of garbage thanks to all the bignum arithmetic (~182tb
 allocated for base 39).  Is there a way to avoid all the bignum division maybe?
 
+## 2019-05-21
+
+Figured out why my alt key wasn't working.  What a gross rabbit shave:
+
+1. Alt key doesn't seem to be working (e.g. `alt-a` in Zoom doesn't work).
+2. Open `xev` and look.  Pressing `alt` shows keycode `133` and keysym `F17`.
+3. Open `.xmodmaprc`, which has `keycode 133 = Alt_L` and nothing else listed
+   for `133`.
+4. Source the file, then run `xmodmap -pke | grep 133` to see if it's working.
+5. This gives `keycode 133 = F17 NoSymbol F17`.  But all the *other* mappings in
+   the rc file are working, so what the fuck?
+6. Eventually I get the idea to look for `F17` instead.  Realize I have a bunch
+   of lines like `keycode 900 = F16`, `keycode 901 = F17`, `keycode 902 = F18`,
+   etc in the rc file.
+7. Tried commenting out the line that maps `F17`, and now everything works.
+8. But that was mapping keycode `901`, not `133`.  Why was it overwriting the
+   alt mapping?
+9. Because `901 ≡ 133 mod 256`.  Fucking kill me.
