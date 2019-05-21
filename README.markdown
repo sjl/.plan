@@ -529,3 +529,54 @@ play the non-web ones, which led to a big old rabbit hole:
   now because I can't remember the magic systemd incantation required to get it
   to quit fucking autostarting the agent whenever anything looks in the general
   direction of its ports and I want to move on with my fucking life tonight.
+
+# May 2019
+
+## 2019-05-20
+
+Going to try to reboot this plan.  I know I haven't kept up with it very well
+(though my work `.plan` has been going strong every day since October).  Oh
+well, no time like the present to restart.
+
+Added a couple of type checks to Adopt.  The only main thing left is to rewrite
+the unit tests to work in the new style.  Then it should be ready for Quicklisp,
+I think.
+
+Continued learning how to sew.  Hemmed my second pair of pants.  Kind of
+a miserable experience, but I'm getting better.  It's weird that the machine
+will happily let you forget to put the foot down before letting you sew, happily
+fucking up your shit into a giant bird's nest instead of having some kind of
+switch you need to press to let yourself fuck it all up.  Oh well, I'll just
+learn to not make mistakes I guess.
+
+Finally figured out what all the `/dev/loopNN` bullshit on Ubuntu is.  Seems to
+be their app store thing "snap".  I removed some of the garbage "snaps" I never
+installed in the first place, but there's still some installed with scary names
+like "core" so I guess I'll just have to live with them if I don't want to take
+the risk of breaking something.  I did make a little `disks` script to show me
+the output I care about using a combination of `lsblk` and `du` and `grep`.
+It'll do for now.
+
+New UHK came.  I now own three: one with browns, one with browns plus
+stabilizers, and one with blues.  The blues are even clickier than I remember.
+I think I still prefer the unsilenced browns though.  They have a nice clunk to
+them instead of the clickiness of the blues.  I think I'm finally done buying
+keyboards — 2 at home and one at the office is plenty.
+
+Need to figure out how many hard drive bays I've got left in my tower and
+motherboard.  I'm running out of room on my Windows partition, and I'm thinking
+of using Lightroom on Windows to finally move one more thing away from MacOS.
+Sacrilege.  Then DJ'ing for blues and Lindy dances will be the only thing
+I still need the Mac for.  I can live with that.
+
+The polydivisibility search I wrote over the weekend is still churning away.
+It's searching base 41 now.  Checking base 39 took about 4.6 hours.  Base 40
+took around half that.  We'll see how long 41 takes.  Still no results,
+unfortunately.  I wonder if I could prove that odd bases never work.  I played
+around on the whiteboard but couldn't come up with anything (and if Parker
+didn't I almost certainly won't, so I don't feel *too* bad about that).  At
+least my cores are getting some use.  It's fun to see all 32 bars full in
+`htop` for a change.  Memory usage is pretty constant at about 3-4gb, though it
+churns through a lot of garbage thanks to all the bignum arithmetic (~182tb
+allocated for base 39).  Is there a way to avoid all the bignum division maybe?
+
