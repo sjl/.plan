@@ -598,3 +598,6 @@ Figured out why my alt key wasn't working.  What a gross rabbit shave:
 8. But that was mapping keycode `901`, not `133`.  Why was it overwriting the
    alt mapping?
 9. Because `901 ≡ 133 mod 256`.  Fucking kill me.
+
+Pushed my verbose-assertion patch for 1am to Github so I can get to it from
+other machines.
