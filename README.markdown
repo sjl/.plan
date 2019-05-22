@@ -601,3 +601,28 @@ Figured out why my alt key wasn't working.  What a gross rabbit shave:
 
 Pushed my verbose-assertion patch for 1am to Github so I can get to it from
 other machines.
+
+Did some work to get Adopt's test suite running again.  Also added duplicate
+option detection.  Tests pass in SBCL and CCL.
+
+Tried to install ECL to see if I could run the tests there too.  Problem:
+there's no installation link/guide on the ECL page.  Really.  Here's what I did:
+
+    git clone https://gitlab.com/embeddable-common-lisp/ecl.git
+    cd ecl
+    git checkout ECL-16.1.3
+    ./configure --prefix=/usr/local
+    make
+    sudo make install
+
+Seems to work.  Adopt tests all pass just fine on SBCL, CCL, ECL, and ABCL.
+
+I thought about testing with CLASP, but looking at the installation process it
+says it'll take a couple of hours to install.  Maybe once my cores aren't busy
+on the polydivisibility checks I'll give it a go, but I don't want to stop it
+after many hours and waste all that progress, and I don't know how to make
+lparallel interrupt all the threads at once.
+
+Anyway, I think Adopt is finally ready for Quicklisp.  It's a shame I just
+missed this month's dist.  Oh well, move slow and make things.
+
