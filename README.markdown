@@ -623,6 +623,9 @@ on the polydivisibility checks I'll give it a go, but I don't want to stop it
 after many hours and waste all that progress, and I don't know how to make
 lparallel interrupt all the threads at once.
 
-Anyway, I think Adopt is finally ready for Quicklisp.  It's a shame I just
-missed this month's dist.  Oh well, move slow and make things.
+Also finally added some docstrings for all the functions in the API.
+
+Anyway, I think Adopt is finally ready (or at least as ready as it's ever gonna
+be) for Quicklisp.  I submitted it.  It's a shame I just missed this month's
+dist.  Oh well, move slow and make things.
 
