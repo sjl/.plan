@@ -629,3 +629,6 @@ Anyway, I think Adopt is finally ready (or at least as ready as it's ever gonna
 be) for Quicklisp.  I submitted it.  It's a shame I just missed this month's
 dist.  Oh well, move slow and make things.
 
+## 2019-05-23
+
+There are no polydivisible numbers in base `41`.  The search continues.
