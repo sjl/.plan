@@ -632,3 +632,11 @@ dist.  Oh well, move slow and make things.
 ## 2019-05-23
 
 There are no polydivisible numbers in base `41`.  The search continues.
+
+## 2019-05-24
+
+There are no polydivisible numbers in base `42` (what a shame).  Once again,
+even bases finish an order of magnitude faster than odd bases, and so far only
+even bases work.  I'm going to focus the search on the next couple of even bases
+to save time.  I wish I could figure out *why* even bases were more promising.
+Or just a better way to search.
