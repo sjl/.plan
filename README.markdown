@@ -640,3 +640,23 @@ even bases finish an order of magnitude faster than odd bases, and so far only
 even bases work.  I'm going to focus the search on the next couple of even bases
 to save time.  I wish I could figure out *why* even bases were more promising.
 Or just a better way to search.
+
+# June 2019
+
+## 2019-06-09
+
+Restarted work on Flax.  I want to be able to lay out my l-system nonaptychs
+entirely in Lisp, without having to dick around in Inkscape manually.  This
+requires two yaks to be shaved:
+
+1. A nice way to say "take this group of drawing objects and translate/scale
+   them into this specific bounding box".
+2. A way to render text without having to do it manually via Hersheytext.
+
+Implementing 1 was pretty easy.
+
+Implementing 2 is going to require bezier curves, so I went ahead and
+implemented those.  I ended up extending the `path` primitive to accept points
+with control points attached to draw the nice curves.  This was easy in SVG, but
+kind of a pain to do ergonomically in PNG.  I did eventually finish that though.
+So now I just need to find/make a font that I can render with those curves.
