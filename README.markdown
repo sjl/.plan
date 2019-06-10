@@ -660,3 +660,7 @@ implemented those.  I ended up extending the `path` primitive to accept points
 with control points attached to draw the nice curves.  This was easy in SVG, but
 kind of a pain to do ergonomically in PNG.  I did eventually finish that though.
 So now I just need to find/make a font that I can render with those curves.
+
+Ended up just making my own "font" with only the characters I need for the
+L-systems (`+-()LR→ `).  Did a bit more and got string rendering working.  Still
+probably need to handle multiple lines, but this was a productive day.
