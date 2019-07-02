@@ -664,3 +664,25 @@ So now I just need to find/make a font that I can render with those curves.
 Ended up just making my own "font" with only the characters I need for the
 L-systems (`+-()LR→ `).  Did a bit more and got string rendering working.  Still
 probably need to handle multiple lines, but this was a productive day.
+
+# July 2019
+
+## 2019-07-02
+
+My Linux machine has been randomly hanging completely when playing Youtube
+videos in Firefox.  I have to hard reboot the machine to get it back.  I have no
+idea how to debug this.
+
+Then, today, after one of these reboots the machine wouldn't even get to the
+BIOS at all.  Fantastic.  Looking inside at the motherboard's debug screen
+showed `C0`.  This code isn't mentioned in the manual at all.  Searching online
+showed a bunch of children flailing around in forums, but there was one useful
+nugget: resetting the CMOS.  Apparently you're supposed to do this when you
+install new RAM, and I did not.  It's worked fine for months, but oh well, may
+as well give it a try.  The button on the x399 is just to the left of the debug
+screen, and the computer needs to be completely unplugged for it to work.  After
+resetting the CMOS the machine took a long time to book, but did eventually POST
+to the BIOS and boot normally.
+
+I think I want to update the BIOS at some point, but for now I'm just happy to
+have the machine back and working again.
