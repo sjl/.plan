@@ -673,3 +673,5 @@ To get a black new tab page in Firefox, add the following to
 `~/.mozilla/firefox/*/chrome/userChrome.css`:
 
     .browserContainer { background-color: #000000 !important; }
+
+And in `about:config` set `browser.display.background_color` to black.
