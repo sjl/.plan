@@ -664,3 +664,12 @@ So now I just need to find/make a font that I can render with those curves.
 Ended up just making my own "font" with only the characters I need for the
 L-systems (`+-()LR→ `).  Did a bit more and got string rendering working.  Still
 probably need to handle multiple lines, but this was a productive day.
+
+# July 2019
+
+## 2019-07-09
+
+To get a black new tab page in Firefox, add the following to
+`~/.mozilla/firefox/*/chrome/userChrome.css`:
+
+    .browserContainer { background-color: #000000 !important; }
