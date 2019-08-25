@@ -681,7 +681,7 @@ nugget: resetting the CMOS.  Apparently you're supposed to do this when you
 install new RAM, and I did not.  It's worked fine for months, but oh well, may
 as well give it a try.  The button on the x399 is just to the left of the debug
 screen, and the computer needs to be completely unplugged for it to work.  After
-resetting the CMOS the machine took a long time to book, but did eventually POST
+resetting the CMOS the machine took a long time to boot, but did eventually POST
 to the BIOS and boot normally.
 
 I think I want to update the BIOS at some point, but for now I'm just happy to
