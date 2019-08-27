@@ -686,3 +686,27 @@ to the BIOS and boot normally.
 
 I think I want to update the BIOS at some point, but for now I'm just happy to
 have the machine back and working again.
+
+# August 2019
+
+## 2019-08-27
+
+BitBucket is shitcanning Mercurial support next year, so I have to run on the
+Hamster Wheel of Backwards Incompatibility and fix all my repositories and
+documentation.
+
+Started by setting up <http://docs.stevelosh.com> to serve the repo that was
+formerly served by BitBucket pages.  Added a hook into `.hg/hgrc` on the remote
+repo to autoupdate when pushed:
+
+    [hooks]
+    changegroup = hg update
+
+Then reconfigured nginx to serve the repo (which is full of plain old HTML files
+so it Just Works).  Decided to be lazy and just use `autoindex on` to generate
+the index page.  Good enough.
+
+Added `docs.stevelosh.com` to DNS.
+
+I still need to update all my `pubdocs` make targets, and also update all the
+links everywhere, but that can wait.  One step at a time.
