@@ -710,3 +710,17 @@ Added `docs.stevelosh.com` to DNS.
 
 I still need to update all my `pubdocs` make targets, and also update all the
 links everywhere, but that can wait.  One step at a time.
+
+# December 2019
+
+## 2019-12-23
+
+Enabled HTTPS for `stevelosh.com` and `docs.stevelosh.com` and
+`learnvimscriptthehardway.stevelosh.com`.  Used Let's Encrypt which was… okay
+I guess.  Hopefully the cron machinery works and I don't have to dick around
+with it again in the future.
+
+Spent some time migrating all my Bitbucket repos to Source Hut and updating the
+links, so that when Atlassian tells us all to eat shit next year I don't have to
+scramble.
+
