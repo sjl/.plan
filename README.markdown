@@ -724,3 +724,6 @@ Spent some time migrating all my Bitbucket repos to Source Hut and updating the
 links, so that when Atlassian tells us all to eat shit next year I don't have to
 scramble.
 
+## 2020-01-03
+
+Converted `paste.stevelosh.com` to HTTPS.  Forgot it in the previous conversion.
