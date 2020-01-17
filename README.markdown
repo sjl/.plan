@@ -24,3 +24,11 @@ Mercurial breaks internal shit over time.
 
 Still need to finish the CSS for the rendered Markdown, but that can wait for
 now.
+
+## 2020-01-17
+
+Got the RIT VPN set up on my Linux machine so I can connect for class.  I was
+worried I'd have to install some horrible Cisco VPN client thing, but it turns
+out you can use the `openconnect` client to connect, so `sudo apt install
+openconnect` and then `sudo openconnect vpn.rit.edu` just magically works.
+Fantastic.
