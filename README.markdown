@@ -82,8 +82,8 @@ Cellular respiration:
   NADH results in ~2-3 ATPs).  This happens in the crista of the mitochondria.
 * Whole result is ~27-38 ATPs (typically 29-30 in most cells).
 * Review: the four steps of cellular respiration:
-  1. Glycolysis: splits glucose into two pyruvates, produces ATP and reduces NAD⁺ to NADH.  Happens in the cytosol.
-  2. Pyruvate Oxidation: each pyruvate is stripped of CO₂, binds to CoA, and generates more NADH.
-  3. Citric Acid/Krebs Cycle: each acetyl-CoA goes through a cycle and produces ATP, NADH, and FADH₂.
-  4. Oxidative Phosphorylation: the NADH and FADH₂ are used to make a proton gradient, and that is used to make more ATP.
+    1. Glycolysis: splits glucose into two pyruvates, produces ATP and reduces NAD⁺ to NADH.  Happens in the cytosol.
+    2. Pyruvate Oxidation: each pyruvate is stripped of CO₂, binds to CoA, and generates more NADH.
+    3. Citric Acid/Krebs Cycle: each acetyl-CoA goes through a cycle and produces ATP, NADH, and FADH₂.
+    4. Oxidative Phosphorylation: the NADH and FADH₂ are used to make a proton gradient, and that is used to make more ATP.
 
