@@ -35,3 +35,20 @@ Fantastic.
 
 Finished the `hg.stevelosh.com` reskin on my lunch break.  Just had to get the
 `README`s looking decent.
+
+Finally figured out a strategy for syncing a small subset of my dotfiles onto
+remote servers easily, so I don't have to be completely miserable on them.
+Goals:
+
+* Needs to provide a reasonable subset of the stuff I use to get around.
+* Needs to handle servers with both bash and fish.
+* Needs to be easily syncable with a single command and no extra setup.
+* Needs to handle servers that don't have git or Mercurial.
+
+Ended up making a `remote/` folder in my dotfiles.  Almost everything inside it
+is a symlink except for a `bootstrap.sh`.  The folder gets `rsync
+--copy-links`ed over and then `bootstrap.sh` will symlink all the resulting
+files into their places.  Hopefully this should be easier to maintain.  Did
+a bunch of cleanup on my bash and fish setups while I was at it.
+
+
