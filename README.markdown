@@ -46,10 +46,10 @@ Goals:
 * Needs to handle servers that don't have git or Mercurial.
 
 Ended up making a `remote/` folder in my dotfiles.  Almost everything inside it
-is a symlink except for a `bootstrap.sh`.  The folder gets `rsync
---copy-links`ed over and then `bootstrap.sh` will symlink all the resulting
-files into their places.  Hopefully this should be easier to maintain.  Did
-a bunch of cleanup on my bash and fish setups while I was at it.
+is a symlink except for a `bootstrap.sh`.  The folder gets `rsync --copy-links`ed
+over and then `bootstrap.sh` will symlink all the resulting files into their
+places.  Hopefully this should be easier to maintain.  Did a bunch of cleanup on
+my bash and fish setups while I was at it.
 
 Still need to figure out how to get a decent Vim setup remotely.  Syncing all my
 plugins is probably not ideal, but maybe.  Who knows.
@@ -99,3 +99,13 @@ time:
 * To change the size of a node, use `:height` and `:width`, not `:size`.  They
   will be "helpfully" be ignored if you have a label that's too big to fit.
 * `cl-dot` provides implicit labels, so if you want no label you need `:label ""`.
+
+Cleanup up the styling of `hg.stevelosh.com` a bit more.  This time it was the
+`<code>` tags inside `<li>`'s that weren't styled.  I styled `<p><code>` before,
+because I wanted to *avoid* applying those styles to `<pre><code>` content
+(otherwise it'd have double borders all over the place).  But that missed out on
+the `<code>` tags that weren't inside paragraphs.  Ended up just styling *all*
+`<code>`s and then undoing the borders in `<pre><code>`.  Sigh.
+
+Also realized that the repository descriptions served by hgweb can contain
+arbitrary HTML.  Neat.  Used that to clean a few more things up.
