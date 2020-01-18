@@ -53,3 +53,37 @@ a bunch of cleanup on my bash and fish setups while I was at it.
 
 Still need to figure out how to get a decent Vim setup remotely.  Syncing all my
 plugins is probably not ideal, but maybe.  Who knows.
+
+## 2020-01-18
+
+KA biology and coffee.
+
+Cellular respiration:
+
+* Starts with glucose (C₆H₁₂O₆).
+* The process is called glycolysis, and starts in the cytosol.
+* Glycolysis split the 6-carbon glucose into two 3-carbon molecules (pyruvate).
+* In the process we produce 2 (net) ATP's, and reduce 2 NAD⁺ molecules to 2 NADH
+  (note the move from a positive charge to negative, i.e. gaining electrons,
+  i.e. RIG (reduction is gaining)).
+* Some organisms stop here and use the pyruvates for fermentation.
+* Otherwise, the carboxyl group is stripped from each pyruvate and released as
+  CO₂.
+* The rest of the pyruvate (essentially an acetyl group) latches onto "coenzyme
+  A" (aka "CoA"), forming acetyl-CoA.
+* The enzyme transfers the acetyl group to an oxaloacetic acid, which forms
+  citric acid.
+* Next step is the "Krebs cycle"/"citric acid cycle", which is… complicated, and
+  happens in the matrix of the mitochondria.
+* As the citric acid cycle progresses we keep reducing to NADH.
+* The ATPs produced in cellular respiration can be used directly.
+* The reduced NADHs (and other products like QH₂) are used to create a proton
+  gradient in the mitochondria, which is then used to produce more ATP (each
+  NADH results in ~2-3 ATPs).  This happens in the crista of the mitochondria.
+* Whole result is ~27-38 ATPs (typically 29-30 in most cells).
+* Review: the four steps of cellular respiration:
+  1. Glycolysis: splits glucose into two pyruvates, produces ATP and reduces NAD⁺ to NADH.  Happens in the cytosol.
+  2. Pyruvate Oxidation: each pyruvate is stripped of CO₂, binds to CoA, and generates more NADH.
+  3. Citric Acid/Krebs Cycle: each acetyl-CoA goes through a cycle and produces ATP, NADH, and FADH₂.
+  4. Oxidative Phosphorylation: the NADH and FADH₂ are used to make a proton gradient, and that is used to make more ATP.
+
