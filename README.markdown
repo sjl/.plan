@@ -109,3 +109,7 @@ the `<code>` tags that weren't inside paragraphs.  Ended up just styling *all*
 
 Also realized that the repository descriptions served by hgweb can contain
 arbitrary HTML.  Neat.  Used that to clean a few more things up.
+
+Updated all the Bitbucket repository `README`s to point to `hg.stevelosh.com`.
+The Great Source Hut Yak Shaving of 2020 is finally complete, thank christ.
+Time to move on to doing actual work.
