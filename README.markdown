@@ -87,3 +87,15 @@ Cellular respiration:
     3. Citric Acid/Krebs Cycle: each acetyl-CoA goes through a cycle and produces ATP, NADH, and FADH₂.
     4. Oxidative Phosphorylation: the NADH and FADH₂ are used to make a proton gradient, and that is used to make more ATP.
 
+Did the `TRIE` problem in Rosalind.  Making an actual trie was easy, but getting
+an adjacency list for the flattened/copypasteable output and using `cl-dot` to
+graph it nicely was fiddly.  Annoying bits about `cl-dot` to remember for next
+time:
+
+* There's no `:shape :square`, it's `:shape :box`.
+* `:fillcolor` does nothing without `:style :filled`.
+* The solution to "edge labels are too close to the edges" is apparently "add
+  spaces to your label string".  Ugh.
+* To change the size of a node, use `:height` and `:width`, not `:size`.  They
+  will be "helpfully" be ignored if you have a label that's too big to fit.
+* `cl-dot` provides implicit labels, so if you want no label you need `:label ""`.
