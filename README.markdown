@@ -51,4 +51,5 @@ is a symlink except for a `bootstrap.sh`.  The folder gets `rsync
 files into their places.  Hopefully this should be easier to maintain.  Did
 a bunch of cleanup on my bash and fish setups while I was at it.
 
-
+Still need to figure out how to get a decent Vim setup remotely.  Syncing all my
+plugins is probably not ideal, but maybe.  Who knows.
