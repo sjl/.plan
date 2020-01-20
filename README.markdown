@@ -138,3 +138,20 @@ to keep myself honest — I usually use SBCL, so using another implementation no
 and then helps ensure I'm writing standards-compliant code.  But apparently
 a recent Vlime commit broke Vlime in CCL.  So I had to shave *that* yak first.
 Sent a PR.
+
+Did Rosalind problem `ASPC`.  The problem itself was trivial.  Made a handy
+iterate driver to make it even more trivial.
+
+Running the test suite in CCL gave me exactly what I wanted: examples of where
+I was unintentionally relying on SBCL's behavior.  Today there were two:
+
+1. Relying on the traversal order of iterate's `:in-hashtable` (which uses
+   `with-hash-table-iterator`) to get the output of `TRIE`.  Made a helper to
+   convert the hash tables to sorted alists to fix the output.
+2. Relying on the `~,…F` format directive having a half-up rounding strategy.
+   Turns out that when format is rounding a float to a given number of decimal
+   places, the implementation is allowed to round half however it wants.  SBCL
+   seems to round half up (which matches what Rosalind shows in their examples,
+   which is why I never noticed) but CCL seems to use banker's rounding.  Had to
+   do an ugly hack in `float-string` to make the output consistently match
+   Rosalind's style everywhere.
