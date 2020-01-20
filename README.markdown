@@ -126,3 +126,7 @@ a `utils` package.  I did this for my Advent of Code repo a while back and while
 it was a pain in the ass to refactor everything, the result is much nicer.
 Today I refactored the Rosalind repo.  The Project Euler repo is a work in
 progress, mostly because it's so much bigger than the other two.
+
+Did Rosalind problem `PDST`.  Pretty easy.  Most annoying part was the output,
+but I extended my float printer to handle 2D arrays to make it easier to output
+what they want in the future.
