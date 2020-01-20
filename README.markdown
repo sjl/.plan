@@ -130,3 +130,11 @@ progress, mostly because it's so much bigger than the other two.
 Did Rosalind problem `PDST`.  Pretty easy.  Most annoying part was the output,
 but I extended my float printer to handle 2D arrays to make it easier to output
 what they want in the future.
+
+## 2020-01-20
+
+Wanted to do a Rosalind problem over lunch.  On a whim I decided to use CCL just
+to keep myself honest — I usually use SBCL, so using another implementation now
+and then helps ensure I'm writing standards-compliant code.  But apparently
+a recent Vlime commit broke Vlime in CCL.  So I had to shave *that* yak first.
+Sent a PR.
