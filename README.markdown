@@ -113,3 +113,16 @@ arbitrary HTML.  Neat.  Used that to clean a few more things up.
 Updated all the Bitbucket repository `README`s to point to `hg.stevelosh.com`.
 The Great Source Hut Yak Shaving of 2020 is finally complete, thank christ.
 Time to move on to doing actual work.
+
+## 2020-01-19
+
+Finally got around to setting up packages for all of my Rosalind problems.  In
+all my "coding challenge" repos (Rosalind, Project Euler, Advent of Code, etc)
+I originally just shoved everything into one big package.  This was easy to
+start with, but as I solved more and more problems I started to hit naming
+conflicts more and more often.  Eventually I realized that for my own sanity
+I should really give each problem its own package, with all the utilities in
+a `utils` package.  I did this for my Advent of Code repo a while back and while
+it was a pain in the ass to refactor everything, the result is much nicer.
+Today I refactored the Rosalind repo.  The Project Euler repo is a work in
+progress, mostly because it's so much bigger than the other two.
