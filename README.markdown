@@ -155,3 +155,9 @@ I was unintentionally relying on SBCL's behavior.  Today there were two:
    which is why I never noticed) but CCL seems to use banker's rounding.  Had to
    do an ugly hack in `float-string` to make the output consistently match
    Rosalind's style everywhere.
+
+## 2020-01-23
+
+Started doing Rosalind problems in shell/Awk, to join in with a group of folks
+at work doing them for the first time.  The first few problems are simple, but
+I still managed to learn a few tricks by implementing them with UNIXy tools.
