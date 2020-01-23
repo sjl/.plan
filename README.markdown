@@ -161,3 +161,9 @@ I was unintentionally relying on SBCL's behavior.  Today there were two:
 Started doing Rosalind problems in shell/Awk, to join in with a group of folks
 at work doing them for the first time.  The first few problems are simple, but
 I still managed to learn a few tricks by implementing them with UNIXy tools.
+
+Fixed a few remaining broken links on my site.  It's been a week or two since
+I poked around at it, and that was on another machine, but `./deploy.sh` Just
+Worked.  It's so nice to have a site generator I designed myself that's not
+going to change out from under me when I just want to fix something simple and
+move on with my life.
