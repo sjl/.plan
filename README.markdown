@@ -183,3 +183,20 @@ Lesk book exercises, chapter 1:
     * A: I am confused.  The glossary defines a "haplotype" as a group of closely-linked genes that are typically inherited together.  So… 1 haplotype?  But the *text* talks about a haplotype as being a combination of SNPs in a recombination-poor region.  So if "haplotype" means the combination of SNPs, not a set of genes, then I think this would be `4^10 = 1048576`.
     * B: On a diploid chromosome, you'd have two separate sets of SNPs to combine (and order doesn't matter), so I think it's  `4^10 * 4^10 / 2`.
     * C: `(1 SNP / 5 kb) * (100 kb) = 20 SNPs = 2^20 sequences = 1048576 sequences`
+5. TODO
+6. TODO
+7. TODO
+8. A much less drastic change, though it could still cause issues if it's at
+   a critical point in the RNA molecule (e.g. the anticodon in tRNA).
+9. TODO
+10. If the gene Kangaroo coat color is not on the X chromosome, you wouldn't be able to get the calico pattern that comes from X chromosome inactivation.
+11. Parts:
+    * A: No, because if it were a mutation in the gene itself it would act by affecting the structure of the protein, and should have the same effect in adults and children.  But it doesn't, so it's more likely to be a mutation in regulatory region.
+    * B: It's not on the Y chromosome?
+12. TODO
+13. TODO
+14. TODO
+15. TODO
+16. TODO
+17. TODO
+18. TODO
