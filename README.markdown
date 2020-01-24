@@ -174,12 +174,12 @@ Lesk book exercises, chapter 1:
 
 1. Average density would be `(/ 3r4 3r9) = 1/100000` or 1 gene every ~100kb.
 2. Parts:
-   A. Two humans would have roughly 250k differences. 
-   B. A human and a chimpanzee would have roughly 3m differences.
+    A. Two humans would have roughly 250k differences. 
+    B. A human and a chimpanzee would have roughly 3m differences.
 3. Parts:
-   A. Average density would be 2 SNPs per 1000 base pairs.
-   B. Is this a trick question?  I think 1.1% of the differences would be in protein-coding regions.
+    A. Average density would be 2 SNPs per 1000 base pairs.
+    B. Is this a trick question?  I think 1.1% of the differences would be in protein-coding regions.
 4. Parts:
-   A. I am confused.  The glossary defines a "haplotype" as a group of closely-linked genes that are typically inherited together.  So… 1 haplotype?  But the *text* talks about a haplotype as being a combination of SNPs in a recombination-poor region.  So if "haplotype" means the combination of SNPs, not a set of genes, then I think this would be `4^10 = 1048576`.
-   B. On a diploid chromosome, you'd have two separate sets of SNPs to combine (and order doesn't matter), so I think it's  `4^10 * 4^10 / 2`.
-   C. `(1 SNP / 5 kb) * (100 kb) = 20 SNPs = 2^20 sequences = 1048576 sequences`
+    A. I am confused.  The glossary defines a "haplotype" as a group of closely-linked genes that are typically inherited together.  So… 1 haplotype?  But the *text* talks about a haplotype as being a combination of SNPs in a recombination-poor region.  So if "haplotype" means the combination of SNPs, not a set of genes, then I think this would be `4^10 = 1048576`.
+    B. On a diploid chromosome, you'd have two separate sets of SNPs to combine (and order doesn't matter), so I think it's  `4^10 * 4^10 / 2`.
+    C. `(1 SNP / 5 kb) * (100 kb) = 20 SNPs = 2^20 sequences = 1048576 sequences`
