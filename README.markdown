@@ -203,7 +203,13 @@ Lesk book exercises, chapter 1:
 
 ## 2020-01-24
 
-Solved the `FIB` Rosalind problem.  Tried doing it in straight bash, but
-I couldn't figure out how to get the bash function to use a global bash array
-for memoization after like 10 minutes of searching.  Ended up rewriting it in
-Awk, which took two minutes, was simple, and runs fast.  Great.
+Solved the `FIB` Rosalind problem in my shell/Awk repo.  Tried doing it in
+straight bash, but I couldn't figure out how to get the bash function to use
+a global bash array for memoization after like 10 minutes of searching.  Ended
+up rewriting it in Awk, which took two minutes, was simple, and runs fast.
+Great.
+
+Solved `MMCH` in my Lisp repo.  Much like the previous problem in this line, it
+was way easier than they made it seem.  Also fixed the Uniprot cache to use the
+filesystem instead of just keeping a hash table, to save a few seconds of my
+life every time I `(run-tests)` in a fresh Lisp session.
