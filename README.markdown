@@ -200,3 +200,10 @@ Lesk book exercises, chapter 1:
 16. TODO
 17. TODO
 18. TODO
+
+## 2020-01-24
+
+Solved the `FIB` Rosalind problem.  Tried doing it in straight bash, but
+I couldn't figure out how to get the bash function to use a global bash array
+for memoization after like 10 minutes of searching.  Ended up rewriting it in
+Awk, which took two minutes, was simple, and runs fast.  Great.
