@@ -213,3 +213,15 @@ Solved `MMCH` in my Lisp repo.  Much like the previous problem in this line, it
 was way easier than they made it seem.  Also fixed the Uniprot cache to use the
 filesystem instead of just keeping a hash table, to save a few seconds of my
 life every time I `(run-tests)` in a fresh Lisp session.
+
+## 2020-01-25
+
+Rebooted my Mansion repo to try to simplify it enough that I can start
+dogfooding it for actual use, then turn it into something publicly-usable.
+
+## 2020-01-27
+
+Trying to decide on data to use for the BIOL-650 project.  A list of
+possibilities:
+
+* <https://www.ncbi.nlm.nih.gov/sra/ERX1735780>
