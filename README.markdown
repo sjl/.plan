@@ -228,3 +228,28 @@ possibilities:
 * <https://www.cell.com/cell/fulltext/S0092-8674(15)01339-2#back-bib72>
 * <https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga/studied-cancers>
 * <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3673022/>
+
+## 2020-01-29
+
+Figured out how to get the mutt HTMLified email working on my local machine,
+like I had done for work.  Had to install NeoMutt from source because the Ubuntu
+version is too old to include `group-alternatives`:
+
+* Clone the NeoMutt repo.
+* Install Tokyo Cabinet for the header cache with `sudo apt install libtokyocabinet-dev`.
+* Configure the NeoMutt build with `./configure --disable-idn --idn2 --disable-doc --prefix=/usr/local --gnutls --with-ui=ncurses --tokyocabinet`.
+  * Note the `--disable-idn --idn2` to make it use `libidn2` which is installed, instead of `libidn` which isn't.
+  * Is this the correct set of options?  Who knows!?
+* Install into `/usr/local` with `sudo make install`.
+
+More searching around for projects for HTSA:
+
+    https://www.sciencedirect.com/science/article/pii/S2352340918302920
+    doi 10.1016/j.dib.2018.03.079
+    Illumina HiSeq 2500
+    https://www.ncbi.nlm.nih.gov/sra/?term=PRJNA432903
+
+    https://www.sciencedirect.com/science/article/pii/S2352340919303750
+    doi 10.1016/j.dib.2019.104022
+    Ion Proton sequencer
+    https://www.ncbi.nlm.nih.gov/sra?linkname=bioproject_sra_all&from_uid=506922
