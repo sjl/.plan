@@ -273,3 +273,10 @@ I really need to spend the time to grok how Linux formats and mounts drives
 now, but I really should just learn it.  Ordered a copy of the new edition of
 the sysadmin book that I remember being really good from my Dumbwaiter days.
 Hopefully that will be a good reference.
+
+Finished the FastQC stuff early, so spent a few minutes going through the
+gnuplot book.  Random notes:
+
+* The user config file is `~/.gnuplot` (note the lack of an `rc` suffix).
+* To stop gnuplot from stealing my goddamn focus: `set terminal … noraise`.
+* To show the current value of a setting: `show …`.
