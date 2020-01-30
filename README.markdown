@@ -253,3 +253,23 @@ More searching around for projects for HTSA:
     doi 10.1016/j.dib.2019.104022
     Ion Proton sequencer
     https://www.ncbi.nlm.nih.gov/sra?linkname=bioproject_sra_all&from_uid=506922
+
+Started going through the gnuplot book at night.  Going to try to do that in
+parallel with the class.
+
+## 2020-01-30
+
+Drove to RIT only to discover class was not being held in person, and we're
+supposed to work online instead.  **Welp.**
+
+Installed FastQC locally and got it running.  Really just downloaded the binary
+version and symlinked it into place.
+
+Downloading the actual data is taking a while.  While I wait, thinking about
+disk setups: now that I have a NAS and have moved my local backups to it, I can
+format my previously-for-backup internal drives and use them for actual data.
+I really need to spend the time to grok how Linux formats and mounts drives
+— I've been flailing and slapping things together and it has mostly worked until
+now, but I really should just learn it.  Ordered a copy of the new edition of
+the sysadmin book that I remember being really good from my Dumbwaiter days.
+Hopefully that will be a good reference.
