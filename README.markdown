@@ -280,3 +280,6 @@ gnuplot book.  Random notes:
 * The user config file is `~/.gnuplot` (note the lack of an `rc` suffix).
 * To stop gnuplot from stealing my goddamn focus: `set terminal … noraise`.
 * To show the current value of a setting: `show …`.
+
+Finally got around to writing a first draft of a `lines` utility.  Discovered
+and fixed a stupid bug in Adopt in the process.
