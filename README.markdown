@@ -300,3 +300,36 @@ Much cleaner now.
 ## 2020-02-01
 
 Fixed up my `$PATH` in my bash profile, for when I'm forced to use bash.
+
+Also had to fix up the uses of `set_color` in my Fish shell config to only
+happen for interactive connections, because Fish shits out some errors when you
+call `set_color` on a noninteractive connection (e.g. when using `scp` or
+`rsync`).  Sigh.
+
+Now that I've got my backups pushed to my NAS (plus off-site) I can repurpose
+those 4 TB drives sitting empty in my tower.  Gonna use them for a data dump
+site on the Linux side of things, e.g. for all the FASTQs and resulting data
+I'll be dealing with for my class this semester.  Read through the sysadmin book
+chapters on the filesystem which were *super* helpful.  Decided to pair the
+drives as a `btrfs` raid 0 array.  I'm not super concerned with durability here
+— everything should be reproducible from the original raw FASTQs from SRA if I'm
+doing my job right, so I may as well just have one giant pool of storage.  Also
+I don't need this `/dump` to be encrypted — it'll be handling non-sensitive
+data.
+
+To get them ready for `btrfs` I used:
+
+* `fdisk` to create new GPT partition tables on each and blow away the old ones.
+* Had to use `sudo cryptsetup luksClose` on the previously-encrypted backup
+  drive to remove the lingering `sda_crypt` "partition" I was seeing.
+* `wipefs` to finish cleaning them completely.
+
+Even with all that, `mkfs.btrfs` complained about a partition table still
+existing on one of the drives.  At that point I gave up and passed `-f` to it,
+and everything Just Worked.  In hindsight, I bet I could have just done that to
+begin with and let `mkfs.btrfs` handle blowing away everything, but it was still
+a fun exercise.
+
+Attempted to figure out how to acquire MS Word for the class.  Apparently
+there's a web version of Word now?  If I can use that, at least I won't have to
+spin up a full Windows VM to write the papers…
