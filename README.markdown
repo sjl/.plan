@@ -283,3 +283,14 @@ gnuplot book.  Random notes:
 
 Finally got around to writing a first draft of a `lines` utility.  Discovered
 and fixed a stupid bug in Adopt in the process.
+
+## 2020-01-31
+
+Now that I've got a more thorough backup system, went through and did my yearly
+pruning of unnecessary crap on my hard drive, and adding restic excludes to
+avoid backin up track.  Number of scans was cut drastically:
+
+* Directories: 125k to 30k
+* Files: 567k to 285k
+
+Much cleaner now.
