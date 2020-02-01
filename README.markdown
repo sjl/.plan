@@ -294,3 +294,9 @@ avoid backin up track.  Number of scans was cut drastically:
 * Files: 567k to 285k
 
 Much cleaner now.
+
+# February 2020
+
+## 2020-02-01
+
+Fixed up my `$PATH` in my bash profile, for when I'm forced to use bash.
