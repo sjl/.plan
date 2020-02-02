@@ -344,3 +344,14 @@ documented and user friendly, and is definitely faster.  The biggest speedup
 came from telling it to use RAM as its temporary filesystem with `-t /dev/shm`,
 which cut the time down to 1/3.  Guess all this RAM *is* actually good for
 something.
+
+After rebooting later, the boot process was suddenly hanging for over a minute.
+Another fucking yak to shave.  Figured out how to disable the goddamn splash
+screen (edit `/etc/default/grub` to remove `quiet` and `default` and then
+`update-grub2`) so I could get some logs.  Eventually saw some systemd horseshit
+about `a job is running for dev-disk-by\x2duuid-…`.  Tried to figure out which
+drive had that UUID, but none of them did.  After a bunch of flailing in `fstab`
+I realized that it might be the UUID of *the old backup drive I killed*.  Sure
+enough, there was still an entry in `/etc/crypttab` for it, and a bunch of
+systemd shit in `/run/systemd/generator/` left over that I had to clean out.
+After that, everything boots fast(ish) again.  I hate computing.
