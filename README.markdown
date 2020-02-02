@@ -355,3 +355,25 @@ I realized that it might be the UUID of *the old backup drive I killed*.  Sure
 enough, there was still an entry in `/etc/crypttab` for it, and a bunch of
 systemd shit in `/run/systemd/generator/` left over that I had to clean out.
 After that, everything boots fast(ish) again.  I hate computing.
+
+## 2020-02-02
+
+Spent some time cleaning up the `Makefile` for my individual class project.
+Learned some stuff about `make` in the process:
+
+* When you have a pattern rule `foo/bar/%.baz`, whatever matches the `%` is
+  called the "stem", and you can use `$*` to get the stem inside the rule.
+* There are a bunch of ways to allow users to override variables, but the one
+  I settled on is to use `VAR := val` in the `Makefile`.  Users can override
+  these with `make VAR=newval …`.  This doesn't allow overriding with
+  environment variables, but that seems fraught with danger anyway, so let's
+  consider it a feature, not a bug.
+* I was dicking around a lot with `addprefix` and `addsuffix` unnecessarily
+  before.  Much simpler is to use `$(FOO:%=prefix%suffix)`, e.g. `FASTQ_FILES
+  := $(KEYS:%=data/00-input/%.fq.gz)`.  This works with multiple-word variables
+  too (god help me if filenames ever contain spaces).
+* Prefixing a command with `@` prevents `make` from echoing the command before
+  executing it (but not when doing a dry run).  Handy for the `echo …` commands
+  in `make debug`.
+* Management of directory creation is… annoying.  Ended up going with
+  placeholder `.ph` files.  Simple but inelegant.  Oh well.
