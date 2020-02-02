@@ -333,3 +333,14 @@ a fun exercise.
 Attempted to figure out how to acquire MS Word for the class.  Apparently
 there's a web version of Word now?  If I can use that, at least I won't have to
 spin up a full Windows VM to write the papers…
+
+Installed `sra-toolkit` from Ubuntu's repository.  Unfortunately it doesn't seem
+to come with `fasterq-dump`, only the older `fastq-dump`, at least according to
+`dpkg-query -L sra-toolkit`.  Installed the latest binary from their site
+instead.
+
+Poked around at both `fastq-dump` and `fasterq-dump`.  `fasterq-dump` seems more
+documented and user friendly, and is definitely faster.  The biggest speedup
+came from telling it to use RAM as its temporary filesystem with `-t /dev/shm`,
+which cut the time down to 1/3.  Guess all this RAM *is* actually good for
+something.
