@@ -377,3 +377,13 @@ Learned some stuff about `make` in the process:
   in `make debug`.
 * Management of directory creation is… annoying.  Ended up going with
   placeholder `.ph` files.  Simple but inelegant.  Oh well.
+
+Finished writing up my class project pick paper.
+
+Did more in the gnuplot book.
+
+Updated my `lines` tool to add a `--limit` option and handle broken pipes.
+I could have sworn I handled broken pipes in some other Lisp script at some
+point, but can't seem to find it now.  I used `sb-int:broken-pipe` but I'm not
+sure if that's something I should be relying on.  Need to ask in `#sbcl`.
+
