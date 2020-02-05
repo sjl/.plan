@@ -432,7 +432,6 @@ directory you happen to be in.  And let's ignore all those unquoted variable
 expansions I guess.  Sigh.  Better version:
 
     #!/usr/bin/env bash
-    set -euo pipefail
     pbin=""
     fl=$(readlink -f "$0")
     if [[ -z "$fl" ]]; then
