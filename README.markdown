@@ -387,3 +387,94 @@ I could have sworn I handled broken pipes in some other Lisp script at some
 point, but can't seem to find it now.  I used `sb-int:broken-pipe` but I'm not
 sure if that's something I should be relying on.  Need to ask in `#sbcl`.
 
+## 2020-02-04
+
+Class today.  Did a bunch of various things after the lecture (I hope I can
+remember it all).
+
+Got the group permissions sorted out on the server in two steps:
+
+* Had the admin [add a `setgid` bit to the team directory][dir-setgid], so new
+  stuff in there will get created with the team group as the owner by default.
+* Then we all added `umask 002` to our `rc` files to change our default `umask`,
+  so when we create files they'll be `664` by default instead of `644`.  This
+  isn't a problem for non-team files because they get created with your personal
+  group as the group.
+
+[dir-setgid]: https://www.gnu.org/software/coreutils/manual/html_node/Directory-Setuid-and-Setgid.html
+
+Once that was sorted out, started diving into aligning the Trapnell data with
+tophat and bowtie.  This is… not pleasant.
+
+First I need to install both tools.  There's an Ubuntu package for `tophat`, but
+it wanted to install NodeJS as a prerequisite.  Why on earth does tophat want
+NodeJS?  `SIGINT`ed that immediately and downloaded the binary version instead.
+
+The wrapper script `tophat2` tries to set up `$PATH` magically so everything
+just works:
+
+    #!/usr/bin/env bash
+    pbin=""
+    fl=$(readlink $0)
+    if [[ -z "$fl" ]]; then
+       pbin=$(dirname $0)
+     else
+       pbin=$(dirname $fl)
+    fi
+    export PATH=$pbin:$PATH
+    $pbin/tophat "$@"
+
+Unfortunately it doesn't try hard enough.  The `readlink` is *attempting* to
+deal with symbolic links there, but only works with absolute links — relative
+symlinks (e.g. `ln -s ./tophat-…/tophat2 tophat2`) just return the relative
+path, which then gets passed to `dirname` and treated as relative from whatever
+directory you happen to be in.  And let's ignore all those unquoted variable
+expansions I guess.  Sigh.  Better version:
+
+    #!/usr/bin/env bash
+    set -euo pipefail
+    pbin=""
+    fl=$(readlink -f "$0")
+    if [[ -z "$fl" ]]; then
+        pbin=$(dirname -- "$0")
+     else
+        pbin=$(dirname -- "$fl")
+    fi
+    export PATH="$pbin:$PATH"
+    "$pbin"/tophat "$@"
+
+Once it's installed, I can finally run it.  This is where things get even more
+confusing.  After a whole bunch of flailing I think I managed to narrow down
+what the hell all these magic parameters are, and how things have changed since
+the paper was written.  Notes:
+
+* Bowtie is an aligner — it aligns reads to a reference genome.
+* Tophat uses bowtie to align reads, but adds splice-awareness on top.
+* To use Bowtie to align, you need to preprocess your reference genome and
+  create an index of the genome.
+* Additionally/separately, you also need to create a *transcriptome* reference
+  genome for the splice awareness.  You do this with tophat, which invokes
+  bowtie under the hood.  This means you end up with *two* bowtie indexes:
+  a genome index and a transcriptome index.
+* To create the genome index: `bowtie2-build --threads 15 foo.fa some/prefix/foo`
+  * This creates a bunch of files in `some/prefix` named `foo.…`.
+  * Why does this take a basename and not just a directory name?
+  * Do the name of the FASTA and the name of the index files have to match?
+* To create the transcriptome index: `tophat2 -p 15 --GTF foo.gff --transcriptome-index=another/prefix/bar some/prefix/foo`
+  * There are three separate things specified here, each in a different way:
+    * The gene annotation file is provided with the `--GTF` option, as a path.  (Even if it's a GFF file, not a GTF file.  There's no `--GFF` option.  Of course.)
+    * The genome index is provided with a positional parameter, as a basename.
+    * The destination for the transcriptome index is a basename, and it'll splat out a bunch of files with various suffixes there.
+* Note that the chromosome names in the `.gtf`/`.gff` file and the sequence
+  headers in the `.fa` file must match.
+  * This caused me much pain when I was trying to use the `.gtf` file (foolishly assuming `--GTF` required a `.gtf`), the inclusion of which seems to be a trap in the input data laid for the unwary student.  I will not be fooled again.
+  * Tophat gave me a completely useless error (`"Couldn't build bowtie index with err = 1"`) when I tried this, rather than tell me anything useful that might have pointed me in the right direction.  Extremely Good Software.
+* Some/all of the prefixes/basenames may or may not have to match.  By the time
+  I flailed enough to get everything working I had renamed everything to
+  a single prefix, but I'm not sure if it was strictly necessary.  I'll
+  investigate tomorrow or Thursday, when I'm less annoyed.
+* Once you've got the two indexes created, you can run the alignment:
+  `tophat2 -p 15 --transcriptome=another/prefix/bar --output-dir baz/ some/prefix/foo *.fq`
+
+That's as far as I got today.  Next step is to clean up this mess and get it
+into the `Makefile`.
