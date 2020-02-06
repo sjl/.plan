@@ -477,3 +477,8 @@ the paper was written.  Notes:
 
 That's as far as I got today.  Next step is to clean up this mess and get it
 into the `Makefile`.
+
+## 2020-02-06
+
+Refactored the `Makefile` and added in all the alignment stuff.  Wrote up the
+weekly report far too late.
