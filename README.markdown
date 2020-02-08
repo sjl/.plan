@@ -482,3 +482,77 @@ into the `Makefile`.
 
 Refactored the `Makefile` and added in all the alignment stuff.  Wrote up the
 weekly report far too late.
+
+## 2020-02-08
+
+Decided to try using gnuplot to do the graphing exercises in the Campbell
+Biology textbook, to combine the things I've been reading lately.
+
+The first exercise I did was from chapter 9.  Data:
+
+    Low        4.3
+    Normal     4.8
+    Elevated   8.7
+
+Gnuplot file:
+
+    set title "{/:Bold*1.5 Thyroid Hormome Levels and Oxygen Consumption}"
+    set xlabel "Thyroid Hormone Level"
+    set ylabel "Oxygen Consumption Rate [nmol O_2 / (min * mg cells)]"
+
+    unset key
+    set boxwidth 0.8
+
+    plot [][0:10] "bio/thyroid" u 0:2:xtic(1) w boxes fillstyle solid fc rgb "black"
+
+That was pretty simple.  Then I went back to a previous chapter.  Data:
+
+    # Time (min)  Concentration of inorganic Phosphate (μmol/mL)
+    0               0
+    5              10
+    10             90
+    15            180
+    20            270
+    25            330
+    30            355
+    35            355
+    40            355
+
+Gnuplot file:
+
+    set title "{/:Bold*1.3 Glucose-6-Phosphate Activity in Isolated Liver Cells}"
+    set xlabel "Time (minutes)"
+    set ylabel "Concentration of ℗_i (μmol/mL)"
+
+    set xtics format "%h min"
+
+    unset key
+
+    set grid xtics ytics
+
+    set lmargin 12
+    set rmargin  6
+
+    plot [0:45][0:400] "liver-glucose" w lines linewidth 2
+
+This one was a little trickier.  I was trying to play around in the gnuplot
+REPL, but pasting the Unicode characters was producing garbage at the gnuplot
+command line.  Pasting into a normal terminal/fish shell worked fine.  After
+much flailing I tracked down the problem to gnuplot itself:
+
+* Gnuplot uses one of several different libraries to handle readline-like
+  editing: `libeditline`, GNU `readline`, and some others (I think).
+* The library it uses is specified as an argument to `./configure` and linked in
+  at compile time.
+* `libeditline` does not handle UTF-8 input correctly in this, the year of our
+  Lord, 2020.
+* GNU `readline` *does* handle UTF-8 input correctly.
+* Unfortunately, `readline` is GPL-licensed, which is incompatible with
+  gnuplot's license.
+* Debian (and Ubuntu) therefore link gnuplot with the broken `libeditline`,
+  rather than linking it to `libreadline` and violating the GPL.
+* As far as I can tell, there's no way to simply disable all line editing in
+  gnuplot so it can be wrapped with `rlwrap` or something.
+
+At this point I just gave up on using Unicode at the REPL and created `.gp`
+files that I then `load`.  The GPL strikes again.
