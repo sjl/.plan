@@ -556,3 +556,61 @@ much flailing I tracked down the problem to gnuplot itself:
 
 At this point I just gave up on using Unicode at the REPL and created `.gp`
 files that I then `load`.  The GPL strikes again.
+
+## 2020-02-09
+
+Installed R Studio from the `.deb`.  Needed to `apt install r-base` first to get
+the dependencies.  It installed… a lot of stuff.  Let's hope it hasn't wreaked
+too much havoc.
+
+Moved on to differential gene expression with `cuffdiff`.  Finally starting to
+understand what the actual data files are.  The input FASTQs are:
+
+    GSM794483_C1_R1_1.fq.gz
+    GSM794483_C1_R1_2.fq.gz
+    GSM794484_C1_R2_1.fq.gz
+    GSM794484_C1_R2_2.fq.gz
+    GSM794485_C1_R3_1.fq.gz
+    GSM794485_C1_R3_2.fq.gz
+    GSM794486_C2_R1_1.fq.gz
+    GSM794486_C2_R1_2.fq.gz
+    GSM794487_C2_R2_1.fq.gz
+    GSM794487_C2_R2_2.fq.gz
+    GSM794488_C2_R3_1.fq.gz
+    GSM794488_C2_R3_2.fq.gz
+
+The `C` here apparently stands for "condition".  I still have no idea what
+`R[123]` is trying to tell me.  The `_[12]` is the paired-end read pairs.  Would
+it kill people to name things more descriptively and/or include a `README` that
+explains what all their one-letter abbreviations mean?
+
+Thinking about restructuring the filesystem layout to make the relationships
+between the FASTQ files more explicit:
+
+    C1/
+        R1/
+            GSM794483_C1_R1_1.fq.gz
+            GSM794483_C1_R1_2.fq.gz
+        R3/
+            GSM794484_C1_R2_1.fq.gz
+            GSM794484_C1_R2_2.fq.gz
+        R3/
+            GSM794485_C1_R3_1.fq.gz
+            GSM794485_C1_R3_2.fq.gz
+    C2/
+        R1/
+            GSM794486_C2_R1_1.fq.gz
+            GSM794486_C2_R1_2.fq.gz
+        R2/
+            GSM794487_C2_R2_1.fq.gz
+            GSM794487_C2_R2_2.fq.gz
+        R3/
+            GSM794488_C2_R3_1.fq.gz
+            GSM794488_C2_R3_2.fq.gz
+
+But I might be too lazy at this point to do it.
+
+The more I work with `make` the more I realize how limited it is.  The general
+idea behind it (computing a dependency graph and using it to rebuild things) is
+sound, but the implementation is a clusterfuck of string processing and horrific
+syntax.  It really gives me the urge to create Yet Another Build System.  Sigh.
