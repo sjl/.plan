@@ -614,3 +614,41 @@ The more I work with `make` the more I realize how limited it is.  The general
 idea behind it (computing a dependency graph and using it to rebuild things) is
 sound, but the implementation is a clusterfuck of string processing and horrific
 syntax.  It really gives me the urge to create Yet Another Build System.  Sigh.
+
+Eventually `cuffdiff` finished.  Time to move on.  Tried to install cummerbund
+in R, but ran into a bunch of errors.  Had to install numerous third-party
+dependencies outside of R:
+
+* `libcurl4-openssl-dev`
+* `libxml2-dev`
+* `libmariadbclient-dev`
+
+Why on earth does installing cummerbund require a goddamn **MySQL** client?!
+This is completely nuts.
+
+Ran into a giant pile of inscrutable errors even after installing all these
+bananas dependencies.  Eventually tracked it down to the R version shipped in
+the Ubuntu package repository being too out of date to work with some of the
+required packages.  I hate volatile software.  Installed a newer version of
+R with [this guide](https://www.digitalocean.com/community/tutorials/how-to-install-r-on-ubuntu-18-04).
+
+Finally managed to get cummerbund working and started graphing stuff.  It mostly
+works, but my graphs don't really look quite like theirs.  Need to ask the
+professor about this. 
+
+In the mean time, played around with using gnuplot to plot the data instead of
+R.  Turned out to be not too bad, since cuffdiff already dumps its output in
+a textual format.  Example of the plot comparing the expression levels of the
+various genes:
+
+    set logscale
+    unset key
+    plot "gene_exp.diff" using \
+        "value_1":"value_2" lt 3 pt 1 lw 1, \
+        x+(0.5*x) lt -1 lw 1 dt 2, \
+        x-(0.5*x) lt -1 lw 1 dt 2
+
+I also played around with adding some nicer default `linetype`s to my
+`~/.gnuplot` using colors from ColorBrewer.  Fairly happy with the result so
+far, but I'll need to play around with them more over time to see if they hold
+up.
