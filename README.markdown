@@ -652,3 +652,41 @@ I also played around with adding some nicer default `linetype`s to my
 `~/.gnuplot` using colors from ColorBrewer.  Fairly happy with the result so
 far, but I'll need to play around with them more over time to see if they hold
 up.
+
+## 2020-02-10
+
+Started making some actual gnuplot scripts to draw the stuff from yesterday.
+Got a couple of scripts working, but went down a horrific rabbit hole.
+
+First: the graphs produced by cummerbund are titled very poorly ("Genes" is not
+particularly helpful).  I'm going to need to chat with the professor to try to
+decipher what these graphs are trying to show me.
+
+I reproduced the scatter and volcano plots without too much trouble.  Used the
+PDF plotter and came up with the simple printable line styles that should be
+okay.
+
+Then I tried to reproduce the first graph, the "distribution of expression
+levels for each sample", and all hell broke loose.  First of all, what is this
+graph even trying to show?  The title is just "Genes", which is useless garbage.
+The y-axis is labelled "Density", the x-axis is pabelled `log_10(FPKM)`, and the
+function used to create it is `csDensity`, so maybe this is a kernel density
+plot of the `log10(FPKM)` values?  Well, I tried that, and I ended up with
+fucking spaghetti in gnuplot — there were hundreds of lines all overlaying each
+other instead of the expected single line.  I spent like an hour dicking around
+online trying to figure out what the hell gnuplot was doing.  Eventually,
+*finally*, I realized no one online was going to help me, and decided to break
+things down myself.  I extracted the problematic column from the file and
+computed the `log10` values myself in Lisp, and found an issue: some of them are
+0, which means their `log10` value is undefined.  After removing those and
+replotting, I confirmed that those undefined values were what was causing all
+the discontinuities in the original gnuplot kernel density plot — instead of
+ignoring the values, it would start a new line every time it hit one.  Christ.
+So then I cloned down the cummerbund repo to see how they were handling this.
+The code is… not particularly easy to read.  I searched around more online, now
+that I realized the problem, and eventually found a post where someone notes
+that they add `1` to the FPKM values first, before taking the `log`, to avoid
+negative and undefined log values.  So the x-axis label that says `log_10(FPKM)`
+is fucking lying — what's actually on the graph is `log_10(FPKM+1)`.  Once
+I plugged that in, everything works and the graph looks roughly like theirs.  To
+hell with all this, I'm done for tonight.
