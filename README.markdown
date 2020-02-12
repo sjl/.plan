@@ -690,3 +690,20 @@ negative and undefined log values.  So the x-axis label that says `log_10(FPKM)`
 is fucking lying — what's actually on the graph is `log_10(FPKM+1)`.  Once
 I plugged that in, everything works and the graph looks roughly like theirs.  To
 hell with all this, I'm done for tonight.
+
+## 2020-02-11
+
+Class today.  Chatted about various stuff.  The XLOC identifiers aren't actual
+identifiers, they're just arbitrary IDs generated during the alignment process.
+That explains why I was seeing `0`s when trying to plot the `XLOC_012662`, which
+was regucalcin in the paper — it's a different gene in my run, so I'd need to
+look up the gene in my own results.  Also talked about P and Q values, and
+plotting each to find interesting cutoffs.  I really need to refresh my memory
+on how to more easily make histograms in gnuplot.
+
+Started reading [A Curious Moon](https://bigmachine.io/products/a-curious-moon/)
+and got about 1/3 of the way through.  An interesting approach to teaching SQL,
+though the writing voice is a little bit annoying.  Still turning out to be
+a good book though.
+
+
