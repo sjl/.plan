@@ -706,4 +706,23 @@ and got about 1/3 of the way through.  An interesting approach to teaching SQL,
 though the writing voice is a little bit annoying.  Still turning out to be
 a good book though.
 
+Finished the gnuplot book.  It's really, really good.
 
+Finished my weekly report and homework for this week.  Good to have a couple
+days of buffer.  Figured out how to build the assignment zip file in
+a `Makefile` which was overkill, but "fun":
+
+    assignments/sjl7678-alignment.zip: $(ALIGNMENTS)
+    	rm -rf assignments/sjl7678-alignment
+    	mkdir -p assignments/sjl7678-alignment/
+    	cd assignments/sjl7678-alignment && mkdir -p $(KEY_PREFIXES)
+    	mcp 'data/02-alignment/*/align_summary.txt' 'assignments/sjl7678-alignment/#1/align_summary.txt'
+    	mcp 'data/02-alignment/*/logs/tophat.log'   'assignments/sjl7678-alignment/#1/tophat.log'
+    	cd assignments && zip -r sjl7678-alignment.zip sjl7678-alignment
+
+I'm slowly becoming more and more disillusioned of `make`.  Even though I'm only
+using it for what it's actually designed for (running commands to turn files
+into new files) it's still a tremendous pain in the ass to do anything
+nontrivial.  The "scripting" support is completely batshit string-based munging,
+and even the basic definition of any dependencies beyond explicit lists of files
+is miserable.
