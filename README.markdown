@@ -726,3 +726,10 @@ into new files) it's still a tremendous pain in the ass to do anything
 nontrivial.  The "scripting" support is completely batshit string-based munging,
 and even the basic definition of any dependencies beyond explicit lists of files
 is miserable.
+
+## 2020-02-12
+
+Spent some (far too much) time getting the Trapnell data into Postgres, figuring
+out how to ergonomically plot it with gnuplot, and figuring out how to do decent
+histogram and CDF plots.  I'm not thrilled with what I came up with, but it'll
+have to do for now because it's already 11 PM.
