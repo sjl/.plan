@@ -733,3 +733,15 @@ Spent some (far too much) time getting the Trapnell data into Postgres, figuring
 out how to ergonomically plot it with gnuplot, and figuring out how to do decent
 histogram and CDF plots.  I'm not thrilled with what I came up with, but it'll
 have to do for now because it's already 11 PM.
+
+## 2020-02-15
+
+Tracked down the root cause of https://github.com/dimitri/pgloader/issues/1005
+— need to write it up in a comment.
+
+## 2020-02-16
+
+Finished the `make` book.  I'm becoming less and less enthusiastic about `make`
+the more I learn about it and see real-world examples of it.
+
+Wrote up the pgloader issue debugging comment.
