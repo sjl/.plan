@@ -174,7 +174,7 @@ Lesk book exercises, chapter 1:
 
 1. Average density would be `(/ 3r4 3r9) = 1/100000` or 1 gene every ~100kb.
 2. Parts:
-    * A: Two humans would have roughly 250k differences. 
+    * A: Two humans would have roughly 250k differences.
     * B: A human and a chimpanzee would have roughly 3m differences.
 3. Parts:
     * A: Average density would be 2 SNPs per 1000 base pairs.
@@ -634,7 +634,7 @@ R with [this guide](https://www.digitalocean.com/community/tutorials/how-to-inst
 
 Finally managed to get cummerbund working and started graphing stuff.  It mostly
 works, but my graphs don't really look quite like theirs.  Need to ask the
-professor about this. 
+professor about this.
 
 In the mean time, played around with using gnuplot to plot the data instead of
 R.  Turned out to be not too bad, since cuffdiff already dumps its output in
@@ -745,3 +745,114 @@ Finished the `make` book.  I'm becoming less and less enthusiastic about `make`
 the more I learn about it and see real-world examples of it.
 
 Wrote up the pgloader issue debugging comment.
+
+## 2020-02-18
+
+Class today was a lot of chatting and planning ahead for the group project.
+Things to think about:
+
+* Need to get a CSV or something together with the sample names and SRA IDs so
+  I can map the FASTQ files back to the actual conditions.  Not sure if there's
+  a way to pull this metadata out of the raw data files or whether I have to
+  type it out by hand like some uncultured swine.
+* Need to figure out what the "transcript integrity number" from the paper
+  means.
+  * Professor wasn't sure.
+  * I think I found the paper that created it, so I just need to read it and hope it doesn't go over my head.
+* Need to think more about the filesystem layout for the project.
+  * Pipeline directories mostly worked in the individual one.  Try that again?
+* Need to figure out how we're going to automate the project.
+  * Considered trying `redo` but I want it to run on the server, so that's probably out.
+  * Could use `make` again even though I'm more and more disenchanted with it every time I try to use it.
+  * Could use bash scripts but that seems miserable in different ways.
+* I'd really like to try to reproduce the paper with the exact versions of the
+  tools they used, as a baseline.
+  * This will likely be fucking miserable because modern software has a half life of a year.
+  * If I can manage to do that, then I could update the tools and see what changes.
+  * Then try different tools and see what changes.
+
+One more big question: need to figure out what the overrepresented sequences
+FastQC is complaining about are.  I figured I'd do BLAST searches for them, so
+I wanted to get a list of all the overrepresented sequences.  So I need to pull
+them out of the FastQC reports… which are HTML files… all on one line.  Did some
+horrific `grep`ing to get what I wanted:
+
+     sjl at ouroboros in /dump/karkinos/fastqs/qc
+     ><((°> grep -Po 'id="M9".*<h2' *.html | head | grep -Po '<td>.*?</td>' | grep -v 'No Hit' | grep '<td>[ACTG]' | tr -s '<>' '  ' | cut -d' ' -f3 | sort | uniq -c
+           2 CCTCACCCGGCCCGGACACGGACAGGATTGACAGATTGATAGCTCTTTCT
+           2 CGGACATCTAAGGGCATCACAGACCTGTTATTGCTCAATCTCGGGTGGCT
+           2 CTCACCCGGCCCGGACACGGACAGGATTGACAGATTGATAGCTCTTTCTC
+           2 CTGCCAGTAGCATATGCTTGTCTCAAAGATTAAGCCATGCATGTCTAAGT
+           2 CTGGAGTCTTGGAAGCTTGACTACCCTACGTTCTCCTACAAATGGACCTT
+           2 CTGGAGTGCAGTGGCTATTCACAGGCGCGATCCCACTACTGATCAGCACG
+
+     sjl at ouroboros in /dump/karkinos/fastqs/qc
+     ><((°> grep -Po 'id="M9".*<h2' *.html | head | grep -Po '<td>.*?</td>' | grep -v 'No Hit' | grep '<td>[ACTG]' | tr -s '<>' '  ' | cut -d' ' -f3 | sort | uniq | xargs -ISEQ grep --files-with-match SEQ *.html | sort | uniq
+     SRR6671104.1_1_fastqc.html
+     SRR6671104.1_2_fastqc.html
+
+Interesting — only one of the samples has this issue, and the same sequences
+appear in both sides of the pair.  Immediately after doing this horrible `grep`
+incantation I remembered the `.zip` produced by FastQC and sure enough, there's
+a text file in it with the results in a much less awful format.  But I still
+needed a janky awk incantation:
+
+     ><((°> awk 'BEGIN { RS=">>END_MODULE\n"; FS="\n" } $1 ~ /Overrepre/ { for (i=1;i<=NF;i++) print FILENAME, $i }' */fastqc_data.txt
+     SRR6671104.1_1_fastqc/fastqc_data.txt >>Overrepresented sequences       warn
+     SRR6671104.1_1_fastqc/fastqc_data.txt #Sequence Count   Percentage      Possible Source
+     SRR6671104.1_1_fastqc/fastqc_data.txt CCTCACCCGGCCCGGACACGGACAGGATTGACAGATTGATAGCTCTTTCT        58594   0.18785731410785536     No Hit
+     SRR6671104.1_1_fastqc/fastqc_data.txt CTCACCCGGCCCGGACACGGACAGGATTGACAGATTGATAGCTCTTTCTC        39157   0.12554065004132323     No Hit
+     SRR6671104.1_1_fastqc/fastqc_data.txt CTGGAGTGCAGTGGCTATTCACAGGCGCGATCCCACTACTGATCAGCACG        36886   0.11825963218388151     No Hit
+     SRR6671104.1_1_fastqc/fastqc_data.txt CTGGAGTCTTGGAAGCTTGACTACCCTACGTTCTCCTACAAATGGACCTT        34457   0.11047205297836592     No Hit
+     SRR6671104.1_1_fastqc/fastqc_data.txt CTGCCAGTAGCATATGCTTGTCTCAAAGATTAAGCCATGCATGTCTAAGT        33273   0.10667604895229328     No Hit
+     SRR6671104.1_1_fastqc/fastqc_data.txt CGGACATCTAAGGGCATCACAGACCTGTTATTGCTCAATCTCGGGTGGCT        31923   0.1023478349022949      No Hit
+     SRR6671104.1_1_fastqc/fastqc_data.txt
+     SRR6671104.1_2_fastqc/fastqc_data.txt >>Overrepresented sequences       warn
+     SRR6671104.1_2_fastqc/fastqc_data.txt #Sequence Count   Percentage      Possible Source
+     SRR6671104.1_2_fastqc/fastqc_data.txt CCTCACCCGGCCCGGACACGGACAGGATTGACAGATTGATAGCTCTTTCT        58938   0.18896020716948458     No Hit
+     SRR6671104.1_2_fastqc/fastqc_data.txt CTCACCCGGCCCGGACACGGACAGGATTGACAGATTGATAGCTCTTTCTC        39362   0.12619789736002668     No Hit
+     SRR6671104.1_2_fastqc/fastqc_data.txt CTGGAGTGCAGTGGCTATTCACAGGCGCGATCCCACTACTGATCAGCACG        36752   0.11783001686336315     No Hit
+     SRR6671104.1_2_fastqc/fastqc_data.txt CTGGAGTCTTGGAAGCTTGACTACCCTACGTTCTCCTACAAATGGACCTT        34782   0.11151403043484702     No Hit
+     SRR6671104.1_2_fastqc/fastqc_data.txt CTGCCAGTAGCATATGCTTGTCTCAAAGATTAAGCCATGCATGTCTAAGT        34471   0.11051693816110664     No Hit
+     SRR6671104.1_2_fastqc/fastqc_data.txt CGGACATCTAAGGGCATCACAGACCTGTTATTGCTCAATCTCGGGTGGCT        31900   0.10227409495922085     No Hit
+     SRR6671104.1_2_fastqc/fastqc_data.txt
+     SRR6671105.1_1_fastqc/fastqc_data.txt >>Overrepresented sequences       pass
+     SRR6671105.1_1_fastqc/fastqc_data.txt
+     …
+
+Some quick `cut`ing and such and I've got what I need, in a slightly less
+horrible way.  I guess.
+
+    ><((°> awk 'BEGIN { RS=">>END_MODULE\n"; FS="\n" } $1 ~ /Overrepre/ { for (i=3;i<NF;i++) printf(">%s/%d %s\n", FILENAME, x++, $i) }' */fastqc_data.txt | cut -f1 | sort -k2 | uniq -f1 | tr ' ' '\n'
+    >SRR6671104.1_1_fastqc/fastqc_data.txt/0
+    CCTCACCCGGCCCGGACACGGACAGGATTGACAGATTGATAGCTCTTTCT
+    >SRR6671104.1_1_fastqc/fastqc_data.txt/5
+    CGGACATCTAAGGGCATCACAGACCTGTTATTGCTCAATCTCGGGTGGCT
+    >SRR6671104.1_1_fastqc/fastqc_data.txt/1
+    CTCACCCGGCCCGGACACGGACAGGATTGACAGATTGATAGCTCTTTCTC
+    >SRR6671104.1_1_fastqc/fastqc_data.txt/4
+    CTGCCAGTAGCATATGCTTGTCTCAAAGATTAAGCCATGCATGTCTAAGT
+    >SRR6671104.1_1_fastqc/fastqc_data.txt/3
+    CTGGAGTCTTGGAAGCTTGACTACCCTACGTTCTCCTACAAATGGACCTT
+    >SRR6671104.1_1_fastqc/fastqc_data.txt/2
+    CTGGAGTGCAGTGGCTATTCACAGGCGCGATCCCACTACTGATCAGCACG
+
+Did a BLAST search for these sequences and they're all 18S Ribosomal RNA.
+Professor wasn't sure how that could have gotten into the mix, since the paper
+says they only used poly(A) RNA.  Need to ask around at work to see if anyone
+has any ideas what the heck happened.
+
+(This weirdness is only on sample C0.  Unfortunately that's not the sample the
+paper identified as being low quality (C3) so that isn't the issue.)
+
+Did a bit more on the Enceladus book.  Decided to just read the rest, because
+the DB/Makefile crap is getting way too messy.  I really need a `sqlfmt` tool,
+but every time I try to use smug to write a parser I get depressed.
+
+Merged a GitHub PR into badwolf and tried to pull it down locally with hg-git,
+which fucking broke for the millionth time, with a lying error message blaming
+hg-prompt.  Fucking fantastic.  Updated hg-git (apparently there's a new repo on
+Heptapod since Atlassian is shitcanning BitBucket's Mercurial support) and now
+there are four heads on default.  I have no idea which one I'm supposed to use.
+I picked the latest one arbitrarily and it seems to work, at least well enough
+to pull down the PR.  Good enough.
