@@ -856,3 +856,9 @@ Heptapod since Atlassian is shitcanning BitBucket's Mercurial support) and now
 there are four heads on default.  I have no idea which one I'm supposed to use.
 I picked the latest one arbitrarily and it seems to work, at least well enough
 to pull down the PR.  Good enough.
+
+## 2020-02-19
+
+Finished the weekly report for class.
+
+Fixed the scroll overflow of the code blocks in this site.
