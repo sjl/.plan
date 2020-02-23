@@ -862,3 +862,16 @@ to pull down the PR.  Good enough.
 Finished the weekly report for class.
 
 Fixed the scroll overflow of the code blocks in this site.
+
+## 2020-02-22
+
+Put together some initial structure for the group project.  Got the files
+unzipped and FastQC run, so tomorrow I can dive into new stuff.
+
+Tried to track down a human reference genome for use later.  I *think* I got
+what I need, but the sites are… not very user friendly.  Will confirm with the
+professor in class.
+
+Started reading one of Tufte's books.  Found a beautiful graph from a 1979 paper
+(`10.1126/science.206.4421.987`) with a gorgeous plotter font.  Need to try to
+find a similar font to use myself.
