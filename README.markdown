@@ -914,3 +914,10 @@ functions to make it less annoying:
         "plant-co2" u "CO2":"Velvetleaf" w lp, \
         lr(x)  t lrt(3,0)   lt 6, \
         lr2(x) t lrt2(3, 0) lt 7
+
+Looked into why our first few bases are called at lower quality.  Found
+[this](http://seqanswers.com/forums/showthread.php?t=61936) which says that it's
+because Illumina uses the first few bases to calibrate their quality score
+analyzer, and so they mark them as being less confident to account for the
+calibration process.  Signed up for that forum (over bare-ass HTTP, sigh) to get
+the damn tech note PDF too.
