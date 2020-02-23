@@ -875,3 +875,42 @@ professor in class.
 Started reading one of Tufte's books.  Found a beautiful graph from a 1979 paper
 (`10.1126/science.206.4421.987`) with a gorgeous plotter font.  Need to try to
 find a similar font to use myself.
+
+## 2020-02-23
+
+Did another graphing exercise from Campbell Biology in gnuplot for fun.
+
+Figured out that `dashtype ''` in my style files was causing the *line* to show
+as solid, but the entry in the key was blank!  Turns out `dashtype solid` is
+what I actually want.  Also learned that I need to explicitly reset that when
+I want a solid line, otherwise the dashtypes I set in previous styles will carry
+over.
+
+Refined my color plotting style to use dashed lines instead of lighter colors
+for types 6-10.  Seems easier to read that way — the light colors were *really*
+light.
+
+Figured out how to do linear regression in gnuplot, and made some helper
+functions to make it less annoying:
+
+    # lr  = linear regression (the function to fit)
+    # lrt = linear regression title
+
+    baselrt(mm, bb, mprecision, bprecision) = sprintf(\
+            sprintf("%%.%dfx + %%.%df", mprecision, bprecision), \
+        mm, bb)
+
+    lr(x) = m * x + b
+    lrt(mp, bp) = baselrt(m, b, mp, bp)
+
+    lr2(x) = m2 * x + b2
+    lrt2(mp, bp) = baselrt(m2, b2, mp, bp)
+
+    fit lr(x)  "plant-co2" using "CO2":"Corn"       via m, b
+    fit lr2(x) "plant-co2" using "CO2":"Velvetleaf" via m2, b2
+
+    plot [300:1050] \
+        "plant-co2" u "CO2":"Corn"       w lp, \
+        "plant-co2" u "CO2":"Velvetleaf" w lp, \
+        lr(x)  t lrt(3,0)   lt 6, \
+        lr2(x) t lrt2(3, 0) lt 7
