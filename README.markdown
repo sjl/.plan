@@ -935,3 +935,49 @@ Then I tried to get the `Render > Hershey Text` thing working again, but it
 just… did nothing at all.  Looks like there's a *second* Hershey Text plugin,
 this time under the AxiDraw extension menu.  I guess I'm supposed to use that
 one now?  Who knows?
+
+Played around with how to make a dot plot in gnuplot while the AxiDraw drew
+Rochester.  First I grabbed the read counts for our various FASTQ files, pulled
+from the FastQC output files:
+
+    ffind _data.txt \
+        | xargs grep 'Total Sequences' \
+        | sed -Ee 's|./([^/]+)_fastqc/.*\t|\1 |' \
+        | sort --stable -k1,1 -r \
+        | sort -k2,2 -n \
+        > seqs.txt
+
+    cat seqs.txt | head -n2
+    C3_1 21081615
+    C3_2 21081615
+
+Then I can plot a dot plot with something like:
+
+    # https://twitter.com/stevelosh/status/1231434196213796864
+    set termoption font "Routed Gothic,12"
+
+    # I wonder if there's a way to capitalize stylistically
+    set title "READ COUNTS OF INDIVIDUAL FASTQ FILES"
+    set xlabel "READS (MILLIONS)"
+
+
+    # major x tics every 2 million, with 2 minor divisions per major (i.e. minor tics are every 1 million)
+    set xtics 2
+    set mxtics 2
+
+    set grid y nox
+
+    # left justify
+    set ytics left offset -2.2, 0.0
+
+    unset key
+
+    #                                     scale to millions by hand
+    #                                                       read FASTQ names from file
+    plot [20:35][-1:26] "seqs.txt" using ($2 / 1000000.0):0:ytic(1) lc rgb 'black'
+
+And I get something like:
+
+![plot](https://i.imgur.com/YAPXHaQ.png)
+
+Neat!
