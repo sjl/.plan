@@ -921,3 +921,17 @@ because Illumina uses the first few bases to calibrate their quality score
 analyzer, and so they mark them as being less confident to account for the
 calibration process.  Signed up for that forum (over bare-ass HTTP, sigh) to get
 the damn tech note PDF too.
+
+Dug out the old AxiDraw to play around with
+<https://anvaka.github.io/city-roads/?q=rochester%2C%20ny&areaId=3600176069>.
+First problem: after installing the new AxiDraw version, connecting to the
+AxiDraw in Inkscape failed with `Failed to connect to AxiDraw`.  Sigh.  After
+much flailing, it turns out the problem was that something had `pip install`ed
+the `serial` module, which is some kind of serialization/deserialization
+library, and so `import serial` was importing that instead of pySerial, which is
+the serial port communication library that happens to use the module name
+`serial` too.  Ugh.  So `pip uninstall serial; pip install pySerial` fixed that.
+Then I tried to get the `Render > Hershey Text` thing working again, but it
+just… did nothing at all.  Looks like there's a *second* Hershey Text plugin,
+this time under the AxiDraw extension menu.  I guess I'm supposed to use that
+one now?  Who knows?
