@@ -960,7 +960,6 @@ Then I can plot a dot plot with something like:
     set title "READ COUNTS OF INDIVIDUAL FASTQ FILES"
     set xlabel "READS (MILLIONS)"
 
-
     # major x tics every 2 million, with 2 minor divisions per major (i.e. minor tics are every 1 million)
     set xtics 2
     set mxtics 2
@@ -981,3 +980,11 @@ And I get something like:
 ![plot](https://i.imgur.com/YAPXHaQ.png)
 
 Neat!
+
+Hacked together some Awk to remove overrepresented sequences.  **But** I don't
+think a simple `grep -v` approach works, because the two FASTQ files are
+expected to have the paired reads at the same positions in the file.  So if we
+remove a read from one file but not the other, now all the reads are going to be
+offset.  So we need to remove these reads a bit more carefully (really, we need
+tools that process the paired-end reads together).  Need to think about this
+a little bit more.
