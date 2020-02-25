@@ -1013,3 +1013,23 @@ being there in both files, *but* I bet this was an issue of the pairs getting
 out of sync because we grepped out the overrepresented sequences naively.  Tried
 restarting the alignment on the original data and it's still going, so that's
 probably it.  Need to figure out how to filter those bad reads properly tomorrow.
+
+## 2020-02-25
+
+Class.  Chatting about QC and such.
+
+Professor says he asked around and people haven't seen the first 5 bases being
+lower quality before, but that the explanation from Illumina makes sense, and
+that we should *not* trim those bases unless they seem to be causing issues.
+Also talked about how to filter out the overrepresented sequences — he thought
+fastx had something for this, but I can't seem to find anything in the
+documentation.  I may need to write some code.
+
+Professor installed `pigz` on the server, so I can remove my hacky `xargs`
+workaround.
+
+Need to find a way to filter bad sequences from BOTH files at once.
+
+Need to align to the NCBI reference GTF instead of the other weird one.
+
+
