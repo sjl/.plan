@@ -1000,3 +1000,8 @@ in advance for tomorrow in case I need it:
 
     # unmount
     fusermount -u ~/foo
+
+Downloaded STAR and got it running.  Tried running it on the gzipped reference
+genome but it complains that it requires the genome to be uncompressed.  Tried
+to trick it into working by psubbing `zcat` but that didn't work.  Gave up and
+decompressed the damn reference.
