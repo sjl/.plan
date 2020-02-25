@@ -1006,3 +1006,10 @@ broken English, was fairly useful.  Tried running it on the gzipped reference
 genome but it complains that it requires the genome to be uncompressed.  Tried
 to trick it into working by psubbing `zcat` but that didn't work.  Gave up and
 decompressed the damn reference.
+
+Once the genome index was built, started aligning the reads.  It failed right
+away complaining about a zero-length read.  `zcat | grep`ing showed the read as
+being there in both files, *but* I bet this was an issue of the pairs getting
+out of sync because we grepped out the overrepresented sequences naively.  Tried
+restarting the alignment on the original data and it's still going, so that's
+probably it.  Need to figure out how to filter those bad reads properly tomorrow.
