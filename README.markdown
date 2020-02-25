@@ -988,3 +988,15 @@ remove a read from one file but not the other, now all the reads are going to be
 offset.  So we need to remove these reads a bit more carefully (really, we need
 tools that process the paired-end reads together).  Need to think about this
 a little bit more.
+
+## 2020-02-24
+
+Figured out how to mount a directory on my home machine on my laptop with SSHFS,
+in advance for tomorrow in case I need it:
+
+    # mount
+    mkdir ~/foo
+    sshfs -o idmap=user sjl@server:/whatever ~/foo
+
+    # unmount
+    fusermount -u ~/foo
