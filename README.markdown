@@ -1032,4 +1032,20 @@ Need to find a way to filter bad sequences from BOTH files at once.
 
 Need to align to the NCBI reference GTF instead of the other weird one.
 
+## 2020-02-26
 
+Tried rebuilding the genome index with the other GTF file.  Initially got:
+
+    Feb 26 21:00:45 ..... inserting junctions into the genome indices
+    terminate called after throwing an instance of 'std::bad_alloc'
+      what():  std::bad_alloc
+    ./src/03-index-genome.sh: line 19: 14902 Aborted                 (core dumped) STAR --runThreadN $CORES --runMode genomeGenerate --genomeDir data/03-genome-index …
+
+That seems… bad.  But perhaps this is because I didn't have enough RAM, because
+I still had my Lisp process from 2 days ago open consuming ~25 GB of RAM.
+I killed that so I've got about 60 GB now.  Let's see if that helps.  Otherwise
+it sounds like I may need to look at [this](https://github.com/alexdobin/STAR/issues/103).
+
+Still need to find that other paper my partner found from the same people.
+
+Submitted weekly report.
