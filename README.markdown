@@ -1049,3 +1049,50 @@ it sounds like I may need to look at [this](https://github.com/alexdobin/STAR/is
 Still need to find that other paper my partner found from the same people.
 
 Submitted weekly report.
+
+# March 2020
+
+## 2020-03-16
+
+Installed TrimGalore.  Had to install `cutadapt` first, which is some Python
+package.  Luckily it's `apt install`able so I did that, then grabbed TrimGalore
+which is blessedly self-contained.
+
+Installed pardre.  The "release" is just a source dump of C++ files with no
+`README`, cool.  Had to install `mpi-default-dev` to get `make` to work.  Gross.
+
+Used ParDRe to dedupe a couple of the samples as a test.  It took 927 seconds to
+finish the first pair, where I used the `.fastq.gz` files as input and the `-z`
+option to enable compression.  I noticed a bunch of the time (the last 700
+seconds or so) was spent bottlenecked on a single CPU core while writing the
+output.  So then I tried the next sample without compression, and it took 309
+seconds.  Welp.
+
+Ran FastQC on the first two sample results.  For the most part FastQC is happy
+now, but there *are* still some duplicated sequences left.  I'm guessing this is
+because ParDRe is paired-end aware, and will only remove a pair if *the entire
+thing* is a duplicate, while FastQC works only on a per-fastq basis.  I don't
+know this for sure though.
+
+I did the initial run with 0 mismatches allowed.  We should also try with
+N mismatches, though note that this will not work perfectly because ParDRe
+clusters reads by their prefix, so reads with `<=N` mismatches in their prefix
+(and none in the suffix) will not be caught because they'll never get compared.
+Welp.
+
+Cleaned up the scripts to run all the ParDRe runs (0/1/2 mismatches for every
+pair) and FastQC them.  Seems to take roughly 5 minutes per pair to do ParDRe.
+We have 13 pairs, so it should take around an hour per mismatch setting (i.e.
+3 hours) to do them all.
+
+ParDRe finished.  Results look reasonable.  There's not a *ton* of difference
+between 0 and 1 mismatch (there is *some* though).  The difference between 1 and
+2 is minimal.  Next step is to trim low-quality stuff with trim galore.  Gonna
+do that during "class" tomorrow and let it run while I'm at work.
+
+## 2020-03-17
+
+Started sketching out some trimming scripts using Trim Galore.  It has a bunch
+of options — I'm not really sure how to go about deciding what the correct
+values for each are, other than… try some and see if the resulting FastQC run
+seems reasonable?
