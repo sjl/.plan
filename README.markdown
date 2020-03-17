@@ -1096,3 +1096,14 @@ Started sketching out some trimming scripts using Trim Galore.  It has a bunch
 of options — I'm not really sure how to go about deciding what the correct
 values for each are, other than… try some and see if the resulting FastQC run
 seems reasonable?
+
+Attempted to do something foolish: update software.  I wanted to fix the StumpWM
+window/frame focus thing, but I figured I would update StumpWM and SBCL and my
+dotfiles first.  Clearly, this was a mistake.  I updated all of them, added the
+fix, and restarted StumpWM, and everything went to shit.  StumpWM suddenly
+started chewing up tons of a CPU core, lagging to hell, and Firefox and Chrome
+wouldn't even open.  Tried reverting back to the previous versions but it didn't
+work.  Eventually I SSH'ed into the machine and rebooted it, and *then*
+everything started working again.  I think.  We'll see.  Going to give up on
+updating for today — wasted enough time dicking around with this tonight.
+I hate computers.
