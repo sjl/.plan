@@ -1113,3 +1113,48 @@ I hate computers.
 Debugged a gnuplot issue a bit in IRC with someone.  I think I'm losing my mind.
 
 Submitted weekly report for class.
+
+## 2020-03-19
+
+Met with the professor for office hours to chat about the deduplication/trimming
+results.
+
+For deduplication, we first talked about what might cause the actual problem
+it's trying to solve.  A cell may have many duplicate copies of a particular
+mRNA floating around if the gene is highly expressed — this is exactly what
+RNAseq is trying to measure.  However, once those mRNAs are fragmented, it's
+extremely unlikely that they would fragment *exactly* in the same place, and so
+when you sequence the resulting fragments they should be offset from each other.
+If you see exact duplicate reads, it means that the *fragment* was somehow
+duplicated, which is probably an artifact of your laboratory process and not
+biologically significant.
+
+Next: mismatches.  ParDRe supports removing duplicates with up to N mismatches,
+so we talked about why we might want to do this.  If two reads match with `N
+> 0` mismatches it indicates one of the following:
+
+* It's the same problem as the exact duplicates, but with an extra error
+  accumulated during the process (e.g. a sequencing read error or a PCR
+  duplication problem).
+* It's from two genes that are very biologically similar, and so is genuine
+  useful information.  However, this is still unlikely because the fragments
+  would likely be shifted as described above.
+
+At the end he recommended deduplicating with 1 mismatch.
+
+Another complication: ParDRe can operate in paired-end mode, which means that in
+some cases FastQC still finds some duplication.  This happens when one side of
+the read is an exact duplicate while the other is not.  ParDRe does not remove
+this (because of the non-duplicate side) but FastQC only looks at the individual
+FASTQs.  He said this is not a problem, and that ParDRe is doing what we want.
+
+Also chatted a bit about trimming.  We mostly talked about the issue mentioned
+in the Trim Galore documentation: because it trims *any* matching adapter
+sequences, it will *always* trim off a particular base at the end of a read
+(because that one base always matches the adapter sequence's last base).  This
+is not ideal.  He recommended running Trim Galore and requiring at least adapter
+5 bases to match before trimming to deal with that issue.
+
+Plan for today: rerun the trimming with the 5 base requirement and using the
+1 mismatch deduplication data as the source, and then kick off an alignment if
+I still have time (unlikely).
