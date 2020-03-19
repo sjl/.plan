@@ -1107,3 +1107,9 @@ work.  Eventually I SSH'ed into the machine and rebooted it, and *then*
 everything started working again.  I think.  We'll see.  Going to give up on
 updating for today — wasted enough time dicking around with this tonight.
 I hate computers.
+
+## 2020-03-18
+
+Debugged a gnuplot issue a bit in IRC with someone.  I think I'm losing my mind.
+
+Submitted weekly report for class.
