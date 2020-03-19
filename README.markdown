@@ -1158,3 +1158,17 @@ is not ideal.  He recommended running Trim Galore and requiring at least adapter
 Plan for today: rerun the trimming with the 5 base requirement and using the
 1 mismatch deduplication data as the source, and then kick off an alignment if
 I still have time (unlikely).
+
+Neomutt has suddenly started shitting the bed and failing to quite with `Unable
+to write` errors.  I *hate* software.  Tried updating to the latest `master` and
+rebuilding.  I guess we'll see if it fixes things.
+
+Trimming finished.  It looks like increasing the minimum adapter length to
+5 fixed the base imbalance issue.  Good.
+
+Decided to rebuild the STAR index I had made because I can't remember whether
+I had already rebuilt it with the different reference file.  Shouldn't take too
+long.
+
+Index rebuild finished in ~35 minutes.  Kicked off the 26 alignment runs.  That
+should take a lot longer.
