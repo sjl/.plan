@@ -1172,3 +1172,6 @@ long.
 
 Index rebuild finished in ~35 minutes.  Kicked off the 26 alignment runs.  That
 should take a lot longer.
+
+Checked in on the STAR progress.  It's actually only taking ~5-10 minutes to run
+each alignment.  That's not nearly as bad as I expected.
