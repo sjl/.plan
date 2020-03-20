@@ -1175,3 +1175,54 @@ should take a lot longer.
 
 Checked in on the STAR progress.  It's actually only taking ~5-10 minutes to run
 each alignment.  That's not nearly as bad as I expected.
+
+Initial alignments finished.  Started digging into what I can actually *do* with
+the results.  I found the Integrative Genomics Viewer (IGV) that seems
+promising.  Downloaded it and loaded the genome into it, then tried to load the
+alignments but apparently it wants BAMs, not SAMs, and additionally it wants
+indexes of the BAMs.
+
+I looked into how to convert the SAMs to BAMs+indexes.  Went down a bit of an
+unnecessary rabbit hole, but it was still productive.  My initial attempt was
+using `samtools` to do a bunch of conversion:
+
+    STAR … # produces Aligned.out.sam
+
+    samtools view -S -b Aligned.out.sam > sample.unsorted.bam
+    samtools sort sample.unsorted.bam > sample.bam
+    samtools index sample.bam
+
+This worked, but took a while and wrote a bunch of intermediate files I don't
+really need.  Eventually I realized that STAR can produce sorted BAM files
+itself, so all I need to do with `samtools` is the final indexing.  Learned
+a bunch about running STAR too.  One nice way to save time across all the
+alignments is to have STAR load the genome index into shared memory once at the
+beginning and use it for all the alignments, the flush it out at the end:
+
+    function cleanup {
+        STAR --genomeDir "${genome}" --genomeLoad Remove
+    }
+
+    trap cleanup EXIT
+
+    STAR --genomeDir "${genome}" --genomeLoad LoadAndExit
+
+Then the STAR invocations look like:
+
+        STAR \
+            --runMode alignReads                \
+            --runThreadN $CORES                 \
+            --genomeDir "${genome}"             \
+            --genomeLoad LoadAndKeep            \
+            --limitBAMsortRAM "${sortram}"      \
+            --outSAMtype BAM SortedByCoordinate \
+            --outBAMcompression 0               \
+            --outBAMsortingThreadN $CORES       \
+            --outFileNamePrefix "${outdir}/"    \
+            --readFilesIn "${in1}" "${in2}"
+
+I tried putting the temporary directory on `/dev/shm` but it ended up being too
+much with the persistent genome index also in RAM.  Unfortunately my order from
+Crucial is still backordered.  Oh well, I'll just watch more TNG while I wait
+for all the alignments to complete.
+
