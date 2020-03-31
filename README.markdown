@@ -1226,3 +1226,40 @@ much with the persistent genome index also in RAM.  Unfortunately my order from
 Crucial is still backordered.  Oh well, I'll just watch more TNG while I wait
 for all the alignments to complete.
 
+## 2020-03-31
+
+Ran the Trapnell plots from the paper on our data.  Results seem at least
+plausible on the surface.  Pinged my partner to see if his plots match.
+
+Attempted to install RSeQC to do the TIN score stuff mentioned in the paper.
+Ran `pip3 install RSeQC` as described in their docs, but that failed with:
+
+    ValueError: no cython installed, but can not find pysam/libchtslib.c.Make sure that cython is installed when building from the repository
+
+After some searching online I found that this can be fixed by upgrading pip with
+`pip3 install --upgrade pip`.  It's… fine, I guess?
+
+Once I got it installed, I tried running `tin.py` to produce the TIN scores.
+The script wants the BAM (which I have) and a "BED" file.  BED apparently stands
+for Browser Extensible Data and is a TSV file with lines like this:
+
+    chr1	67092175	67109072	XM_011541469.1	0	-	67093004	67103382	0	5	1429,187,70,145,44,	0,3059,4076,11062,16853,
+    chr1	67092175	67131183	XM_011541467.1	0	-	67093004	67127240	0	9	1429,187,70,106,68,113,158,92,42,	0,3059,4076,11062,19401,23176,33576,34990,38966,
+    chr1	67092175	67131227	XM_017001276.1	0	-	67093004	67127240	0	9	1429,187,70,145,68,113,158,92,86,	0,3059,4076,11062,19401,23176,33576,34990,38966,
+
+The collections of stuff I downloaded from UCSC didn't include one of these, but
+the RSeQC site has one available for download.  Actually, it has several BED
+files.  I'm not sure which one is correct.  I downloaded `hg38_RefSeq.bed`
+because it sounds the most like the GTF I used (`hg38.ncbiRefSeq.gtf`).  Was
+that correct?  Who knows?
+
+Now that I have that, I'm doing an initial run with:
+
+    tin.py --input data/05-alignment/clean/C0/C0.bam -r data/00-raw/hg38_RefSeq.bed
+
+It seems like it's going to take a long time.  Guess I'll wait.
+
+The goddamn thing didn't output an ending timestamp.  Come *on*.  It took
+somewhere between 2-5 hours, but I have no idea how long because I wasn't
+watching it when it finished.  I guess I'll do another run with a `time` prefix.
+Sigh.
