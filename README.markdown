@@ -1263,3 +1263,7 @@ The goddamn thing didn't output an ending timestamp.  Come *on*.  It took
 somewhere between 2-5 hours, but I have no idea how long because I wasn't
 watching it when it finished.  I guess I'll do another run with a `time` prefix.
 Sigh.
+
+# April 2020
+
+## 2020-04-02
