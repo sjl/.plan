@@ -1266,4 +1266,70 @@ Sigh.
 
 # April 2020
 
-## 2020-04-02
+## 2020-04-04
+
+Spent an hour wrangling gnuplot for class to try to make a multiplot of the TIN
+scores.  Mostly it was just a bunch of fiddly stuff to try to make the graph
+look exactly like I wanted.  Some of the key points follow.
+
+Basic multiplotting happens with:
+
+    set multiplot \
+        title "TIN Score Distributions by Sample" font ",14" \
+        layout 3,5
+
+    …
+
+    unset multiplot
+
+Looped through the samples with this:
+
+    do for[c=0:9] {
+        set title "C" . c
+        bad = (c == 3)
+        plot [][0:1] "data/05-alignment/tin/C" . c . ".tin.xls" using 5:(1) smooth cnorm notitle lw 3 \
+            lc (bad ? 3 : '#000000') \
+            lt (bad ? 6 : 1)
+    }
+
+    do for[n=1:3] {
+        set title "N" . n
+        bad = (n == 2 || n == 3)
+        plot [][0:1] "data/05-alignment/tin/N" . n . ".tin.xls" using 5:(1) smooth cnorm notitle lw 3 \
+            lc (bad ? 3 : '#000000') \
+            lt (bad ? 6 : 1)
+    }
+
+Note the `smooth cnorm` requiring the columns to be `using
+data-column:literal-value`.  This tripped me up for a while — I was doing `using
+0:data-column` and that was fucking things up completely.  I realized the
+problem when I noticed there wasn't a peak at zero, and also that sorting
+changed the results (which it shouldn't).  `smooth cnormal` needs exactly one
+column of the value, plus a weight value for the point.  Remember this!
+
+You can skip around the plot with `set multiplot next` and `set multiplot prev`.
+Handy for adjusting the layout.
+
+Instead of trying to draw labels on every graph, I decided to try putting a key
+at the bottom right.  This was very fiddly:
+
+    set multiplot next
+
+    $empty << EOF
+    EOF
+
+    set termoption fontscale "0.1"
+    set title "{/*0.9 Key}"
+
+    set ylabel "{/*0.9 CDF}"
+    set xlabel "{/*0.9 TIN Score}"
+    set format x "{/*0.9 %g}"
+    set format y "{/*0.9 %.2f}"
+
+    set origin 0.75,0.0
+    set size 0.25,0.33
+
+    plot [0:100][0:1] $empty using 1:(1) smooth cnorm notitle
+
+Note the `%g` for "humanized" formatting.  I'm going to remember the `g` as
+standing for `god dammit, what is the magic character?`.
