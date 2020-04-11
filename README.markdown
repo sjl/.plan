@@ -1333,3 +1333,8 @@ at the bottom right.  This was very fiddly:
 
 Note the `%g` for "humanized" formatting.  I'm going to remember the `g` as
 standing for `god dammit, what is the magic character?`.
+
+## 2020-04-11
+
+Merged some PRs for `t` and did some basic test maintenance.  I still love
+`cram` for CLI tests — it's such an intuitive, usable way to test things.
