@@ -1338,3 +1338,25 @@ standing for `god dammit, what is the magic character?`.
 
 Merged some PRs for `t` and did some basic test maintenance.  I still love
 `cram` for CLI tests — it's such an intuitive, usable way to test things.
+
+# July 2020
+
+## 2020-07-18
+
+More work on Jarl.
+
+Started going through The Data Compression Book, doing the examples in Common
+Lisp.  First code was a bit stream wrapper.  I initially did
+a `trivial-gray-streams` wrapper but then refactored it into simple structs,
+since it's going to be writing a lot of bits and performance probably matters.
+Maybe.
+
+## 2020-07-19
+
+Did some server upgrades I've put off too long.  Need to script up some stuff
+for automagically doing this in the future.  Might be a good excuse to learn
+`expect`?
+
+PR'ed Quicklisp to move my projects from Bitbucket/Github to my self-hosted
+setup.  At least now I own my availability and won't have to do this bullshit
+again.
