@@ -1364,3 +1364,7 @@ again.
 Imported a couple of contributed patches to `hg-prompt`.  I'm glad people still
 find it useful.  Also took the time to port the documentation to `d` because it
 was using some Python wiki bullshit thing before.
+
+Did some more work on The Data Compression Book.  Wrote up a little `main`
+skeleton for the binaries.  Might use this as an excuse to try out subtask-style
+interfaces in Adopt.  I think it'll work, but I haven't actually tried it yet.
