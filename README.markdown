@@ -1360,3 +1360,7 @@ for automagically doing this in the future.  Might be a good excuse to learn
 PR'ed Quicklisp to move my projects from Bitbucket/Github to my self-hosted
 setup.  At least now I own my availability and won't have to do this bullshit
 again.
+
+Imported a couple of contributed patches to `hg-prompt`.  I'm glad people still
+find it useful.  Also took the time to port the documentation to `d` because it
+was using some Python wiki bullshit thing before.
