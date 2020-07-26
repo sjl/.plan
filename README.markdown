@@ -1368,3 +1368,20 @@ was using some Python wiki bullshit thing before.
 Did some more work on The Data Compression Book.  Wrote up a little `main`
 skeleton for the binaries.  Might use this as an excuse to try out subtask-style
 interfaces in Adopt.  I think it'll work, but I haven't actually tried it yet.
+
+## 2020-07-26
+
+Finally finished reading ULSAH.  Took a few months, but aside from skimming over
+20% that wasn't super relevant it was as good as I remember back from 2008.
+Lots of things I need to look deeper into and try out on my own:
+
+* `strace` and friends.
+* Performance monitoring stuff: `sar`, `vmstat`, `iostat`, etc.
+* VMs using KVM and Qemu instead of Virtualbox.
+* Learn more about `systemd` (unfortunately).
+* Poke at `btrfs` a bit more using my existing setup.
+* Look into Ansible as a configuration management system — it seems the simplest
+  of the Puppet/Chef/Salt/Ansible crew.
+* Building machine images with Packer.
+* Look into Terraform for deployment.
+* Restructure local wifi into main/guest networks.
