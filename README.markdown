@@ -1385,3 +1385,9 @@ Lots of things I need to look deeper into and try out on my own:
 * Building machine images with Packer.
 * Look into Terraform for deployment.
 * Restructure local wifi into main/guest networks.
+
+## 2020-07-28
+
+Did a bit more work on Jarl.  It's actually coming together.  Still got a bunch
+of things on the TODO list but I poked at the GitHub API with it a bit and it
+already works surprisingly smoothly.  Neat.
