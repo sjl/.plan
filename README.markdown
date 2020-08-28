@@ -1391,3 +1391,11 @@ Lots of things I need to look deeper into and try out on my own:
 Did a bit more work on Jarl.  It's actually coming together.  Still got a bunch
 of things on the TODO list but I poked at the GitHub API with it a bit and it
 already works surprisingly smoothly.  Neat.
+
+# August 2020
+
+## 2020-08-27
+
+Fixed Chancery to work around a bug in CCL's `RANDOM`.  In the process I had to
+shave another yak and rotate my SSH keys so I could push to GitHub from my
+laptop.  Ended up going with `ed25519` keys this time.
