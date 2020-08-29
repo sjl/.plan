@@ -1399,3 +1399,12 @@ already works surprisingly smoothly.  Neat.
 Fixed Chancery to work around a bug in CCL's `RANDOM`.  In the process I had to
 shave another yak and rotate my SSH keys so I could push to GitHub from my
 laptop.  Ended up going with `ed25519` keys this time.
+
+## 2020-08-28
+
+Took a stab at having Travis run Lisp tests.  After flailing at it for a while,
+there's just too much jank.  I'll stick to running them locally.
+
+Also tried installing Clasp, but the process is too bonkers.  If they ever
+provide binaries I'll run my tests on it, but the current install process is
+just way too much work to be worth my time.
