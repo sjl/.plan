@@ -1408,3 +1408,15 @@ there's just too much jank.  I'll stick to running them locally.
 Also tried installing Clasp, but the process is too bonkers.  If they ever
 provide binaries I'll run my tests on it, but the current install process is
 just way too much work to be worth my time.
+
+## 2020-08-28
+
+A bunch more work on Jarl.  Wrapped up a couple of loose ends.  Ran into some
+more MOP craziness that I *think* I've solved, but am not 100% sure.
+
+## 2020-08-30
+
+Threw together a little `weather` CLI because trying to use any weather
+website/app is just maddening.  All I want is the temp/rain chance for the next
+few hours to know if I can go sit in a park… why is this so hard to find?
+Learned a bit about ZIP codes in the process of making it.
