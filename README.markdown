@@ -1420,3 +1420,19 @@ Threw together a little `weather` CLI because trying to use any weather
 website/app is just maddening.  All I want is the temp/rain chance for the next
 few hours to know if I can go sit in a park… why is this so hard to find?
 Learned a bit about ZIP codes in the process of making it.
+
+# September 2020
+
+## 2020-09-19
+
+First day of PTO.  My Pine64 arrived, so I downloaded their installer/MicroSD
+flasher thing and put Ubuntu on it for now, at least to make sure it's all
+working.  Worked pretty well (aside from very slow download speeds) but the
+thing seems to work!
+
+Wanted to watch some stuff on my projector, but for some reason VLC would
+*always* display on the main monitor when fullscreen was activated, no matter
+where the window was on the screen beforehand and no matter whether I set the
+(multiple!) settings in the preferences to the other screen.  Absolutely
+*maddening*, especially because this worked fine a week ago.  Turns out the
+solution was to run `refresh-heads` in StumpWM.  Christ.  I hate computers.
