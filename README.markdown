@@ -1436,3 +1436,8 @@ where the window was on the screen beforehand and no matter whether I set the
 (multiple!) settings in the preferences to the other screen.  Absolutely
 *maddening*, especially because this worked fine a week ago.  Turns out the
 solution was to run `refresh-heads` in StumpWM.  Christ.  I hate computers.
+
+## 2020-09-27
+
+TIL about `ncdu`.  It's like a text-mode DaisyDisk, which is something I've
+wanted for a long time.  Nice!
