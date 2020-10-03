@@ -1441,3 +1441,55 @@ solution was to run `refresh-heads` in StumpWM.  Christ.  I hate computers.
 
 TIL about `ncdu`.  It's like a text-mode DaisyDisk, which is something I've
 wanted for a long time.  Nice!
+
+# October 2020
+
+## 2020-10-01
+
+New Thinkpad finally arrived.  Time to shave the computer setup yak once again.
+
+Figured out how to get into the BIOS and disable the GUI BIOS.  Disabled
+Trackpad, etc.  Can't seem to figure out how to disable hyperthreading yet.
+
+Downloading an Ubuntu 20.04 `iso`.  Since the machine is so new I figure I'll
+need a relatively new release.  Documentation says to open the "startup disk
+creator" in Ubuntu's gnome search thing but since I don't use that, some
+googling around shows it's actually called `usb-creator-gtk`.  Selected my 4GB
+USB drive and the 2.6 GB ISO and pressed the start button, and got an error
+dialog saying "Could not write the disk image … to the device …."  *Fantastic*
+start.  Tried another USB stick, same thing.  Eventually something clicked in my
+brain and I realized it probably wanted me to `sudo`.  Restarted the creator
+with `sudo` and it worked.  You couldn't have fucking *told* me that in the
+error message?  Christ.
+
+Plugged in the USB stick and rebooted.  Went straight to Windows setup.  Killed
+power and rebooted and used `F12` to get to the boot menu.  Ubuntu started, ran
+a drive scan, found errors in a file.  Christ.
+
+Eventually the install finished.  Booted into Ubuntu at a tiny resolution.
+Wanted to increase the resolution but the settings menu isn't tall enough to see
+the display settings I guess.  Christ.
+
+Dove into a giant rabbit hole to update my kernel.  Once that was finally done
+my resolution was better.
+
+Generated an SSH key and bootstrapped it by typing in the pubkey manually into
+an `authorized_keys` file because I don't want to install Dropbox on this
+machine now that Dropbox is such a horrible mess.  Typed in my
+`hg.stevelosh.com` SSH config by hand, and was finally able to clone my
+dotfiles.  Immediately failed because Git subrepos are disabled by default in
+Mercurial for security reasons, and you have to enable them in your `hgrc` which
+is in the repo I'm trying to clone.  Kill me.  Created a simple `hgrc` to enable
+them.  It worked until one of the Github repo clones randomly hung.  Christ.
+Ran `hg up -C` to unfuck it.
+
+Installed an old SBCL through `apt`, cloned and rebuilt a new version, installed
+Quicklisp, cloned and built Stump.
+
+Got through the hellscape of `hg-git` installation by pinning versions that work
+on my desktop.  Some day this isn't going to work and I'll have to unravel this
+hairball or abandon Mercurial, but that day is not today.
+
+Building `st` on the new machine.  The `README` only mentions "the X header
+files" as a dependency, which is a lie.  You actually need `libx11-dev`,
+`libxft-dev`, and `libxext-dev`.
