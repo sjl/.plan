@@ -1493,3 +1493,24 @@ hairball or abandon Mercurial, but that day is not today.
 Building `st` on the new machine.  The `README` only mentions "the X header
 files" as a dependency, which is a lie.  You actually need `libx11-dev`,
 `libxft-dev`, and `libxext-dev`.
+
+## 2020-10-06
+
+Going back through the ARM book and doing some of the exercises.  To help me
+check my answers, I extended CACL to support reading characters, added
+`char-code` and `code-char` commands, added `hex` and `bits` commands.
+
+Also started going through BIAL again, because now we're doing it for the book
+club at work.  Maybe I'll actually finish this time.
+
+I keep going back and forth on whether it's worth making a special sequence
+class for DNA/RNA sequences while doing Rosalind.  I poke around at it every
+time, but I don't think I have the time to truly do it right (yet), so for now
+I'm going to stick with vanilla strings.
+
+## 2020-10-07
+
+Finished chapter 1 of BIAL again.  Took a little of my old code (mainly
+utilities) but mostly just wrote it from scratch.  It was a good exercise.
+I feel a little rusty at Lisp though…
+
