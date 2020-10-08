@@ -1514,3 +1514,10 @@ Finished chapter 1 of BIAL again.  Took a little of my old code (mainly
 utilities) but mostly just wrote it from scratch.  It was a good exercise.
 I feel a little rusty at Lisp though…
 
+Sending emails with `msmtp` from Fastmail suddenly broke with:
+
+    msmtp: TLS certificate verification failed: the certificate fingerprint does not match fastmail
+
+I guess Fastmail updated their certs.  The fingerprints are at
+<https://www.fastmail.com/help/technical/certs.html>.
+
