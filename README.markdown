@@ -1521,3 +1521,10 @@ Sending emails with `msmtp` from Fastmail suddenly broke with:
 I guess Fastmail updated their certs.  The fingerprints are at
 <https://www.fastmail.com/help/technical/certs.html>.
 
+## 2020-10-22
+
+Continued setting up the new laptop.  Was going to set up mutt for mail, but one
+of my settings files is still in Dropbox and I was hoping to avoid installing
+Dropbox on this machine since Dropbox is a pile of garbage now.  Maybe it's time
+to shave that yak and set up some kind of `rsync` based syncing solution for the
+bulk of my files.
