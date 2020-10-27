@@ -1528,3 +1528,21 @@ of my settings files is still in Dropbox and I was hoping to avoid installing
 Dropbox on this machine since Dropbox is a pile of garbage now.  Maybe it's time
 to shave that yak and set up some kind of `rsync` based syncing solution for the
 bulk of my files.
+
+## 2020-10-26
+
+Finally got around to merging some `hg-prompt` patches.  They add Python
+3 compatibility, but break Python 2 compatibility because it used `bytes(foo,
+'utf-8')` which breaks with an inscrutable error in Python 2:
+
+    Python 2.7.17 (default, Sep 30 2020, 13:38:04) 
+    [GCC 7.5.0] on linux2 
+    Type "help", "copyright", "credits" or "license" for more information. 
+    >>> bytes('foo', 'utf-8') 
+    Traceback (most recent call last): 
+    File "<stdin>", line 1, in <module> 
+    TypeError: str() takes at most 1 argument (2 given) 
+
+I'm calling `bytes`, not `str`, what the fuck are you talking about, Python?
+Eventually I found `bytes(foo.encode('utf-8'))` which will work in both.  I'm
+glad I don't use this language any more.
