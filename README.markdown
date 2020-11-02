@@ -1559,3 +1559,6 @@ so I eventually gave up and asked in `#sbcl`.  The magical incantation to
 parallelize SBCL with multiple jobs is:
 
     SBCL_MAKE_PARALLEL=12 SBCL_MAKE_JOBS=-j12 ./make.sh
+
+Need to investigate <https://github.com/troglobit/xplugd> for dealing with
+keyboard bullshit in Linux.  Looks promising.
