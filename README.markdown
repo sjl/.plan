@@ -1546,3 +1546,16 @@ Finally got around to merging some `hg-prompt` patches.  They add Python
 I'm calling `bytes`, not `str`, what the fuck are you talking about, Python?
 Eventually I found `bytes(foo.encode('utf-8'))` which will work in both.  I'm
 glad I don't use this language any more.
+
+# November 2020
+
+## 2020-11-02
+
+Had to update SBCL today and wanted to parallelize the build to make it run
+a bit faster.  I remember Rainer Joswig tweeting about this but can't find the
+tweet, Googling for `SBCL parallel` is useless, there's no documentation of the
+magic env vars, and I can't find them by scanning `make-config.sh` or `make.sh`
+so I eventually gave up and asked in `#sbcl`.  The magical incantation to
+parallelize SBCL with multiple jobs is:
+
+    SBCL_MAKE_PARALLEL=12 SBCL_MAKE_JOBS=-j12 ./make.sh
