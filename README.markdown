@@ -1562,3 +1562,15 @@ parallelize SBCL with multiple jobs is:
 
 Need to investigate <https://github.com/troglobit/xplugd> for dealing with
 keyboard bullshit in Linux.  Looks promising.
+
+## 2020-11-08
+
+Getting `pass` set up on the new machine.  Steps, for the next time I need to do
+this:
+
+    git clone … ~/.password-store
+    apt install pass scdaemon
+    switch-yubikeys
+    gpg --import gpg-pubkey-main.txt
+
+    pass show …
