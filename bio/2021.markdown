@@ -1,0 +1,152 @@
+# Biology Notes
+
+## 2021-04-26
+
+Homework:
+
+* Watch Ken Burns: the Gene.
+* Go through <https://www.coursera.org/learn/introduction-genomics>
+* Find practice exams from biology courses.
+* Find a paper to go over.
+
+Started Introduction to Genomic Tech class on Coursera.
+
+In one of the videos he talked about the word gene.  What does it mean?
+
+* A heritable unit of the genome?
+* A sequence of the genome that codes for a protein?
+* What about introns?  Are they part of the gene?
+* What about the upstream region with enhancers/repressors/promoter?  Aren't
+  those just as important as the content itself, since they manage whether the
+  gene gets transcribed at all?
+* What about parts that code for non-protein-making RNA (TODO what is this
+  called again?)?
+
+## 2021-04-27
+
+More Coursera.
+
+* Any given gene might have a bunch of exons that get spliced in many different
+  ways.  Is there a way to tell just by the sequence which stretches are exons?
+  I.e. is there something like the start/stop codons for exons/introns?
+
+## 2021-04-28
+
+More Coursera.  Learned about some sequencing variants I hadn't known before:
+
+* CHiP-Seq is used to figure out where repressor/enhancer proteins bind to the DNA:
+  * Start by "cross-linking" the protein to the DNA (basically "freezing" the proteins to the DNA so they can't detach).
+  * Fragment the DNA.
+  * Use antibodies (how?) to pull/separate out the fragments that have a protein fused to them.
+  * Sequence just those fragments to find all the stretches of DNA that have proteins (presumably repressors/enhancers) bound to them.
+* Bisulfite sequencing is used to figure out which C's are methylated:
+  * Start with two identical DNA samples (unsure why we need this).
+  * In one sample, do some chemical magic that converts all *non*-methylated C's into U's.
+  * Sequence both samples.
+  * Any remaining C's in the modified sample must have been methylated.
+
+## 2021-04-29
+
+Coursera CS section.  Mostly review for me, but a couple of interesting tidbits:
+
+* I liked how he emphasized how you have to *understand* what the software you
+  use is doing, and not just treat it as a black box.
+* The example of RNA editing and misalignments was interesting.
+* Need to look into "NCBI Genome Workbench" program.  How does it compare to IGV?
+* The example RNAseq pipeline he used was bowtie → tophat → cufflinks → cuffdiff
+  which was what we used in my class at RIT.
+
+## 2021-05-01
+
+Coursera statistics section:
+
+* I like the term "ridiculogram".  I see these a lot.
+* Batch effects are very common and very problematic.
+
+## 2021-05-03
+
+Lesson.
+
+Gene definition: a region of the genome with some function.  Alternatives might
+be called "genomic elements".
+
+Introns/exons *might* use epigenetic information to determine splice sites.
+Search for "regulation of RNA splicing" to find more.
+
+Ligand: a molecule that can interact.
+
+Homework:
+
+* Might want to do DNA Algorithms class on Coursera.
+* Do at least one of <https://ocw.mit.edu/courses/biology/7-012-introduction-to-biology-fall-2004/exams/>
+* Look into supplementary material to find out if we were used in the journal club paper.
+
+## 2021-05-09
+
+Finally getting to the practice tests and the Coursera course.  This week has
+been crazy.
+
+Started with practice test 2.  Some parts were easy, some others I vaguely
+recall but am going to need to use the book to refresh myself on.
+
+## 2021-05-16
+
+Trying the scavenger hunt Emily gave me.
+
+There seem to be a LOT of results.  Maybe I should try limiting them by date?
+Tried to figure that out, looks like there's a way to do it with an "Entrez
+Query".  <https://www.ncbi.nlm.nih.gov/books/NBK3837/> is the handbook that
+describes those queries.  I think it should be something like:
+
+    2000/1/1:2020/5/5[Publication Date]
+
+Not sure if there's a standard place to find the location, or if it's always
+just randomly mixed into the text and you have to figure it out.
+
+## 2021-05-19
+
+Lesson.
+
+Chatted about the COVID scavenger.
+
+Question from last time: how does DNA replication terminate?  It goes until the
+telomeres every time — it never partially replicates.
+
+## 2021-05-23
+
+Caught up on the coding side of the Coursera course.  Redid the gnuplot
+interface in my Lisp utilities to match what the gnuplot book recommends, and
+it's working pretty well.
+
+## 2021-05-24
+
+Lesson.
+
+CD34+ cells: CD34 is a protein present only in young stem cells, used very often
+as a marker to identify them.
+
+Flow cytometry:
+
+1. Pick 1 or more markers (proteins on the surface of a cell).
+2. Buy antibodies that will bind to those markers, which have a fluorescent tag
+   tag attached to them.
+3. Draw blood.
+4. Lyse the red blood cells with a special reagent.
+5. Mix in the antibodies.  Antibodies bind to the cells of interest.
+6. Use a microfludics thing to pipe cells one at a time through a channel.
+7. Use lasers to excite the fluorescent tags.
+8. Measure cell counts (and abundance of the marker on the individual cells!).
+
+## 2021-06-01
+
+Flow cytometry presentation.  FCS is a super interesting tool that I didn't
+really know about before.  Interesting tidbits:
+
+* About grill/refrigerator sized, $100k to $200k+ (depending on number of
+  lasers, more = better).
+* You can not only count cells, but also *sort* them on the fly.
+* It analyzes basic non-wavelength stuff like the size of the cell (by shadow
+  size) and density (by how much light is scattered at various depths in the
+  cell).
+* It also analyzes wavelength-specific stuff to figure out which
+  receptors/antibodies got dyed.

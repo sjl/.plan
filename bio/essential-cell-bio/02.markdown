@@ -1,0 +1,126 @@
+Chapter 2
+=========
+
+Questions
+---------
+
+### Q 2-1
+
+Number of molecules in the ocean:
+
+    1.5e24 cm³ = 1.5e24 g = 1.5e24 g * 6e23 molecules = 9e37
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+    Not sure if this is right -- do I need the divide by the molecular weight of
+    water here?
+
+Picking up a mole of water means you have 6e23 shots at getting one of the
+original molecules, each with a (roughly) 6e23/9e37 chance (1/150000000000000)
+of success, or 149999999999999/150000000000000 chance of failure:
+
+    1 - ((1 - 6e23/9e37) ^ 6e23)
+
+    set logscale x
+    plot [1:600000000000000000000000][] (1 - (0.9999999999999933 ** x))
+
+The chance is almost 100%.
+
+### Q 2-2
+
+A. Number: 6.  Weight: 12.
+B. 6.
+C. 4.  It can form covalent bonds with up to 4 other atoms.
+D. It has 2 additional neutrons.  It will eventually radioactively decay, but
+   otherwise acts like Carbon.
+
+### Q 2-3
+
+This seems like a reasonable statement to make.
+
+### Q 2-4
+
+True.  In water molecules the O atom has a partial negative charge δ⁻, so it
+will be attracted to the positively charged Na⁺ cations and will repelled from the
+negatively charged Cl⁻ anions.
+
+### Q 2-5
+
+Yes, at a concentration of 10⁻⁷ M/L.  They're formed by protons moving between
+water molecules.
+
+### Q 2-6
+
+Using two separate types of amino acids would require separate versions of all
+the various translation machinery for no benefit, and it's simpler to just use
+one kind of machinery for everything.
+
+### Q 2-7
+
+The polarity of a chemical bond is referring to electrical polarity (+/-).  When
+the word is used for a polypeptide it's just referring to the general
+asymmetry/directionality of the different ends, not electrical charge.
+
+### Q 2-8
+
+Having a single type of reaction mechanism means enzymes can be reused for
+multiple purposes, instead of having to build many different types of metabolism
+pathways.  Condensation/hydrolysis is nice because water is already so abundant
+in the cell.
+
+### Q 2-9
+
+Covalent bonds are much harder to break apart when finished than noncovalent
+bonds.
+
+Because covalent bonds are very strong, a single covalent bond might be enough
+to hold macromolecules together.  But this is not necessarily a good thing
+— requiring multiple noncovalent bonds allows more specificity and lets
+a molecule be more selective about the other molecules it binds to.
+
+### Q 2-10
+
+A. Usually, although H sometimes has no neutron.
+B. If it does, it's an ion (an anion).
+C. True.
+D. No, different isotopes have different number of neutrons.
+E. True (but is it the *only* factor?  not sure).
+F. True.
+G. True.
+
+### Q 2-11
+
+C     12
+H      2
+O     16
+Total 30
+
+A. 12/30 * 5 * 6e23 = 1.2e24
+B. I'm not really sure what they're asking here.
+C. 2e-10 * n = 0.07e-3
+   n = 350,000
+
+### Q 2-12
+
+A. 4, 8, 8
+B.
+              Gain Lose
+    Helium    0    0
+    Oxygen    2    6
+    Carbon    4    4
+    Sodium    7    1
+    Chlorine  1    7
+
+C. Helium is not very reactive.  Sodium and Chlorine are well suited to bonding
+   with each other.
+
+### Q 2-13
+
+Oxygen is much more electronegative than Sulfur (3.44 > 2.58).  This means H₂O
+is a much more polar molecule than H₂S, so water molecules have much more
+hydrogen bonding between themselves which helps keep water liquid at higher
+temperatures than H₂S.
+
+### Q 2-14
+
+Glycine + Alanine
+H₅NC₂O₂ + H₇NC₃O₂ = H₂O + H₁₀N₂C₅O₄
+

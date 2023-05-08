@@ -1,0 +1,172 @@
+Chapter 1
+=========
+
+Questions
+---------
+
+### Q 1-1
+
+* Person: 7
+* Potato: 7
+* Vacuum: 3
+
+### Q 1-2
+
+No, because a mistake in producing a shoe will usually result in it being thrown
+out.  In a rare case of a beneficial mistake, the one who notices the mistake
+(the eventual wearer) is probably not in a position to give feedback that would
+let the improvement be incorporated back into the shoes, unless they happen to
+work at the factory (unlikely).
+
+### Q 1-3
+
+It doesn't prove you've generated life, it could easily be contamination from
+airborne microorganisms.  You would need to filter or at least sterilize the air
+first to remove microorganisms.
+
+Pasteur did it by using long, bent-neck flasks, assuming that the organisms
+wouldn't be able to fight gravity and make it up the neck of the tube.  I guess
+it worked, but that seems iffy to me — I could easily imagine an errant air
+current managing to push a dust speck into the neck.
+
+### Q 1-4
+
+    10e-12 g * (N₀ * 2^(t/20 min)) = 6e24 kg
+    10e-12 g * ( 1 * 2^(t/20 min)) = 6e27 g
+    2^(t/20min) = 6e27 g / 10e-12 g
+    2^(t/20min) = 6e38
+    log₂(2^(t/20min)) = log₂(6e38)
+    t/20min = 128.818
+    t ≈ 43 hours
+
+    set logscale y
+    set xlabel "Time (hours)"
+    set ylabel "Biomass (kg)"
+    plot [0:44][] ((2**(x/0.333333)) * 10.0**-15)
+
+It's not a paradox because in reality the bacteria are resource-constrained long
+before they approach the mass of Earth.
+
+### Q 1-5
+
+Certain substances are harmful if they get into the cell, while others are
+helpful (and some can be either, depending on what else it happening in the
+cell).  Having a membrane that can selectively import specific substances allows
+a cell to keep out the bad stuff but allow the good stuff.
+
+### Q 1-6
+
+Light microscopy is cheaper, usually less labor intensive, and allows studying
+of living cells.  Electron microscopy allows much higher
+magnification/resolution.
+
+* Living skin cell: must be done with light, electron cannot image living cells.
+* Yeast mitochondrion: probably requires the magnification of electron.
+* Bacterium: light is probably sufficient.
+* Microtubule: required electron magnification.
+
+### Q 1-7
+
+Many genes are similar between humans and yeast.  Studying a particular gene in
+yeast can be many times more efficient than trying to study it in humans, so her
+money goes much further.
+
+### Q 1-8
+
+A. Cytosol: subset of the cytoplasm that is not contained inside an organelle.
+   A gel where many of the chemical reactions inside the cell happen.
+B. Cytoplasm: everything inside the cell membrane and outside the nucleus.
+   Does… lots of different things.
+C. Mitochondria: small organelles where cellular respiration happens ("the
+   powerhouse of the cell").  Originated from a bacteria being engulfed by an
+   ancestral cell (Margulis' endosymbiont hypothesis).  Have their own genomes,
+   though many genes have been lost/relocated to the nuclear genome.  The
+   compatibility between a mitochondrial genome and nuclear genome is important:
+   https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4981548/
+D. Nucleus: membrane-surrounded organelle that contains the cell's DNA.  Site of
+   DNA→ RNA transcription and DNA replication.  Only found in eukaryotes (by
+   definition).
+E. Chloroplasts: plant organelles where photosynthesis happens.  Thought to be
+   another endosymbiont.  Also have their own genomes.  Is chloroplast/nuclear
+   genome compatibility also important?
+F. Lysosomes: small organelles that digest food particles and break down other
+   unwanted particles.
+G. Chromosomes: packaged DNA (includes e.g. histones, etc).  Condense during
+   cell division so they can line up along the metaphase plate and microtubules
+   can attach to the kinetochores and pull apart/sort them.
+H. Golgi Apparatus: organelle that modifies/packages things to be moved around
+   inside of or out of the cell.
+I. Peroxisomes: small vesicles used for reactions where hydrogen peroxide is
+   used to inactivate something toxic.
+J. Plasma Membrane: phospholipid bilayer separating the cell from the world.
+   Selectively permeable to things, studded with various things (e.g. channel
+   proteins, receptors, etc).
+K. Endoplasmic Reticulum: extension of the nuclear membrane.  Partly studded
+   with ribosomes (rough ER), partly not (smooth ER).  Site where parts of the
+   cell membrane and things destined for outside the cell are made.
+L. Cytoskeleton: three kinds of proteins (actin, intermediate filaments,
+   microtubules) in the cytosol that act as the internal structure/scaffolding
+   of the cell.
+M. Ribosome: small machine made of RNA and protein, used to translate RNA into
+   protein.
+
+### Q 1-9
+
+A. No, it's passed by DNA.
+B. Yes, bacteria are prokaryotes and don't have a nucleus.
+C. No, plants are eukaryotes.
+D. Pretty much always yes.
+E. No, the cytosol is everything that's NOT an organelle.  The cytoplasm
+   includes the organelles.
+F. Yes.
+G. No, protozoans are unicellular.
+H. Yes (if you count digested food particles as "unwanted").
+
+### Q 1-10
+
+A. Nucleus
+B. Vacuole
+C. Cell wall
+D. Chloroplast
+
+### Q 1-11
+
+Actin
+Intermediate filaments
+Microtubules
+
+Muscle cells have a lot of actin.
+
+Skin would probably have more microtubules (helpful for communication).
+
+### Q 1-12
+
+    1e6 * 2^(t/20) = 1 * 2^(t/15)
+    1e6 = (2^(t/15) / 2^(t/20))
+    1e6 = 2^(t/15 - t/20)
+    log₂(1e6) = log₂(2^(t/15 - t/20))
+    20 ≈ t/15 - t/20
+    20 ≈ t * (1/15 - 1/20)
+    20 ≈ t * (1/60)
+    1200 minutes ≈ t
+    20 hours ≈ t
+
+    set logscale y
+    set xlabel "Time (hours)"
+    set ylabel "Population"
+    plot [0:24][] (1.0e6 * 2**(x/0.333333)), (1 * 2**(x/0.25))
+
+### Q 1-13
+
+Eventually one bacterium may acquire a mutation that resists the antibiotic.
+Selection pressure will rapidly cause its descendants to take over the
+population, at which point it continues growing normally.
+
+### Q 1-14
+
+    10^13 = 1 * 2^(t/24)
+    2^43 = 2^(t/24)
+    43 = t/24
+    43 * (24 hours) = t
+    43 days = t
+

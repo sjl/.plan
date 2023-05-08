@@ -1,0 +1,120 @@
+Chapter 3
+=========
+
+Questions
+---------
+
+### Q 3-1
+
+It would probably not happen in a single step, because sugars have the form
+(CH₂O)ₙ.  The smallest sugars have n=3, and so multiple steps are required to
+build the sugar from individual H₂O and CO₂ molecules.
+
+Heat must be generated because sugars are more complex molecules than the
+components.  As order increases, the overall system must gain disorder in the
+form of heat.
+
+### Q 3-2
+
+A. Yes
+B. No
+C. No
+D. Yes
+E. No
+
+### Q 3-3
+
+A. ΔG depends on the starting proportion of heads and tails.  If there are
+   unequal amounts, there will be a tendency for the box to end up closer to
+   1:1.  The more unequal the starting proportions the larger magnitude ΔG will
+   be.  ΔG⁰ is zero, because H → T and T → H are equally likely.
+
+B. The temperature is how vigorously you shake the box.  The activation energy
+   is the minimum force needed to possibly flip a coin.  The enzyme would be
+   something that lowered the minimum force needed to flip a coin (e.g. it might
+   make the coins lighter).
+
+### Q 3-4
+
+Enzymes would reduce the activation energy required at each step, but wouldn't
+change the starting or ending values at all.
+
+### Q 3-5
+
+It's probably limited by the concentration of the reactants.
+
+The area under the curve for the catalyzed portion should be 10,000,000 times
+the area under the uncatalyzed portion.
+
+### Q 3-6
+
+Enzymes don't catalyze a reaction in a single direction, they catalyze it it
+*either* direction depending on the relative concentrations of the
+reactants/products.
+
+### Q 3-7
+
+A. Rocks: ATP
+   Debris: ADP + Pi
+   Bucket Bottom: X
+   Bucket Top: Y
+
+B. Rocks hitting the ground without machine:     ATP →      ADP + Pi + lots of heat
+   Rocks hitting the ground WITH machine:    X + ATP →  Y + ADP + Pi + some heat
+
+### Q 3-8
+
+ΔG depends not only on ΔG⁰ but also on the concentration of the reactants and
+products in the cell:
+
+    ΔG = ΔG⁰ + RT ln([X]/[Y])
+    ΔG = ΔG⁰ + RT ln([ADP]*[Pi]/[ATP])
+
+If the proportion `[ADP]*[Pi]/[ATP]` is less than 1 (i.e. there's more ATP in
+the cell than ADP/Pi) then `ln([ADP]*[Pi]/[ATP])` will be negative and will
+increase the amount of free energy liberated when the reaction happens.
+
+A range is given because the exact concentration of ATP, ADP, and Pi in the cell
+is not always constant.
+
+### Q 3-9
+
+A. No, this is cellular respiration.
+B. Yes, this is the second stage of photosynthesis.
+C. No, once you have the nucleoside triphosphates you're all set.
+D. Yes, cellular respiration is used to "charge up" the carriers like ADP into ATP.
+E. Yes, this is an example of D.
+
+### Q 3-10
+
+A. No, they might slow to a crawl but they won't stop completely.
+B. No, the "high energy" here is referring to how much energy is release from
+   giving up the electron, not how much energy the electron itself has.
+C. Yes, roughly (109 is roughly 2 * 54)
+D. If it's oxidized it's lost some of its electrons, so… not sure.
+E. Yes, e.g. CoA.
+F. No, this is true in the presence of oxygen but not necessarily true everywhere.
+G. What?
+H. No, constants are constant.  But the equilibrium constant of the chain of
+   reactions *as a whole* will be shifted when compared to X → Y.
+
+### Q 3-11
+
+    4.2 kJ/mole * 2 = 12.6 kJ/mole
+
+According to the table, the ratio of X to Y will be a little larger than 10².
+
+Doubling the number of hydrogen bonds would double the energy, and result in
+a ratio a little more than 10⁴.
+
+### Q 3-12
+
+### Q 3-13
+
+True:
+
+    ΔG = ΔG⁰ + RT ln([X]/[Y])
+
+If X is more prevalent than Y, then x/y will be more than 1 and the log will be
+positive.  If Y is more prevalent than X then x/y will be between 0 and 1 and
+the log will be negative.  RT is always a positive constant.
