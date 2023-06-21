@@ -27,3 +27,8 @@ have expired some time recently.  Went to create a new one and somehow the list
 of permissions doesn't manage to make it clear which goddamn box you have to
 check to say "just let me push and pull code".  For future reference: it's
 `Contents`.
+
+## 2023-06-21
+
+Pushed some changes to `cl-digraph` I've had sitting around for a while after
+writing up a couple of quick tests.
