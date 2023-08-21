@@ -32,3 +32,15 @@ check to say "just let me push and pull code".  For future reference: it's
 
 Pushed some changes to `cl-digraph` I've had sitting around for a while after
 writing up a couple of quick tests.
+
+# August 2023
+
+First day of orientation as a PhD student.  Here we go again, back to school one
+final time.
+
+Figured out the campus wifi despite the Linux jankery.  Had to:
+
+1. Register as a special device, the laptop registration link redirected to
+   nothing useful.
+2. Use `nm-connection-editor` from `gnome-network-manager` to edit the
+   connection and manually set up the WPA2+PEAP+user/pass for the connection.
