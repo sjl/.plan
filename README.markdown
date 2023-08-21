@@ -44,3 +44,8 @@ Figured out the campus wifi despite the Linux jankery.  Had to:
    nothing useful.
 2. Use `nm-connection-editor` from `gnome-network-manager` to edit the
    connection and manually set up the WPA2+PEAP+user/pass for the connection.
+
+Finally fixed the dulwich errors from hg-git.  Since I'm using Debian's hg now
+instead of building from source, I needed to install dulwich somewhere that the
+system python can find it.  I almost installed `python3-pip` to do that, but
+then realized I could just install `python3-dulwich` and be done.  Cool.
