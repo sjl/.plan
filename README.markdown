@@ -2,6 +2,8 @@
 
 # August 2023
 
+## 2023-08-21
+
 First day of orientation as a PhD student.  Here we go again, back to school one
 final time.
 
