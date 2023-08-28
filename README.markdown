@@ -117,4 +117,10 @@ Essentially:
     ÷         ln(y)/ln(x) = logₓ(y)
     RTN
 
+Trying out syncthing as a Dropbox replacement.  Installing:
 
+    sudo apt install syncthing
+    systemctl --user enable syncthing.service
+    systemctl --user start syncthing.service
+
+Then <http://localhost:8384> to access the admin.
