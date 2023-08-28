@@ -208,3 +208,8 @@ hidden files.
 Can run with some basic reporting with some extra flags:
 
     nextflow run example.nf -with-report report.html -with-dag graph.svg
+
+Of course there appears to be some backwards-incompatible jank in the language
+already.  Reading through <https://www.nextflow.io/blog/2020/dsl2-is-here.html>
+shows minor syntax changes I guess I'll need to be aware of when looking at
+things a few years old.
