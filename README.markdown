@@ -124,3 +124,7 @@ Trying out syncthing as a Dropbox replacement.  Installing:
     systemctl --user start syncthing.service
 
 Then <http://localhost:8384> to access the admin.
+
+Got my budget scripts working and synced via syncthing (also shaved a couple of
+yaks by making scripts to archive/create new hosts while I was at it).  Seems to
+work okay at the moment.  Will gradually transition other stuff over time.
