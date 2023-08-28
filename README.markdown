@@ -117,4 +117,6 @@ Essentially:
     ÷         ln(y)/ln(x) = logₓ(y)
     RTN
 
-
+Got my budget scripts working and synced via syncthing (also shaved a couple of
+yaks by making scripts to archive/create new hosts while I was at it).  Seems to
+work okay at the moment.  Will gradually transition other stuff over time.
