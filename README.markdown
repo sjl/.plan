@@ -103,3 +103,18 @@ I must have configured the *display* precision to 2 SD's at some point in the
 past and forgotten about it.  The full precision is there, it was only rounding
 to display.  I set it to 6 to avoid this, but also the `PREFIX` key will show
 the full precision temporarily.
+
+Figured out (again) how to program the calculator to do logs of arbitrary bases.
+Essentially:
+
+    logₓ(y) = ln(y)/ln(x)
+
+              stack
+    LBL C     x y
+    LN        x ln(y)
+    x<->y     ln(y) x
+    LN        ln(y) ln(x)
+    ÷         ln(y)/ln(x) = logₓ(y)
+    RTN
+
+
