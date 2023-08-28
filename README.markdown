@@ -128,3 +128,83 @@ Then <http://localhost:8384> to access the admin.
 Got my budget scripts working and synced via syncthing (also shaved a couple of
 yaks by making scripts to archive/create new hosts while I was at it).  Seems to
 work okay at the moment.  Will gradually transition other stuff over time.
+
+Going to spend some time learning about Nextflow while I wait to hear from
+rotation folks.  Nextflow is basically a DAG, where:
+
+* Edges are FIFO queues (Nextflow calls them "channels")
+* Vertices are things that consume input from their channels and produce output (Nextflow calls them "processes").
+
+There are two types of channels.  First: queue channels: asynchronous FIFO queues.  Examples:
+
+    # emits sequence of given values
+    ch = Channel.of(1, 1, 2, 3, 5, 8)
+
+    # emits a single file path (queue of size 1)
+    ch = Channel.fromPath('data/one-single-file.txt')
+
+    # emits multiple file paths
+    ch = Channel.fromPath('data/*.txt')
+
+Value channels: like queue channels, but just emit the same value over and over.
+Basically `(constantly val)`.
+
+Processes: basically stages of a pipeline.  Take input and output definitions,
+plus something to run (e.g. `shell`).  Example after a bit of poking around:
+
+
+    // allows you to define processes to be used for modular libraries
+    nextflow.enable.dsl = 2
+
+    workflow {
+        ids = Channel.fromPath('data/ids.txt') // single-item channel
+        chunksize = Channel.value(1000)        // (constantly 1000) but will only ever be used once here
+
+        // The process below produces a list of outputs.  It will only ever be
+        // run once, but nextflow doesn't know that -- you could potentially
+        // have a process run multiple times that each produces a list.  So by
+        // default it groups all the outputs into a single emitted value.  But
+        // here we want to flatted [[aa ab ac ad ae]] into [aa ab ac ad ae].
+        batched_ids = split_ids(ids, chunksize) | flatten
+        batched_ids.view()   // .view() doesn't consume, good for debugging
+
+        result = reverse(batched_ids)
+        result.view()
+    }
+
+    process split_ids {
+        input:
+        path(ids)
+        val(chunksize)
+
+        output:
+        file('batch-*')
+
+        shell:
+        """
+        split -l !{chunksize} !{ids} batch-
+        """
+    }
+
+    process reverse {
+        input:
+        path(batch_file)
+
+        output:
+        file('result')
+
+        shell:
+        """
+        tac !{batch_file} > result
+        """
+    }
+
+Nextflow seems to have the concept of a "run name", i.e. an identifier for
+a particular run.  It creates a `work/` directory with the output files, but
+*also* seems to splat out a bunch of hidden `.nextflow/` and `.nextflow.log.*`
+files in the current directory.  `nextflow clean` removes `work` but not the
+hidden files.
+
+Can run with some basic reporting with some extra flags:
+
+    nextflow run example.nf -with-report report.html -with-dag graph.svg
