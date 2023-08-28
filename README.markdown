@@ -83,5 +83,23 @@ tomorrow.  This is… not great.
 Doing more trainings and paperwork at a school building so I can plug in my
 laptop.
 
+## 2023-08-28
 
+Turns out I didn't get power until *last night*, i.e. three of God's own full
+days after it went out.  Ann Arbor is… not feeling great right now.
 
+Also, yesterday around 14:00 the university's network went down, entirely.
+Unable to get online from the wifi, and any services hosted on the university
+network are down, which is… not great.  Of course, many of the services used
+(e.g. Canvas) are third-party services not hosted on the university network.
+Except they all use the university SSO (because Security™), which *is* hosted on
+the network.  So you can only use them if you're already logged in.  And of
+course sessions expire super quickly (because Security™) so, in summary: lol.
+
+Starting to use my HP-15C clone(s) from Swissmicros again.  Was getting
+misleading results when trying to do some stuff with logarithms: it seemed like
+it only had two digits of precision.  But after some digging around I realized
+I must have configured the *display* precision to 2 SD's at some point in the
+past and forgotten about it.  The full precision is there, it was only rounding
+to display.  I set it to 6 to avoid this, but also the `PREFIX` key will show
+the full precision temporarily.
