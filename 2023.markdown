@@ -33,3 +33,154 @@ check to say "just let me push and pull code".  For future reference: it's
 Pushed some changes to `cl-digraph` I've had sitting around for a while after
 writing up a couple of quick tests.
 
+# July 2023
+
+## 2023-07-15
+
+Installing Debian LTS on my laptop so I don't have to do it again any time soon
+while in grad school.  Taking notes to remember for when I put it on my desktop.
+
+First, back up everything:
+
+* Faster on wired ethernet.
+* Don't forget password-store!
+* Don't forget hidden dotfiles!
+
+Partitioned everything, installed nothing.
+
+Boot into a command line as root (no `sudo` yet).
+
+Add user account to groups:
+
+    usermod -a -G sudo   sjl
+    usermod -a -G netdev sjl
+
+Allow non-free packages:
+
+    vim /etc/apt/sources.list
+
+    edit to add non-free to lines, e.g.:
+    deb http://http.us.debian.org/debian bookworm main contrib non-free
+
+    apt update
+
+Install first round of stuff:
+
+    apt install \
+        nmtui sudo make
+        curl wget network-manager
+        fish rlwrap
+        mercurial git
+        xcape xautolock
+        pulseaudio alsa-utils
+        libzstd-dev libx11-dev libxft-dev
+        build-essential autoconf pkg-config
+        bzip2 udisks2 lm-sensors htop
+        fonts-ubuntu w3m atool psmisc
+        suckless-tools trash-cli
+        dunst
+
+Make wired connection manageable by network manager (might not need this?)
+* Remove from `/etc/network/interfaces`
+* `sudo service NetworkManager restart`
+
+`chsh` to `/usr/bin/fish`.
+
+Set up `.ssh` and keys.
+
+Bootstrap lisp:
+
+    sudo apt install sbcl
+    git clone https://github.com/sbcl/sbcl
+    git checkout sbcl-2.3.6
+    sh make.sh --with-sb-core-compression
+    sudo sh install.sh
+    sudo apt remove sbcl
+
+    curl -O https://beta.quicklisp.org/quicklisp.lisp
+    sbcl --load quicklisp.lisp
+    (quicklisp-quickstart:install :path "/home/sjl/.quicklisp/")
+
+    TODO CCL and others
+
+Get dotfiles:
+
+    hg clone ssh://hsl/repos/dotfiles
+    cd dotfiles
+    ./bin/bootstrap.sh
+
+    TODO build hg from scratch to get hg-git working maybe
+    TODO bootstrap script might fuck up the fish config because shit's already created, thanks a lot fish
+
+    git clone https://github.com/sjl/z-fish
+
+Clone repos:
+
+    hg clone hsl://adopt adopt
+    cd adopt
+    llp
+    cd ..
+
+    etc
+
+Build st:
+
+    git clone https://github.com/sjl/st
+
+Get a desktop environment up and running:
+
+    sudo apt install xinit xdm
+
+    git clone https://github.com/stumpwm/stumpwm
+
+    (ql:quickload "clx")
+    (ql:quickload "cl-ppcre")
+    (ql:quickload "alexandria")
+    (ql:quickload "xembed")
+
+    ./autogen.sh
+    ./configure
+    make
+    sudo make install
+
+    cd ~/.stumpwm.d/
+    git clone https://github.com/sjl/stumpwm-contrib modules
+    cd modules
+    git co sjl
+
+Set up `pass`:
+
+    git clone sjl@redacted:password-store .password-store
+    sudo apt install pass scdaemon pinentry-gtk2
+    gpg -a --export 5D... > public-key.txt
+    copy over
+    gpg --import < public-key.txt
+
+Add GPU stuff:
+
+    sudo apt install vainfo radeontop
+
+Pulseaudio crap:
+
+    sudo apt install pulseaudio alsa-utils
+    pulseaudio --start
+    alsamixer
+    (m to unmute, up/down to change vol)
+
+Set up Firefox:
+
+    wget 'https://download.mozilla.org/?product=firefox&os=linux64&lang=en-US'
+    aunpack fi…
+    mv firefox /opt/
+    cd /opt/
+    chown -R root:root firefox
+    ln -s /usr/local/bin/firefox /opt/firefox/firefox
+    sudo apt install libgtk-3-0 libdbus-glib-1-2
+    finish the rest of this garbage https://wiki.debian.org/Firefox#Hardware_Video_Acceleration
+
+VLC (installs the world, sigh):
+
+    sudo apt install vlc
+    View > Docked Playlist to unbreak the playlist
+
+Figure out a graphical file manager solution (double commander?).
