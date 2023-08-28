@@ -213,3 +213,13 @@ Of course there appears to be some backwards-incompatible jank in the language
 already.  Reading through <https://www.nextflow.io/blog/2020/dsl2-is-here.html>
 shows minor syntax changes I guess I'll need to be aware of when looking at
 things a few years old.
+
+Putting some things on the TODO list for learning mroe about nextflow:
+
+* <https://github.com/seqeralabs/nextflow-tutorial> (uses old DSL)
+* <https://carpentries-incubator.github.io/workflows-nextflow/index.html>
+
+I also need to get some basic scratch VM infrastructure set up with qemu/vagrant
+and Ansible so I can test out Nextflow/pipeline stuff without polluting my own
+machines and/or any servers I eventually get access to with random testing
+garbage.  Maybe I'll put that on tomorrow's list too.
