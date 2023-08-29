@@ -245,4 +245,5 @@ Going to meet again on Thursday to see if the network is available.  If so I'll
 dive in more then — until then I'll just poke around learning that stuff because
 I know I'll need it eventually.
 
-
+Don't have a lot of time before next class, but I went ahead and installed
+Snakemake highlighting/etc for Vim.
