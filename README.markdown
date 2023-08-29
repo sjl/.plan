@@ -223,3 +223,26 @@ I also need to get some basic scratch VM infrastructure set up with qemu/vagrant
 and Ansible so I can test out Nextflow/pipeline stuff without polluting my own
 machines and/or any servers I eventually get access to with random testing
 garbage.  Maybe I'll put that on tomorrow's list too.
+
+## 2023-08-29
+
+First BIOSTAT-521 class.  This one seems like it's going to be quite easy, but
+given I have a crazily-hard class and lab rotation work to do, I think that's
+fine with me.  It *does* use R, which will be a good excuse to poke around at
+that since it's used so heavily in the industry.
+
+First lab meeting as well.  It was good to meet everyone in person.  Talked
+about scheduling stuff and overall gist of my project, though we can't move
+forward directly right now while the university network is still hosed.  But
+I did get some more information about things I'll want to look into:
+
+* Snakemake (not Nextflow, oh well).
+* Singularity containers (should probably read the UNIX book section on
+  containerization first).
+* I still want to get Vagrant/libvirt/qemu/Ansible working to make scratch envs.
+
+Going to meet again on Thursday to see if the network is available.  If so I'll
+dive in more then — until then I'll just poke around learning that stuff because
+I know I'll need it eventually.
+
+
