@@ -247,3 +247,45 @@ I know I'll need it eventually.
 
 Don't have a lot of time before next class, but I went ahead and installed
 Snakemake highlighting/etc for Vim.
+
+## 2023-08-30
+
+HG545 this morning.  Class was mostly about how to succeed in the class.
+
+Still trying to decide on how I want to take notes while I'm here.  I read the
+Zettelkasten book and was considering trying that.  But after poking around at
+it I'm not sure I like the overhead of having to link everything up all the
+time.  I tried creating some notes while studying and it was a pain to have to
+try to link everything to something else.  Sometimes I want to just jot down
+something without worrying about its place in the graph. I think I might end up
+going with this current format (stream-of-consciousness .plan file style notes)
+for everything, but taking a few things from Zettelkasten than might help:
+
+* Take fleeting notes as I read.
+* Turn fleeting notes into permanent ones, but as text in my .plan instead of
+  linked entries in some other system.
+
+That seems like something I might actually *do*, and hopefully with grep it'll
+be good enough for what I need.
+
+Installing JabRef to try as a reference manager.  Zotero looks nicer (no stupid
+flat UI) but syncing the DB requires sending it to their web thing.  JabRef
+seems to use a plain text file so I can probably just sync it with syncthing and
+deal with conflicts manually.  Spent some time adding a couple of papers to it.
+Not sure it's great (it got the info wrong for 2/3 papers) but I guess that's
+just typical open source jankery.
+
+Apparently you can just `C-v` a DOI into JabRef and it'll import it.  Hard to
+discover, but seems to work okay.  JabRef is complaining about capital letters
+in the titles but I'll figure out that jankery later.  At least I've got
+something for now.
+
+Had some wonkiness with my Syncthing budget stuff, but I think I just forgot to
+reeval the location on my desktop.  Will poke around more if anything else seems
+to break.
+
+Watched some snakemake videos and read through their paper.  This smells a lot
+more academic than Nextflow did, which is a little worrying.  I'm sure it'll be
+fine in the end though.
+
+Send off the rest of my VA paperwork so things can get moving on that side.
