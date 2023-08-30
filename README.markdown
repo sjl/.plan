@@ -289,3 +289,56 @@ more academic than Nextflow did, which is a little worrying.  I'm sure it'll be
 fine in the end though.
 
 Send off the rest of my VA paperwork so things can get moving on that side.
+
+Read the ULSAH section on containers to get a high-level overview.  Started
+looking into Singularity and it's already looking spicy.  Apparently the project
+forked a couple of years ago and there are now two competing versions?  Great.
+Also you have to install it from source, which requires installing Golang.
+I thought I was free of Rob Pike's Googly Tendrils but I guess I never will be.
+Installed Go, built Singularity.  At least it installs to a prefix
+(`/opt/singularity`), so I can remove it easily if I want.
+
+Poked around a little to make sure it's working, e.g.:
+
+    singularity pull docker://debian:bookwork-slim
+    singularity shell debian_bookworm-slim.sif
+
+Seems to be working as far as I can tell.
+
+Also installing snakemake.  Using pip with a venv for now even though the
+documentation tries to convince you not to.  If anything breaks I can revisit
+it, but for now it's probably fine to go through some tutorials without pulling
+in some giant slab of junk.
+
+Started going through the Snakemake tutorial.
+
+> Since the rule has multiple input files, Snakemake will concatenate them,
+> separated by a whitespace [sic]
+
+Oh boy.
+
+Realized I'd need to install a pile of stuff to get through the tutorial,
+decided to pause and shave the qemu yak first so I can do this without dumping
+a ton of stuff on my laptop.  So many yaks.
+
+Shaved the qemu yak, now I've got a reliable VM setup.  Committed the
+instructions and a tiny script to a `vms` repo so I don't have to relearn this
+again.
+
+With that out of the way, installed Snakemake and all the prereqs from their
+tutorial on the VM with wild abandon.  Now I can *actually* do the tutorial.
+The simple tutorial was straightforward for the most part, but for this:
+
+    rule bcftools_call:
+        input:
+            fa="data/genome.fa",
+            bam=expand("sorted_reads/{sample}.bam", sample=SAMPLES),
+            bai=expand("sorted_reads/{sample}.bam.bai", sample=SAMPLES)
+        output:
+            "calls/all.vcf"
+        shell:
+            "bcftools mpileup -f {input.fa} {input.bam}"
+            " | bcftools call -mv - > {output}"
+
+It's not clear how the expanded input lists are ordered.  Are they guaranteed to
+always produce the same order given the same input list?
