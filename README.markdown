@@ -342,3 +342,10 @@ The simple tutorial was straightforward for the most part, but for this:
 
 It's not clear how the expanded input lists are ordered.  Are they guaranteed to
 always produce the same order given the same input list?
+
+Finally realized I could put my pubkeys online so I can just `curl
+https://stevelosh.com/pubkeys >> ~/.ssh/authorized_keys`.  No idea why I never
+though of this before now.  Also updated my site now that I've moved.  Of course
+everything just worked even though I haven't touched the site in months, because
+it's written in Common Lisp which never changes.  It's so nice to not have to
+work with constantly-breaking shit.
