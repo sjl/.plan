@@ -359,4 +359,11 @@ Reading for tomorrow's BS521 class: chapter 1 of OpenIntro Statistics (probably
 also want to real Holm's stats book again as a refresher).  All pretty basic so
 far.
 
+## 2023-08-31
 
+BS521 this morning.  Still pretty straightforward.
+
+Going to create a separate note repo for lab notes, so I can take those
+privately.  I'll still put public notes here, but for certain things (e.g. DB
+table names, etc) I don't want to have to worry about which are okay to make
+public.
