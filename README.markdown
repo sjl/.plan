@@ -349,3 +349,14 @@ though of this before now.  Also updated my site now that I've moved.  Of course
 everything just worked even though I haven't touched the site in months, because
 it's written in Common Lisp which never changes.  It's so nice to not have to
 work with constantly-breaking shit.
+
+Installed R and RStudio for tomorrow's class.  Base R is `r-base` in Debian.
+Unfortunately Debian 12 has only been out for a few months and the RStudio
+Debian package only supports 11, but apparently the `deb` one for Ubuntu 22
+works so I guess I'll just yolo it with that one for now.
+
+Reading for tomorrow's BS521 class: chapter 1 of OpenIntro Statistics (probably
+also want to real Holm's stats book again as a refresher).  All pretty basic so
+far.
+
+
