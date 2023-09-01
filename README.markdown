@@ -128,7 +128,7 @@ Trying out syncthing as a Dropbox replacement.  Installing:
     systemctl --user enable syncthing.service
     systemctl --user start syncthing.service
 
-Then <http://localhost:8384> to access the admin.
+Then <https://localhost:8384> to access the admin.
 
 Got my budget scripts working and synced via syncthing (also shaved a couple of
 yaks by making scripts to archive/create new hosts while I was at it).  Seems to
@@ -373,12 +373,13 @@ privately.  I'll still put public notes here, but for certain things (e.g. DB
 table names, etc) I don't want to have to worry about which are okay to make
 public.
 
-Going through my fleeting notes on HG545 stuff and also going to port the
-abortive attempt at a Zettelkasten into here in no particular order (thank god
-for `grep`).  Should have done this earlier but it's been a hectic couple of
-days.
-
-Should I use heading more in this .plan for folding purposes?  Maybe.
+Going to port the abortive attempt at a Zettelkasten into here in no particular
+order (thank god for `grep`).  Should have done this earlier but it's been
+a hectic couple of days. Should I use heading more in this .plan for folding
+purposes?  Maybe. I still need to finish going through my fleeting notes that
+I've got so far and getting them in here.  I also should have already done this,
+but I'll do that this weekend when I have some free time and try not to let it
+pile up so much in the future.
 
 ### Short-Read Sequencing
 
