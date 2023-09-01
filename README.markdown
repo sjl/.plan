@@ -1,3 +1,8 @@
+This is my personal notebook where I dump thoughts and notes for my future self.
+
+**I make no guarantees about the accuracy of anything in here.  Read at your own
+risk!**
+
 [TOC]
 
 # August 2023
@@ -367,3 +372,244 @@ Going to create a separate note repo for lab notes, so I can take those
 privately.  I'll still put public notes here, but for certain things (e.g. DB
 table names, etc) I don't want to have to worry about which are okay to make
 public.
+
+Going through my fleeting notes on HG545 stuff and also going to port the
+abortive attempt at a Zettelkasten into here in no particular order (thank god
+for `grep`).  Should have done this earlier but it's been a hectic couple of
+days.
+
+Should I use heading more in this .plan for folding purposes?  Maybe.
+
+### Short-Read Sequencing
+
+Short-read sequencing aims to sequence long stretches of DNA (or RNA) by first
+fragmenting them into small pieces, sequencing those pieces separately (usually
+in parallel, for speed), then reassembling the fragments into contigs
+computationally.
+
+There are several forms of short-read sequencing, but the most popular by far
+today is Illumina's sequencing by synthesis approach.
+
+Short-read sequencing is often used for whole-genome sequencing.
+
+The cost of sequencing, especially short-read sequencing, has fallen
+*dramatically* in the past 20 years, which has started to enable its use as
+a clinical tool.  It was impractical to sequence someone's genome to learn about
+their health when it cost $1 billion, but it is much more reasonable to do it
+when it costs $1,000.
+
+### Whole-Genome Sequencing
+
+Whole-genome sequencing refers to sequencing an organism's entire genome,
+instead of just a limited part of it.
+
+This has the benefit of letting you get data on *all* of the genome at once,
+without having to know what you're looking for in advance.  But if you *do* know
+what you're interested in, it can be much faster/cheaper to sequence just that
+part (or can give you deeper coverage for the same cost).  Like many things in
+science and engineering, it's a tradeoff.
+
+### Fragmentation
+
+When sequencing DNA or RNA with short-read sequencing like Illumina, the strands
+of nucleic acid need to be fragmented into shorter pieces.  This usually happens
+in one of a few ways:
+
+* Mechanical fragmentation by forcing it through a small passage
+* Enzymatic fragmentation
+* Sonication
+
+### Sequencing Alternatives
+
+Although sequencing costs have fallen dramatically in the past 20 years, they
+are not completely free.  There are several alternatives to sequencing that are
+still used for a number of reasons:
+
+* They can provide the information more cheaply than sequencing.
+* They can provide much deeper coverage than would be practical to get by sequencing.
+* They can be done much faster than sequencing, allowing for rapid diagnostic use.
+
+Some examples of alternatives are:
+
+* Microarrays
+* Nanostring
+* qPCR
+* Optical mapping
+
+### Post-Transcriptional Modification
+
+After RNA is transcribed from DNA, but before it goes on to do its actual job
+(being translated into protein, or doing something on its own), it is sometimes
+modified.  There are a number of modifications that happen, some of the most
+common are:
+
+* Splicing out introns.
+* Polyadenalation of the 3' tail.
+* Adding a 5' cap.
+
+### Post-Translational Modification
+
+After RNA is translated into protein, but before the protein begins to do its
+intended work, it is sometimes modified.  Modifications come in many forms and
+can affect the terminal ends or one of the amino acid side chains.  One common
+modification is phosphorylation.
+
+### Chromatin
+ 
+Chromatin structure varies in the genome.  Chromatin that is uncoiled and
+available for work is euchromatin (eu = useful).  Chromatin that is tightly
+coiled and not accessible for transcription is called heterochromatin.
+Heterochromatin has two sub-types of its own:
+
+* Facultative heterochromatin can temporarily become euchromatic.
+* Constitutive heterochromatin is always condensed, and is usually found in
+  repetitive sections of the genome.
+
+[ATAC-Seq](https://en.wikipedia.org/wiki/ATAC-seq): "Assay for
+Transposase-Accessible Chromatin using sequencing" is used to determine which
+parts of the genome's chromatin are accessible (and, implicitly, which are not).
+It uses a mutant, hyperactive transposase to insert sequencing adapters
+*everywhere* it can inside the genome.  Those tagged fragments are then
+extracted and sequenced.
+
+[ChIP-seq](https://en.wikipedia.org/wiki/ChIP_sequencing):
+"Chromatin-immunoprecipitation sequencing" is used to determine which parts of
+genome particular proteins are interacting with, e.g. where a particular
+transcription factor is binding to in the genome.  The steps are roughly:
+
+1. Crosslink the DNA and proteins to lock them together, so the protein can't
+   unbind from the DNA (usually using formaldehyde).
+2. [Fragment](n/fragmentation.md) the DNA into small (~500bp) fragments.
+3. Use immunoprecipitation to extract only the proteins you are interested in
+   (antibodies that bind to your protein of interest).
+4. Unlink the DNA and proteins, extract the DNA, and sequence it (e.g. with
+   Illumina).
+
+The resulting reads will be regions where the protein of interest was originally
+bound to the DNA, allowing you to see (roughly) where a particular protein
+interacts with the genome.
+
+### Homopolymer
+
+"Homopolymer" when used in the context of sequencing means a sequence of the
+same base repeated, e.g. `AAAAA` or `CCC`.
+
+Many sequencing technologies have trouble with these kinds of sequences.  For
+example, Oxford Nanopore sequencing uses the properties of the bases currently
+inside the pore to determine the bases that enter/leave. But for homopolymers
+it's hard to tell when one enters and another leaves if they're completely
+uniform along the entire pore.
+
+### Long-read sequencing
+
+Long-read sequencing is a relatively new branch of technology that allows for
+sequencing much longer reads than e.g. Illumina.  This is useful because many
+parts of many genomes have regions that are difficult for short-read sequencing
+to deal with, e.g. repetitive elements and high-level structural variation.
+Long-read sequencing can help assemble those sequences which would be difficult
+to piece together from short reads.
+
+### Oxford Nanopore Technologies
+
+A long-read sequencing technology that can be used to directly read a strand of
+DNA using a molecular pore that produces current as DNA passes through it.  The
+variations in current can be recorded and processed to determine the DNA
+sequence being passed through.
+
+          ---,
+              \
+               \
+                ===============  DNA helix
+               /
+              /  ssDNA (unwound)
+             /
+           ( | )
+           ( | ) motor protein
+           ( | )
+          [  |  ]
+          [  |  ] pore for sensing DNA
+          [  |  ]
+          [  |  ]
+          [  |  ]
+    ______[  |  ]__________________________
+             |
+             |
+           vvvvv  DNA is fed through the pore by the motor protein and current (picoamps) measured
+
+ONT units are available as small devices that connect to a USB port on a laptop,
+which makes them much more portable than other sequencers (though the library
+prep equipment is not as portable, yet).
+
+### 10X Genomics Linked Reads
+
+A form of synthetic long-read sequencing from 10X. Long DNA fragments were
+loaded into gel beads with barcodes.  They were then fragmented and barcoded,
+then sequenced on a normal sequencer.  The barcodes allowed you to know which
+short reads came from the same longer fragment (i.e. were "linked"), which helps
+reconstruct the longer fragments from the short ones.
+
+We discontinued this product while I was working at 10X.  RIP.
+
+### Non-uniform genotypes
+
+An organism is a **mosaic** if it has cells with different genomes that stem from
+a somatic mutation in one of the ancestral cells, which then divided and
+resulted in a chunk of the organism having the mutation while the rest does not.
+
+An organism is a **chimera** when it has cells with different genomes that are
+caused by multiple zygotes combining early in development.  The resulting
+organism will have cells with completely different genomes depending on which
+zygote they trace their ancestry back to.
+
+### Kaelin 2017
+
+Read this paper from intro materials.  Main thrust was about broad vs narrow
+claims in papers.
+
+Scientific papers make and justify claims using evidence.  Papers vary on how
+many claims they make, and how well-supported each of those claims is with
+evidence in the paper.
+
+Because scientists have limited time and papers must be a finite size, there is
+almost always a tradeoff between making a broad set or a narrow set of claims:
+more claims will generally mean less evidence to support each claim.
+
+The author claims that in biomedical research there is a growing trend toward
+requiring papers with broader and more sweeping claims if you want to get
+published. Reviewers want more and more claims, more "translatability" to the
+real world. It is no longer enough to notice and document something is
+happening, now you must also propose *why* it happens and experiment to
+demonstrate this mechanism.
+
+Requiring authors of scientific papers to make broader and broader claims in
+order to get published has several (likely unintended) effects.
+
+First, by adding more and more claims to a paper, each claim will likely have
+less individual support behind it.  Instead of a few claims supported by many
+pieces of evidence:
+
+    ------- -----
+     |||||   |||
+
+papers will end up with a collection of claims, each balancing precariously on
+narrow support:
+
+    ---------  -----  ---  --- -----  ----
+     |     |     |     |    |    |     ||
+
+This harms reproducibility because claims that are not supported by a robust set
+of evidence are less likely to reproduce successfully.
+
+Broad claims are also often harder for peer reviewers to deal will -- they often
+need to be an expert in multiple fields just to be able to evaluate the paper.
+
+### Recombination
+
+Recombination is a step that happens during meiosis where homologous chromosomes
+cross over pieces of themselves, effectively swapping random chunks of their
+sequences.  This provides much more genetic variation than random segregation of
+chromosomes alone, allowing sexual reproduction to explore more of the genetic
+space more quickly.
+
+The number of recombination events (crossovers) per chromosome is random, but is
+usually relatively low (3-5 per chromosome).
