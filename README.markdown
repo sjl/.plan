@@ -693,3 +693,202 @@ Need to install singularity *inside* my VM:
     ./mconfig && \
         make -C builddir && \
         sudo make -C builddir install
+
+## 2023-09-02
+
+It is time to shave the LaTeX yak again. Installed it with `texlive-latex-base`
+to start, we'll see if I need to add some more crud in later. Going to go
+through some guides for now.
+
+Going to note some things to remember.  Skeleton of document:
+
+    \documentclass{article}
+    \begin{document}
+
+    Basic text.
+
+    \end{document}
+
+Math:
+
+    Inline math $y = 3 \sin x$ example.
+
+    Block equation:
+    \[
+            y = 3 \sin x
+    \]
+
+    With reference:
+    \begin{equation}\label{equa}
+        y' = 3 \cos x
+    \end{equation}
+    refer to it by label, e.g. equation (\ref{equa}).
+
+    More complicated: $x^2$ and $x^{2+\alpha}$ and $y_{n+1}$.
+
+Verbatim:
+
+    Verbatim text: \verb"$x^{2+\alpha}$".  Delimiter can be anything ala sed,
+    \verb_%%&_ or \verb+$$+.
+
+    Must escape special characters \&, \$, \%, \_, \{, \}, and \#.
+
+    \begin{verbatim}
+    A whole verbatim region.
+
+    (defun square (x)
+    (* x x))
+    \end{verbatim}
+
+Comments:
+
+    Comments exist.  % This is a comment.
+
+Type styles:
+
+    Shapes:
+    \textup{Upright}
+    \textit{Italic}
+    \textsl{Slanted}
+    \textsc{Small}
+
+    Series (weight):
+    \textmd{Medium}
+    \textbf{Boldface}
+
+    Families:
+    \textrm{Roman}
+    \textsf{Sans}
+    \texttt{Typewriter}
+
+Emphasis:
+
+    \emph{Never} do Foo!
+
+"Environments" are sections that are treated differently, made with `\begin{…}`
+and `\end{…}`.
+
+Lists:
+
+    Unordered list:
+    \begin{itemize}
+        \item Foo
+        \item Bar
+        \item Baz
+    \end{itemize}
+
+    Ordered list:
+    \begin{enumerate}
+        \item One
+        \item Two
+        \item Three
+    \end{enumerate}
+
+    Customizable labels:
+    \begin{description}
+        \item[Rule 1.] Foo
+        \item[Rule 2.] Bar
+        \item[Rule 3.] Baz
+    \end{description}
+
+Sizes (note the brace comes BEFORE the command!):
+
+    {\Huge Huge}
+    {\huge huge}
+    {\LARGE LARGE}
+    {\Large Large}
+    {\large large}
+    {\normalsize normalsize}
+    {\small small}
+    {\footnotesize footnotesize}
+    {\scriptsize scriptsize}
+    {\tiny tiny}
+
+Centering:
+
+    \begin{center}
+        {\large\textbf{Assignment 1}}\\% The \\ linebreaks.
+        Steve Losh\\
+        BS521
+    \end{center}
+
+Example table.
+
+    \begin{tabular}{l|rc} % lrc = cols should be left, right, centered, pipe for vertical line
+        Name & Mark & Grade \\
+        \hline\hline
+        Foo & 99 & A+ \\
+        Bar & 51 & C  \\
+        Baz &  5 & F
+    \end{tabular}
+
+Colspan with multicolumn command.
+
+    \begin{tabular}{|l||r|r|}
+        \hline
+            & \multicolumn{2}{c|}{Grades} \\
+                \cline{2-3}
+        Name & Class 1 & Class 2 \\
+        \hline\hline
+        Foo & 99 & 88 \\
+        Bar & 51 & 65  \\
+        Baz &  5 & 58 \\
+        \hline
+    \end{tabular}
+
+Full example, with referencing and caption, e.g. `Table~\ref{tab:a} on page~\pageref{tab:a}`.
+
+    % b = try to put at Bottom.  Also t top, h here, p separate page.
+    % Can do multiple in order of preference.
+    % [!t] ! = try harder
+    \begin{table}[b]
+        \begin{center}
+            \caption{An Example Table}
+            \label{tab:a}
+
+            \begin{tabular}{lr}
+                Name & Value \\
+                \hline
+                Foo &  1.0 \\
+                Bar & 15.9 \\
+                Baz &  6.2
+            \end{tabular}
+            % \caption{Caption at the end works too.}
+        \end{center}
+    \end{table}
+
+Sections:
+
+    \section{Some section} % includes numbering
+    \subsection{Some subsection}
+
+    \section*{Some section} % no numbering
+    \subsection*{Some subsection}
+
+Quotation marks (hilarious):
+
+    `Single quoted'
+    ``Double quoted''
+
+Change overall text size (simple):
+
+    \documentclass[11pt]{article} % only valid sizes are 10/11/12.
+
+Palatino instead of Computer Modern:
+
+    \usepackage{mathpazo}
+    \linespread{1.05}         % needs more leading (space between lines)
+    \usepackage[T1]{fontenc}
+
+Vimtex stuff:
+
+* Close thing with `]]` in insert mode.
+
+Got about that far, which was enough to start my BIOSTAT-521 homework.  Will dig
+in again later, but it's nice to be able to use it for something real to
+practice.
+
+Puttered around a bit looking at other fonts, but didn't find anything new or
+interesting.
+
+
