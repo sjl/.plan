@@ -614,3 +614,82 @@ space more quickly.
 
 The number of recombination events (crossovers) per chromosome is random, but is
 usually relatively low (3-5 per chromosome).
+
+# September 2023
+
+## 2023-09-01
+
+HG545.  Looked over the slides last night and was a little worried, but felt
+okay after the lecture for the most part.  Still a few things I need to look up
+and I do still need to get my fleeting notes into this, but I feel okay.
+
+Continuing the Snakemake tutorial.
+
+Threads can be specified for a given job with `threads: 8`, and you need to
+propagate that to the command yourself with `{threads}`.  Will be scaled down if
+run with fewer cores than threads, otherwise will wait until that many are
+available.
+
+Snakemake has some support for noticing log files, but it seems like you have to
+manually create them yourself?  This seems… tedious?
+
+    rule bwa_map:
+        input:
+            "data/genome.fa",
+            lambda wc: SAMPLES[wc.sample]
+        output:
+            "mapped_reads/{sample}.bam"
+        threads: 8
+        params:
+            rg=r"@RG\tID:{sample}\tSM:{sample}"
+        log: "logs/bwa_map/{sample}.log"
+        shell:
+            "("
+            "bwa mem -R '{params.rg}' -t {threads} {input}"
+            " | samtools view -Sb - > {output}"
+            ") >{log} 2>&1"
+
+Do I really have to wrap everything in `(…) >{log} 2>&1` by hand myself?
+
+You can get a summary of file provenance with `snakemake --summary`.  The output
+is a TSV, so I went down a rathole of pretty-printing TSVs and eventually found
+that `| column -s $'\t' -t` works (mnemonic: `s$tt`).  I love how every UNIX
+program gets to invent its own bespoke command line interface for specifying
+special characters. Really great.
+
+Can mark outputs as `temp()` and `protected()`, which is nice.
+
+Need to install singularity *inside* my VM:
+
+    # Ensure repositories are up-to-date
+    sudo apt-get update
+
+    # Install debian packages for dependencies
+    sudo apt-get install -y \
+        wget \
+        build-essential \
+        libseccomp-dev \
+        libglib2.0-dev \
+        pkg-config \
+        squashfs-tools \
+        cryptsetup \
+        runc
+
+    # Install Golang
+    export VERSION=1.21.0 OS=linux ARCH=amd64 && \
+        wget https://dl.google.com/go/go$VERSION.$OS-$ARCH.tar.gz && \
+        sudo tar -C /usr/local -xzvf go$VERSION.$OS-$ARCH.tar.gz && \
+        rm go$VERSION.$OS-$ARCH.tar.gz
+
+    echo 'export PATH=/usr/local/go/bin:$PATH' >> ~/.bashrc && \
+        source ~/.bashrc
+
+    # Install Singularity
+    export VERSION=3.11.4 && \
+        wget https://github.com/sylabs/singularity/releases/download/v${VERSION}/singularity-ce-${VERSION}.tar.gz && \
+        tar -xzf singularity-ce-${VERSION}.tar.gz && \
+        cd singularity-ce-${VERSION}
+
+    ./mconfig && \
+        make -C builddir && \
+        sudo make -C builddir install
