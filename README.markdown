@@ -891,4 +891,14 @@ practice.
 Puttered around a bit looking at other fonts, but didn't find anything new or
 interesting.
 
+## 2023-09-03
+
+Spent most of today getting the reading room in my apartment ready.  Went to
+IKEA, looked around a lot and got some ideas, picked up a chair and bookshelf
+for my still-boxed unread books.  Not the most productive Sunday, but sitting in
+my chair and reading at night felt good.
+
+## 2023-09-04
+
+Continuing the EdX genetics course over breakfast.
 
