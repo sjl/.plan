@@ -902,3 +902,111 @@ my chair and reading at night felt good.
 
 Continuing the EdX genetics course over breakfast.
 
+## 2023-09-05
+
+BIOSTAT-521 and BIOINF-500 classes this morning.
+
+Going to spend my non-class time looking into Unicycler today (and taking care
+of paperwork if anything that needs my attention crops up) and Bandage to
+visualize the results.
+
+Grabbed the container from StaPH-B and tried to figure out where the executable
+is.  I think it's `/unicycler/unicycler-runner.py`.  Grabbed the sample data
+from the Unicycler repo and got something running:
+
+    singularity exec containers/unicycler.sif \
+        /unicycler/unicycler-runner.py \
+        --short1 sample_data/short_reads_1.fastq.gz \
+        --short2 sample_data/short_reads_2.fastq.gz \
+        --out assembly/
+
+Pretty straightforward so far.  The result directory contains a log and a bunch
+of GFA files.  GFA apparently stands for [Graphical Fragment
+Assembly](https://gfa-spec.github.io/GFA-spec/GFA1.html), but I think it's
+"graphical" in the "directed/undirected graph" sense and not in the "pixels"
+sense.  Text-based format which seems pretty straightforward to parse (maybe
+I should have a go at parsing it for fun).
+
+Installed Bandage and viewed the results.  Not sure what exactly I'm looking at,
+but it works and looks pretty enough I guess.  [This
+example](https://github.com/rrwick/Bandage/wiki/Simple-example) was helpful to
+get a sense of what it's trying to show me.
+
+Unicycler has some configuration knobs to tweak:
+
+> Unicycler can be run in three modes: conservative, normal (the default) and
+> bold, set with the --mode option. Conservative mode is least likely to produce
+> a complete assembly but has a very low risk of misassembly. Bold mode is most
+> likely to produce a complete assembly but carries greater risk of misassembly.
+> Normal mode is intermediate regarding both completeness and misassembly risk.
+
+Reran with both conservative and bold modes and looked at the difference in the
+results for the sample data.  They're not the same, but I can't visually detect
+any major obvious differences.  Maybe it's not a big deal on this sample.
+
+Once I got that running in a shell, I got it ported into Snakemake, shaving
+a bunch of yaks along the way.
+
+I noticed that Snakemake can take a JSON config file instead of YAML. Fantastic,
+switched over to that right away:
+
+    {
+        "containers": {
+            "fastqc":    "docker://staphb/fastqc:0.12.1",
+            "unicycler": "docker://staphb/unicycler:0.5.0"
+        },
+        "samples": {
+            "short_read_example": [
+                "sample_data/short_reads_1.fastq.gz",
+                "sample_data/short_reads_2.fastq.gz"
+            ]
+        }
+    }
+
+Got the containers downloading via snakemake as well, so it's snakes all the way
+down:
+
+    rule containers:
+        input:
+            expand("containers/{name}.sif", name=config["containers"].keys()),
+
+    rule container:
+        output:
+            "containers/{name}.sif",
+        params:
+            source=lambda wc: config["containers"][wc.name],
+        shell:
+            "singularity pull {output} {params.source}"
+
+Got `snakefmt` working with Neoformat so I can `F6` in Vim to reformat.  Had to
+fuck around with the config because it was just emptying out the file — I think
+the key was that:
+
+* `snakefmt` edits in-place by default (gross).
+* Need to use `replace`: `1` in the Neoformat config to deal with this.
+
+And finally we can assemble:
+
+    def get_input_fastqs(wildcards):
+        return config["samples"][wildcards.sample]
+
+    rule unicycler_assemble:
+        log:
+            "logs/unicycler_assemble/{sample}.log",
+        container:
+            "containers/unicycler.sif"
+        threads: 8
+        input:
+            "containers/unicycler.sif",
+            get_input_fastqs,
+        output:
+            "assemblies/{sample}/assembly.gfa",
+            "assemblies/{sample}/assembly.fasta",
+        shell:
+            logged(
+                "/unicycler/unicycler-runner.py"
+                " --threads {threads}"
+                " --short1 {input[0]}"
+                " --short2 {input[1]}"
+                " --out assemblies/{wildcards.sample}/"
+            )
