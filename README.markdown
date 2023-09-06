@@ -1048,4 +1048,24 @@ Changed my school password after the network clusterfuck last week.  Sigh.
 
 Wanted to print something in the lab, realized I never installed any printing
 support on this laptop, lol.  `apt install cups` will hopefully Just Work.  CUPS
-interface is at `http://localhost:631/`.
+interface is at `http://localhost:631/`.  It did not Just Work.  Surely 2024
+will be The Year of Linux on the Desktop.  Printer wouldn't configure itself,
+driver didn't appear in the list when I tried to manually configure it through
+CUPS.  `apt install printer-driver-all` got me more drivers but not this one.
+Tracked it down on the brother site and downloaded some `.deb` packages but
+they're 32-bit instead of 64.  Gave up at this point, what a janky shitshow of
+an OS.  If only everything else didn't suck in even worse ways.
+
+Tried getting the VPN running.  Installed with the script into `/opt/cisco`
+(good).  Got mysterious errors when trying to connect.  Tried the GUI connection
+manager, which runs, but gave a more informative error message I could search
+for.  Looks like I need to install `libwebkit2gtk-4.0-37`.  Installed that, now
+I get the login screen, but I can't 2FA because I only have Yubikeys set up but
+that requires a real browser, not this jank webkitgtk thing, so now I need to
+set up *another* 2FA method just for this.  Good god.  Tried to add a new device
+via Duo, but that requires 2FAing *again*, but this time it's through the Duo
+site which doesn't actually fucking work on Linux, so I can't add it here, I'll
+need to use the Windows shitbox at home.  God, I hate two-factor authentication
+so much.  It's *always* miserable.
+
+
