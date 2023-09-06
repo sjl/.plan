@@ -1046,3 +1046,6 @@ fine.
 
 Changed my school password after the network clusterfuck last week.  Sigh.
 
+Wanted to print something in the lab, realized I never installed any printing
+support on this laptop, lol.  `apt install cups` will hopefully Just Work.  CUPS
+interface is at `http://localhost:631/`.
