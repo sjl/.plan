@@ -1062,10 +1062,32 @@ manager, which runs, but gave a more informative error message I could search
 for.  Looks like I need to install `libwebkit2gtk-4.0-37`.  Installed that, now
 I get the login screen, but I can't 2FA because I only have Yubikeys set up but
 that requires a real browser, not this jank webkitgtk thing, so now I need to
-set up *another* 2FA method just for this.  Good god.  Tried to add a new device
-via Duo, but that requires 2FAing *again*, but this time it's through the Duo
-site which doesn't actually fucking work on Linux, so I can't add it here, I'll
-need to use the Windows shitbox at home.  God, I hate two-factor authentication
-so much.  It's *always* miserable.
+set up *another* 2FA method just for this.  Good god.  Tried to add a new 2FA
+device via Duo, but that requires 2FAing *again*, but *this* time it's through
+the Duo site which doesn't actually fucking work on Linux, so I can't add it
+here, I'll need to use the Windows shitbox at home.  God, I hate two-factor
+authentication so much.  It's *always* miserable.
+
+Tried to do the homework for BIOINF-500 (creating a pubmed search alert).  To do
+this you need an NCBI account.  Tried to log in via my UM account and managed to
+500 the NCBI site.  Incredible.  Poked around and eventually got it working (I
+think)?  Created the alert, took a screenshot.  Uploaded the PNG into Canvas for
+the assignment.  Canvas shows an error trying to retrieve it.  Uploaded it to
+the Canvas "My Files" and used *that* to submit the assignment, instead of
+uploading the file directly, and that worked.  *Incredible*.  Why does *nothing*
+ever work correctly?
+
+Came home, tried to add the 2FA with the Windows box, but it failed in the same
+way (hanging on the popup after successfully touching the yubikey).  But
+I finally figured out a workaround (in retrospect, I vaguely recall having to do
+this when I added the extra yubikeys originally): log out of everything, then go
+to log back into something (e.g. Wolverine Access), but **before** you 2FA in
+*that* login process there will be a link to add a new device on the left side
+of the screen.  That will then require you to 2FA, but doing it *here* does
+actually work.  It seems absolutely wild to me that you need to *not* be logged
+in if you want to manage 2FA, but here we are.
+
+Now that I have the Duo app thing on my phone and connected, logging into the
+VPN seems to work great.  Yak shaved successfully.
 
 
