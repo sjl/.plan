@@ -1040,3 +1040,9 @@ melanophores, also the rescued wild-type phenotype).
 
 Got my Armis access at some point during class, so it's time to figure out how
 to log into the various HPC clusters today.
+
+Doubled checked exam schedule to make sure nothing conflicts.  I think it's
+fine.
+
+Changed my school password after the network clusterfuck last week.  Sigh.
+
