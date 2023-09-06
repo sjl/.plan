@@ -1010,3 +1010,33 @@ And finally we can assemble:
                 " --short2 {input[1]}"
                 " --out assemblies/{wildcards.sample}/"
             )
+
+Puttered around changing my StumpWM and terminal colors/borders/etc a bit to
+make them a little easier on my eyes.  We'll see if it sticks.
+
+## 2023-09-06
+
+HG545 in the morning.  Mostly understood things.
+
+Asked the professor after about a question I had while reading the paper.  One
+of the things the paper did to confirm the region of interest was to use a PAC
+(P1-derived artificial chromosome) to "rescue" the golden embryos.  The
+resulting fish showed mosaic rescue, confirming that the wild-type gene was
+likely on that PAC, i.e. in the region of interest.
+
+What I didn't understand is how injecting the plasmid into the embryos resulted
+in the expression of the genes farther down the developmental line, e.g. does it
+somehow get incorporated into the cells' genomes?  It turns out to be messy.
+
+First: you don't inject "a PAC" into the embryos, you inject "a shitload of
+copies of the PAC" into the embryo.  So all of the embryo's cells will have
+copies of the PAC floating around inside.  As the cell divides, those will get
+diluted in daughter cells over time.  Some of these copies will, by chance, make
+it into the nucleus of their cells.  And some of those (rarely) will get
+randomly incorporated into the cell's genome, and from then on mitosis takes
+over and the gene gets propagated normally.  So the mosaic region from that
+point forward will have the gene (and if the region happens to contain some
+melanophores, also the rescued wild-type phenotype).
+
+Got my Armis access at some point during class, so it's time to figure out how
+to log into the various HPC clusters today.
