@@ -1090,4 +1090,103 @@ in if you want to manage 2FA, but here we are.
 Now that I have the Duo app thing on my phone and connected, logging into the
 VPN seems to work great.  Yak shaved successfully.
 
+## 2023-09-07
+
+BS521 and its lab this morning.
+
+Got my dotfiles synced to GL.  One tricky thing: my remote `.bash_profile`
+sources `/etc/profile` if it exists, but that causes problems on the cluster
+because there's some read-only variable set in there that it doesn't like.
+Commented out that line and everything looks okay.  `ControlMaster` does work,
+so I won't have to auth a billion times a day (thank god).
+
+BS521 lab.  Of course the AC isn't working so it's a billion degrees, lovely.
+
+Installing tidyverse failed with inscrutable errors.  After some googling it
+[looks like](https://blog.zenggyu.com/posts/en/2018-01-29-installing-r-r-packages-e-g-tidyverse-and-rstudio-on-ubuntu-linux/index.html)
+there's *extra* dependencies you need to install on Linux (C programming is
+wonderful):
+
+    sudo apt install libcurl4-openssl-dev libssl-dev libxml2-dev \
+        libfontconfig1-dev libharfbuzz-dev libfribidi-dev libfreetype6-dev \
+        libpng-dev libtiff5-dev libjpeg-dev
+
+Still fucked, so I manually trawled through the tons of log output, googled
+around more, and found that I need to configure an env variable:
+
+    Sys.setenv(PKG_CONFIG_PATH="/usr/lib/x86_64-linux-gnu/pkgconfig")
+
+And finally it works.  Started going through the lab stuff but then time was up
+— will come back to it later.
+
+Moving on to rotation lab work.  Working from home today, so I wanted to get my
+laptop working with my external monitor and keyboard and such.  Had to swap out
+the USB-C cable I was using previously because apparently that one doesn't work
+for video ("universal" serial bus my ass) and then adjust my StumpWM `xrandr`
+commands, but I did get it working, so now I can use the laptop at my desk,
+which is nice.
+
+Note to self: I can probably use the text-mode VPN UI now that I've got the 2FA
+sorted out, and maybe remove the webkit crap I installed for it originally.
+
+See lab notebook.
+
+Finished BS521 lab 0.  Wasn't too bad once I shaved the tidyverse yak.  Getting
+it written up with Latex required more Latex derusting, this time for code
+listings and images (pulled some of this from the MS thesis).  First, preamble
+stuff:
+
+    % Listing package for code listings.
+    \RequirePackage{listings}
+    \lstdefinestyle{default}{
+        basicstyle=\footnotesize\ttfamily,
+        showtabs=true,
+        frame=lines,
+        aboveskip=10pt,
+    }
+    \lstset{
+        language=,
+        style=default,
+    }
+
+    % Used to embed plots.
+    \usepackage{graphicx}
+
+    % No paragraph indentation for homework, just looks awkward.
+    \setlength{\parindent}{0pt}
+
+    % Inline code.
+    \def\code#1{\small\texttt{#1}}
+
+I really need to split these up into actual files I can include instead of
+copypasting them a million times, but maybe I'll wait for one more practice
+round first.
+
+Usage:
+
+    % Code listings.
+    \begin{lstlisting}
+    prop.table(table(DATA$Race))
+
+            Black MexicanAmerican           Other   OtherHispanic           White
+        0.22921790      0.23954747      0.04230202      0.03885883      0.45007378
+    \end{lstlisting}
+
+
+    % Graphics.
+    \includegraphics[]{figures/bmi-hist}
+
+    \begin{center}
+        \includegraphics[width=0.45\textwidth]{figures/hist-age}
+        \includegraphics[width=0.45\textwidth]{figures/hist-log-age}
+    \end{center}
+
+To actually save PDF plots with R:
+
+    pdf("figures/foo.pdf", height=6, width=6)
+    hist(DATA$Foo, main = "Distribution of Foo", xlab="Foo")
+    dev.off()
+
+Went to the poster session.  Lots of stuff I don't understand, and a tiny bit
+that I do.
 
