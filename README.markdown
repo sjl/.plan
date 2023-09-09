@@ -1190,3 +1190,65 @@ To actually save PDF plots with R:
 Went to the poster session.  Lots of stuff I don't understand, and a tiny bit
 that I do.
 
+## 2023-09-08
+
+HG545 this morning.
+
+Papers never say what *could* have gone wrong with what they did — you have to
+just read between the lines and actively think about that (and what it would
+have meant, and what you would have done if it did).
+
+Learned about nonsense-mediated decay: a mechanism where mRNA with premature
+stop codons is degraded, instead of expressing a (probably truncated) protein.
+Without this, if you have a mutation that creates a stop codon in the middle of
+the gene, you would see truncated protein expressed.  But because of NMD, the
+mRNA is degraded and doesn't express the broken protein (as much).  This is good
+not only to reduce wasted translation, but because the truncated proteins can be
+actively bad.
+
+One important control that was left out of the study where they wanted to find
+where in the organism the target gene is being expressed: inject a probe with
+GFP that intentionally shouldn't match *anything*, and expect it to show up
+vaguely all over (or not at all).
+
+Another example covered during class: if you suspected a phenotype was caused by
+a mutation in a promoter (instead of in an exon), how would you test this?
+There were a couple of things folks came up with:
+
+* Could sequence the region in the mutant and wild-type population, compare to
+  see if the mutation segregates the two reliably.
+* Old school: "reporter genes".  I'm a bit fuzzy on this, but I think you insert
+  the promoter into a vector with some easily observable gene (e.g. luciferase,
+  a bioluminescent protein).  Then you see if that product is expressed more or
+  less with the different variants of the promoter.  This is a bit janky because
+  just yanking the promoter completely out of context can be problematic (e.g.
+  loses the chromatin structure around it, nearby enhancers/repressors, etc).
+* Could use RNAseq to see if the mutants with the variants are producing more of
+  the RNA for that gene.
+* Could use CHIPseq, if you know the transcription factors that bind to that
+  promoter.  Fix, fragment, attach antibodies to the TFs, precipitate them out,
+  unfix, extract the DNA (all the remaining is whatever was bound to the
+  transcription factors), and then do the sequencing.  You would expect to see
+  a larger signal if the mutation in the promoter is causing transcription
+  factors to be more likely to bind.
+
+
+Got back and tried VPN'ing with the command-line client.  It seemed to hang
+after entering my password, but then I realized it had just silently tried to
+2FA with my phone and I didn't notice.  Trying again and being ready with Duo
+let me log in, so I think I can probably ditch the webkit crap I installed for
+the graphical thing.
+
+See lab notebook.
+
+Desktop machine wouldn't take input from my USB hub all of a sudden.  Found some
+bullshit in the logs, probably not worth debugging Yet More Linux Jank if I'm
+just going to wipe this machine and install Debian on it soon anyway.  Tried to
+reboot and systemd hung at the end, so I just powercycled the damn thing.  If
+I could just have one single day where no computer broke for me, that would be
+so nice.
+
+Flu shots are available, need to get one so PI doesn't get pinged all the time.
+
+Read for BS521 class.  All still pretty basic.  Cleaned up and turned in lab 0.
+Finished homework 2 as well, just to get it out of the way.
