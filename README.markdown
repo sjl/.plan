@@ -1254,3 +1254,14 @@ Read for BS521 class.  All still pretty basic.  Cleaned up and turned in lab 0.
 Finished homework 2 as well, just to get it out of the way.  Or at least
 I thought I did, except there are apparently Surprise Questions™ not in the book
 to do with R.  I'll do that this weekend.
+
+## 2023-09-09
+
+Actually finished BS521 homework 2.  Realized my Latex `\code` shortcut was
+broken:
+
+    % Broken, doesn't scope the \small so later text is changed.
+    \def\code#1{\small\texttt{#1}}
+
+    % Fixed     v                 v
+    \def\code#1{{\small\texttt{#1}}}
