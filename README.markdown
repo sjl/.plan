@@ -1251,4 +1251,6 @@ so nice.
 Flu shots are available, need to get one so PI doesn't get pinged all the time.
 
 Read for BS521 class.  All still pretty basic.  Cleaned up and turned in lab 0.
-Finished homework 2 as well, just to get it out of the way.
+Finished homework 2 as well, just to get it out of the way.  Or at least
+I thought I did, except there are apparently Surprise Questions™ not in the book
+to do with R.  I'll do that this weekend.
