@@ -1265,3 +1265,6 @@ broken:
 
     % Fixed     v                 v
     \def\code#1{{\small\texttt{#1}}}
+
+Did a first draft of the HG545 assignment 1.  This one is a lot harder than the
+stats homework.  Need to polish it up and submit it tomorrow.
