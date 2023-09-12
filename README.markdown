@@ -1327,3 +1327,8 @@ See lab notebook.
 So far I'm loving the look of the stumpwm config changes I made the other day.
 Shouldn't have waited this long to clean things up.  TODO: use
 `select-from-menu` to implement a better screen-switching shortcut in stump.
+
+Figured out how to print.  Use <https://mprint.umich.edu/maps?sites> to find
+a reasonable printer nearby, then Print Here to use it.  You upload a PDF or
+whatever through the web UI.  Good enough, it works.  One color paper cost
+$3.22 of my (apparent) $24 print budget.  Welp.
