@@ -1332,3 +1332,10 @@ Figured out how to print.  Use <https://mprint.umich.edu/maps?sites> to find
 a reasonable printer nearby, then Print Here to use it.  You upload a PDF or
 whatever through the web UI.  Good enough, it works.  One color paper cost
 $3.22 of my (apparent) $24 print budget.  Welp.
+
+Spent a bit more time tracking down my white whale font from that 1979 Science
+issue.  Identifont came to the rescue and I think I finally have an answer, or
+at least something very close: "Rotation" by Arthur Ritzel from 1971.
+Unfortunately a 50-year old font still has ghastly licensing options, so I'll
+probably never be able to *use* it, but at least I have peace of mind, I guess.
+
