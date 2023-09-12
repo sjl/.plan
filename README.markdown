@@ -1268,3 +1268,17 @@ broken:
 
 Did a first draft of the HG545 assignment 1.  This one is a lot harder than the
 stats homework.  Need to polish it up and submit it tomorrow.
+
+## 2023-09-10
+
+Polished and submitted the HG545 homework.  We'll see how it goes, I guess.
+
+## 2023-09-11
+
+HG545 discussion.  This paper was pretty straightforward.
+
+Lab.  See lab notebook.
+
+Met with PIBS peer mentor.
+
+HG545 second paper was posted, need to do an initial read of that tonight.
