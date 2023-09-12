@@ -1282,3 +1282,48 @@ Lab.  See lab notebook.
 Met with PIBS peer mentor.
 
 HG545 second paper was posted, need to do an initial read of that tonight.
+
+## 2023-09-12
+
+BS521 again.  Mostly basic linear regression stuff, but got a few interesting
+tidbits out of it, mostly about the coefficient of determination, also called
+`R²` or `r²`.  This is the square of the correlation coefficient `r`, and it is
+said to mean "the fraction of the variability in the data that is explained by
+the linear model".  So an `r²` of `0.7` would mean "70% of the variation in the
+data is explained by the model".
+
+*Intuitively* what this means would be to look at the total variability in the
+data, i.e.:
+
+    (- (reduce #'max y) (reduce #'min y))
+
+Then convert the data to residuals by subtracting out the model:
+
+    (mapcar #'- (mapcar #'model x) y)
+
+and look at home much variability remains:
+
+    (- (reduce #'max residuals) (reduce #'min residuals))
+
+Compare the two to see the fraction that remains after accounting for the model.
+
+Looked into some "R for actual programmers" resources so maybe I can feel like
+I'm flailing less:
+
+* <https://arrgh.tim-smith.us/>
+* <https://r4ds.hadley.nz/>
+* <https://adv-r.hadley.nz/>
+* <https://www.burns-stat.com/documents/books/the-r-inferno/>
+* <https://www.burns-stat.com/documents/tutorials/impatient-r/>
+* <https://www.burns-stat.com/documents/books/tao-te-programming/>
+
+Lunch at a place called Maizie's.  Was actually pretty good!
+
+Doing Yet Another Round of Paperwork for the VA.  So much red tape.  Did what
+I could here, but there's a bunch I can't do until I get home after class today.
+
+See lab notebook.
+
+So far I'm loving the look of the stumpwm config changes I made the other day.
+Shouldn't have waited this long to clean things up.  TODO: use
+`select-from-menu` to implement a better screen-switching shortcut in stump.
