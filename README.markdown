@@ -1435,3 +1435,11 @@ extremely long and I already have enough red tape to deal with through the VA,
 so I'm not going to add more paperwork for myself.  Oh well.
 
 See lab notebook.
+
+Met with John Prensner about possibly rotating in his lab.  Next steps for
+rotations are pretty clearly to set up some chats with his students and some
+from Boyle/Parker labs to make a choice for the next 1-2 slots.  I'll try to do
+that for next week I think.  Also want to talk to Shavit again — I really liked
+chatting with him, and I think if I wanted to rotate there I would need him to
+join the department as an affiliate of some kind, so I'd need to see if he's
+okay with doing that.
