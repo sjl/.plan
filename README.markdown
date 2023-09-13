@@ -1332,3 +1332,6 @@ Figured out how to print.  Use <https://mprint.umich.edu/maps?sites> to find
 a reasonable printer nearby, then Print Here to use it.  You upload a PDF or
 whatever through the web UI.  Good enough, it works.  One color paper cost
 $3.22 of my (apparent) $24 print budget.  Welp.
+
+PIBS800.  Getting… another lecture about how to use the library?  Didn't we
+already do this in the other class?
