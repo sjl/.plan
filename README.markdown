@@ -1335,3 +1335,97 @@ $3.22 of my (apparent) $24 print budget.  Welp.
 
 PIBS800.  Getting… another lecture about how to use the library?  Didn't we
 already do this in the other class?
+
+## 2023-09-13
+
+HG545.  This module is focusing on how to create physical maps of chromosomes,
+especially the weird-ass human Y chromosome.
+
+There's a difference between a genetic map and a physical map.  A genetic map
+can be created with e.g. linkage analysis, and can tell you relative distances
+but not necessarily the exact locations of things.  A physical map shows the
+actual locations.  Note that physically linked genes might not necessarily be
+genetically linked if they're far enough apart that the recombination chance is
+50%.
+
+We can't use genetic mapping for the Y chromosome because there's not
+recombination with another chromosome.
+
+In the paper they used hierarchical shotgun sequencing to sequence the
+Y chromosome, which goes roughly like this:
+
+1. Fragmented the human genome into ~200kb fragments.
+2. Cloned those into BACs
+3. You want to retrieve *only* the fragments from the Y chromosome, not from the others.
+4. Start with a known gene on Y (e.g. a well-known gene like Sry, the
+   sex-determining gene) and you PCR that to amplify the fragment(s) that
+   contain it.
+5. Sequence those fragments (split into 20kb and shotgun sequence).
+6. Design more PCR primers that *start* at the ends of *those* fragments, use
+   those to amplify things next to it.
+7. Repeat to get overlapping tiles.
+
+You end up with overlapping tiles:
+
+    ---------Sry----------                          ----------Zry--------------
+                       >>>                          <<<
+                       -----------------
+                                     >>>
+                                     -------------------
+
+Nowadays we can take advantage of long read tech to eliminate a lot of the grunt
+work in the process, e.g.:
+
+* Oxford Nanopore: 50-500kb, 90% accuracy.
+* PacBio: 20kb, >99% accuracy.
+
+Oxford is still pretty bad accuracy, but is useful to resolve things when PacBio
+still runs into trouble with some of the crazy-long repeats.
+
+Also learned about some kind of "bionano" thing that was glossed over very
+quickly.  Looks like it's a company?  Need to ask someone about this.
+
+Next talked about content of the human genome:
+
+    Human Genome
+        Unique DNA (1/3)
+        Repetative DNA (2/3)
+            Dispersed Repeats
+                Transposable Elements (e.g. LINEs, Alu)
+                Retrogenes (e.g. CDY)
+                Transposed Genes (e.g. DAZ)
+                tDNA
+            Local Repeats
+                Segmental Duplication (e.g. palindromes)
+                Satellite Duplication
+                rDNA
+
+Repeats are challenging to assemble, e.g. if you have:
+
+    Unique A | LINE1 | Unique B | LINE 1 | Unique C
+
+You might get reads like:
+
+    A1
+    1B1
+    1C
+
+It's hard to tell which direction the `1B1` should go, or whether `A` should go
+directly to `C`.  `LINE1` specifically can be resolved with PacBio because it's
+only ~6.5kb, far less than the 20kb you get from PacBio, but other segments
+still cause problems.
+
+Example of problematic things are the large palindromes from the paper:
+
+             1.45mb arm
+    <------------------------ Unique -------------------------->
+               arms have ~99.97% nucleotide identity
+
+Even if there are a few SNPs on the arms, if the segments right around the
+unique part happen to be identical it's hard to tell which arm goes where.
+
+Looked into the PACCAR thing from yesterday, but the application form is
+extremely long and I already have enough red tape to deal with through the VA,
+so I'm not going to add more paperwork for myself.  Oh well.
+
+See lab notebook.
