@@ -1336,6 +1336,12 @@ $3.22 of my (apparent) $24 print budget.  Welp.
 PIBS800.  Getting… another lecture about how to use the library?  Didn't we
 already do this in the other class?
 
+Spent a bit more time tracking down my white whale font from that 1979 Science
+issue.  Identifont came to the rescue and I think I finally have an answer, or
+at least something very close: "Rotation" by Arthur Ritzel from 1971.
+Unfortunately a 50-year old font still has ghastly licensing options, so I'll
+probably never be able to *use* it, but at least I have peace of mind, I guess.
+
 ## 2023-09-13
 
 HG545.  This module is focusing on how to create physical maps of chromosomes,
