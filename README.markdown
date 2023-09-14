@@ -1461,3 +1461,5 @@ this will make it easier to see what's coming up since Canvas is barely usable.
 
 Started reaching out to set up chats with folks in a few labs I might be
 interested in for my next rotation.
+
+See lab notebook.
