@@ -1345,7 +1345,7 @@ probably never be able to *use* it, but at least I have peace of mind, I guess.
 ## 2023-09-13
 
 HG545.  This module is focusing on how to create physical maps of chromosomes,
-especially the weird-ass human Y chromosome.
+especially the bizarre human Y chromosome.
 
 There's a difference between a genetic map and a physical map.  A genetic map
 can be created with e.g. linkage analysis, and can tell you relative distances
@@ -1453,4 +1453,11 @@ my Syncthing dir.
 Sped up my shell prompt by wrapping the Mercurial prompt in a basic `.hg`
 existence check.  Had to relearn how to write a fish function.
 
-BS521.
+BS521. Chatted with the professor at office hours a bit to ask a couple of
+things.
+
+Made a TODO list with all the homework/exam/lab stuff for school.  Hopefully
+this will make it easier to see what's coming up since Canvas is barely usable.
+
+Started reaching out to set up chats with folks in a few labs I might be
+interested in for my next rotation.
