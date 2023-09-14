@@ -1443,3 +1443,11 @@ that for next week I think.  Also want to talk to Shavit again — I really like
 chatting with him, and I think if I wanted to rotate there I would need him to
 join the department as an affiliate of some kind, so I'd need to see if he's
 okay with doing that.
+
+## 2023-09-14
+
+I am going to `mark` every time I have to log in and/or 2FA for school for at
+least a week, so I can graph it and be sad.  Adjusted my `marks` thing to go to
+my Syncthing dir.
+
+BS521.
