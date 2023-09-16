@@ -1514,3 +1514,12 @@ install CCL.
 
     sudo ln -s /home/sjl/src/ccl/lx86cl64 /usr/local/bin/ccl64
 
+Finally discovered the reason my bash prompt gets mangled sometimes:
+non-printing characters in `PS1` have to be wrapped in `\[…\]`.  So I need to do
+something ugly like this:
+
+    export PS1='\n\[${PINK}\]\u \[${D}\]at \[${HOST_COLOR}\]\h \[${D}\]in \[${GREEN}\]\w\[${D}\] $(last_return_value)$ '
+
+But at least it works properly now and won't drive me crazy.
+
+See lab notebook.
