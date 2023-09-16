@@ -1467,3 +1467,50 @@ See lab notebook.
 ## 2023-09-15
 
 HG545 this morning.
+
+See lab notebook.
+
+## 2023-09-16
+
+BS521 reading.
+
+Z-score means "number of standard deviations above the mean".
+
+Successes-based distributions:
+
+* Geometric: number of trials before observing a success.
+* Binomial: number of successes in a fixed number of trials.
+
+The chapters of this book are getting sloppier as they go on — I'm noticing
+a lot more typos now than in the first couple of chapters.
+
+Went back to John D Cook's R for Programmers post when the `pnorm` function was
+mentioned.  R has several of these functions with veyr confusing names:
+
+    <func><dist>
+
+    <func>: d: PDF ("density")
+            p: CDF ("probability")
+            q: Quantile, i.e. CDF⁻¹
+            r: Random sample
+
+    <dist>: norm: Normal aka gaussian
+            unif: Uniform
+
+So `pnorm` is "the CDF of a normal distribution".
+
+Found a way to view which fonts a PDF file embeds and/or references: `pdffonts`.
+Nice.
+
+Tired of CACL crashing on my laptop because I don't have CCL, so I'll just
+install CCL.
+
+    git clone https://github.com/Clozure/ccl.git ccl
+    curl -L -O https://github.com/Clozure/ccl/releases/download/v1.12.2/linuxx86.tar.gz
+    cd ccl
+    tar xf ../linuxx86.tar.gz
+    ./lx86cl64
+    (rebuild-ccl :full t)
+
+    sudo ln -s /home/sjl/src/ccl/lx86cl64 /usr/local/bin/ccl64
+
