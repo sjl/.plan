@@ -1523,3 +1523,13 @@ something ugly like this:
 But at least it works properly now and won't drive me crazy.
 
 See lab notebook.
+
+## 2023-09-16
+
+Did a bit more font hunting.  Looking for something to use for figures that
+looks plotter-esque, but isn't something with a couple of scattered glyphs and
+no weights like the plotter fonts I've found.  Licensing is a minefield, but
+Google Fonts has a bunch of stuff that's under the open font license, and
+I think I found a couple that might work: Quicksand and Nunito.  Of the two,
+Nunito seems a little nicer to me.  Will need to try it in some graphs and see
+how it works.
