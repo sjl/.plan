@@ -1524,8 +1524,6 @@ But at least it works properly now and won't drive me crazy.
 
 See lab notebook.
 
-## 2023-09-16
-
 Did a bit more font hunting.  Looking for something to use for figures that
 looks plotter-esque, but isn't something with a couple of scattered glyphs and
 no weights like the plotter fonts I've found.  Licensing is a minefield, but
@@ -1533,3 +1531,10 @@ Google Fonts has a bunch of stuff that's under the open font license, and
 I think I found a couple that might work: Quicksand and Nunito.  Of the two,
 Nunito seems a little nicer to me.  Will need to try it in some graphs and see
 how it works.
+
+## 2023-09-17
+
+Trying to get ahead of classwork for the next couple of weeks, since I've got so
+many other things going on.
+
+Did the reading for BS521 for the next two weeks.
