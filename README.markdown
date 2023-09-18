@@ -935,4 +935,9 @@ Finished BS521 homework 3.
 
 ## 2023-09-18
 
-HG545.
+HG545.  Feeling better about this module than the last, which is surprising
+because I enjoyed this paper less.
+
+Chatted with someone about one of the labs I'm thinking about rotating in.
+
+See lab notebook.
