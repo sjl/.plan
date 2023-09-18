@@ -1538,3 +1538,7 @@ Trying to get ahead of classwork for the next couple of weeks, since I've got so
 many other things going on.
 
 Did the reading for BS521 for the next two weeks.
+
+See lab notebook.
+
+Finished BS521 homework 3.
