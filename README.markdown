@@ -519,8 +519,6 @@ which is nice.
 Note to self: I can probably use the text-mode VPN UI now that I've got the 2FA
 sorted out, and maybe remove the webkit crap I installed for it originally.
 
-See lab notebook.
-
 Finished BS521 lab 0.  Wasn't too bad once I shaved the tidyverse yak.  Getting
 it written up with Latex required more Latex derusting, this time for code
 listings and images (pulled some of this from the MS thesis).  First, preamble
@@ -629,8 +627,6 @@ after entering my password, but then I realized it had just silently tried to
 let me log in, so I think I can probably ditch the webkit crap I installed for
 the graphical thing.
 
-See lab notebook.
-
 Desktop machine wouldn't take input from my USB hub all of a sudden.  Found some
 bullshit in the logs, probably not worth debugging Yet More Linux Jank if I'm
 just going to wipe this machine and install Debian on it soon anyway.  Tried to
@@ -666,8 +662,6 @@ Polished and submitted the HG545 homework.  We'll see how it goes, I guess.
 ## 2023-09-11
 
 HG545 discussion.  This paper was pretty straightforward.
-
-Lab.  See lab notebook.
 
 Met with PIBS peer mentor.
 
@@ -711,8 +705,6 @@ Lunch at a place called Maizie's.  Was actually pretty good!
 
 Doing Yet Another Round of Paperwork for the VA.  So much red tape.  Did what
 I could here, but there's a bunch I can't do until I get home after class today.
-
-See lab notebook.
 
 So far I'm loving the look of the stumpwm config changes I made the other day.
 Shouldn't have waited this long to clean things up.  TODO: use
@@ -824,8 +816,6 @@ Looked into the PACCAR thing from yesterday, but the application form is
 extremely long and I already have enough red tape to deal with through the VA,
 so I'm not going to add more paperwork for myself.  Oh well.
 
-See lab notebook.
-
 Met with John Prensner about possibly rotating in his lab.  Next steps for
 rotations are pretty clearly to set up some chats with his students and some
 from Boyle/Parker labs to make a choice for the next 1-2 slots.  I'll try to do
@@ -852,13 +842,9 @@ this will make it easier to see what's coming up since Canvas is barely usable.
 Started reaching out to set up chats with folks in a few labs I might be
 interested in for my next rotation.
 
-See lab notebook.
-
 ## 2023-09-15
 
 HG545 this morning.
-
-See lab notebook.
 
 ## 2023-09-16
 
@@ -912,8 +898,6 @@ something ugly like this:
 
 But at least it works properly now and won't drive me crazy.
 
-See lab notebook.
-
 Did a bit more font hunting.  Looking for something to use for figures that
 looks plotter-esque, but isn't something with a couple of scattered glyphs and
 no weights like the plotter fonts I've found.  Licensing is a minefield, but
@@ -929,8 +913,6 @@ many other things going on.
 
 Did the reading for BS521 for the next two weeks.
 
-See lab notebook.
-
 Finished BS521 homework 3.
 
 ## 2023-09-18
@@ -940,4 +922,30 @@ because I enjoyed this paper less.
 
 Chatted with someone about one of the labs I'm thinking about rotating in.
 
-See lab notebook.
+Cleaned up HW2 for HG545 a bit.  Still not done, but at least I'm getting it
+into shape.
+
+## 2023-09-19
+
+BS521.
+
+Meeting with two more grad students to chat about their labs.
+
+BI500.
+
+DCMB has full time IT staff: `DCMB-IT-Services@umich.edu`.  Might email them
+about Ethernet connection?
+
+Chat widget on <https://michmed.service-now.com/sp> is a decent way to get help.
+Also walk-in help in THSL 4020. ARC support: <arc-support@umich.edu>.
+
+Slurm tutorial.  Learned a couple of interesting things:
+
+* `sq` is an alias for `squeue --me`.  Nice.
+* `my_job_header` can help debug weird Slurm shit, handy.
+* Emails will include core/mem high-water marks.  Need to figure out if I can
+  get this programatically, might be more accurate than the Snakemake benchmarks
+  (or at least worth comparing).
+
+Chatted about Boyle lab with a current grad student.
+
