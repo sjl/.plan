@@ -949,3 +949,6 @@ Slurm tutorial.  Learned a couple of interesting things:
 
 Chatted about Boyle lab with a current grad student.
 
+PIBS 800.
+
+Finished HG545 homework 2.
