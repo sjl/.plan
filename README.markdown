@@ -952,3 +952,18 @@ Chatted about Boyle lab with a current grad student.
 PIBS 800.
 
 Finished HG545 homework 2.
+
+## 2023-09-20
+
+HG545 discussion.  Talked a lot about the Y chromosome paper.
+
+## 2023-09-21
+
+BS521.  Went over the binomial distribution.  Seeing this yet another time gave
+me an actual intuitive understanding this time, which is nice.
+
+BISTRO seminar.
+
+## 2023-09-22
+
+Retreat.
