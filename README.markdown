@@ -967,3 +967,15 @@ BISTRO seminar.
 ## 2023-09-22
 
 Retreat.
+
+Lightning talks.
+
+Breakout panel with current grad students.
+
+How to come up with ideas and/or practice for prelims:
+
+* Read a lot to figure out where the gaps in the field are.
+* Do the AMS practice talk.
+* Pick some professors who are knowledgeable in your area because they'll be
+  able to give more useful feedback.
+
