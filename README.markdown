@@ -970,12 +970,6 @@ Retreat.
 
 Lightning talks.
 
-Breakout panel with current grad students.
-
-How to come up with ideas and/or practice for prelims:
-
-* Read a lot to figure out where the gaps in the field are.
-* Do the AMS practice talk.
-* Pick some professors who are knowledgeable in your area because they'll be
-  able to give more useful feedback.
+Breakout panel with current grad students.  Lots of stuff, probably not going to
+write it all down here.
 
