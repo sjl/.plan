@@ -973,3 +973,42 @@ Lightning talks.
 Breakout panel with current grad students.  Lots of stuff, probably not going to
 write it all down here.
 
+## 2023-09-23
+
+Finished HW 4 for BS521.
+
+Got some random Latex shit to remember for next time. Aligned equations:
+
+    \begin{eqnarray*}
+        foo &=& bar \\
+        meow &=& wow \\
+    \end{eqnarray*}
+
+References to figures:
+
+    (See figure~\ref{fig:g-a})
+
+    …
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.65\textwidth]{figures/g-a}
+        \caption{Graph for exercise 4.1 part a.}
+        \label{fig:g-a}
+    \end{figure}
+
+Units:
+
+    \usepackage{units}
+
+    Drink 500 \unit{ml} of water at lunch.
+
+And some random R shit to remember for next time:
+
+    dbinom = Binomial PDF
+    pbinom = Binomial CDF
+
+Came up with some absolutely cursed code to made shaded normal graphs.
+Surprised that's not already a thing.
+
+
