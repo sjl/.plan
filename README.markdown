@@ -1011,4 +1011,33 @@ And some random R shit to remember for next time:
 Came up with some absolutely cursed code to made shaded normal graphs.
 Surprised that's not already a thing.
 
+## 2023-09-25
 
+HG545.  Need to retype all my notes for this module here when I get some time so
+I don't lose them.
+
+Today started with a description of RNAseq.  Something vaguely familiar was
+a nice change for this class.  Then reviewed STARR-seq which I think I mostly
+understand now.
+
+Talked about the similarity between enhancers and promoters.  Polymerase can
+sometimes actually sit down at enhancers and produce small RNAs, but
+transcription doesn't ever elongate.  But this might be an example of how genes
+could evolve.
+
+Then talked about heat shock proteins and heat shock factor as an example of how
+rapid transcription can happen.
+
+* HSE: "Heat Shock Element", an enhancer sequence located upstream of a gene,
+  e.g. hsp90.
+* hsp90: "Heat Shock Protein 90", a protein that's used in cells to help other
+  proteins fold in the presence of heat that might otherwise prevent it.  The 90
+  is from its weight in kilodaltons (lol).
+* HSF1: "Heat Shock Factor 1", a transcription factor that trimerizes, binds to
+  HSE, and recruits another thing to activate the transcription of hsp90.
+
+There's a self-regulation loop here where, when things are cold, hsp90 binds to
+HSF1 outside the nucleus and prevents it from enhancing transcription of hsp90
+(i.e. of itself).  But when heat is applied, other proteins unfold and hsp90
+starts chaperoning them more, which leaves HSF1 free to enter the nucleus and
+enhance transcription of hsp90.
