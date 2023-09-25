@@ -1041,3 +1041,20 @@ HSF1 outside the nucleus and prevents it from enhancing transcription of hsp90
 (i.e. of itself).  But when heat is applied, other proteins unfold and hsp90
 starts chaperoning them more, which leaves HSF1 free to enter the nucleus and
 enhance transcription of hsp90.
+
+Remembering how to create a local Postgres DB for testing:
+
+    sudo -u postgres psql
+
+    postgres=# CREATE DATABASE example;
+    CREATE DATABASE
+
+    postgres=# CREATE USER testuser WITH PASSWORD 'pass';
+    CREATE ROLE
+
+    postgres=# GRANT ALL PRIVILEGES ON DATABASE example TO testuser;
+    GRANT
+
+    postgres=# \q
+
+    psql postgresql://testuser:pass@localhost:5432/example
