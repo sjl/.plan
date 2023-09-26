@@ -1057,3 +1057,12 @@ Remembering how to create a local Postgres DB for testing:
 
     psql postgresql://testuser:pass@localhost:5432/example
 
+## 2023-09-26
+
+BS521.  Exam is on Thursday.  Today is about sampling distributions and
+statistical inference.
+
+BIOINF500.  Fire alarm for the first half of class, nice.  Rest of the class
+will be recorded, need to remember to watch it later.
+
+
