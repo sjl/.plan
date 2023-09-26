@@ -1046,15 +1046,14 @@ Remembering how to create a local Postgres DB for testing:
 
     sudo -u postgres psql
 
-    postgres=# CREATE DATABASE example;
-    CREATE DATABASE
+    CREATE DATABASE example;
+    CREATE USER testuser WITH PASSWORD 'pass';
+    GRANT ALL PRIVILEGES ON DATABASE example TO testuser;
 
-    postgres=# CREATE USER testuser WITH PASSWORD 'pass';
-    CREATE ROLE
+    \c example
+    GRANT ALL ON SCHEMA public TO testuser;
 
-    postgres=# GRANT ALL PRIVILEGES ON DATABASE example TO testuser;
-    GRANT
-
-    postgres=# \q
+    \q
 
     psql postgresql://testuser:pass@localhost:5432/example
+
