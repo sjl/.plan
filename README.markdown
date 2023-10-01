@@ -1065,4 +1065,38 @@ statistical inference.
 BIOINF500.  Fire alarm for the first half of class, nice.  Rest of the class
 will be recorded, need to remember to watch it later.
 
+## 2023-09-27
+
+HG545 this morning. Did an initial pass on the homework, then met up with some
+other grad students later to chat about it and now I'm even less confident, lol.
+Welp.
+
+## 2023-09-28
+
+BS521 exam.  Did okay, though I really should have had a couple of more things
+on my note sheet than I did.  Next time I need to go through the slides too, not
+just the book — there were things on the test from class only, not in the book.
+I think I did alright though.
+
+Finished HG545 homework.  I think I did alright, but my brain is now fried.
+
+## 2023-09-29
+
+HG545 discussion this morning.
+
+Sent a few emails to try to nail down my next three rotations.  I think at this
+point I have a pretty good idea of where I want to try, so if I can just get
+them all nailed down now it'll be less stuff to deal with later.
+
+Signed up for the 503 discussion sections.  What a painful process to get
+registered.  I should have waited til I was home on my large monitor because
+trying to flip back and forth between the 90%-whitespace-filled list of sessions
+and my calendar/TODO list was extremely tedious.  I think I've got it all mapped
+out now though.
+
+## 2023-10-01
+
+Put up a bunch of stuff for sale on the PIBS list.  Need to declutter my
+apartment now that I've mostly moved in.
+
 
