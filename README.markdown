@@ -1178,3 +1178,6 @@ tomorrow since it's been a while.
 
 Finish BS521 lab 1, finally.  That was a lot more work than I expected.
 
+Met with a professor about possible rotation.  Need to chat with my advisor to
+see if there's special paperwork I'll need.
+
