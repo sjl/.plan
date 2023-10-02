@@ -690,7 +690,7 @@ and look at home much variability remains:
     (- (reduce #'max residuals) (reduce #'min residuals))
 
 Compare the two to see the fraction that remains after accounting for the model.
-
+₂
 Looked into some "R for actual programmers" resources so maybe I can feel like
 I'm flailing less:
 
@@ -1099,4 +1099,75 @@ out now though.
 Put up a bunch of stuff for sale on the PIBS list.  Need to declutter my
 apartment now that I've mostly moved in.
 
+Did a few hours of work on Lab 1 for BS521.  Too much unproductive screwing
+around in R trying to figure out how to get decent fonts.  Should be able to
+finish it up tomorrow though.  Random notes jotted down from the process follow.
+
+Side-by-side figures in LaTeX:
+
+    \begin{figure}[h]
+        \begin{minipage}[t]{0.48\textwidth}
+            \includegraphics[width=\linewidth]{figures/bp-histogram}
+            \caption{Distribution of blood pressure among participants.}
+            \label{fig:bp-histogram}
+        \end{minipage}
+        \hfill
+        \begin{minipage}[t]{0.48\textwidth}
+            \includegraphics[width=\linewidth]{figures/bp-nqq}
+            \caption{Normal QQ plot of blood pressure values.}
+            \label{fig:bp-nqq}
+        \end{minipage}
+    \end{figure}
+
+
+Reasonable quantile plot in R:
+
+    qplot <- function(filename, data, label, main, ...) {
+        n = length(data)
+        plot(((1:n - 1)/(n - 1)), sort(data),
+             type = "l",
+             main = main,
+             xlab = "Quantile",
+             ylab = label,
+             ...)
+    }
+
+QQ plot with the damn line in R:
+
+    nqqplot <- function(data, ...) {
+        qqnorm(data, ...)
+        qqline(data)
+    }
+
+Reading in a CSV with specific column types:
+
+    data <- read_csv("EPID_521_lab_data.csv", col_types="iddfiffdffdd")
+
+Note that this seems to give you a "tibble", whatever the hell that is.  Some
+kind of tidyverse thing?  It's very confusing that everywhere you look there's
+a hairball of a mess of base R, tidyverse, and ggplot2 and everyone just assumes
+you understand which is part of what.
+
+Reordering levels:
+
+    data <- mutate(data, diet=factor(data$diet, levels=c("Poor", "Fair", "Good", "VeryGood", "Excellent")))
+
+
+Removing rows with `NA`s for e.g. the `cot` column:
+
+    data <- data[complete.cases(data$cot),]
+
+Histograms with specific bin widths, rather than a number of bins:
+
+    hist(data$age, breaks=seq(from=15, to=90, by=1), main="", xlab="Age")
+
+Multiple box plots in one image:
+
+    boxplot(bmi~sex, data=data)
+
+Marking and/or filtering on a boolean condition:
+
+    data$locot <- data$cot <= 0.011
+    locot <- subset(data, cot <= 0.011)
+    hicot <- subset(data, cot > 0.011)
 
