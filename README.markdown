@@ -1171,3 +1171,10 @@ Marking and/or filtering on a boolean condition:
     locot <- subset(data, cot <= 0.011)
     hicot <- subset(data, cot > 0.011)
 
+## 2023-10-02
+
+HG545 review this morning.  Need to go back and review the first module again
+tomorrow since it's been a while.
+
+Finish BS521 lab 1, finally.  That was a lot more work than I expected.
+
