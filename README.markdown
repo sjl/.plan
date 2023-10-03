@@ -1192,3 +1192,5 @@ sync the minimal one to servers and not hate myself when trying to edit. There's
 some jank involved around the colorschemes and `set termguicolors` but I think
 have have something that should work.
 
+PIBS800.  Mentor/mentee relationships.
+
