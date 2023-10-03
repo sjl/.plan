@@ -1181,3 +1181,14 @@ Finish BS521 lab 1, finally.  That was a lot more work than I expected.
 Met with a professor about possible rotation.  Need to chat with my advisor to
 see if there's special paperwork I'll need.
 
+## 2023-10-03
+
+BS521.  Confidence intervals.
+
+BI500.  Research writing.
+
+Finally got around to splitting my Vimrc into minimal and extra files, so I can
+sync the minimal one to servers and not hate myself when trying to edit.
+There's some jank involved around the colorschemes but I think have have
+something that should work.
+
