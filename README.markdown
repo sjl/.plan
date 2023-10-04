@@ -1194,3 +1194,8 @@ have have something that should work.
 
 PIBS800.  Mentor/mentee relationships.
 
+## 2023-10-04
+
+Advising meeting.  Need to do a couple of things in EdM and register for 602,
+but I'm currently blocked on both by other folks so I'm good for now.
+
