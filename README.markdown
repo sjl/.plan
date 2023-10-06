@@ -1209,7 +1209,9 @@ BS521.  Hypothesis testing.
 
 BS521 reading.
 
-Read the paper for HG545.
+Read the paper for HG545.  I get the general idea, and it seems like a pretty
+clear experiment.  I wonder how much we'll stick to the paper vs going off topic
+this time.
 
 Needed to convert some PDF graphs to PNG to put in a presentation, but `convert`
 was whining about some security crap:
@@ -1228,3 +1230,6 @@ doesn't trust it so won't convert stuff.  Great.  Have to edit
     <policy domain="coder" rights="none" pattern="EPS" />
     <policy domain="coder" rights="none" pattern="PDF" />
     <policy domain="coder" rights="none" pattern="XPS" />
+
+Skimmed through the slides for HG545 tomorrow.  It's nice to be able to get
+a preview of things again.
