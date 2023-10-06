@@ -1199,3 +1199,32 @@ PIBS800.  Mentor/mentee relationships.
 Advising meeting.  Need to do a couple of things in EdM and register for 602,
 but I'm currently blocked on both by other folks so I'm good for now.
 
+HG545 exam.
+
+## 2023-10-05
+
+Finished the HG545 exam last night.  That was… deeply unpleasant.
+
+BS521.  Hypothesis testing.
+
+BS521 reading.
+
+Read the paper for HG545.
+
+Needed to convert some PDF graphs to PNG to put in a presentation, but `convert`
+was whining about some security crap:
+
+    ><((°> convert n50.pdf n50.png
+    convert-im6.q16: attempt to perform an operation not allowed by the security policy `PDF' @ error/constitute.c/IsCoderAuthorized/421.
+
+Turns out there was a bug in ghostscript, which was fixed, but convert still
+doesn't trust it so won't convert stuff.  Great.  Have to edit
+`/etc/ImageMagick-6/policy.xml` and comment out these lines to make it behave:
+
+    <!-- disable ghostscript format types -->
+    <policy domain="coder" rights="none" pattern="PS" />
+    <policy domain="coder" rights="none" pattern="PS2" />
+    <policy domain="coder" rights="none" pattern="PS3" />
+    <policy domain="coder" rights="none" pattern="EPS" />
+    <policy domain="coder" rights="none" pattern="PDF" />
+    <policy domain="coder" rights="none" pattern="XPS" />
