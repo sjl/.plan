@@ -1233,3 +1233,8 @@ doesn't trust it so won't convert stuff.  Great.  Have to edit
 
 Skimmed through the slides for HG545 tomorrow.  It's nice to be able to get
 a preview of things again.
+
+## 2023-10-06
+
+HG545, class was about splicing.  I feel much better about this module thanks to
+being able to prepare a bit with the preview last night.
