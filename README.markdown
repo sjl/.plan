@@ -1094,6 +1094,8 @@ trying to flip back and forth between the 90%-whitespace-filled list of sessions
 and my calendar/TODO list was extremely tedious.  I think I've got it all mapped
 out now though.
 
+# October 2023
+
 ## 2023-10-01
 
 Put up a bunch of stuff for sale on the PIBS list.  Need to declutter my
@@ -1238,3 +1240,8 @@ a preview of things again.
 
 HG545, class was about splicing.  I feel much better about this module thanks to
 being able to prepare a bit with the preview last night.
+
+## 2023-10-07
+
+Installed <https://github.com/numcommand/num> — might come in handy here and
+there.
