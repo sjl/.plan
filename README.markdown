@@ -1245,3 +1245,16 @@ being able to prepare a bit with the preview last night.
 
 Installed <https://github.com/numcommand/num> — might come in handy here and
 there.
+
+## 2023-10-08
+
+Reread the paper for HG545.  It's… a little clearer now?  Though honestly it
+wasn't too bad before compared to the other papers.  Just a lot of acronyms.
+Got a list of things to ask.
+
+## 2023-10-09
+
+HG545 this morning, about co/post-transcriptional modification.  The downside of
+having slides is that people put a ton of things on them and you can't take
+notes fast enough.  Need to go back over the slides and write down things once
+I get home so I don't forget them.
