@@ -1284,3 +1284,73 @@ I really wish the book wouldn't omit the axis-drawing code from the diagrams
 — it makes it unclear where each piece of the output is coming from.  I think
 I *mostly* understand it, but would prefer if it were all explicit (even if it
 would make things a bit longer).
+
+Going back to take some notes for HG545 while they're still (vaguely) fresh in
+my mind.  First: notes from the class on splicing.
+
+The "R-loop" terminology is confusing.  It's inspired by the name "D-loop",
+which notes how DNA will unzip to show a loop when it's being duplicated (and
+there's a complementary strand bound to one side).  "R-loop" *also* refers to
+the loop *in the DNA* when it's bound *to RNA* (e.g. when it's being
+transcribed).  Again: the actual loop in an "R-loop" is a loop of DNA.
+
+An RNA molecule has 3 relevant sites when considering splicing:
+
+```
+ 5' exon |                  intron                            | 3' exon
+ ======AG|GUAAGU============================YNYURAY====Y₁₁NCAG|G==============
+                                                 ↑
+      5' Splice Site                    Branch Site      3' Splice Site
+```
+
+Note that in this case the branch site is specifically an adenine.  That's
+important (reason comes later).
+
+One important aspect of RNA that allows it to be spliced (contrasted with DNA)
+is the hydroxyl group on the 2' carbon in RNA, which is not present in DNA
+(that's why it's *deoxy*ribose).  That hydroxyl group is what attacks the
+phosphate bond at the 5' splice site and cleaves it apart (after being brought
+close to it by the spliceosome).  That leaves a hydroxyl group exposed hanging
+off of the 5' exon, and in the next step *that* group is brought close to the 3'
+splice site and attacks it.  Once that bond is broken the intron (as
+a lariat-shaped thing) floats away, and the exons are spliced together.
+
+The chemistry of the breaks is called "transesterification": two
+phosphodi*ester* bonds are broken (at intron/exon and exon/intron boundaries),
+and two more are created (one in the lariat, and the splice between exons).
+
+(Of course like everything in biology, in reality it's all a giant mess and there
+are multiple kinds of splicing, including self-splicing.)
+
+The spliceosome is a giant thing made of a bunch of different proteins and also
+5 RNAs that mediates splicing.  The RNAs are important because those are what
+recognize the splice and branch sites through complementary pairing, e.g. at the
+5' splice site we have:
+
+       ____________
+      /     U1     \  U1 component of spliceosome
+      \            /
+       \__CAUUCA__/
+          ┆┆┆┆┆┆
+        ==GUAAGU==    RNA
+
+In a similar way, the U2 component binds to the branch site, but the binding
+sequence specifically skips the adenine at the site, which "extrudes" it from
+the RNA a little bit:
+
+              extruded adenine
+                   ↓
+                   A
+    ======U A C U A C=======    RNA
+          ┆ ┆ ┆ ┆ ┆ ┆
+       .——C A U U C A——.
+      /                 \
+     /        U2         \      U2 component of spliceosome
+     \___________________/
+
+Alternate splicing is also a big deal, because it allows the creation of many
+different mRNAs from the same gene by bringing together different exon/intron
+boundaries to be spliced instead of always splicing the closest one.
+
+Of course there's other complications too, like splicing enhancers and silencers
+that can recruit/block the splicing machinery.
