@@ -1285,6 +1285,10 @@ I really wish the book wouldn't omit the axis-drawing code from the diagrams
 I *mostly* understand it, but would prefer if it were all explicit (even if it
 would make things a bit longer).
 
+Read chapter 5 too, on algebras.  This was much, much more confusing and would
+have been much clearer with more explicit examples.  Need to read this at least
+one more time to get it, I'm sure.
+
 Going back to take some notes for HG545 while they're still (vaguely) fresh in
 my mind.  First: notes from the class on splicing.
 
@@ -1354,3 +1358,4 @@ boundaries to be spliced instead of always splicing the closest one.
 
 Of course there's other complications too, like splicing enhancers and silencers
 that can recruit/block the splicing machinery.
+
