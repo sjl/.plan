@@ -1359,3 +1359,7 @@ boundaries to be spliced instead of always splicing the closest one.
 Of course there's other complications too, like splicing enhancers and silencers
 that can recruit/block the splicing machinery.
 
+Skimmed over tomorrow's HG545 slides so I don't have to go in blind again. Seems
+pretty reasonable, though the end seems pretty rushed and I *think* it's
+relevant to one of the questions in the homework.  Need to pay attention at the
+end.
