@@ -1258,3 +1258,29 @@ HG545 this morning, about co/post-transcriptional modification.  The downside of
 having slides is that people put a ton of things on them and you can't take
 notes fast enough.  Need to go back over the slides and write down things once
 I get home so I don't forget them.
+
+## 2023-10-10
+
+BS521, hypothesis testing, p values, t distribution.
+
+BI500, code quality tips.  Checked with Prof. Sartor and submitting a LaTeX PDF
+for the references homework is fine.
+
+Pinged a few students in a lab I'm interested in to see if they're willing to
+chat about their experience.  Just need to nail down my third rotation and then
+I'll be all set.
+
+Ordered a used copy of the Grammar of Graphics book.  I've read enough in the
+ebook copy from the library that I know I want the entire thing, even though
+it's quite expensive.
+
+Read chapter 4 of the book while the straggler genomes finish in the last batch,
+about variables and basic transformations on them.  The book uses the ridiculous
+terms "homoscedasticity" and "heteroscedasticity" to mean "homogeneous variance"
+and "heterogeneous variance", which I *think* is the same idea as Cleveland's
+"monotone spread" (or possibly a more general version of it).
+
+I really wish the book wouldn't omit the axis-drawing code from the diagrams
+— it makes it unclear where each piece of the output is coming from.  I think
+I *mostly* understand it, but would prefer if it were all explicit (even if it
+would make things a bit longer).
