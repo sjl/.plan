@@ -1371,4 +1371,13 @@ Started BS521 homework 5.  A bit more confusing than the previous homeworks, and
 it's been a week or so since I touched LaTeX so I once again have to fight it
 every step of the way.
 
+## 2023-10-11
+
+HG545 this morning, about translation.
+
+VA onboarding after that.  Took a couple of hours, but I now finally have
+a badge.
+
+
+
 
