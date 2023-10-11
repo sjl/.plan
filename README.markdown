@@ -1367,3 +1367,8 @@ end.
 PIBS800, how to read a research paper.  I feel like I've had three versions of
 this presentation by different people at different times at this point.
 
+Started BS521 homework 5.  A bit more confusing than the previous homeworks, and
+it's been a week or so since I touched LaTeX so I once again have to fight it
+every step of the way.
+
+
