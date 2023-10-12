@@ -1378,6 +1378,15 @@ HG545 this morning, about translation.
 VA onboarding after that.  Took a couple of hours, but I now finally have
 a badge.
 
+Been reading the GoG book during some spare free minutes here and there.
+Skimming over a lot of the formalism, I still feel like this could be much
+improved by showing some full examples with everything laid out.
+
+Sketched out some answers to HG545 questions.
+
+Finished BS521 homework 5, turned it in.
+
+Cleaned up HG545 answers.  Need to do one final pass tomorrow.
 
 
 
