@@ -1388,5 +1388,21 @@ Finished BS521 homework 5, turned it in.
 
 Cleaned up HG545 answers.  Need to do one final pass tomorrow.
 
+## 2023-10-12
+
+BS521, started talking about two-distribution t tests.
+
+Finally got around to swapping my search engine on my phone to Kagi.  The
+degoogling continues.
+
+I really need to figure out a decent way to do proper pivot tables in Postgres.
+From reading the docs it looks *surprisingly* janky for what I'd expect from
+Postgres.
+
+Read up on index operator classes, which was preventing Postgres from using an
+index when searching for a prefix of a string, e.g. `SELECT name FROM foo WHERE
+name LIKE 'pref%';`.  Fixed by telling Postgres this index will be used with
+text patterns by e.g. `CREATE INDEX i__foo__name ON foo(name
+text_pattern_ops);`.
 
 
