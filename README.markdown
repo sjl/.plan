@@ -1405,4 +1405,10 @@ name LIKE 'pref%';`.  Fixed by telling Postgres this index will be used with
 text patterns by e.g. `CREATE INDEX i__foo__name ON foo(name
 text_pattern_ops);`.
 
+## 2023-10-13
 
+HG545 discussion.
+
+## 2023-10-14
+
+Fall break.
