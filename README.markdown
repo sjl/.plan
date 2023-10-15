@@ -1412,3 +1412,31 @@ HG545 discussion.
 ## 2023-10-14
 
 Fall break.
+
+## 2023-10-15
+
+Did the BIOINF-500 homework on reference management/citation.  Figured out how
+to get Latex set up to do references.  Lots of jank, but I think I've got it
+working now.  JabRef produces a `.bib` file as its database.  Then in the Latex
+document, add a preamble:
+
+
+    \usepackage[
+    backend=biber,
+    style=nature,
+    sorting=ynt
+    ]{biblatex}
+    \addbibresource{sjl.bib}
+
+Cite things with `\cite{foo}` and `\cite{bar,baz}`.  Then `\printbibliography`
+to put the references section into the paper there.
+
+This is complicated by the fact that you have to run `biber` between runs of
+`pdflatex`, so I kludged together a `mklatex` script that does something
+horrifying like `pdflatex; biber; pdflatex; pdflatex`  to actually make the damn
+document.  Gross.
+
+I really need to get my latex stuff into a set of files, rather than
+copy/pasting everything into every single document.
+
+
