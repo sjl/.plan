@@ -1467,3 +1467,12 @@ from ONT reads.
 Need to remember to ask Alan if he has any suggestions on reading material
 I should look at over the weekend before I start with him on Monday.
 
+## 2023-10-20
+
+HG545.  More on transposable elements, this time about LTR retrotransposons.
+
+Met with Bob about rotation paperwork.
+
+Last day of my first rotation!  I think it went well.  Looking forward to trying
+out more things in the next few rotations, but this one was great!
+
