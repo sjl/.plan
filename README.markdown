@@ -1439,4 +1439,31 @@ document.  Gross.
 I really need to get my latex stuff into a set of files, rather than
 copy/pasting everything into every single document.
 
+## 2023-10-18
+
+Back from fall break. Time to get back into the swing of classes.
+
+HG545 this morning, starting the section about transposable elements.  The
+professor put up slides, videos, and a narrative document in advance which is
+really great — I was able to prepare and not be completely lost.
+
+Read over animal ethics stuff for tomorrow.  Need to consider if I want to
+really do a rotation with animal subjects.  I'm a little less sure now.
+
+## 2023-10-19
+
+BS521 this morning.  The second half of the class has a different lecturer,
+starting today.  Talked about paired t-tests (which are essentially just doing
+a one-sample t-test on the difference of the paired values) and ANOVA for
+many-sample t-testing.
+
+First PIBS503 discussion section.  This is (I think) the only one that's in
+person, and it's in the middle of goddamn nowhere on the North Campus.
+I managed to find my way there, but dear god are these buildings confusing.
+
+BISTRO at 4. Topic: HMMSTR, using HMMs for tandem repeat copy number detection
+from ONT reads.
+
+Need to remember to ask Alan if he has any suggestions on reading material
+I should look at over the weekend before I start with him on Monday.
 
