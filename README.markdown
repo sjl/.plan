@@ -1487,3 +1487,9 @@ Finally got around to hooking up a keyboard shortcut for `switch-yubikeys`
 since I find myself actually using it a lot again, now that I'm not working from
 home full time.
 
+Sent my lab notebook to the PI, which is my last official act of the rotation.
+
+Swapped out a fresh VM for my next rotation.  Keeping the old one around for
+a few weeks in case I end up needing anything from it.  Glad I've got everything
+scripted up around this — much easier to do it this time.
+
