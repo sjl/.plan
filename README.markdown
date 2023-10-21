@@ -1476,3 +1476,14 @@ Met with Bob about rotation paperwork.
 Last day of my first rotation!  I think it went well.  Looking forward to trying
 out more things in the next few rotations, but this one was great!
 
+## 2023-10-21
+
+Finished reading the HG545 paper, finally.  It was long, but a lot more clear
+than the other papers thanks to the supplementary material actually *explaining*
+things.  So even though it was a little tedious to get through with so many
+abbreviations, I think I preferred it overall to the other papers so far.
+
+Finally got around to hooking up a keyboard shortcut for `switch-yubikeys`
+since I find myself actually using it a lot again, now that I'm not working from
+home full time.
+
