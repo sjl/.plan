@@ -1493,3 +1493,12 @@ Swapped out a fresh VM for my next rotation.  Keeping the old one around for
 a few weeks in case I end up needing anything from it.  Glad I've got everything
 scripted up around this — much easier to do it this time.
 
+Started BS Lab 2.  Not going to do the extra credit this time, I just don't have
+the spare time at the moment.  Too much going on all at once.
+
+Installed Weechat+wee-slack and irssi on my laptop.  Going to give irssi a try
+for a while as an IRC client, which would let me reserve Weechat (which I don't
+really like all that much) for Slack.  Irssi config was a little janky, but
+I think I got something dogfoodable for now.
+
+Installed the Python lib for the next rotation on the VM in a venv.
