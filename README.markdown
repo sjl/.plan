@@ -1502,3 +1502,14 @@ really like all that much) for Slack.  Irssi config was a little janky, but
 I think I got something dogfoodable for now.
 
 Installed the Python lib for the next rotation on the VM in a venv.
+
+## 2023-10-22
+
+Finish BS lab 2.  Didn't go the extra mile on this one either, still trying to
+catch up from break.  I'm getting there though.
+
+Figured out some travel/break logistics for between semesters.
+
+Finished BS homework 7.  I should be all caught up on stuff for that class
+(aside from reading, which goes quick) for a while now.  Next big thing for it
+is the exam on 11/02.
