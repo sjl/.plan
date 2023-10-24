@@ -424,3 +424,69 @@ Figured out some travel/break logistics for between semesters.
 Finished BS homework 7.  I should be all caught up on stuff for that class
 (aside from reading, which goes quick) for a while now.  Next big thing for it
 is the exam on 11/02.
+
+Got a couple of LaTeX snippets to remember after all the biostat stuff.  First,
+often worth making shortcuts for frequently used stuff in a given assignment:
+
+    \def\h0{\textbf{H}_0}
+    \def\hA{\textbf{H}_A}
+    \def\tstar#1{t^\star_\textit{#1}}
+
+Adding spacing between equation lines with `\jot`:
+
+    \begin{equation*}
+    \setlength{\jot}{10pt}
+    \begin{split}
+        T & = \frac{\bar{X} - \mu_D}{s/\sqrt{n}} \\
+          & = \frac{-0.545 - 0}{8.887/\sqrt{200}} \\
+          & = \frac{-0.545}{0.6284058} \\
+        T & \approx -0.867 \\
+    \end{split}
+    \end{equation*}
+
+Started HG545 homework, just sketching out notes.  Burned out before getting too
+far, will have to actually get a rough draft done tomorrow (then cleaned up on
+Tuesday).
+
+## 2023-10-23
+
+HG545, about the L1 transposition assaying and Alu.
+
+First day of the new lab rotation!  Set up `black` on the laptop since I'll be
+doing Python.  Ended up installing it into a venv and symlinking to the binary,
+which seems to have worked okay.
+
+Need to figure out how to get Irssi to autoload scripts properly and set up
+e.g. `/toggle awl_viewer` on startup so I don't have to do it by hand every
+time.
+
+Got a first draft of HW5 90% done.  Will finish tomorrow.
+
+Did some reading for BS521.  Still have a little left for Thursday.
+
+## 2023-10-24
+
+BS521 today.  Got another intuitive explanation of ANOVA (which was nice) and
+talked about categorical CIs/hypothesis testing.
+
+BI500.  Presentations by faculty who are looking to recruit students:
+
+1. Statistical/online bioinformatics.
+2. Cell lineage trees via imaging + ML.  If only there was a way to kludge
+   something into mitosis that would tag descendant genomes ala service request
+   ID tagging (or even just e.g. a plasmid that would mutate quickly as
+   a clock).
+3. Head/neck cancer and ALS research via multiomics and large cohort studies.
+4. How molecular/biological clocks work.
+5. How cell cell signaling controls cell fate in human pluripotent stem cells.
+6. Exercise, multiomics, and wearables, cell communications and differential
+   expression with ML.
+7. Wearable and multiomics data to identify biomarkers for early
+   detection/prevention of disease.
+
+Should also look into the additional ones who couldn't be fit into timeslots to
+present.
+
+Lunch at Maizie's.
+
+
