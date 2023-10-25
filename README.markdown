@@ -489,4 +489,18 @@ present.
 
 Lunch at Maizie's.
 
+PIBS 800 about grants, e.g.
+<https://rackham.umich.edu/funding/rackham-graduate-student-research-grant/>
+which can be done as a pre-candidate *and* candidate.  I think I should get Cat
+to explain this to me in idiot terms so I can figure out all the stuff I'm
+missing.
+
+Met with study group for HG545 homework.  I feel like I understand everything
+very well, but trying to fit a coherent explanation into the line limits of the
+homework is absolutely miserable.
+
+Finished HG545 homework.  Walking unsteadily as I emerge from the prose-gutting
+facility covered in texual viscera and stinking of article blood, my filleting
+backspace key dull in its socket.
+
 
