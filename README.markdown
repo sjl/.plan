@@ -515,3 +515,4 @@ Put together my new table at home.  Looks nice.
 Reviewed the files for the next two 503 discussions this week.  Nothing
 really surprising here.
 
+Did the BS521 reading for tomorrow.
