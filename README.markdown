@@ -529,3 +529,24 @@ PIBS 503 discussion class zoom meeting.
 
 Started reading the next HG545 paper and glanced over the slides.  I wish we had
 lectures recorded like the last module.
+
+## 2023-10-27
+
+HG545 lecture.  New module starts today, on replication.
+
+There's more than just one DNA Polymerase.  Three main ones are called α, δ, and
+ε.  Roughly, α starts, then hands off to δ.  On the lagging strand, that's all
+it has time for before it falls off and the process starts again for the next
+Okazaki fragment.  But on the leading strand, δ has time to hand off to ε, which
+is much more stable and can continue along the strand.
+
+Proofreading and mismatch repair are both very important.  The initial
+polymerization process has an error rate somewhere around 10⁻⁶.  Mismatch repair
+happens *in-line* with the replication process: DNA Pol doesn't like continuing
+from a mismatch based, so most of the time it will pause for a bit and the
+proofreading machinery that's also in the replication complex will chomp off the
+bad base, then DNA Pol will continue. Mismatch repair happens separately: one
+protein recognizes the mismatch and recruits another protein that excises the
+match *and a big chunk of the downstream strand*, and that whole chunk gets
+resynthesized.
+
