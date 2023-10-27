@@ -516,3 +516,16 @@ Reviewed the files for the next two 503 discussions this week.  Nothing
 really surprising here.
 
 Did the BS521 reading for tomorrow.
+
+## 2023-10-26
+
+BS521 class this morning.
+
+I've got the 503 discussion thing at 2, need to figure out a good place to take
+that Zoom call.  Maybe the study rooms at the top of THSL?  Need to figure out
+how to reserve those at some point.
+
+PIBS 503 discussion class zoom meeting.
+
+Started reading the next HG545 paper and glanced over the slides.  I wish we had
+lectures recorded like the last module.
