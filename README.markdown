@@ -550,3 +550,9 @@ protein recognizes the mismatch and recruits another protein that excises the
 match *and a big chunk of the downstream strand*, and that whole chunk gets
 resynthesized.
 
+Another PIBS 503 class discussion zoom meeting.  3 down, 4 to go.
+
+## 2023-10-28
+
+Started digging into the HG545 paper.  I hate that we only have 2 classes for
+this one, it feels far too rushed.
