@@ -556,3 +556,29 @@ Another PIBS 503 class discussion zoom meeting.  3 down, 4 to go.
 
 Started digging into the HG545 paper.  I hate that we only have 2 classes for
 this one, it feels far too rushed.
+
+## 2023-10-29
+
+Finished the second readthrough of the paper.  I feel a little better now, but
+am still not perfectly sure on the questions.
+
+## 2023-10-30
+
+HG545 class, mostly on DNA repair.  Makes the case that a lot of DNA repair
+reuses the same polymerases (e.g. δ) as replication (but not all, e.g.
+single-base repair uses something else (I think β?)), and you can kind of think
+of it as just another form of replication.
+
+Another important point: replication is not deterministic, because it doesn't
+have to be.  As long as the whole genome (well, chromosome) gets replicated, it
+doesn't matter precisely where that replication started.  This is very different
+from e.g. transcription, because starting in a different place would transcribe
+a different gene.
+
+Also important to define terms like lesion vs mutation: a lesion is detectable
+DNA damage, which then get fixed into place (in the "use fixer on the photo
+paper" sense, not the "repair" sense) by subsequent replication.
+
+I think I'm feeling a little better about the homework questions now after
+talking through it a bit.  Need to get some rough drafts sketched out for when
+I meet with the study group tomorrow.
