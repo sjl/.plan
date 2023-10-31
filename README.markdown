@@ -582,3 +582,21 @@ paper" sense, not the "repair" sense) by subsequent replication.
 I think I'm feeling a little better about the homework questions now after
 talking through it a bit.  Need to get some rough drafts sketched out for when
 I meet with the study group tomorrow.
+
+## 2023-10-31
+
+BS521. Chi-square test.
+
+BI500.  Senior student discussion panel.  Each gave us advice:
+
+* Find a mentor that works for you (specifically what *you* need, will be
+  different for everyone).
+* Use these years as training, not 100% research.
+* Take care of yourself, set boundaries.  Marathon, not sprint.
+* Take ownership of your time here, do things that'll help you grow.
+* The novelty of a PhD will wear off, stick with it.
+* Have hobbies.
+* Keep a calendar.
+* Talk with your peers a lot, don't keep everything to yourself.
+
+PIBS800.
