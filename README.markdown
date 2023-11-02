@@ -599,4 +599,76 @@ BI500.  Senior student discussion panel.  Each gave us advice:
 * Keep a calendar.
 * Talk with your peers a lot, don't keep everything to yourself.
 
-PIBS800.
+PIBS800.  Career planning.
+
+Met with HG545 folks.  This module was a bit better than the rest.
+
+Finished and submitted HG545 homework.
+
+Made BS521 note sheet for the exam Thursday.
+
+## 2023-11-01
+
+HG545 discussion section.
+
+Made a little tornado plots demo with `p5.js` to be able to poke around and
+confirm a couple of things:
+
+* When you have two pause sites symmetric about an origin, there is *no* shift,
+  but the coverage massively changes there.
+* If you decrease the rate of both forks, you don't get a long skinny tornado,
+  you get a shorter normal-looking one with higher coverage.
+
+SAA Wednesday dance.
+
+Got nerd sniped by Kate into adding calculation of the read counts to the
+tornado plots instead of just abstracting that as a parameter itself and jesus,
+that was a rabbit hole I didn't expect.  Most of it was easy — the dependence on
+cell population and synthesis time was trivial, and undercutting was simple to
+kludge in.
+
+The problem was the last parameter in the equation: the firing rate of origins.
+How do you even define this?  I came up with two options:
+
+* Half-life based exponential firing, e.g. "after 5 seconds, the origin will
+  have fired in half the cells".
+* Per-cell linear rates, e.g. "this origin has a 5% chance of firing every
+  second".
+
+Looking at the results, I'm now more confused than ever — I'm not even sure the
+second model is actually different from the first when applied to a population
+of origins that can only fire once.
+
+As I was implementing this, I initially started with proportion-based
+computations, e.g. for a given timestep, how many of the remaining origins
+fired?  But this immediately causes issues in the data if the timesteps are big:
+in reality no two origins *ever* fire simultaneously, so this method produces
+bands that wouldn't be there in reality when the timesteps are large.
+
+So the obvious solution is to just shrink the timesteps, and that does help at
+first, but it begins to break down in another way when the steps shrink small
+enough. It helps to think about what the ideal timestep size should be: small
+enough most individual firings are in separate timesteps instead of simultaneous
+ones.  But when the time is small enough for this to happen at the beginning
+(when firing is high), that means that later in the process you end up computing
+things like "0.01 cells should fire" in a given step.  But you have to choose
+some rounding method to turn that into an integer number of firings, and all of
+them will fuck you:
+
+* `round` and `floor` will always result in `0`, so your remaining population
+  will never ever fire.
+* `ceiling` will always fire at least one cell, which results in wildly-too-high
+  rates near the end.
+
+So eventually I realized this and did the ugly thing that should actually work:
+turned the proportion into a probability and checked `random() < p` for every
+remaining cell to actually simulate the individual firings instead of
+abstracting them across the population.  This is noticeably slower in
+pathological cases, but still not too bad most of the time, and is much more
+realistic.
+
+## 2023-11-02
+
+BS521 exam.  Got a little tripped up on the paired t test question until
+I realized that `(average (map #'- as bs))` is algebraically equivalent
+to `(- (average as) (average bs))`.
