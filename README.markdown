@@ -724,3 +724,7 @@ on my Sinc with StumpWM:
 
 Also realized that I've mapped the raise/lower to the opposite directions on the
 encoder in QMK, welp.  Should fix that at some point…
+
+Did a bit of dotfile cleanup.  Realized I can also sync `htoprc` which is nice.
+Also discovered `htop` has an option for highlighting new processes and
+recently-killed ones, which will be *really* handy.
