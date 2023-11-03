@@ -607,6 +607,8 @@ Finished and submitted HG545 homework.
 
 Made BS521 note sheet for the exam Thursday.
 
+# November 2023
+
 ## 2023-11-01
 
 HG545 discussion section.
