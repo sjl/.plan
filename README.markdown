@@ -672,3 +672,25 @@ realistic.
 BS521 exam.  Got a little tripped up on the paired t test question until
 I realized that `(average (map #'- as bs))` is algebraically equivalent
 to `(- (average as) (average bs))`.
+
+Met with advisor about classes to take next semester.  Need to register when
+that becomes available in a few days.  Basic plan is to take:
+
+* BIOSTAT-522: continues stats progression and completes that requirement.
+* BIOINF-529: required for all bioinformatics people, cannot ever be waived, may
+  as well get it out of the way now.
+* BIOINF-602: journal club part 1 (no presenting).
+* PIBS-800: continues.
+* PIBS-504: round 2 of the ethics classes.
+
+I can consider adding one more class to the mix if those feel too light
+(compared to HG545 they'll probably both be easier).  Might pick from one of:
+
+* BIOINF-545: classical bioinformatics, done in R.
+* EECS-551/553: machine learning, probably really hard to get into.
+* BIOINF-597: AI class, I lack the prereqs now but might be able to convince
+  them to let me in because I'm a CS person.  Or just wait until I take
+  BIOINF-580 in the fall and do this next winter.
+* CANCBIO-554: would be good for Prensner lab, possibly also for a training
+  grant.
+
