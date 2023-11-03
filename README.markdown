@@ -701,3 +701,26 @@ the recording some time this weekend.
 
 Finally got around to adding the bash version of Z to my remote dotfiles so
 I don't lose my mind trying to work on servers/VMs.
+
+Also finally got around to properly mapping the numpad keys and rotary encoder
+on my Sinc with StumpWM:
+
+    ("KP_End"       "gselect 1")
+    ("KP_Down"      "gselect 2")
+    ("KP_Page_Down" "gselect 3")
+    ("KP_Left"      "gselect 4")
+    ("KP_Begin"     "gselect 5")
+    ("KP_Right"     "gselect 6")
+    ("KP_Home"      "gselect 7")
+    ("KP_Up"        "gselect 8")
+    ("KP_Page_Up"   "gselect 9")
+
+    ("H-F1" "mute")
+    ("H-F2" "volume-down")
+    ("H-F3" "volume-up")
+    ("XF86AudioMute" "exec mute")
+    ("XF86AudioRaiseVolume" "volume-down") ; todo unfuck the backwards mapping in qmk
+    ("XF86AudioLowerVolume" "volume-up")
+
+Also realized that I've mapped the raise/lower to the opposite directions on the
+encoder in QMK, welp.  Should fix that at some point…
