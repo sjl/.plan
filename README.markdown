@@ -670,7 +670,7 @@ realistic.
 ## 2023-11-02
 
 BS521 exam.  Got a little tripped up on the paired t test question until
-I realized that `(average (map #'- as bs))` is algebraically equivalent
+I realized that `(average (mapcar #'- as bs))` is algebraically equivalent
 to `(- (average as) (average bs))`.
 
 Met with advisor about classes to take next semester.  Need to register when
@@ -694,3 +694,10 @@ I can consider adding one more class to the mix if those feel too light
 * CANCBIO-554: would be good for Prensner lab, possibly also for a training
   grant.
 
+## 2023-11-03
+
+HG545 review session.  Didn't manage to get in at 8 AM so I'll have to watch
+the recording some time this weekend.
+
+Finally got around to adding the bash version of Z to my remote dotfiles so
+I don't lose my mind trying to work on servers/VMs.
