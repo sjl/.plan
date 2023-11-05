@@ -730,3 +730,58 @@ encoder in QMK, welp.  Should fix that at some point…
 Did a bit of dotfile cleanup.  Realized I can also sync `htoprc` which is nice.
 Also discovered `htop` has an option for highlighting new processes and
 recently-killed ones, which will be *really* handy.
+
+## 2023-11-04
+
+Poking around at getting my Pine64 working again.  Dug out what I think is power
+suppy (5V 3A), and it seems to work, so that's good.  Booted it with the tiny
+screen and one of my old UHK's, but couldn't remember the password I had set
+(and apparently I never bothered saving it in my password manager, which is
+bizarre for me).  Oh well, probably a good idea to do a fresh install of Armbian
+on it anyway.  Attempted this and no matter what I try, the board just doesn't
+ever boot.  Tried multiple different SD cards, no luck.  Linux is such a goddamn
+mess some times.
+
+Eventually I realized that I was trying to use the Pine64 images from Armbian
+because the page is titled "Pine64 and LTS" and I have a Pine A64-LTS.  But
+apparently the A64-LTS needs to use the SOPINE images, even though I don't have
+a SOPINE.  Christ, what a mess. Got SSH set up, dotfiles synced easily.
+
+Starting to look at the GPIO stuff now.  Useful links:
+
+* <https://web.archive.org/web/20230501084346/https://synfare.com/599N105E/hwdocs/pine64/index.html>
+* <https://files.pine64.org/doc/Pine%20A64%20Schematic/Pine%20A64%20Pin%20Assignment%20160119.pdf>
+* <https://www.ics.com/blog/gpio-programming-using-sysfs-interface>
+
+HelLEDo, world:
+
+    echo 77 >/sys/class/gpio/export
+    cd /sys/class/gpio77
+    echo 1 > direction
+    echo 1 > value
+    echo 0 > value
+    echo 77 >/sys/class/gpio/unexport
+
+    (defparameter *f*
+      (open "/sys/class/gpio/gpio77/value" :direction :output :if-exists :supersede))
+    (write-char #\0 *f*)
+    #\0
+    (force-output *f*)
+
+Neat.  Dug around and tried to figure out how to use hardware PWM, but the
+documentation is… a mess, so I janked together PWM in software instead.  That…
+kind of worked.  I (much) later realized the site that gave me the duty cycle
+timings lied to me (it said 1ms-2ms when it's really much closer to 0.5ms-2.5ms
+according the manufacturer).  But even so, it's still really janky to try to
+software PWM from an SBC, so everyone seems to recommend breaking out an Arduino
+to make *that* control the servos, and then have the SBC drive that.  Poked
+around a bunch more and eventually got that working too.
+
+Next step is to get a web server running, which wasn't too hard with
+Hunchentoot.  Looked at various routing libraries and went with `easy-routes`
+for now.  Seems okay, though there are a few parts I don't love.  But it's good
+enough for now.  And with that I can `curl` and move the arm.  Neat.
+
+## 2023-11-05
+
+HG545 review session.
