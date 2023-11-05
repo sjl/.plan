@@ -785,3 +785,5 @@ enough for now.  And with that I can `curl` and move the arm.  Neat.
 ## 2023-11-05
 
 HG545 review session.
+
+Continued poking around at the Arduino stuff.
