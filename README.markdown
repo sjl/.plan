@@ -791,3 +791,9 @@ Continued poking around at the Arduino stuff.
 ## 2023-11-06
 
 HG545 test and literally nothing else.
+
+## 2023-11-07
+
+BS521.  Finished up Χ² testing.
+
+BI500.  Talked about visualization and Adobe Illustrator.
