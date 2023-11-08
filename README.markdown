@@ -797,3 +797,20 @@ HG545 test and literally nothing else.
 BS521.  Finished up Χ² testing.
 
 BI500.  Talked about visualization and Adobe Illustrator.
+
+Figured out how to jank together SSH tunneling between my server and my Pine SBC
+to expose a server running on the Pine to the internet.  Basically need to do
+two legs of SSH tunneling for this:
+
+    ssh -NTR '*:12345:localhost:8888' sl
+    ssh -NTL    '8888:localhost:80'   pine
+
+The first line makes anything connecting to port `12345` on the remote machine
+actually connect to what my intermediate machines sees as `localhost:8888`.
+Unfortunately that `localhost` hostname is indeed a hostname, and I can't use an
+SSH server name there to automagically jump around that way.  So anything
+hitting `12345` on the server will now hit `8888` on my intermediate machine.
+Then we use the second tunnel to forward *that* to whatever `pine` thinks
+`localhost:80` is.  Also note you need to enable `GatewayPorts` on the remote
+server and restart `sshd` for this to ever work at all.
+
