@@ -824,3 +824,16 @@ because registration doesn't open until Nov 13?
 ## 2023-11-08
 
 HG545 this morning, about recombination.
+
+BS521 homework.  Finally figured out how to get rid of the stupid
+`\begin{description}` hanging indent:
+
+    \usepackage{enumitem}
+    \setlist{leftmargin=!,labelwidth=2em}
+
+and how to tell LaTeX where to put page breaks:
+
+    \pagebreak[1] % Meh.
+    \pagebreak[2] % This would be a reasonable place to break.
+    \pagebreak[3] % Prefer to page break here unless it seems ridiculous not to.
+    \pagebreak[4] % Page break here, dammit.
