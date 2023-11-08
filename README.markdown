@@ -797,3 +797,10 @@ HG545 test and literally nothing else.
 BS521.  Finished up Χ² testing.
 
 BI500.  Talked about visualization and Adobe Illustrator.
+
+Backpacked classes for next semester.  Can't register yet, but I think that's
+because registration doesn't open until Nov 13?
+
+## 2023-11-08
+
+HG545 this morning, about recombination.
