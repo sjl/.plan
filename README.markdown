@@ -798,6 +798,8 @@ BS521.  Finished up Χ² testing.
 
 BI500.  Talked about visualization and Adobe Illustrator.
 
+PIBS800.  "House" meeting, talked about various stuff.
+
 Figured out how to jank together SSH tunneling between my server and my Pine SBC
 to expose a server running on the Pine to the internet.  Basically need to do
 two legs of SSH tunneling for this:
@@ -814,3 +816,4 @@ Then we use the second tunnel to forward *that* to whatever `pine` thinks
 `localhost:80` is.  Also note you need to enable `GatewayPorts` on the remote
 server and restart `sshd` for this to ever work at all.
 
+Read a bit for 503.  Need to do a bunch more.
