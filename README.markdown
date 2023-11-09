@@ -837,3 +837,16 @@ and how to tell LaTeX where to put page breaks:
     \pagebreak[2] % This would be a reasonable place to break.
     \pagebreak[3] % Prefer to page break here unless it seems ridiculous not to.
     \pagebreak[4] % Page break here, dammit.
+
+Played around with some of the recombination stuff.  I think I finally
+understand the junction resolution.  The key was that when you cut "vertically"
+at a Holliday junction you cut the *outside* strands, *not* the inside ones.
+Once I drew that out, it's obvious how you can unwind it.
+
+Reading for 503 discussion thing tomorrow.
+
+Reading for BS521 tomorrow, linear regression p-values.
+
+Started reading the HG545 paper but feeling a bit overwhelmed by it.  Will try
+again tomorrow (need to print it out tomorrow afternoon too, reading on a laptop
+sucks).
