@@ -850,3 +850,9 @@ Reading for BS521 tomorrow, linear regression p-values.
 Started reading the HG545 paper but feeling a bit overwhelmed by it.  Will try
 again tomorrow (need to print it out tomorrow afternoon too, reading on a laptop
 sucks).
+
+## 2023-11-09
+
+Looked into 3D printing and there's actually [a
+lab](https://www.lib.umich.edu/visit-and-study/creation-and-learning-spaces/shapiro-design-lab/workshop)
+here with that and a lot more.
