@@ -856,3 +856,22 @@ sucks).
 Looked into 3D printing and there's actually [a
 lab](https://www.lib.umich.edu/visit-and-study/creation-and-learning-spaces/shapiro-design-lab/workshop)
 here with that and a lot more.
+
+Looked into why my enter and backspace keys on my laptop seem to intermittently
+stop working.  Turns out it's a common issue with this model of T14s.  Ugh.  The
+laptop is ~4 years old so I guess I could potentially justify getting a new one,
+but I'd really rather not.  80% of the time I'm using this with an external
+keyboard anyway, so maybe I'll just jank together some shortcuts in case this
+happens during a presentation or something.  If a computer could ever Just Work
+for me I'd be so happy.
+
+BS521 about linear regression.  The clock is broken in the classroom now.
+
+Poked around a little at Parenscript.  Need to figure out a way to get it
+working standalone which is *not* clear at all from the documentation, but
+I managed to find <https://app.leby.org/post/fun-with-parenscript/> that gave me
+somewhere to start.
+
+Yet another ethics/rigor meeting.
+
+Wired up `super-m` and `super-del` to deal with the Thinkpad keyboard crap.
