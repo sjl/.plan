@@ -880,3 +880,37 @@ Wired up `super-m` and `super-del` to deal with the Thinkpad keyboard crap.
 
 HG545.  A little worried, this section feels super rushed and I still feel very
 lost looking at the paper.
+
+## 2023-11-11
+
+Finally managed to get through the HG545 paper.  Still don't grok it in
+fullness, but at least I'm not totally bewildered.
+
+## 2023-11-12
+
+HG545 homework.  This was *rough*.
+
+## 2023-11-13
+
+HG545 discussion.  At least it's good to know everyone had a rough time with
+this one.
+
+The dying Thinkpad keys are really getting on my nerves.  Might be time to get
+a new Thinkpad so I've got two laptops in case one dies.  Looked at Lenovo's
+site but they just released Gen 4 of the AMD T14's, and I think I'd rather get
+one generation back so that Debian supports it.  Looks like I'll need to buy
+refurbished if I want that, unfortunately, but it might end up saving me some
+money anyway.
+
+Yet Antoher PIBS 503 research/responsibility/ethics meeting, this time on
+conflicts of interest.
+
+Looked into the new laptop thing a bit more.  Tried to find some Gen 3 AMD T14's
+but there's not any available from Lenovo themselves, only eBay.  Eventually
+I realized the P14s is essentially a T14 with a few tiny changes, and Lenovo
+*did* have a Gen 3 one of those available on a clearance, so I just went ahead
+and grabbed it.  Not looking forward to porting everything over again, but it'll
+be a good exercise I guess.
+
+
+
