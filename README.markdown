@@ -871,3 +871,8 @@ somewhere to start.
 Yet another ethics/rigor meeting.
 
 Wired up `super-m` and `super-del` to deal with the Thinkpad keyboard crap.
+
+## 2023-11-10
+
+HG545.  A little worried, this section feels super rushed and I still feel very
+lost looking at the paper.
