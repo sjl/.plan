@@ -853,6 +853,10 @@ sucks).
 
 ## 2023-11-09
 
+Looked into 3D printing and there's actually [a
+lab](https://www.lib.umich.edu/visit-and-study/creation-and-learning-spaces/shapiro-design-lab/workshop)
+here with that and a lot more.
+
 Looked into why my enter and backspace keys on my laptop seem to intermittently
 stop working.  Turns out it's a common issue with this model of T14s.  Ugh.  The
 laptop is ~4 years old so I guess I could potentially justify getting a new one,
