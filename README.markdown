@@ -902,7 +902,7 @@ one generation back so that Debian supports it.  Looks like I'll need to buy
 refurbished if I want that, unfortunately, but it might end up saving me some
 money anyway.
 
-Yet Antoher PIBS 503 research/responsibility/ethics meeting, this time on
+Yet Another PIBS 503 research/responsibility/ethics meeting, this time on
 conflicts of interest.
 
 Looked into the new laptop thing a bit more.  Tried to find some Gen 3 AMD T14's
@@ -912,5 +912,19 @@ I realized the P14s is essentially a T14 with a few tiny changes, and Lenovo
 and grabbed it.  Not looking forward to porting everything over again, but it'll
 be a good exercise I guess.
 
+Reviewed materials for Yet *Another* R/R/E meeting tomorrow.
 
+## 2023-11-14
 
+The dead keys are getting *really* annoying.  Glad I ordered the P14s.  Maybe
+I'll turn this into a little home assistant server or something.  Could be fun.
+
+Got an email this morning that the R/R/E meeting is rescheduled for Friday.
+Welp.  Good to know they can just change them out from under you, I guess.
+
+BS521.
+
+Chatted with another PI about my third rotation.  Going to chat with some of
+their grad students later this week.
+
+PIBS800.
