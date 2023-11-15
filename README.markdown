@@ -912,5 +912,13 @@ I realized the P14s is essentially a T14 with a few tiny changes, and Lenovo
 and grabbed it.  Not looking forward to porting everything over again, but it'll
 be a good exercise I guess.
 
+## 2023-11-14
 
+Finished the 3D printing course on the library site so I can potentially use the
+3D printers there now.  Still need to learn how to make stuff in e.g. TinkerCAD
+first I think.
 
+Read the review papers for HG545 tomorrow to prime my brain.  I'm still
+expecting it to be a lot to take in.
+
+Started the TinkerCAD tutorials.  Seems simple enough so far.
