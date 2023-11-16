@@ -350,3 +350,11 @@ Registered for classes.  Mostly went smoothly except for two:
 
 Went to a talk by a professor I chatted with during Matchathon about Denisovans
 and population genetics.
+
+## 2023-11-16
+
+Unfortunately had to miss the BS521 class today to sign for my laptop so it
+wouldn't get returned.  I hope they recorded it.  I guess I know what I'm
+spending the weekend on: setting up another goddamn computer.  Ugh.
+
+Finish BS521 lab 3.
