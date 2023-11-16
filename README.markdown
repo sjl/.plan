@@ -348,3 +348,5 @@ Registered for classes.  Mostly went smoothly except for two:
   and *Friday*?  Strange set of days.  So much for my free Fridays.  Oh well, at
   least Thursdays will be less wild I guess.
 
+Went to a talk by a professor I chatted with during Matchathon about Denisovans
+and population genetics.
