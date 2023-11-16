@@ -358,3 +358,14 @@ wouldn't get returned.  I hope they recorded it.  I guess I know what I'm
 spending the weekend on: setting up another goddamn computer.  Ugh.
 
 Finish BS521 lab 3.
+
+Downloading a Debian installation image while I have fast internet so I can
+install that this weekend.  Cleaned up my downloads folder with the janky-ass
+file manager I installed to avoid having to install all of Gnome, but it… kind
+of sucks.  I wonder if it's worth poking around at making my own with McCLIM.
+Probably not, given how flaky McCLIM seems and how painful working with files in
+in CL.
+
+ieure helped me track down the replacement part I'd want to get for my broken
+Thinkpad keyboard: `5M10Z41656`.  Not sure whether I want to spend $200 on
+fixing the keyboard, but at least it's an option if I decide I want to.
