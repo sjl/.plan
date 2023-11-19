@@ -369,3 +369,12 @@ in CL.
 ieure helped me track down the replacement part I'd want to get for my broken
 Thinkpad keyboard: `5M10Z41656`.  Not sure whether I want to spend $200 on
 fixing the keyboard, but at least it's an option if I decide I want to.
+
+## 2023-11-19
+
+Catching up on stuff from the rough last couple of days.
+
+Finished BIOINF500 Illustrator homework.  I do not like this program.
+
+Watched BS521 lecture I missed on Thursday.  Really love that classes are
+recorded.
