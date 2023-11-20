@@ -78,7 +78,8 @@ Install first round of stuff:
         bzip2 udisks2 lm-sensors htop
         fonts-ubuntu w3m atool psmisc
         suckless-tools trash-cli
-        dunst
+        dunst neovim python3-dulwich
+        silversearcher-ag
 
 Make wired connection manageable by network manager (might not need this?)
 * Remove from `/etc/network/interfaces`
@@ -174,7 +175,7 @@ Set up Firefox:
     mv firefox /opt/
     cd /opt/
     chown -R root:root firefox
-    ln -s /usr/local/bin/firefox /opt/firefox/firefox
+    ln -s /opt/firefox/firefox /usr/local/bin/firefox 
     sudo apt install libgtk-3-0 libdbus-glib-1-2
     finish the rest of this garbage https://wiki.debian.org/Firefox#Hardware_Video_Acceleration
 

@@ -370,6 +370,13 @@ ieure helped me track down the replacement part I'd want to get for my broken
 Thinkpad keyboard: `5M10Z41656`.  Not sure whether I want to spend $200 on
 fixing the keyboard, but at least it's an option if I decide I want to.
 
+## 2023-11-17
+
+HG545.  Overslept and missed the first 5 minutes – need to rewatch to see what
+I missed.
+
+Met with some folks about a prospective rotation lab.
+
 ## 2023-11-19
 
 Catching up on stuff from the rough last couple of days.
