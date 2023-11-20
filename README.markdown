@@ -378,3 +378,11 @@ Finished BIOINF500 Illustrator homework.  I do not like this program.
 
 Watched BS521 lecture I missed on Thursday.  Really love that classes are
 recorded.
+
+Continued getting new laptop set up.  Mostly followed my notes from August, but
+of course there's some fresh new hell to wade through.  Main problem was wifi,
+needed to:
+
+    systemctl stop wpa_supplicant
+    systemctl disable wpa_supplicant
+    systemctl mask wpa_supplicant

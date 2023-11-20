@@ -169,7 +169,7 @@ Pulseaudio crap:
 
 Set up Firefox:
 
-    wget 'https://download.mozilla.org/?product=firefox&os=linux64&lang=en-US'
+    wget 'https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=en-US'
     aunpack fi…
     mv firefox /opt/
     cd /opt/
