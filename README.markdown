@@ -393,3 +393,8 @@ needed to:
     systemctl stop wpa_supplicant
     systemctl disable wpa_supplicant
     systemctl mask wpa_supplicant
+
+## 2023-11-20
+
+HG545 class this morning.  Finally got the description of the opaque notation in
+the paper, so I feel like I can finally start reading it.  Maybe.
