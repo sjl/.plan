@@ -412,6 +412,14 @@ Continued setting up the new Thinkpad.  Got my GPG key moved over, pass working.
 Got Rstudio, JabRef, qemu, OpenTrons, and a bunch of other stuff working too,
 I think.
 
+Trying to install LaTeX and I didn't write down what the packages were when
+I did this a month or two ago, dammit:
+
+    apt install texlive-latex-base \
+                texlive-latex-recommended \
+                texlive-latex-extra \
+                texlive-fonts-extra
+
 Realized I fucked up when I built SBCL the other day, it's
 `--with-sb-core-compression`, not `--with-core-compression` (note the `-sb`).
 
