@@ -414,3 +414,6 @@ I think.
 
 Realized I fucked up when I built SBCL the other day, it's
 `--with-sb-core-compression`, not `--with-core-compression` (note the `-sb`).
+
+Still need to get my new weechat/irssi setup installed on this machine, but
+otherwise I think I might mostly be ready to switch over.
