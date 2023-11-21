@@ -398,3 +398,12 @@ needed to:
 
 HG545 class this morning.  Finally got the description of the opaque notation in
 the paper, so I feel like I can finally start reading it.  Maybe.
+
+Got confirmation from the next rotation lab that I'll be joining, so that's one
+fewer thing to worry about.
+
+Made another attempt at reading through the HG545 paper again when I got home.
+Made it all the way this time, but it was still a slog – the constant barrage of
+unintuitive notation made it quite painful, though not as bad as the last one.
+
+Did BS521 homework.
