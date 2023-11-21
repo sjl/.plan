@@ -407,3 +407,7 @@ Made it all the way this time, but it was still a slog – the constant barrage 
 unintuitive notation made it quite painful, though not as bad as the last one.
 
 Did BS521 homework.
+
+Continued setting up the new Thinkpad.  Got my GPG key moved over, pass working.
+Got Rstudio, JabRef, qemu, OpenTrons, and a bunch of other stuff working too,
+I think.
