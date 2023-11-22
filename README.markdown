@@ -425,3 +425,5 @@ Realized I fucked up when I built SBCL the other day, it's
 
 Still need to get my new weechat/irssi setup installed on this machine, but
 otherwise I think I might mostly be ready to switch over.
+
+## 2023-11-22
