@@ -427,3 +427,8 @@ Still need to get my new weechat/irssi setup installed on this machine, but
 otherwise I think I might mostly be ready to switch over.
 
 ## 2023-11-22
+
+Using my new laptop in the lab today.  Realized I needed to get the wifi
+running.  From my notes I figured out I needed to use WPA2+PEAP+user/pass, and
+this time I used `nmtui` to add the connection.  The trick was selecting
+enterprise WPA2 and also changing TLS auth to PEAP.
