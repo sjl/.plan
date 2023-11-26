@@ -432,3 +432,16 @@ Using my new laptop in the lab today.  Realized I needed to get the wifi
 running.  From my notes I figured out I needed to use WPA2+PEAP+user/pass, and
 this time I used `nmtui` to add the connection.  The trick was selecting
 enterprise WPA2 and also changing TLS auth to PEAP.
+
+## 2023-11-26
+
+Figured out how to disable the stupid PC speaker on this laptop.  From the Arch
+wiki:
+
+    sudo rmmod pcspkr
+    sudo rmmod snd_pcsp
+
+And to fix on boot, create `/etc/modprobe.d/nobeep.conf`:
+
+    blacklist pcspkr
+    blacklist snd_pcsp
