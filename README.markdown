@@ -445,3 +445,12 @@ And to fix on boot, create `/etc/modprobe.d/nobeep.conf`:
 
     blacklist pcspkr
     blacklist snd_pcsp
+
+Met with HG545 group about the homework.  We disagreed more on this one than any
+other, which is probably not a good sign…
+
+## 2023-11-27
+
+Getting back into the swing of things after a short Thanksgiving break.
+
+HG545 discussion.  This homework was… not great.
