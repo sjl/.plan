@@ -433,6 +433,10 @@ running.  From my notes I figured out I needed to use WPA2+PEAP+user/pass, and
 this time I used `nmtui` to add the connection.  The trick was selecting
 enterprise WPA2 and also changing TLS auth to PEAP.
 
+## 2023-11-23
+
+Watched BS521 class I missed.
+
 ## 2023-11-26
 
 Figured out how to disable the stupid PC speaker on this laptop.  From the Arch
