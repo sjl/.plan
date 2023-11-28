@@ -458,3 +458,16 @@ other, which is probably not a good sign…
 Getting back into the swing of things after a short Thanksgiving break.
 
 HG545 discussion.  This homework was… not great.
+
+Watched the BI500 youtube video I missed.  Still need to watch the Zoom and do
+the homework.
+
+Read textbook sections for BS521 tomorrow.
+
+## 2023-11-28
+
+BS521.  Multiple linear regression again.
+
+BI500.  Grant writing, internship, writing tips.
+
+PIBS800.
