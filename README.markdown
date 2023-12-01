@@ -471,3 +471,23 @@ BS521.  Multiple linear regression again.
 BI500.  Grant writing, internship, writing tips.
 
 PIBS800.
+
+## 2023-11-29
+
+HG545.  Final module, thankfully.  Printed the paper at Palmer before my meeting
+with Alan.
+
+Starting doing the BI500 homework I missed.  Need to finish this up tonight or
+tomorrow.
+
+## 2023-11-30
+
+BS521.  More multiple linear regression (not much beyond the textbook reading).
+
+Installed the VPN on my new laptop.  Been meaning to do that for a while.
+
+Finally did that BI500 homework.
+
+## 2023-12-01
+
+HG545 this morning.
