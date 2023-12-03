@@ -491,3 +491,27 @@ Finally did that BI500 homework.
 ## 2023-12-01
 
 HG545 this morning.
+
+Started AoC again, we'll see how far I get.  Did both 2022 and 2023 day 1,
+because I skipped it last year.
+
+Apparently "store a PBKDF2ed password" is too fucking hard for a website to do
+in The Year of Our Lord 2023 and AoC only supports garbage OAuth logins. I can
+no longer log in via Twitter without my old Yubikey, so I guess I'm going to
+switch to Github login for it until that eventually breaks.  But this means that
+my scores are reset.  That's fine, I still have the code, but the puzzle inputs
+all changed.  I reran all my stuff for 2016, need to do the other years as
+I find some time.
+
+## 2023-12-03
+
+Homework, reading.  Almost done, just need to sprint to the finish line in just
+over a week.
+
+## 2023-12-03
+
+Wrapped up all the rest of the homework for BS521.  Just need to make the final
+exam note sheet.
+
+Discovered the equivalent of Vim's `c-o` in evince: `alt-p`.  Why did I wait til
+now to look this up?
