@@ -515,3 +515,27 @@ exam note sheet.
 
 Discovered the equivalent of Vim's `c-o` in evince: `alt-p`.  Why did I wait til
 now to look this up?
+
+## 2023-12-04
+
+Final HG545 lecture today.  I've learned a lot, but I'm thankful it's done.
+
+Reread the HG545 paper yet again.  I just now feel like I'm starting to
+understand it.
+
+Started course evaluations.  Will finish later.
+
+## 2023-12-05
+
+BS521.
+
+BI500.
+
+Final research/ethics session.
+
+HG545 study group and homework.  Very happy this is the last time I'll have to
+do this.
+
+## 2023-12-06
+
+HG545.
