@@ -538,4 +538,8 @@ do this.
 
 ## 2023-12-06
 
-HG545.
+HG545 for the last time (aside from review on Friday).
+
+## 2023-12-08
+
+Final HG545 review session.  A/V and Zoom issues made this an absolute mess.
