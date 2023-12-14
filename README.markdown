@@ -543,3 +543,16 @@ HG545 for the last time (aside from review on Friday).
 ## 2023-12-08
 
 Final HG545 review session.  A/V and Zoom issues made this an absolute mess.
+
+## 2023-12-11
+
+Presented at the lab meeting about the rotation project.
+
+BS521 final.  Unfortunately forgot to include the `β₃x₁x₂` stuff on my notes
+sheet, so I think I probably didn't do as well on this one as previous ones, but
+I'm not worried about the grade.
+
+HG545 final.  I'm just glad it's finally done.  Going to take a few days to
+focus on wrapping up rotation stuff and taking a much needed break.
+
+
