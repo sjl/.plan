@@ -14,4 +14,5 @@ couple of days).  Feels good to be back.
 
 ## 2024-01-09
 
-Another day of rotation before classes start.  Getting my laptop set up again.
+Another day of rotation before classes start.  Getting my laptop set up to do
+actual work again.
