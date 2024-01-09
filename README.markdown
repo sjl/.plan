@@ -16,3 +16,11 @@ couple of days).  Feels good to be back.
 
 Another day of rotation before classes start.  Getting my laptop set up to do
 actual work again.
+
+Looked around a little bit in Canvas.  One of my classes doesn't seem to have
+posted anything yet, but I'm definitely registered so I think I should be good.
+
+Did a couple of tasks to get ready for classes tomorrow (though they don't
+*really* start til Thursday).
+
+Need to remember to bring headphones into the lab tomorrow.
