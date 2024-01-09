@@ -23,4 +23,7 @@ posted anything yet, but I'm definitely registered so I think I should be good.
 Did a couple of tasks to get ready for classes tomorrow (though they don't
 *really* start til Thursday).
 
-Need to remember to bring headphones into the lab tomorrow.
+Need to remember to bring things into the lab tomorrow:
+
+* Something to put my laptop on to raise it.
+* Headphones.
