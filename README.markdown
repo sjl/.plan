@@ -27,3 +27,35 @@ Need to remember to bring things into the lab tomorrow:
 
 * Something to put my laptop on to raise it.
 * Headphones.
+
+## 2024-01-10
+
+Cleaned up my schedule and sketched out my TODO list, found all the rooms for my
+classes.  Got one new building to find/learn: USB, the "Undergraduate Science
+Building".  I think I've seen it before, never been inside though.
+
+First day of journal club.  Main things I'll need to do are:
+
+* Ask two questions during the semester.
+* Two review sessions for particular papers.
+* Read over the rest of the papers.
+
+## 2024-01-11
+
+First two actual classes.
+
+BS521.  Fairly straightforward.  8:30 AM sucks.  Tried to change lab sections to
+something that works better with my schedule, but the class registration system
+is awful and won't let me swap things out for some reason, despite there being
+open seats.
+
+BI529.  Need to watch videos (and do the embedded quizzes) before classes.
+Really awful high-pitched coil whine from the projector in the spot I sat in the
+room — need to move around and find a spot that isn't going to destroy my ears.
+Got both Great Lakes and my VM set up with Jupyter (I think) so we'll see how
+this goes during the next class.
+
+Poked around at running `make docs` in a Lisp project with my new laptop and
+something in `d`'s Python dependency shitpile broke since I last built it, so
+I had to screw around with the guts of `d` to get it rendering again.  I really
+need to rewrite `d` in a sane language.
