@@ -50,12 +50,22 @@ is awful and won't let me swap things out for some reason, despite there being
 open seats.
 
 BI529.  Need to watch videos (and do the embedded quizzes) before classes.
-Really awful high-pitched coil whine from the projector in the spot I sat in the
-room — need to move around and find a spot that isn't going to destroy my ears.
-Got both Great Lakes and my VM set up with Jupyter (I think) so we'll see how
-this goes during the next class.
+Really awful high-pitched whine from something in the ceiling in the spot I sat
+in the room — need to move around and find a spot that isn't going to destroy my
+ears. Got both Great Lakes and my VM set up with Jupyter (I think) and
+accessibly by SSH port forwarding (e.g. `ssh -NAL 8888:localhost:8888
+slosh@gl1234 -J gl`) so we'll see how this goes during the next class I guess.
 
 Poked around at running `make docs` in a Lisp project with my new laptop and
 something in `d`'s Python dependency shitpile broke since I last built it, so
 I had to screw around with the guts of `d` to get it rendering again.  I really
 need to rewrite `d` in a sane language.
+
+Attempted to set up printing in the lab, but of course it doesn't work on Linux.
+
+Downloaded the first 3 papers for journal club.  Need to print them and start
+reading soon, at least for next week's.
+
+After going back and forth with someone about the BS522 lab section stuff, they
+realized they needed to grant me permission for that section.  Once they did
+that I was able to swap it, so that's all set now.
