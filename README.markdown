@@ -69,3 +69,16 @@ reading soon, at least for next week's.
 After going back and forth with someone about the BS522 lab section stuff, they
 realized they needed to grant me permission for that section.  Once they did
 that I was able to swap it, so that's all set now.
+
+Read through chapter 1 of the BS522 textbook.  It's… meh.
+
+## 2024-01-12
+
+Reinstalled Figlet and the `figlet-fonts` repo yet again on this new computer.
+Finally got around to writing a script to do the stupid install so I don't have
+to manually do it every time.
+
+Reinstalled ABCL on the new machine.  Changed my scripts so they invoke `java
+-jar /usr/local/bin/abcl.jar` directly instead of requiring
+a `/usr/local/bin/abcl` wrapper for no reason, so now all I have to do is
+download the binary distribution and move the two jars to `/usr/local/bin/`.
