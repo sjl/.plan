@@ -612,7 +612,7 @@ there's no installation link/guide on the ECL page.  Really.  Here's what I did:
     cd ecl
     git checkout ECL-16.1.3
     ./configure --prefix=/usr/local
-    make
+    make -j5
     sudo make install
 
 Seems to work.  Adopt tests all pass just fine on SBCL, CCL, ECL, and ABCL.
