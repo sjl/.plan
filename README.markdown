@@ -130,4 +130,81 @@ Oauth is broken, sigh.
 Finally got around to setting up keyboard shortcuts for a couple of my most
 commonly used `pass -c` commands.  I should have done this months ago.
 
+Need to make a last-minute slide for myself for PIBS 800 when I get home.
+
+## 2024-01-16
+
+BS522 early.  Mostly review of stuff from BS521 today.
+
+BI529.  Most of the time spent getting Jupyter working and the data all
+downloaded.  Need to find a better workflow here.
+
+BI545:
+
+* Slurm account: `bioinf545w24_class`
+* Scratch: `/scratch/bioinf545_w24_class_root/bioinf545w24_class/`
+* Turbo: `/nfs/turbo/dcmb-class/bioinf545`
+  * `gsi/`: GSI's stuff
+  * `sec001`: directories for each student
+  * `shared`: read-only, shared data and stuff.
+
+Now basic UNIX/bash scripting stuff.
+
+Slurm `.sbat` script tidbit: use `my_job_header` for debugging info.
+
+Method for raw-dogging batch mode execution instead of writing an sbat: `sbatch
+-c4 --mem=32G foo.sh`. Not sure I'll use that much, but good to know it's an
+option.
+
+Ate lunch during my short break today.  Tuesdays are going to suck.
+
+Looked around again for how to integrate Jupyter and Neovim and found nothing
+good.  Maybe I'll just suffer through using Jupyter for a class and not try to
+shave this yak.
+
+BS522 lab.  Pretty simple, but gave lots of advice for the homework which will
+come in handy when I get to that.  Sketched out a LaTeX file for it, but
+I really really need to get around to modularizing my LaTeX situation at some
+point — the copy/paste is getting untenable.
+
+## 2024-01-17
+
+Finished BS529 exercise.  Looked at the solutions to figure out some of the
+fiddly bits, like the 1-based indexing from the GFF (I was right) and the GFF
+entry type (`CDS`, I was also right).  The problem was I was dumb and forgot to
+reverse in the reverse complement.  Welp.
+
+Went through the videos for BI529 tomorrow.
+
+BI602.  Didn't get a chance to ask questions — this is going to be a very
+annoying part of the class.
+
+## 2024-01-18
+
+BS522.  Started talking about simple linear regression.  Mostly still review at
+this point.
+
+BI529.  Talking about transcription factor binding sites, and fuzzy-matching
+motifs using Positional Weight Matrices (PWMs).
+
+Went to a lecture by my grandPI about the human skin microbiome, especially
+mapping the distributions of various populations across the topology of the
+human skin.
+
+Wrapped up BI529 after getting the clarification email.  Today was more
+straightforward than the last class, probably in part by not having to mess
+around with Jupyter setup.
+
+Did a first pass at a read of the journal club paper for next week.  It's an
+older ML paper whose results are… meh?
+
+## 2024-01-19
+
+BI545. The next few classes will be mostly RNA-seq data, especially focused on
+QC.  Need to watch 2 videos in the slides before next time.  Mostly a review for
+me at the beginning.  Need to look into:
+
+* Ribodepletion as an RNA selection step.
+  * This just means using probes with magnetic beads to select and pull out ribosomal RNA so it doesn't get sequenced.
+* Strand-specific library prep for RNA seq.
 
