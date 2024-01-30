@@ -208,3 +208,126 @@ me at the beginning.  Need to look into:
   * This just means using probes with magnetic beads to select and pull out ribosomal RNA so it doesn't get sequenced.
 * Strand-specific library prep for RNA seq.
 
+## 2024-01-22
+
+Tried to watch the BI529 videos but they kept cutting out.  Will retry later.
+
+Started the Biostat 522 homework.  So far it's… meh.  Still trying to find
+a Latex font setup I like.  Going to try XCharter this time, it seems… slightly
+better than Stix?  Really with I could use Rotation, but foundries gonna founder
+I guess.
+
+BI529 videos are still cutting out.  Ugh.
+
+Watched the BI545 videos.  Those were on Youtube, so that worked reliably.
+
+## 2024-01-23
+
+The roads and sidewalks are one giant sheet of ice today.  This sucks.
+
+BS522.  More linear regression stuff.  He really rushed through the last few
+topics far too fast in the last couple of minutes of class — I think I need to
+review those slides myself to make sure I got what he was trying to cover.
+
+BI529.  Gibbs sampling.  Thursday will also be this topic, so if we finish today
+we can skip that day if we want.
+
+BI545.  QC and such for RNAseq.  Lots of various things to consider, but felt
+like a bit of a grab bag of topics.
+
+Read through the journal club paper again for tomorrow.  Some ideas on
+questions:
+
+* How does the performance of their tool compare to a human doctor?
+* How robust is their data?  E.g. what if someone has a heart attack outside of
+  the hospital, could that be counted as a control?
+
+PIBS800.
+
+BS522 lab.
+
+## 2024-01-24
+
+Finally learned about `View > Panes > Console on Right` in R.  Should have found
+this months ago.
+
+Reread the paper for BI602.  Being forced to ask synthetic questions sucks
+a lot, but oh well.
+
+BI602.
+
+## 2024-01-25
+
+BS522.  Many slides with walls of text and notation.
+
+BI529.  Mostly done already, so just relaxing for a change.
+
+Started reading the paper for BI602 review session tomorrow.
+
+Poked around a little at implementing some of the 521 stuff in Common Lisp.  It
+was trivial to port the first class, but I've now hit two stumbling blocks.
+
+Naive parsing of bioinformatics files like FASTAs is slow when you have a stream
+sandwich of a flexi stream wrapping a gzip stream wrapping a Lisp stream.  Can
+likely live with this for now, and writing a real parser for some of the common
+formats (which would probably work directly with the binary and avoid the slow
+flexi stream layer) has been on my list for a while, so this isn't an
+insurmountable obstacle.
+
+The other snag I hit is the lack of Numpy.  There are a bunch of linear algebra
+libraries in CL and they're all lacking.  Oddly enough the one that seems to
+have the most promise for me is April, even though it would have the steepest
+learning curve at the beginning.  I've poked around with it a bit before but
+maybe this is a good time to actually give it a real try.  Need to go through
+some/all of:
+
+* <https://xpqz.github.io/learnapl/intro.html>
+* <http://archive.vector.org.uk/art10011550>
+* <https://microapl.com/APL/tutorial_contents.html>
+
+At least I shaved the input yak the last time I looked at it, so I can dive
+right in (as if I don't have enough other shit to do, but at least this is
+computery so it's actually fun to learn).
+
+## 2024-01-26
+
+BI545.  More RNA seq lectures, talking mostly about how to normalize and account
+for non-biological variability when doing differential gene expression.
+
+BI602 review session.  Was pretty fun and chill and cool.  By far the best part
+of the class so far.
+
+Continued one of the APL tutorials.  Pretty basic stuff, pretty much just
+getting my fingers used to the keyboard shortcuts to type basic stuff.
+
+## 2024-01-27
+
+Found a series of videos about using APL to build neural networks, which might
+be a fun thing to go through:
+<https://www.youtube.com/playlist?list=PLgTqamKi1MS3p-O0QAgjv5vt4NY5OgpiM>
+
+Watched the BS521 videos for Tuesday.  Starting assembly with De Bruijn graphs
+which is going to be fun.  Need to find those papers I read a while back that
+had a good summary of the process.
+
+## 2024-01-28
+
+BI545 homework.  Long.  The first two sections (biology/computer stuff) were
+easy, the last (experimental design) was rough.
+
+Started the BS522 homework.  Going to finish it tomorrow I think.
+
+Went through some more of those APL videos.  I'm actually liking it (and April)
+quite a lot.  I feel like I might be actually motivated to learn this time
+because I can see things I would use it for now, as opposed to years ago when it
+was just a fun novelty.
+
+## 2024-01-29
+
+Finished BS522 homework.  That was *tedious*.  The inconsistent notation in this
+class is… not fun.
+
+## 2024-01-30
+
+BS522.  Started multiple linear regression, mostly review for now.
+
