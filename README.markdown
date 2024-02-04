@@ -331,3 +331,87 @@ class is… not fun.
 
 BS522.  Started multiple linear regression, mostly review for now.
 
+BI529.  Today's assignment was pretty trivial after reviewing De Bruijn graphs
+last night, presumably it'll get more difficult when we actually use it on
+Thursday.  We also figured out what the high-pitched whine in the room was
+coming from (one particular bank of lights), thank god.
+
+Spent some of the spare time to create a bug report for April and the April guy
+responded pretty quickly that I had indeed ran into multiple compiler bugs.  If
+I could ever just use a computer and have it reliably work I would be so happy.
+
+BI545 on Zoom, mostly talking about how to measure the false discovery rate in
+a variety of different ways.
+
+PIBS800, about posters.
+
+Watched the BI529 video.  It suggested we read the Velvet paper, which is funny
+because I already printed it out the other day intending to reread it.
+
+Did one or two more of the APL videos, now that I've confirmed I'm not crazy and
+it was a bug in APL.  Got the forward pass working, though I need to learn to be
+even more precise than usual in APL I guess.  When all your variables are like
+`ws, bs, w, b` then `1↓ ws` and `1↓ w` is an easy mistake to make, and I guess
+because everything is an array and every operator works on any shape of array
+that could even be conceivable for convenience you won't get any type errors to
+help you realize you did something stupid.
+
+## 2024-01-31
+
+Read the Velvet paper for BI529 tomorrow.  Seems like what I remember, though
+I think I actually understand it better now.  There are still a few bits I'm not
+100% clear on, but I think I get the general idea.
+
+BI602.  This is the paper I reviewed the presentation for, and I asked something
+last week, so I think this week I really have nothing to do.
+
+## 2024-02-01
+
+Tried to commit my dotfiles this morning and had to commit to a subrepo
+I modified yesterday.  Wanted to push that to the git mirror but the hg-git
+mapping was fucked again, so I needed to run that janky `remap-hggit-mapfile`
+thing I wrote ages ago.  But I needed to port *that* to Python 3 to get it to
+run on this laptop.  Did that and finally unwound the stack of yaks.  Ugh.
+Final process to run the remapping is something like:
+
+    cd src/foo
+    cd .hg
+    git clone https://github.com/sjl/foo gitrepo
+    cd ..
+    remap-hggit-mapfile . .hg/gitrepo
+    remap-hggit-mapfile . .hg/gitrepo > .hg/git-mapfile
+
+BS522.
+
+BI529.  Going to release the first homework assignment today.  The assignment
+was tricky today — I think there's a bug in the doctest and/or their
+implementation of the Eulerian walk.
+
+Continued watching a couple of APL videos.
+
+## 2024-02-02
+
+Started reading the journal club paper for next week, about prediction of CRISPR
+off-target effects.  It's not very well-written, unfortunately — I'm not even
+a page in and there are multiple typos.
+
+BI545.  Lecture plus interactive lab on Great Lakes.  The lab was okay, but
+quite rushed because the lecture took a long time.  I'm pretty decent at CLI
+stuff so it went smoothly for me, but I still didn't have enough time to finish
+in class.
+
+## 2024-02-03
+
+Watched some BI529 videos for next week.  Still need to finish up the homework.
+Next week is BWT, which always breaks my brain, so I think I should probably
+have a poke around tomorrow just to get my head around it again.  I wonder how
+it would be to implement in APL.
+
+## 2024-02-04
+
+Finished the BS529 homework.  Wrote a bunch of stuff about the confusing parts
+in the summary document only to realize there's a one page limit.  Oh well, it
+was cathartic for me at least.
+
+Started the BS522 homework, but I just don't have the willpower to deal with the
+tedium of this today.  I'll get it done tomorrow.
