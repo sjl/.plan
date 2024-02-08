@@ -415,3 +415,55 @@ was cathartic for me at least.
 
 Started the BS522 homework, but I just don't have the willpower to deal with the
 tedium of this today.  I'll get it done tomorrow.
+
+Looked at some BWT transform videos.  I think I understand it a little better
+now, though not sure if I'll retain it.  I need to write it down at some point
+if I really want to remember it (is it worth it?).
+
+## 2024-02-05
+
+Read part of the chapter on BWT in the Bioinformatics Algorithms textbook.
+It's… really not great.  They have a really weird way of presenting algorithms
+that's long and rambly and does a lot of unnecessary work to actually explain
+things.  Sometimes they go on for a page about something trivial, and other time
+gloss over major points.
+
+I think I need to find a better source to review for tomorrow.  Found
+<https://james.fabpedigree.com/bwt.htm> which is actually pretty nice because it
+shows how to *efficiently* do this, albeit with godawful terse C code.  After
+going through it and deciphering the stupid C programmer shortcuts… I think
+I finally get it.  At least the efficient compression and decompression side of
+things.  Took me a long time, but it feels good.
+
+BWT fried my brain, so I'm procrastinating the tedious BS522 homework til
+tomorrow.  Sorry, future self.
+
+## 2024-02-06
+
+Slept late, missed BS522.  Need to watch the VOD tomorrow.
+
+BI529 about BWT.  Easy given that I figured it out yesterday, though there were
+some new data structures that we'll need for string matching (which I still
+haven't figured out — only the decompression).
+
+Had a stroke of luck with respect to the BS522 homework — they pushed the due
+date back to Sunday (four more days) so I've got a few more days to deal with
+it.  That's a relief.
+
+BI545, about novel transcript identifications.
+
+## 2024-02-07
+
+Spent a ton of time trying to decipher what the BI529 homework was trying to ask
+for.  Not fun.
+
+BI602.  Paper was about using machine learning to predict CRISPR off target
+scores for various sgRNA configurations.
+
+## 2024-02-08
+
+BS522.  Feels like we're moving incredibly slowly now, but the homeworks are
+still painful.  Very strange.
+
+BI529, BWT matching.  Going to try to make sure I understand what's actually
+happening here.
