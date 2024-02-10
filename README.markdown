@@ -467,3 +467,20 @@ still painful.  Very strange.
 
 BI529, BWT matching.  Going to try to make sure I understand what's actually
 happening here.
+
+BI545, hodgepodge of various topics (RNASeq contamination, GEO databases?).
+Trying to install the R packages they told us to install at the beginning of
+class using the cluster was an absolute mess, because 50 people all hitting the
+login nodes and doing a ton of file IO slows everything to a crawl.  I ended up
+doing things locally, which was much faster.
+
+Started reading the paper for journal club next week, about prediction
+transcriptional response to genetic perturbation.
+
+## 2024-02-10
+
+Watched BI529 videos.
+
+Finally did the absolutely mind-numbing homework 3 for BS522.  Truly, truly
+miserable.  Result was eleven pages, much of which was manual plug n' chug
+algebra to verify that R can, in fact, do math correctly.  Very unpleasant.
