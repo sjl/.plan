@@ -151,3 +151,92 @@ is.  Oh well.  Checked my work with some folks after class and feel a bit better
 now.
 
 PIBS800, training grant fair.
+
+BS522 lab.
+
+## 2024-02-14
+
+Reading the paper for BI545 on Friday.  They're trying to figure out the cause
+of undiagnosed rare muscular diseases using RNA seq to look for alternative
+splicing events.  Noticed that figure S6 is confusing because they say in the
+paper the median number of potentially pathogenic splice events per sample for
+the "all genes" category is 190, but the S6 figure caption says 105, and the
+figure itself looks like the median in the box plot is more like 250.  So… which
+is it?  Finished the paper up to the methods section, will take a look at that
+tomorrow I think.
+
+## 2024-02-15
+
+BI529 in the morning.  Managed to finish it in class at the end with some hints
+from Alan.  Wasn't too bad once I understood what they actually wanted.
+
+## 2024-02-16
+
+BI545.  This is the class where we had to read the paper about using RNA seq to
+find novel splice isoforms in patients with undiagnosed muscular diseases.  Also
+getting some information about the group project.
+
+Figured out how to get R working with Vim.  I should have done this months ago,
+now that I've got it set up it's no longer nearly as painful to work in R.  The
+trick was realizing that base R running in a terminal, *on its own*, can open up
+a plot window itself.  So I don't have to do any horrible workarounds to get
+plots visible, they just appear in a window that I can put wherever I want.
+Maybe BS522 homework won't feel so painful now.
+
+## 2024-02-17
+
+Did the BS522 homework.  This one wasn't as mind-numbing as the last one,
+thankfully.  Only a tiny bit of R involved, but I can already tell I'm loving
+the Vim setup with it.  I can edit my code and LaTeX in the same editor, imagine
+that.
+
+## 2024-02-18
+
+Read some of the paper(s) for journal club this week.
+
+## 2024-02-19
+
+A bunch of homeworks got rescheduled, and now everything is due on Friday.  Ugh.
+
+Puttered around making a `reductions` function in the evening.  Turned out to be
+tricky if you want it to work like CL's actual `reduce`, i.e. supporting
+`start`, `end`, `key`, `from-end`, and `initial-value` properly.  I think I've
+got something working, though it would also be nice to add a `result-type`
+argument so you could ask for a vector directly though.
+
+## 2024-02-20
+
+BS522.  Another day on multiple regression, this time they mentioned continuous
+vs continuous but otherwise it still just feels like treading water.  I feel
+like we got everything thrown at us in the first week and have been stalled on
+the same stuff ever since.
+
+BI529.  This week was much easier, maybe because I slowed down and read the
+description more carefully first to try to
+
+* Try to figure out the biology behind what we're actually implementing.  Way
+  too easy to treat the problems as a black box, but I'm actually getting to the
+  point now where the biological context *helps* me, rather than overwhelming
+  me.  Progress?
+* Identify which things they're going to handwave over in the implementation
+  (e.g. today we just compare *all* genes with *all* SNPs, not the ones near
+  them like you'd have to do in reality).
+
+Anyway, reading carefully at the beginning saved me going down a couple of
+rabbit holes along the way.  Need to remember to do the same next time.
+
+BI545.  ChIP-seq.
+
+PIBS800, about funding after the PIBS year.  Need to remember to register for
+604 as soon as I'm able.
+
+* Figure out who the graduate coordinator is, check in with them once per term
+  about funding/appointment changes etc.
+
+Funding mechanisms:
+
+* Fellowship, etc.  Paid through financial aid system.
+* Training grants.  Paid through financial aid system.
+* Graduate Student Research Assistant (GSRA), paid through HR.
+* Graduate Student Instructor (GSI), paid through HR.
+
