@@ -240,3 +240,58 @@ Funding mechanisms:
 * Graduate Student Research Assistant (GSRA), paid through HR.
 * Graduate Student Instructor (GSI), paid through HR.
 
+EdM stuff:
+
+* Need to be in PhD lab and program as of July 1.
+* Make sure rotation 4 is done in EdM (I think we did this long ago).
+
+## 2024-02-21
+
+Found <https://www.ejmastnak.com/tutorials/vim-latex/intro/> and might sharpen
+the LaTeX saw a little bit this morning before I dive back into stuff.  I think
+I'm pretty invested in LaTeX at this point, and aside from the snippets thing
+I use almost everything there already, so it might be a good effort/reward
+ratio.
+
+Went through the first part, about snippets.  After some ridiculous yak shaving
+(apparently the obvious, reasonable directory name `snippets` is special-cased
+to be parsed as some *other* snippet plugin's syntax and so if you dare to name
+the directory the obviously correct name it'll fail with a completely
+inscrutable error) I got it working.  Going to have a go and see if it's worth
+adding snippets back into my life, at least for LaTeX — I haven't really used
+them since the Textmate era.
+
+Journal club class.  Paper was about deep learning for EEG data.
+
+## 2024-02-22
+
+BS522 in the morning.
+
+BI529, about Markov chains.  I've done these before so today was pretty basic.
+Played around with some Python syntax to see if I could golf things down a bit.
+
+Finished up the BS522 and BI545 homeworks, no idea why it felt like pulling
+teeth this time — they (mostly) weren't as bad as the previous ones.
+
+Also finished BI529 code (still need to do the writeup).  Ended up being pretty
+easy overall, a lot more straightforward than the previous homework, which was
+nice.
+
+Finally got irssi set up on my new laptop.  It's been months, I should have done
+this before now.  Oh well, at least it's done.
+
+## 2024-02-23
+
+Cleaned up and submitted BI545.  Going to review later today with folks and
+maybe resubmit, but at least there's something up there now in case I forget.
+
+BI545, this time about ATAC-seq.  I feel like it was a good introduction to the
+assay, but am cautious about how in-depth the labs/etc will go.
+
+Journal club review.  Last one for me, so I'm done with the reviews for the rest
+of the semester, which is nice.
+
+Office hours to try to understand what the 545 homework wanted after submitting.
+I still have no idea if I was correct.  Oh well.
+
+Finished BI529 so I don't have to worry about it over the break.
