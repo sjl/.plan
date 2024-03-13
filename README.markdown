@@ -295,3 +295,107 @@ Office hours to try to understand what the 545 homework wanted after submitting.
 I still have no idea if I was correct.  Oh well.
 
 Finished BI529 so I don't have to worry about it over the break.
+
+## 2024-03-04
+
+Back in Ann Arbor.  Need to get in touch with the 545 group so we can get the
+project started.
+
+Watched the (cringey) videos for 504.
+
+## 2024-03-05
+
+BS522 in the morning.  Need to do the test (tomorrow).
+
+BI529.  Talked about Viterbi.  Need to sit own and work through this on my own
+time to make sure I really grok it.
+
+Did Viterbi after lunch.  Was pretty straightforward.
+
+PIBS800.
+
+No BS522 lab today.
+
+## 2024-03-06
+
+Went to watch the videos for BI529 but it looks like there aren't any for
+tomorrow, so I guess I'm all set there.  Cool.
+
+Added link title/slug indexing into `mw`.  I think with that added I might be at
+the point where I can start dogfooding this thing.  Neat.
+
+## 2024-03-07
+
+BI529.  HMM forward/backward.  Easy to implement, but I'm not 100% sure I grok
+where this is going.  I ordered the textbook from the 90s they mentioned for $6
+used, so maybe that'll help.
+
+Really need to set up an IRC bouncer so I don't lose chat history.  Looked
+around online and found a couple, [pounce][] seems promising, but annoying to
+install due to its extreme BSD sporkiness.  Poked around a little bit and
+I think I've managed to get it running by:
+
+* `apt install git build-essential openssl libssl-dev pkg-config`
+* Download a `libtls` release tarball (*NOT* LibreTLS, which is a different
+  thing, jesus).
+* `./configure; make all; sudo make install` for `libtls`.
+* Run `/sbin/ldconfig` to pick up the new library.
+* Clone `pounce` repo.
+* `./configure; make all; sudo make install` for `pounce`.
+
+Now I need to figure out how to configure the thing and install TLS certs and
+shit for it, but at least it's built.  Need to get this Ansibilized at some
+point too.
+
+[pounce]: https://git.causal.agency/pounce/about/
+
+Fuck it, let's just do it.  Ansibilized most of the setup, except for the
+installation described above.  I'm also not 100% sure I've done the dehydrated
+TLS cert shit which is always miserable.  But it seems to work, for now.
+
+PIBS504 ethics class 1 of 2.
+
+## 2024-03-08
+
+BI545.  Jumped right back into the gene set enrichment with no context, and
+I was pretty lost.  I think eventually I managed to orient myself.  Walked
+through the labs, lots of going through the motions without grokking what I was
+actually doing, but I think I managed to get through it successfully eventually?
+
+Printed papers to read this weekend for my fourth and final rotation.
+
+## 2024-03-10
+
+Finished BI545 homework 4.  Was meh, though not as bad as the previous ones.
+
+Read some papers for rotation tomorrow.  Lots of new stuff to learn again, I'm
+looking forward to diving in.
+
+## 2024-03-11
+
+First day of my final rotation.  Looking forward to trying something new
+(again).
+
+Filled in some sections for the 545 group project proposal.
+
+## 2024-03-12
+
+BS522.  Model selection.
+
+I really need to get back to the APL videos now that the April author has fixed
+the bugs I reported.
+
+BI529.
+
+BI545.
+
+Printed the rest of the journal club papers so I don't have to do it for the
+next month.  Read the journal club paper for tomorrow (mostly).
+
+PIBS800.
+
+BS522 lab.  Over really quick today.
+
+## 2024-03-13
+
+Must have left my wireless mouse somewhere, need to try to find that today…
