@@ -399,3 +399,75 @@ BS522 lab.  Over really quick today.
 ## 2024-03-13
 
 Must have left my wireless mouse somewhere, need to try to find that today…
+
+Needed to update R to deal with bioinformatics backwards-incompatibility
+garbage, the instructions at <https://cran.r-project.org/bin/linux/debian/> were
+helpful.  General process was:
+
+1. Add the GPG key for their Debian repo.
+2. Add the repo line to `/etc/apt/sources.list`.
+3. Update through `apt`.
+
+That worked okay.  Then I had to update bioconductor to *its* latest version,
+`BiocManager::install(version="3.18")`.  Took a long time, but it seems to have
+worked.
+
+That, of course, broke my nvim-r setup, because it started complaining about
+`nvimcom` not being available for this version of R.  Eventually I was able to
+install the `nvimcom` thing from the `nvim-r` repo by running
+`install.packages("devtools")` and then inside `nvim-r/R/nvimcom` running
+`devtools::install_local()`.  This *seems* to have worked and unfucked
+everything, though I have no confidence that I haven't broken other things in
+the process.  R packaging does indeed seem to be pretty hellish, as I've heard.
+
+Found the mouse in BI545 class, thankfully.  Now that I think about it, it's
+probably worth buying a second copy of my Gamer Mouse™ at home to leave at the
+lab.  Attempted to do so and found that it's been recently discontinued, so
+I have to pay a premium but thank god I can still find one.  The hamster wheel
+of backwards incompatibility turns ever on, even in the real world, I guess.
+
+Journal club class.  Another machine learning tool for scRNA-seq.
+
+Watched 529 video for tomorrow.  Guess we're starting on Profile HMMs.
+
+## 2024-03-14
+
+BS522, over Zoom today.
+
+BI529, profile HMMs.
+
+Final PIBS504 session.
+
+## 2024-03-15
+
+Had to use the core-imaged machine they gave us today (haven't used it since
+the awful word doc writing for HG545).  Took minutes to boot, then complained at
+me to update teams (I've never used Teams on that machine).  Then complained at
+me to reboot, and when I said "Okay, reboot" it threw an "Error: can't reboot",
+so I clicked start → reboot and it rebooted.  Jesus.  I guess I'll remember this
+the next time Linux does something dumb.
+
+BI545.  Lecture was on single cell data and ways to "integrate" it (I think this
+just means ways to take multiple data sets and compare/contrast them, but it
+wasn't super well defined).  I mostly followed the general ideas, but there were
+a lot of biology terms thrown in that weren't defined (although hey, I actually
+did know what an astrocyte already is thanks to my rotation) and a lot of math
+notation that was passed over too fast to really grok.
+
+## 2024-03-17
+
+BI545 homework today, mostly implementing Baum-Welch.  Looked around for some
+resources on this, found <https://www.youtube.com/watch?v=JRsdt05pMoI> which
+really helped clarify the meaning of the forward/backward/forward-backward
+values in my mind:
+
+* Forward (called α in the video): given the sequence we've seen so far, what's
+  the probability we're in this state?  In their robot example, if I see blue
+  carpet I know I'm probably in my bedroom or den.
+* Backward (called β in the video): given the sequence we're *going to see*,
+  what's the probability we're in this state?  Continuing the example, if the
+  next state is a red rug I know I'm in the living room or the bedroom.
+* Forward-Backward (called γ in the video): combine both forward and backward (α
+  and β) to find the most likely state.  In the example, α says bedroom or den
+  and β lets me rule out the den.
+
