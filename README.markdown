@@ -471,3 +471,4 @@ values in my mind:
   and β) to find the most likely state.  In the example, α says bedroom or den
   and β lets me rule out the den.
 
+## 2024-03-18
