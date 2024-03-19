@@ -506,6 +506,12 @@ up a bit.  I started by just splitting into files, but after reflection
 I decided to make it a full ASDF system called `stumpconfig` to make it play
 more nicely with the rest of Quicklisp.  Hopefully it'll also help the loading
 times, since it won't have to recompile everything every time I change (though
-`:serial t` might be preventing some of the optimization here).  Hopefully
-I haven't completely fucked my Stump setup with this — need to try restarting
-X to make sure it still cold boots.
+`:serial t` might be preventing some of the optimization here).
+
+Hopefully I haven't completely fucked my Stump setup with this — need to try
+restarting X to make sure it still cold boots… yep, seems okay.
+
+PIBS800.
+
+Did some more StumpWM yak shaving between classes, fixing up broken mode
+line/sensor support, etc.
