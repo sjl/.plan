@@ -472,3 +472,40 @@ values in my mind:
   and β lets me rule out the den.
 
 ## 2024-03-18
+
+Going to see if I can get Mutt set up on this machine again.  Installed mbsync
+(the package is named `isync`, sigh) and neomutt via apt.  Started syncing my
+mail down with `mbsync --all --pull`.  Need to grab the config files from my
+other laptop when I get home (or set them up to sync).
+
+Fixed an old blog entry of mine when someone pinged me in IRC.  I'm *so* glad
+I rewrote my blog to generate it myself with Common Lisp.  I haven't touched it
+in forever, but everything Just Worked on the new laptop immediately with no
+fucking around on the HWoBI.  So nice.
+
+Watched BI529 videos.  Going to be moving to pairwise alignment.  I swear I've
+done Smith-Waterman in the past, but looking around all I can find is an
+implementation of Needleman-Wunsch in my sandbox repo.  Maybe that's what I'm
+thinking of.  Oh well, at least I've done something like this before.
+
+## 2024-03-19
+
+BS522.
+
+BI529.  Smith-Waterman.  Finished relatively quickly, but the most confusing
+part was which sequence was "seq1" vs "seq2" and matching that to row/col.
+
+BI545.  Mostly about spatial today.  Already seen a lot of this from working on
+Xenium at 10x.
+
+Since my second `G A M E R M O U S E` arrived yesterday I decided to some up
+with some key mappings for non-gaming use, so I don't have to swap back and
+forth as often during daily driving.  In the process I got tired of my StumpWM
+config being one giant file, so I decided to shave that yak first and split it
+up a bit.  I started by just splitting into files, but after reflection
+I decided to make it a full ASDF system called `stumpconfig` to make it play
+more nicely with the rest of Quicklisp.  Hopefully it'll also help the loading
+times, since it won't have to recompile everything every time I change (though
+`:serial t` might be preventing some of the optimization here).  Hopefully
+I haven't completely fucked my Stump setup with this — need to try restarting
+X to make sure it still cold boots.
