@@ -225,3 +225,70 @@ PIBS800.
 Did some more StumpWM yak shaving between classes, fixing up broken mode
 line/sensor support, etc.
 
+## 2024-03-20
+
+In the lab most of today except for journal club at 3.
+
+Watched the (very short) BI529 video for tomorrow.
+
+BI603.
+
+## 2024-03-21
+
+BI529, multiple sequence alignment.
+
+Wanted to clean out my downloads folder, but haven't gotten around to getting
+a nice graphical file manager on this laptop.  Decided to try out `ranger` and
+it was… fine.  `space` to mark files, then `:delete` to remove them.  Previews
+are ugly but usable.
+
+## 2024-03-22
+
+BI545, this time about single-nuclei 10x Multiome.  Lab is at
+<https://theparkerlab.med.umich.edu/data/porchard/2023-03-02-multiome-lab/multiome-lab.html>,
+and there's a  Nextflow workflow at
+<https://github.com/porchard/snATACseq-NextFlow/blob/master/main.nf> which might
+be worth looking at if I ever decide to use Nextflow again.
+
+Found <https://pair-code.github.io/understanding-umap/> and
+<https://distill.pub/2016/misread-tsne/> again which I came across years ago
+when working at 10x, read through it because I remember them being useful back
+then.
+
+Lunch with some CMB/BI folks.
+
+Finished reading through the 545 lab after meeting.
+
+## 2024-03-24
+
+BI545 and BS522 homework.
+
+## 2024-03-25
+
+Looked for a way to queue up commands to run serially.  Initially found a bunch
+of people recommending `at` and `batch` which absolutely do not do that, cool.
+Eventually I found `nq` (<https://github.com/leahneukirchen/nq>) which uses
+a cute and/or horrifying strategy (the process backgrounds and hangs `flock`ed
+on sequential sentinel files, lol), so I'll give that a try.  For example, to
+`curl` whatever's on your clipboard, something like this (in bash) can work:
+
+    X=`pbpaste` nq -c bash -c 'curl --remote-name -L "$X"'
+
+The `pbpaste` evals immediately, and the string it produces is used later when
+actually running, which is what you want.  Neat.
+
+## 2024-03-26
+
+BS522.
+
+BI529.  Tree search. Implemented DFS and BFS PAIP-style for fun, then also did
+them the way they wanted.
+
+BI545, initial presentations.  All but one group came in under time, thankfully,
+so it wasn't too painful.
+
+PIBS800.  Part 2 of how to give a talk.
+
+## 2024-03-27
+
+BI603.
