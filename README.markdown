@@ -292,3 +292,38 @@ PIBS800.  Part 2 of how to give a talk.
 ## 2024-03-27
 
 BI603.
+
+## 2024-03-28
+
+BS522.
+
+BI529.  Finished the in-class stuff pretty early (basic distance computation
+stuff) so I started poking around at making a little DB migration library in CL,
+so I can use it for little things in the future.
+
+Went to the tools & tech seminar to learn about HMMSTR.
+
+## 2024-03-29
+
+BI545.  Mostly about GWAS.
+
+## 2024-03-31
+
+Met with folks about the BI545 project.  Need to get my side of things done
+relatively quickly because it's blocking the rest of the DAG.
+
+BS522 homework part one.  Looks like this one is going to be another miserable
+slog, ugh.
+
+Got a skeleton of the BI545 project repo sketched out.  Threw together some
+scripts to download the data, leaving it running overnight because in spite of
+its name `fasterq-dump` is not particularly fast.
+
+## 2024-04-01
+
+The BI545 downloading finished this morning as I was drinking coffee.
+Unfortunately some of the sample are single-end, which means there's one
+a single FASTQ, so the downloading script (which assumed 2 FASTQs broke for
+those after downloading).  But that's not too bad, because I can throw together
+a one-liner to `gzip` the rest easily enough, and at least it downloaded them
+all, which is the slowest part.
