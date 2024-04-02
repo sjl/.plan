@@ -327,3 +327,12 @@ a single FASTQ, so the downloading script (which assumed 2 FASTQs broke for
 those after downloading).  But that's not too bad, because I can throw together
 a one-liner to `gzip` the rest easily enough, and at least it downloaded them
 all, which is the slowest part.
+
+Started `gzip`ing the remaining data on the login node, but it's taking too long
+for my linking.  `salloc`ed an interactive instance with more threads to make
+this a bit faster.
+
+Continued the BS522 slog.
+
+## 2024-04-02
+
