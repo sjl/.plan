@@ -336,3 +336,80 @@ Continued the BS522 slog.
 
 ## 2024-04-02
 
+Added STAR rule to our BI545 project.  It was surprisingly difficult to find
+a Singularity/Docker container for it. Eventually finished getting most of the
+pipeline up and running, at least to the point of producing the `.htseq` files
+so the other folks are unblocked.
+
+## 2024-04-04
+
+BS522.
+
+BI529.  Clustering.
+
+Postgres on a VM notes because I have to look this up every single time:
+
+    sudo apt install postgresql postgresql-contrib
+    sudo -u postgres psql
+
+    CREATE USER testuser;
+    CREATE DATABASE testdb;
+    ALTER USER testuser WITH ENCRYPTED PASSWORD 'pass';
+    GRANT ALL PRIVILEGES ON DATABASE testdb TO testuser;
+    \c testdb
+    GRANT ALL ON SCHEMA public TO testuser;
+
+    psql postgresql://testuser@localhost:5432/testdb
+
+## 2024-04-05
+
+Realized I can bind a key to toggle fullscreen windows on StumpWM.  Amazing.
+I should have done this ages ago.  `H-0` on the keyboard (mnemonic: "zero other
+things on the screen") and `s-12` on the Gamer Mouse™.
+
+BI545, eQTL and allelic bias analysis.
+
+## 2024-04-07
+
+Finished BI529 homework.
+
+## 2024-04-09
+
+BS522.
+
+Finished and submitted BI529 homework, the last one I *technically* need to do,
+since the other two classes are drop-lowest and I'm happy with all my current
+scores.  We'll see how ambitious I feel.
+
+Really need to update my `st` installation at some point.  I hear there have
+been performance improvements since I last updated… looks like four years ago?
+But updating `st` is such a miserable fucking slog because of the absolutely
+unhinged approach they take to configuration of "edit the C code and recompile,
+lol", so you need to maintain patch stacks and constantly remerge them to stay
+up to date.  Absolutely batshit behavior.  I need to write my own goddamn
+terminal some day.
+
+I tried just pulling and merging but of course that doesn't fucking work because
+there are a million conflicts from the various patches.  So I need to figure out
+what I need to recreate on the new `st` version:
+
+* My config changes.
+* Scrollback patch.
+* "Fix keyboard input" patch.
+* Externalpipe patch.
+* Boxdraw patch.
+
+BI529, gene set enrichment analysis.  I think I kind of understand the GSEA
+plots now, in a handwavey way.
+
+Added a couple of simple tests to DBvolve so I can at least sanity check things
+when I make changes.  Just uses an in-memory SQLite DB for the tests for now.
+
+Started reading the paper for journal club class tomorrow.  I think this is the
+final one.
+
+PIBS800.
+
+## 2024-04-10
+
+Final journal club of the semester today.
