@@ -413,3 +413,44 @@ PIBS800.
 ## 2024-04-10
 
 Final journal club of the semester today.
+
+## 2024-04-11
+
+BS522.
+
+BI529, mass spec stuff and discrete Fourier transform.
+
+## 2024-04-12
+
+BI545 flex time appointment thing today.
+
+Worked on getting QoRTs running again:
+
+* Previous runs exploded with a mostly-useless error about a GTF line having
+  too few columns.
+* Tried rerunning with an Ensemble GTF instead of one from NCBI and it seems to
+  work.
+* Had to explicitly tell QoRTs to use more than 1GB of memory (lol), by passing
+  the typical Java `-Xmx` option as an option to the shell script, which does
+  some magic garbage to extract it out and pass it separately to Java.
+* There are options for number of threads for QoRTs but they're marked as
+  deprecated because Threading is Hard, so I guess it'll just be single-threaded
+  all the way.
+
+## 2024-04-15
+
+Started writing out a methods section for BI545.  I'm quite ready to be done
+with this class.
+
+Met with 545 folks.
+
+## 2024-04-18
+
+Emailed some folks about BIDS-TP.
+
+## 2024-04-19
+
+Finally turned in the 545 project.  One less thing to worry about.
+
+## 2024-04-22
+
