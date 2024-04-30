@@ -454,3 +454,210 @@ Finally turned in the 545 project.  One less thing to worry about.
 
 ## 2024-04-22
 
+Added a `--slurp` kludge to CACL so I can use it for easy math.  For some reason
+when I use `/dev/tty` as the input I end up having to `c-d` twice to exit the
+REPL, but I can't be bothered to dig that rabbit hole apart today, so whatever,
+it's fine for now I guess.  The joys of personal software.
+
+Starting all the paperwork to join the lab for the rest of my PhD.  Exciting!
+
+## 2024-04-23
+
+Practiced the 545 presentation a couple more times and got it down to under
+2 minutes.  I wish I could update the presenter notes, but sadly that's not an
+option.  Oh well.  Presentation went fine.
+
+Did the BS522 final.  3/25 questions were just… wrong on the test.  Got an email
+hours later acknowledging that but yeah, that fits overall with this course.  At
+least I'm done with it now, thankfully.
+
+## 2024-04-24
+
+Did the second (easier) half of the 529 homework.  I'm realizing now that we
+were probably supposed to pass a locals dict in the lab instead of creating
+local variables and rawdogging the rules with `eval` to mutate the state,
+whoops.
+
+## 2024-04-25
+
+Realized UM students can get a free Yubikey from the university tech shop, so
+I picked one up today.  Nice.
+
+Almost had a heart attack when the GSI for 529 emailed about the homework being
+due in 1 hour.  The assignment page had "Available until (later date)" as the
+first words under the assignment and my brain parsed that as the due date, when
+the due date was listed later, so I almost completely skipped it.
+
+## 2024-04-29
+
+Helped someone debug how to upload stuff to an external service via Great Lakes
+which was an interesting rabbit hole to go down.  Gonna port the notes here for
+my future self because I'm sure I'm going to have to do something like this at
+some point.
+
+The first layer of problem is that the Great Lakes slurm nodes can't access the
+internet by default. <https://arc.umich.edu/document/internet-from-nodes/> has
+some notes on why this is the case.  So we need to use one of the workarounds on
+that page, but which one you need starts bumping up against the next layer of
+problems.
+
+The recommended upload method for what they were looking at was `ncftpput`,
+which is using FTP, which is notorious for being a weird pain in the ass of
+a protocol because it uses multiple TCP connections on different ports to
+transfer shit instead of just using a single connection like… everything else.
+So using FTP here would be even more painful because we'd need to deal with
+wrangling multiple ports/connections on the slurm nodes, which is not great.
+
+Luckily SFTP is also an option in this particular case.  SFTP is probably going
+to be easier here because it only uses a single connection/port.
+
+Side note: there's `/etc/profile.d/http_proxy.sh` on the cluster, but that just
+sets some environment variables for HTTP-based proxies.  `ncftpput` explicitly
+says it cannot use these in its `firewall` file, so that doesn't help.
+
+So step one is to use the final workaround in that ARC document to set up
+a tunnel to the server on the slurm node, then point SFTP at that.  According to
+that document you can do that with something like this:
+
+    ssh -o HostKeyAlgorithms=ssh-ed25519 \
+        -NAL 9922:sftp-private.ncbi.nlm.nih.gov:22 \
+        greatlakes-xfer.arc-ts.umich.edu \
+        &
+
+But if you actually *try* that you immediately hit a problem that they just
+kinda… ignore? in the document.  SSH prompts you to check the host key
+fingerprint the first time you log in, which is done interactively and can't
+happen when it's backgrounded with `&` like that.  So we need to run `ssh -o
+HostKeyAlgorithms=ssh-ed25519 -NAL 9922:sftp-private.ncbi.nlm.nih.gov:22
+greatlakes-xfer.arc-ts.umich.edu` once interactively and accept the host key by
+hand which will store it in `~/.ssh/known_hosts`, then just `^C` it.  Then (as
+long as they don't change the keys) we never need to do that again.
+
+As for the `HostKeyAlgorithms` crap, that's yet another snag.  ARC also keeps
+a list of known host fingerprints for the Great Lakes hosts in something like
+`/etc/ssh/ssh_known_hosts` (which is good).  SSH will check that these
+fingerprints are valid when you connect (also good).  But SSH supports multiple
+key formats, and they've configured the ssh server on the `greatlakes-xfer` host
+to prefer to send one format, but they've listed a different one in their
+`ssh_known_hosts` (I have no idea why they would do this, it's probably an
+oversight?).  So `-o HostKeyAlgorithms=ssh-ed25519` will tell SSH to prefer that
+format of key, which matches what's in `/etc/ssh/ssh_known_hosts`.
+
+Okay, so at this point we need something like this:
+
+    #!/bin/bash
+
+    #SBATCH lines here…
+
+    set -euo pipefail
+
+    # https://arc.umich.edu/document/internet-from-nodes/
+
+    ssh -o HostKeyAlgorithms=ssh-ed25519 \
+        -NAL 9922:sftp-private.ncbi.nlm.nih.gov:22 \
+        greatlakes-xfer.arc-ts.umich.edu \
+        &
+
+    sleep 5
+
+    # Actually upload the files here
+
+    kill %1
+
+And now we can finally get to the internet from the slurm node.
+
+We want to use `sftp` to upload by logging in with `sftp` and running something
+like:
+
+    cd uploads/somedir
+    mkdir new_thing
+    cd new_thing
+    put /path/to/data
+
+First snag: we want to upload an entire directory, so we probably need `put -r`
+to recursively do that.  It's probably also worth adding `-a` to make it
+resumeable:
+
+    cd uploads/somedir
+    mkdir new_thing
+    cd new_thing
+    put -ar /path/to/data
+
+But we don't want to have to interactively type the commands here since it's in
+a script.  `sftp` has a `-b batchfile` option where you can put those commands
+into a file and read it in, e.g.:
+
+    sftp -b commands.txt user@host
+
+We could do it that way, or use bash process substitution to fake a file without
+actually creating one:
+
+    sftp -b <(echo "
+    cd uploads/somedir
+    mkdir new_thing
+    cd new_thing
+    put -ar /path/to/data
+    ") user@host
+
+Since we're using a tunnel instead of connecting directly to the server, we tell
+`sftp` to connect to that:
+
+    sftp -P 9922 \
+         -b <(echo "
+    cd uploads/somedir
+    mkdir new_thing
+    cd new_thing
+    put -ar /path/to/data
+         ") \
+          someuser@localhost
+
+But there's one more snag: entering the password to the SFTP server.  For that
+there's a handy utility called `sshpass` that's already installed on the
+cluster:
+
+    SSHPASS="mypassword" sshpass -e \
+        sftp -P 9922 \
+             -b <(echo "
+    cd uploads/somedir
+    mkdir new_thing
+    cd new_thing
+    put -ar /path/to/data
+             ") \
+              someuser@localhost
+
+Could also stick the password into a text file (probably with `600` permissions
+for safety) and use `sshpass -fpassword.txt` instead of an environment variable
+to avoid including it in the script.
+
+I think that's all the layers of the onion, so the final script would look
+something like this:
+
+    #!/bin/bash
+
+    #SBATCH …
+
+    set -euo pipefail
+
+    # https://arc.umich.edu/document/internet-from-nodes/
+
+    ssh -o HostKeyAlgorithms=ssh-ed25519 \
+        -NAL 9922:sftp-private.ncbi.nlm.nih.gov:22 \
+        greatlakes-xfer.arc-ts.umich.edu \
+        &
+
+    sleep 5
+
+    # Might be safer to use the file-based mode for sshpass with sshpass -fsomefile
+    SSHPASS="mypassword" sshpass -e \
+        sftp -P 9922 \
+             -b <(echo "
+    cd uploads/somedir
+    mkdir new_thing
+    cd new_thing
+    put -ar /path/to/data
+             ") \
+              someuser@localhost
+
+    kill %1
+
+Whew.
