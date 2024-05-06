@@ -661,3 +661,16 @@ something like this:
     kill %1
 
 Whew.
+
+## 2024-05-01
+
+Final day of rotations.  It's been wonderful — I would have *loved* to have
+something like this on the industry side (on both sides of the hiring process).
+
+## 2024-05-06
+
+First day at my permanent lab.  Time to get back into the swing of things.  Lots
+of paperwork and notes rereading today, I think tomorrow will probably be more
+actually-productive.
+
+
