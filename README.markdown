@@ -673,4 +673,22 @@ First day at my permanent lab.  Time to get back into the swing of things.  Lots
 of paperwork and notes rereading today, I think tomorrow will probably be more
 actually-productive.
 
+Did a little more Lisp web stuff after work.  Tried cl-who for a template
+library in this one because I don't really like Djula and it has zero
+dependencies, but… I still don't like it.  The syntax for flipping back and
+forth between Lisp and HTML is annoying, the macro-based-everything makes it
+a pain in the ass to extract helper functions, and it'd be utterly inscrutable
+to any non-Lisper.
+
+## 2024-05-07
+
+Did a bit more Lisp web stuff after work.  Tried out
+<https://github.com/mmontone/ten> and while I don't *love* it I think it's what
+I'll go with for now.  It has more dependencies than cl-who (including cl-who
+itself, lol) but not *that* many, so I think I can live with that.  The tags are
+pretty much vanilla lisp which is a lot less janky than Djula's tags, and the
+templates are at least closer to something a non-lisper might be able to read.
+The non-automatic compilation step is annoying, but I can probably hack a Vim
+shortcut to get something usable there.
+
 
