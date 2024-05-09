@@ -691,4 +691,12 @@ templates are at least closer to something a non-lisper might be able to read.
 The non-automatic compilation step is annoying, but I can probably hack a Vim
 shortcut to get something usable there.
 
+## 2024-05-08
 
+Wrote a little wrapper script to ensure my paper database from JabRef is backed
+up, because at this point it would be catastrophic to lose it, and while
+Syncthing has been… okay so far, I don't fully trust it yet.
+
+Fixed a [Vlime/Paredit bug](https://github.com/vlime/vlime/issues/54) that's
+annoyed me for *checks github issue timestamp* four years.  I should have done
+this ages ago, I don't know why I never bothered to look into it.
