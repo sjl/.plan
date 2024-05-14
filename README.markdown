@@ -700,3 +700,25 @@ Syncthing has been… okay so far, I don't fully trust it yet.
 Fixed a [Vlime/Paredit bug](https://github.com/vlime/vlime/issues/54) that's
 annoyed me for *checks github issue timestamp* four years.  I should have done
 this ages ago, I don't know why I never bothered to look into it.
+
+## 2024-05-09
+
+Started trying to figure out how I want to organize all my PhD-related files for
+the next five years.  I've tried [Johnny Decimal](https://johnnydecimal.com/) in
+the past and used it for a while, but never really felt like I really got into
+it.  Maybe I should resurrect that and try to focus it more on just my PhD,
+instead of trying to track my entire life through it.
+
+## 2024-05-13
+
+Got some Sundew cuttings from a labmate today, going to try propagating them at
+home.
+
+## 2024-05-14
+
+Wanted to deal with error handling and trailing slash redirection in Hunchentoot
+today, but unfortunately it looks like there's no easy way to do either (at
+least not one that's documented).  Hunchentoot allows you to specify some kind
+of error directory, but that only allows static templates, not e.g. rendering
+a template.  Though maybe that's good enough for what I need…
+
