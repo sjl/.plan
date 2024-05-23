@@ -722,3 +722,21 @@ least not one that's documented).  Hunchentoot allows you to specify some kind
 of error directory, but that only allows static templates, not e.g. rendering
 a template.  Though maybe that's good enough for what I need…
 
+## 2024-05-15
+
+A little more web stuff, pretty happy with my choice of templating library
+(TEN).  Now that I grok that it's mostly just the lisp with a tiny syntax
+wrapper, it's trivial to just do e.g.:
+
+    {% multiple-value-bind (foo bar) (get-stuff arg) %}
+        …
+    {% end %}
+
+I'm still not happy with the routing library situation.  Looked at a bunch of
+different options and none of them seem decent.  The one I'm currently using
+(easy-routes with Hunchentoot) doesn't really give me a nice way to deal with
+rendering error pages, or a way to add middleware to e.g. handle trailing slash
+crap site-wide.  Need to think more about how I want to deal with this.
+
+
+
