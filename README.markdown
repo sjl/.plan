@@ -738,5 +738,13 @@ different options and none of them seem decent.  The one I'm currently using
 rendering error pages, or a way to add middleware to e.g. handle trailing slash
 crap site-wide.  Need to think more about how I want to deal with this.
 
+## 2024-05-30
+
+Updated my Mercurial hosting site to enable archive downloads.  Notes for my
+future self:
+
+* Use `man 5 hgrc` and search for archive for the settings.
+* The `hgweb.conf` you need to edit is inside the `hg.stevelosh.com` deployment repo.
+* The deployment repo and the public repo are not the same.
 
 
