@@ -746,5 +746,3 @@ future self:
 * Use `man 5 hgrc` and search for archive for the settings.
 * The `hgweb.conf` you need to edit is inside the `hg.stevelosh.com` deployment repo.
 * The deployment repo and the public repo are not the same.
-
-
