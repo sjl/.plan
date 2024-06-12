@@ -746,3 +746,28 @@ future self:
 * Use `man 5 hgrc` and search for archive for the settings.
 * The `hgweb.conf` you need to edit is inside the `hg.stevelosh.com` deployment repo.
 * The deployment repo and the public repo are not the same.
+
+## 2024-06-12
+
+Figured out some interesting things when working on binding a key in IGV to
+toggle a preference.  IGV listens on a port locally, so to poke it we can open
+a socket:
+
+    (defun send-igv-command (string)
+      (usocket:with-client-socket (socket stream "127.0.0.1" 60151)
+        (unwind-protect (progn (write-line string stream)
+                               (force-output stream))
+          (usocket:socket-close socket))))
+
+The `force-output` was critical there to actually send the command.
+
+To create a separate keymap that you can hang off another key:
+
+
+    (defvar *keymap/igv* (make-sparse-keymap))
+
+    (define-key *keymap/igv* (kbd "s") "igv/toggle-supplementary-alignments")
+
+    (define-top-keys ;; alternate maps
+      ("H-i" *keymap/igv*))
+
