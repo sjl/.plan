@@ -771,3 +771,8 @@ To create a separate keymap that you can hang off another key:
     (define-top-keys ;; alternate maps
       ("H-i" *keymap/igv*))
 
+## 2024-06-18
+
+I need to put together an APL learning club at some point.  I stalled on it
+after the end of the semester and it would be good to have some other motivated
+folks to keep me on it.
