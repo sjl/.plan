@@ -763,7 +763,6 @@ The `force-output` was critical there to actually send the command.
 
 To create a separate keymap that you can hang off another key:
 
-
     (defvar *keymap/igv* (make-sparse-keymap))
 
     (define-key *keymap/igv* (kbd "s") "igv/toggle-supplementary-alignments")
