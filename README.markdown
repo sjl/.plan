@@ -775,3 +775,29 @@ To create a separate keymap that you can hang off another key:
 I need to put together an APL learning club at some point.  I stalled on it
 after the end of the semester and it would be good to have some other motivated
 folks to keep me on it.
+
+My [DM42](https://www.swissmicros.com/product/dm42) arrived the other day.  It
+ran fine, but when I turned it off I kept getting an error message that it
+wasn't able to load the `OFFIMG`.
+
+I wasn't able to mount the calculator as a drive at all despite trying with two
+separate cables on both Windows and Linux.  But it turns out it *was* the cable.
+A post in the forums clued me in that the microusb jack on the calculator is
+recessed so far that the plastic of a standard microusb cable hits the case and
+prevents the cable from being fully seated.  Incredible design.  Bought
+a microusb cable with an extra-long snout and now it can connect.
+
+Next issue: the FAT partition was somehow corrupted.  Fucked around on the
+internet for a while trying to figure this out until I eventually stumbled
+across the simple option: there's a `Format FAT Disk` command in the `Settings`
+menu.  Once I did that I could finally mount the drive.
+
+Next issue: when using GIMP to save 1-bit `bmp`s, it saves them in the wrong
+`bmp` format.  Got around *this* by exporting to `png` from GIMP and then
+running `convert TODO` to get the bitmap.
+
+Final issue: the images still weren't loading properly.  The error message on
+the calculator is just a useless generic one so it took me a while to track
+*this* down, but it turns out I had made them the wrong resolution (440x240
+instead of 400x240).  Once I fixed *that* I finally had my custom `OFFIMG`.
+
