@@ -794,10 +794,12 @@ menu.  Once I did that I could finally mount the drive.
 
 Next issue: when using GIMP to save 1-bit `bmp`s, it saves them in the wrong
 `bmp` format.  Got around *this* by exporting to `png` from GIMP and then
-running `convert TODO` to get the bitmap.
+running `convert dnaat.png -flatten -alpha remove -monochrome dnaat.bmp` to get
+the bitmap.
 
 Final issue: the images still weren't loading properly.  The error message on
 the calculator is just a useless generic one so it took me a while to track
 *this* down, but it turns out I had made them the wrong resolution (440x240
 instead of 400x240).  Once I fixed *that* I finally had my custom `OFFIMG`.
+
 

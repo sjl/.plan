@@ -131,6 +131,7 @@ dive in more when my mind is fresh.
 [figlet]: http://www.figlet.org/
 [lolcat]: https://github.com/busyloop/lolcat
 [toilet]: http://caca.zoy.org/wiki/toilet
+
 ## 2018-07-10
 
 Figured out why StumpWM wasn't noticing my timezone changes.  I tracked it down
