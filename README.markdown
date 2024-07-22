@@ -801,5 +801,3 @@ Final issue: the images still weren't loading properly.  The error message on
 the calculator is just a useless generic one so it took me a while to track
 *this* down, but it turns out I had made them the wrong resolution (440x240
 instead of 400x240).  Once I fixed *that* I finally had my custom `OFFIMG`.
-
-
