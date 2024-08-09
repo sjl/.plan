@@ -801,3 +801,18 @@ Final issue: the images still weren't loading properly.  The error message on
 the calculator is just a useless generic one so it took me a while to track
 *this* down, but it turns out I had made them the wrong resolution (440x240
 instead of 400x240).  Once I fixed *that* I finally had my custom `OFFIMG`.
+
+## 2024-08-09
+
+Rebooted my laptop for the first time since last November and the wifi stopped
+working, fucking Linux.  Spent 30 minutes dicking around trying to debug stuff
+by searching on my phone until I did what I should have done in the past, which
+was look at my notes, which pointed me at the actual problem: `wpa_supplicant`.
+Last November I had to disable it to get the wifi working, but now apparently
+I needed to *enable* it for `NetworkManager` to work:
+
+    sudo systemctl unmask wpa_supplicant
+    sudo systemctl enable wpa_supplicant
+    sudo systemctl start wpa_supplicant
+    sudo systemctl status wpa_supplicant
+    sudo systemctl restart NetworkManager
