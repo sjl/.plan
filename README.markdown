@@ -816,3 +816,8 @@ I needed to *enable* it for `NetworkManager` to work:
     sudo systemctl start wpa_supplicant
     sudo systemctl status wpa_supplicant
     sudo systemctl restart NetworkManager
+
+Decided since my morning was shot I may as well spend the rest of it updating
+StumpWM and SBCL, and that, of course, broke as well.  Got some traceback about
+garbage inside CLX and had to update that and rebuild StumpWM to get it to run
+on the newer SBCL.  I wish computers could ever Just Work for me.
