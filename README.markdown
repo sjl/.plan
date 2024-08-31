@@ -490,16 +490,9 @@ the due date was listed later, so I almost completely skipped it.
 
 ## 2024-04-29
 
-Helped someone debug how to upload stuff to an external service via Great Lakes
-which was an interesting rabbit hole to go down.  Gonna port the notes here for
-my future self because I'm sure I'm going to have to do something like this at
-some point.
+Helped someone debug how to upload stuff to an external service via Great Lakes which was an interesting rabbit hole to go down.  Gonna port the notes here for my future self because I'm sure I'm going to have to do something like this at some point.
 
-The first layer of problem is that the Great Lakes slurm nodes can't access the
-internet by default. <https://arc.umich.edu/document/internet-from-nodes/> has
-some notes on why this is the case.  So we need to use one of the workarounds on
-that page, but which one you need starts bumping up against the next layer of
-problems.
+The first layer of problem is that the Great Lakes slurm nodes can't access the internet by default. <https://arc.umich.edu/document/internet-from-nodes/> has some notes on why this is the case.  So we need to use one of the workarounds on that page, but which one you need starts bumping up against the next layer of problems.
 
 The recommended upload method for what they were looking at was `ncftpput`,
 which is using FTP, which is notorious for being a weird pain in the ass of
@@ -821,3 +814,4 @@ Decided since my morning was shot I may as well spend the rest of it updating
 StumpWM and SBCL, and that, of course, broke as well.  Got some traceback about
 garbage inside CLX and had to update that and rebuild StumpWM to get it to run
 on the newer SBCL.  I wish computers could ever Just Work for me.
+
