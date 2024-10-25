@@ -684,7 +684,7 @@ templates are at least closer to something a non-lisper might be able to read.
 The non-automatic compilation step is annoying, but I can probably hack a Vim
 shortcut to get something usable there.
 
-## 2024-05-08
+## 2024-05-07
 
 Wrote a little wrapper script to ensure my paper database from JabRef is backed
 up, because at this point it would be catastrophic to lose it, and while
@@ -815,3 +815,9 @@ StumpWM and SBCL, and that, of course, broke as well.  Got some traceback about
 garbage inside CLX and had to update that and rebuild StumpWM to get it to run
 on the newer SBCL.  I wish computers could ever Just Work for me.
 
+
+## 2024-10-18
+
+Finally got around to aligning and looking at Avy's FASTQs.
+
+* <http://messybeast.com/genetics-index.htm>
